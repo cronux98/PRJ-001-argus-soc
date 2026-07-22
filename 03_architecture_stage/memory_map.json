@@ -1,0 +1,200 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "version": "1.0.0",
+  "date": "2026-07-20",
+  "address_width": 32,
+  "data_width": 32,
+  "regions": [
+    {
+      "name": "SRAM",
+      "base": "0x00000000",
+      "size": 4096,
+      "size_hex": "0x1000",
+      "access": ["R", "W", "X"],
+      "owner": "sram",
+      "module_id": "M08",
+      "description": "Firmware code, stack, heap, sensor data buffer"
+    },
+    {
+      "name": "SRAM_RESERVED",
+      "base": "0x00001000",
+      "size": 61440,
+      "size_hex": "0xF000",
+      "access": [],
+      "owner": null,
+      "module_id": null,
+      "description": "Reserved for future SRAM expansion (up to 64 KB total)"
+    },
+    {
+      "name": "UART",
+      "base": "0x00010000",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "uart",
+      "module_id": "M03",
+      "description": "UART TX/RX data, status, control, baud config",
+      "registers": [
+        {"offset": "0x00", "name": "TXDATA", "width": 8, "access": "W", "reset": "0x00"},
+        {"offset": "0x04", "name": "RXDATA", "width": 8, "access": "R", "reset": "0x00"},
+        {"offset": "0x08", "name": "STATUS", "width": 8, "access": "R", "reset": "0x0A"},
+        {"offset": "0x0C", "name": "CONTROL", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x10", "name": "BAUD_DIV", "width": 16, "access": "RW", "reset": "0x01B2"},
+        {"offset": "0x14", "name": "FIFO_THRESH", "width": 8, "access": "RW", "reset": "0x41"}
+      ]
+    },
+    {
+      "name": "SPI",
+      "base": "0x00010100",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "spi_master",
+      "module_id": "M04",
+      "description": "SPI data, status, control, clock config",
+      "registers": [
+        {"offset": "0x00", "name": "TXDATA", "width": 8, "access": "W", "reset": "0x00"},
+        {"offset": "0x04", "name": "RXDATA", "width": 8, "access": "R", "reset": "0x00"},
+        {"offset": "0x08", "name": "STATUS", "width": 8, "access": "R", "reset": "0x01"},
+        {"offset": "0x0C", "name": "CONTROL", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x10", "name": "CLK_DIV", "width": 8, "access": "RW", "reset": "0x02"}
+      ]
+    },
+    {
+      "name": "I2C",
+      "base": "0x00010200",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "i2c_master",
+      "module_id": "M05",
+      "description": "I2C data, status, control, clock config",
+      "registers": [
+        {"offset": "0x00", "name": "DATA", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x04", "name": "ADDR", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x08", "name": "STATUS", "width": 8, "access": "R", "reset": "0x10"},
+        {"offset": "0x0C", "name": "CONTROL", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x10", "name": "CLK_DIV_LO", "width": 8, "access": "RW", "reset": "0x7D"},
+        {"offset": "0x14", "name": "CLK_DIV_HI", "width": 8, "access": "RW", "reset": "0x7D"}
+      ]
+    },
+    {
+      "name": "GPIO",
+      "base": "0x00010300",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "gpio",
+      "module_id": "M06",
+      "description": "GPIO data, direction, interrupt enable/status/edge",
+      "registers": [
+        {"offset": "0x00", "name": "DATA_OUT", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x04", "name": "DATA_IN", "width": 8, "access": "R", "reset": null},
+        {"offset": "0x08", "name": "DIR", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x0C", "name": "IRQ_EN", "width": 8, "access": "RW", "reset": "0x00"},
+        {"offset": "0x10", "name": "IRQ_EDGE", "width": 16, "access": "RW", "reset": "0x0000"},
+        {"offset": "0x14", "name": "IRQ_STATUS", "width": 8, "access": "RW1C", "reset": "0x00"}
+      ]
+    },
+    {
+      "name": "PWM",
+      "base": "0x00010400",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "pwm",
+      "module_id": "M07",
+      "description": "PWM period, duty cycle (ch0/ch1), control, status",
+      "registers": [
+        {"offset": "0x00", "name": "PERIOD", "width": 16, "access": "RW", "reset": "0x07D0"},
+        {"offset": "0x04", "name": "DUTY_CH0", "width": 16, "access": "RW", "reset": "0x0000"},
+        {"offset": "0x08", "name": "DUTY_CH1", "width": 16, "access": "RW", "reset": "0x0000"},
+        {"offset": "0x0C", "name": "CONTROL", "width": 8, "access": "RW", "reset": "0x00"}
+      ]
+    },
+    {
+      "name": "INTERRUPT_CTRL",
+      "base": "0x00010500",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "interrupt_ctrl",
+      "module_id": "M09",
+      "description": "IRQ enable, pending per source",
+      "registers": [
+        {"offset": "0x00", "name": "IRQ_EN", "width": 16, "access": "RW", "reset": "0x0000"},
+        {"offset": "0x04", "name": "IRQ_PENDING", "width": 16, "access": "R", "reset": "0x0000"},
+        {"offset": "0x08", "name": "CPU_IRQ", "width": 1, "access": "R", "reset": "0"}
+      ]
+    },
+    {
+      "name": "WATCHDOG",
+      "base": "0x00010600",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "pwm",
+      "module_id": "M07",
+      "description": "Watchdog reload, counter, control",
+      "registers": [
+        {"offset": "0x00", "name": "RELOAD", "width": 24, "access": "RW", "reset": "0xFFFFFF"},
+        {"offset": "0x04", "name": "COUNTER", "width": 24, "access": "R", "reset": "0xFFFFFF"},
+        {"offset": "0x08", "name": "CONTROL", "width": 8, "access": "RW", "reset": "0x00"}
+      ]
+    },
+    {
+      "name": "SYS_CTRL",
+      "base": "0x00010700",
+      "size": 256,
+      "size_hex": "0x100",
+      "access": ["R", "W"],
+      "owner": "sys_ctrl",
+      "module_id": "M12",
+      "description": "Chip ID, clock divider, reset cause, sleep control",
+      "registers": [
+        {"offset": "0x00", "name": "CHIP_ID", "width": 32, "access": "R", "reset": "0x41524755"},
+        {"offset": "0x04", "name": "CLK_DIV", "width": 8, "access": "RW", "reset": "0x01"},
+        {"offset": "0x08", "name": "RESET_CAUSE", "width": 8, "access": "R", "reset": "0x00"},
+        {"offset": "0x0C", "name": "SLEEP_CTRL", "width": 8, "access": "RW", "reset": "0x00"}
+      ]
+    },
+    {
+      "name": "PERIPH_RESERVED",
+      "base": "0x00010800",
+      "size": 63488,
+      "size_hex": "0xF800",
+      "access": [],
+      "owner": null,
+      "module_id": null,
+      "description": "Reserved for future peripherals (DMA, CRC, I2C slave, etc.)"
+    },
+    {
+      "name": "WB_WINDOW",
+      "base": "0x80000000",
+      "size": 2147483648,
+      "size_hex": "0x80000000",
+      "access": ["R", "W"],
+      "owner": "wb_bridge",
+      "module_id": "M10",
+      "description": "Caravel Wishbone to APB bridge address window"
+    }
+  ],
+  "boot_address": "0x00000000",
+  "reset_vector": "0x00000000",
+  "interrupt_sources": [
+    {"id": 0, "name": "IRQ_UART", "source": "M03", "target": "M09", "bit": 0},
+    {"id": 1, "name": "IRQ_SPI", "source": "M04", "target": "M09", "bit": 1},
+    {"id": 2, "name": "IRQ_I2C", "source": "M05", "target": "M09", "bit": 2},
+    {"id": 3, "name": "IRQ_GPIO0", "source": "M06", "target": "M09", "bit": 3},
+    {"id": 4, "name": "IRQ_GPIO1", "source": "M06", "target": "M09", "bit": 4},
+    {"id": 5, "name": "IRQ_GPIO2", "source": "M06", "target": "M09", "bit": 5},
+    {"id": 6, "name": "IRQ_GPIO3", "source": "M06", "target": "M09", "bit": 6},
+    {"id": 7, "name": "IRQ_GPIO4", "source": "M06", "target": "M09", "bit": 7},
+    {"id": 8, "name": "IRQ_GPIO5", "source": "M06", "target": "M09", "bit": 8},
+    {"id": 9, "name": "IRQ_GPIO6", "source": "M06", "target": "M09", "bit": 9},
+    {"id": 10, "name": "IRQ_GPIO7", "source": "M06", "target": "M09", "bit": 10},
+    {"id": 11, "name": "IRQ_PWM", "source": "M07", "target": "M09", "bit": 11},
+    {"id": 12, "name": "IRQ_WDT", "source": "M07", "target": "M09", "bit": 12}
+  ]
+}

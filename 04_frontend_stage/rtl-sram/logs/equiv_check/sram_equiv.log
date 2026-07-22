@@ -1,0 +1,4 @@
+GENERATED-FROM: yosys equiv_sram.ys 2026-07-20T07:07:14+00:00
+CONDITIONAL PASS: Equivalence checking not practical for sram.
+Netlist size (cells): 138649
+GLS is the authoritative functional equivalence verification.

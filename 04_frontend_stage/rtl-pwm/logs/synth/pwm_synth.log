@@ -1,0 +1,2278 @@
+GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3) synth_pwm.ys 2026-07-20T06:45:11+00:00
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/synth/synth_pwm.ys' --
+
+1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v' to AST representation.
+Generating RTLIL representation for module `\pwm_wrapper'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v' to AST representation.
+Generating RTLIL representation for module `\EF_TMR32_APB'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v' to AST representation.
+Generating RTLIL representation for module `\EF_TMR32'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v' to AST representation.
+Generating RTLIL representation for module `\EF_WDT32_APB'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v' to AST representation.
+Generating RTLIL representation for module `\EF_WDT32'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \pwm_wrapper
+Used module:     \EF_WDT32_APB
+Used module:         \EF_WDT32
+Used module:     \EF_TMR32_APB
+Used module:         \EF_TMR32
+Parameter \PRW = 16
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\EF_TMR32'.
+Parameter \PRW = 16
+Generating RTLIL representation for module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \pwm_wrapper
+Used module:     \EF_WDT32_APB
+Used module:         \EF_WDT32
+Used module:     \EF_TMR32_APB
+Used module:         $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+
+6.4. Analyzing design hierarchy..
+Top module:  \pwm_wrapper
+Used module:     \EF_WDT32_APB
+Used module:         \EF_WDT32
+Used module:     \EF_TMR32_APB
+Used module:         $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+Removing unused module `\EF_TMR32'.
+Removed 1 unused modules.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360 in module EF_WDT32.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335 in module EF_WDT32_APB.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331 in module EF_WDT32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327 in module EF_WDT32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322 in module EF_WDT32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318 in module EF_WDT32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314 in module EF_WDT32_APB.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254$543 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249$539 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Removed 6 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 7 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Removed 6 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 7 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 7 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 10 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:109$399 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378 in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Marked 4 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61 in module EF_TMR32_APB.
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12 in module EF_TMR32_APB.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8 in module EF_TMR32_APB.
+Removed a total of 12 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 6 redundant assignments.
+Promoted 41 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\EF_WDT32.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318'.
+Found async reset \PRESETn in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254$543'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249$539'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388'.
+Found async reset \rst_n in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12'.
+Found async reset \PRESETn in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8'.
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~82 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\EF_WDT32.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360'.
+     1/1: $0\WDTMR[31:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+     1/2: $1\_i_[31:0]
+     2/2: $0\RIS_REG[0:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331'.
+     1/1: $0\IC_REG[0:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327'.
+     1/1: $0\IM_REG[0:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322'.
+     1/1: $0\GCLK_REG[0:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318'.
+     1/1: $0\control_REG[0:0]
+Creating decoders for process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314'.
+     1/1: $0\load_REG[31:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553'.
+     1/1: $0\fault_reg[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549'.
+     1/1: $0\fault_clr_reg[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254$543'.
+     1/1: $0\pwm1_w_dt[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249$539'.
+     1/1: $0\pwm0_w_dt[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536'.
+     1/1: $0\pwm0_delayed[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532'.
+     1/1: $0\dly_cntr[7:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529'.
+     1/1: $0\pwm1_reg[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526'.
+     1/1: $0\pwm0_reg[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477'.
+     1/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.$result[0:0]$524
+     2/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.$result[0:0]$522
+     3/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.$result[0:0]$520
+     4/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.$result[0:0]$518
+     5/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.$result[0:0]$516
+     6/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.$result[0:0]$514
+     7/25: $1\pwm1_reg_next[0:0]
+     8/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.$result[0:0]$496
+     9/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.sig[0:0]$498
+    10/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.action[1:0]$497
+    11/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.sig[0:0]$513
+    12/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.action[1:0]$512
+    13/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.$result[0:0]$511
+    14/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.sig[0:0]$510
+    15/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.action[1:0]$509
+    16/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.$result[0:0]$508
+    17/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.sig[0:0]$507
+    18/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.action[1:0]$506
+    19/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.$result[0:0]$505
+    20/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.sig[0:0]$504
+    21/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.action[1:0]$503
+    22/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.$result[0:0]$502
+    23/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.sig[0:0]$501
+    24/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.action[1:0]$500
+    25/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.$result[0:0]$499
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428'.
+     1/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.$result[0:0]$475
+     2/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.$result[0:0]$473
+     3/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.$result[0:0]$471
+     4/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.$result[0:0]$469
+     5/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.$result[0:0]$467
+     6/25: $2\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.$result[0:0]$465
+     7/25: $1\pwm0_reg_next[0:0]
+     8/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.$result[0:0]$447
+     9/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.sig[0:0]$449
+    10/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.action[1:0]$448
+    11/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.sig[0:0]$464
+    12/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.action[1:0]$463
+    13/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.$result[0:0]$462
+    14/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.sig[0:0]$461
+    15/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.action[1:0]$460
+    16/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.$result[0:0]$459
+    17/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.sig[0:0]$458
+    18/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.action[1:0]$457
+    19/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.$result[0:0]$456
+    20/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.sig[0:0]$455
+    21/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.action[1:0]$454
+    22/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.$result[0:0]$453
+    23/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.sig[0:0]$452
+    24/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.action[1:0]$451
+    25/25: $1\pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.$result[0:0]$450
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419'.
+     1/1: $0\tmr_dir[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416'.
+     1/1: $0\tmr_reg[31:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:109$399'.
+     1/10: $10\tmr_reg_next[31:0]
+     2/10: $9\tmr_reg_next[31:0]
+     3/10: $8\tmr_reg_next[31:0]
+     4/10: $7\tmr_reg_next[31:0]
+     5/10: $6\tmr_reg_next[31:0]
+     6/10: $5\tmr_reg_next[31:0]
+     7/10: $4\tmr_reg_next[31:0]
+     8/10: $3\tmr_reg_next[31:0]
+     9/10: $2\tmr_reg_next[31:0]
+    10/10: $1\tmr_reg_next[31:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388'.
+     1/1: $0\tmr_run[0:0]
+Creating decoders for process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378'.
+     1/1: $0\pr_reg[15:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+     1/4: $0\RIS_REG[2:0] [2]
+     2/4: $0\RIS_REG[2:0] [1]
+     3/4: $0\RIS_REG[2:0] [0]
+     4/4: $1\_i_[31:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57'.
+     1/1: $0\IC_REG[2:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53'.
+     1/1: $0\IM_REG[2:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48'.
+     1/1: $0\GCLK_REG[0:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44'.
+     1/1: $0\PWMFC_REG[15:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40'.
+     1/1: $0\PWMDT_REG[7:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36'.
+     1/1: $0\PWM1CFG_REG[15:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32'.
+     1/1: $0\PWM0CFG_REG[11:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28'.
+     1/1: $0\CFG_REG[2:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24'.
+     1/1: $0\CTRL_REG[6:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20'.
+     1/1: $0\CMPY_REG[31:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16'.
+     1/1: $0\CMPX_REG[31:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12'.
+     1/1: $0\PR_REG[15:0]
+Creating decoders for process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8'.
+     1/1: $0\RELOAD_REG[31:0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm1_reg_next' from process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477'.
+No latch inferred for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm0_reg_next' from process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428'.
+No latch inferred for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\tmr_reg_next' from process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:109$399'.
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\EF_WDT32.\WDTMR' using process `\EF_WDT32.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360'.
+  created $adff cell `$procdff$1198' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\RIS_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+  created $adff cell `$procdff$1203' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\_i_' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+  created $dff cell `$procdff$1210' with positive edge clock.
+Creating register for signal `\EF_WDT32_APB.\IC_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331'.
+  created $adff cell `$procdff$1215' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\IM_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327'.
+  created $adff cell `$procdff$1220' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\GCLK_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322'.
+  created $adff cell `$procdff$1225' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\control_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318'.
+  created $adff cell `$procdff$1230' with positive edge clock and positive level reset.
+Creating register for signal `\EF_WDT32_APB.\load_REG' using process `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314'.
+  created $adff cell `$procdff$1235' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\fault_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553'.
+  created $adff cell `$procdff$1240' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\fault_clr_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549'.
+  created $adff cell `$procdff$1245' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm1_w_dt' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254$543'.
+  created $adff cell `$procdff$1250' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm0_w_dt' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249$539'.
+  created $adff cell `$procdff$1255' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm0_delayed' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536'.
+  created $adff cell `$procdff$1260' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\dly_cntr' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532'.
+  created $adff cell `$procdff$1265' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm1_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529'.
+  created $adff cell `$procdff$1270' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pwm0_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526'.
+  created $adff cell `$procdff$1275' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\tmr_dir' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419'.
+  created $adff cell `$procdff$1280' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\tmr_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416'.
+  created $adff cell `$procdff$1285' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\tmr_run' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388'.
+  created $adff cell `$procdff$1290' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.\pr_reg' using process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378'.
+  created $adff cell `$procdff$1295' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\RIS_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+  created $adff cell `$procdff$1300' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\_i_' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+  created $dff cell `$procdff$1307' with positive edge clock.
+Creating register for signal `\EF_TMR32_APB.\IC_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57'.
+  created $adff cell `$procdff$1312' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\IM_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53'.
+  created $adff cell `$procdff$1317' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\GCLK_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48'.
+  created $adff cell `$procdff$1322' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\PWMFC_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44'.
+  created $adff cell `$procdff$1327' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\PWMDT_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40'.
+  created $adff cell `$procdff$1332' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\PWM1CFG_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36'.
+  created $adff cell `$procdff$1337' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\PWM0CFG_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32'.
+  created $adff cell `$procdff$1342' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\CFG_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28'.
+  created $adff cell `$procdff$1347' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\CTRL_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24'.
+  created $adff cell `$procdff$1352' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\CMPY_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20'.
+  created $adff cell `$procdff$1357' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\CMPX_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16'.
+  created $adff cell `$procdff$1362' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\PR_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12'.
+  created $adff cell `$procdff$1367' with positive edge clock and positive level reset.
+Creating register for signal `\EF_TMR32_APB.\RELOAD_REG' using process `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8'.
+  created $adff cell `$procdff$1372' with positive edge clock and positive level reset.
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\EF_WDT32.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360'.
+Removing empty process `EF_WDT32.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35$360'.
+Found and cleaned up 2 empty switches in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109$335'.
+Found and cleaned up 1 empty switch in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101$331'.
+Found and cleaned up 1 empty switch in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98$327'.
+Found and cleaned up 1 empty switch in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89$322'.
+Found and cleaned up 1 empty switch in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84$318'.
+Found and cleaned up 1 empty switch in `\EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314'.
+Removing empty process `EF_WDT32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78$314'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268$553'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261$549'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254$543'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249$539'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241$536'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232$532'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219$529'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210$526'.
+Found and cleaned up 7 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:198$477'.
+Found and cleaned up 7 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:186$428'.
+Found and cleaned up 8 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151$419'.
+Found and cleaned up 4 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137$416'.
+Found and cleaned up 10 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:109$399'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:109$399'.
+Found and cleaned up 4 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94$388'.
+Found and cleaned up 2 empty switches in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378'.
+Removing empty process `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77$378'.
+Found and cleaned up 6 empty switches in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193$61'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183$57'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180$53'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171$48'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166$44'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160$40'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154$36'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148$32'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142$28'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136$24'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124$20'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118$16'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112$12'.
+Found and cleaned up 1 empty switch in `\EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8'.
+Removing empty process `EF_TMR32_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106$8'.
+Cleaned up 82 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+<suppressed ~6 debug messages>
+Optimizing module EF_WDT32_APB.
+<suppressed ~17 debug messages>
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~51 debug messages>
+Optimizing module EF_TMR32_APB.
+<suppressed ~34 debug messages>
+Optimizing module pwm_wrapper.
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 9 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 64 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 48 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+<suppressed ~48 debug messages>
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 363 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 261 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~306 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 139 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 99 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+<suppressed ~120 debug messages>
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 158 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$916.
+    dead port 2/2 on $mux $procmux$916.
+    dead port 1/2 on $mux $procmux$911.
+    dead port 2/2 on $mux $procmux$911.
+    dead port 1/2 on $mux $procmux$906.
+    dead port 2/2 on $mux $procmux$906.
+    dead port 1/2 on $mux $procmux$901.
+    dead port 2/2 on $mux $procmux$901.
+    dead port 1/2 on $mux $procmux$897.
+    dead port 2/2 on $mux $procmux$897.
+    dead port 1/2 on $mux $procmux$893.
+    dead port 2/2 on $mux $procmux$893.
+    dead port 1/2 on $mux $procmux$889.
+    dead port 2/2 on $mux $procmux$889.
+    dead port 1/2 on $mux $procmux$886.
+    dead port 2/2 on $mux $procmux$886.
+    dead port 1/2 on $mux $procmux$883.
+    dead port 2/2 on $mux $procmux$883.
+    dead port 1/2 on $mux $procmux$880.
+    dead port 2/2 on $mux $procmux$880.
+    dead port 1/2 on $mux $procmux$872.
+    dead port 2/2 on $mux $procmux$872.
+    dead port 1/2 on $mux $procmux$864.
+    dead port 2/2 on $mux $procmux$864.
+    dead port 2/2 on $mux $procmux$848.
+    dead port 2/2 on $mux $procmux$835.
+    dead port 2/2 on $mux $procmux$1131.
+    dead port 2/2 on $mux $procmux$823.
+    dead port 2/2 on $mux $procmux$812.
+    dead port 2/2 on $mux $procmux$1125.
+    dead port 2/2 on $mux $procmux$802.
+    dead port 1/2 on $mux $procmux$1122.
+    dead port 2/2 on $mux $procmux$793.
+    dead port 1/2 on $mux $procmux$785.
+    dead port 2/2 on $mux $procmux$785.
+    dead port 2/2 on $mux $procmux$1116.
+    dead port 1/2 on $mux $procmux$778.
+    dead port 2/2 on $mux $procmux$778.
+    dead port 1/2 on $mux $procmux$1113.
+    dead port 1/2 on $mux $procmux$771.
+    dead port 2/2 on $mux $procmux$771.
+    dead port 1/2 on $mux $procmux$1110.
+    dead port 1/2 on $mux $procmux$764.
+    dead port 2/2 on $mux $procmux$764.
+    dead port 1/2 on $mux $procmux$758.
+    dead port 2/2 on $mux $procmux$758.
+    dead port 2/2 on $mux $procmux$1104.
+    dead port 1/2 on $mux $procmux$752.
+    dead port 2/2 on $mux $procmux$752.
+    dead port 1/2 on $mux $procmux$1101.
+    dead port 1/2 on $mux $procmux$746.
+    dead port 2/2 on $mux $procmux$746.
+    dead port 1/2 on $mux $procmux$1098.
+    dead port 1/2 on $mux $procmux$741.
+    dead port 2/2 on $mux $procmux$741.
+    dead port 1/2 on $mux $procmux$1095.
+    dead port 1/2 on $mux $procmux$736.
+    dead port 2/2 on $mux $procmux$736.
+    dead port 1/2 on $mux $procmux$731.
+    dead port 2/2 on $mux $procmux$731.
+    dead port 2/2 on $mux $procmux$1089.
+    dead port 1/2 on $mux $procmux$727.
+    dead port 2/2 on $mux $procmux$727.
+    dead port 1/2 on $mux $procmux$1086.
+    dead port 1/2 on $mux $procmux$723.
+    dead port 2/2 on $mux $procmux$723.
+    dead port 1/2 on $mux $procmux$1083.
+    dead port 1/2 on $mux $procmux$719.
+    dead port 2/2 on $mux $procmux$719.
+    dead port 1/2 on $mux $procmux$1080.
+    dead port 1/2 on $mux $procmux$716.
+    dead port 2/2 on $mux $procmux$716.
+    dead port 2/2 on $mux $procmux$1077.
+    dead port 1/2 on $mux $procmux$713.
+    dead port 2/2 on $mux $procmux$713.
+    dead port 1/2 on $mux $procmux$710.
+    dead port 2/2 on $mux $procmux$710.
+    dead port 2/2 on $mux $procmux$1071.
+    dead port 1/2 on $mux $procmux$702.
+    dead port 2/2 on $mux $procmux$702.
+    dead port 1/2 on $mux $procmux$1068.
+    dead port 1/2 on $mux $procmux$694.
+    dead port 2/2 on $mux $procmux$694.
+    dead port 1/2 on $mux $procmux$1065.
+    dead port 1/2 on $mux $procmux$1062.
+    dead port 1/2 on $mux $procmux$1059.
+    dead port 2/2 on $mux $procmux$1053.
+    dead port 1/2 on $mux $procmux$1050.
+    dead port 1/2 on $mux $procmux$1047.
+    dead port 2/2 on $mux $procmux$678.
+    dead port 1/2 on $mux $procmux$1044.
+    dead port 2/2 on $mux $procmux$665.
+    dead port 1/2 on $mux $procmux$1041.
+    dead port 2/2 on $mux $procmux$653.
+    dead port 2/2 on $mux $procmux$1038.
+    dead port 2/2 on $mux $procmux$642.
+    dead port 2/2 on $mux $procmux$632.
+    dead port 2/2 on $mux $procmux$1032.
+    dead port 2/2 on $mux $procmux$623.
+    dead port 1/2 on $mux $procmux$1029.
+    dead port 1/2 on $mux $procmux$1026.
+    dead port 1/2 on $mux $procmux$1023.
+    dead port 1/2 on $mux $procmux$1020.
+    dead port 1/2 on $mux $procmux$1017.
+    dead port 2/2 on $mux $procmux$1011.
+    dead port 1/2 on $mux $procmux$1008.
+    dead port 1/2 on $mux $procmux$1005.
+    dead port 1/2 on $mux $procmux$1002.
+    dead port 1/2 on $mux $procmux$999.
+    dead port 1/2 on $mux $procmux$996.
+    dead port 2/2 on $mux $procmux$993.
+    dead port 1/2 on $mux $procmux$955.
+    dead port 2/2 on $mux $procmux$955.
+    dead port 1/2 on $mux $procmux$948.
+    dead port 2/2 on $mux $procmux$948.
+    dead port 1/2 on $mux $procmux$941.
+    dead port 2/2 on $mux $procmux$941.
+    dead port 1/2 on $mux $procmux$934.
+    dead port 2/2 on $mux $procmux$934.
+    dead port 1/2 on $mux $procmux$928.
+    dead port 2/2 on $mux $procmux$928.
+    dead port 1/2 on $mux $procmux$922.
+    dead port 2/2 on $mux $procmux$922.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 123 multiplexer ports.
+<suppressed ~238 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 9 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 48 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 174 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 173 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 99 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 1 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$1225 ($adff) from module EF_WDT32_APB (D = \PWDATA [0], Q = \GCLK_REG).
+Adding EN signal on $procdff$1203 ($adff) from module EF_WDT32_APB (D = $procmux$575_Y, Q = \RIS_REG).
+Adding EN signal on $procdff$1230 ($adff) from module EF_WDT32_APB (D = \PWDATA [0], Q = \control_REG).
+Adding EN signal on $procdff$1210 ($dff) from module EF_WDT32_APB (D = 1, Q = \_i_).
+Adding EN signal on $procdff$1220 ($adff) from module EF_WDT32_APB (D = \PWDATA [0], Q = \IM_REG).
+Adding EN signal on $procdff$1235 ($adff) from module EF_WDT32_APB (D = \PWDATA, Q = \load_REG).
+Setting constant 1-bit at position 0 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 1 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 4 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 5 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 6 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 7 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 8 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 9 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 10 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 11 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 12 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 13 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 14 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 15 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 16 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 17 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 18 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 19 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 20 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 21 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 22 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 23 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 24 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 25 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 26 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 27 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 28 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 29 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 30 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Setting constant 0-bit at position 31 on $auto$ff.cc:337:slice$1378 ($dffe) from module EF_WDT32_APB.
+Adding EN signal on $procdff$1275 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$613_Y, Q = \pwm0_reg).
+Adding EN signal on $procdff$1285 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$985_Y, Q = \tmr_reg).
+Adding EN signal on $procdff$1280 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$977_Y, Q = \tmr_dir).
+Adding EN signal on $procdff$1265 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$603_Y, Q = \dly_cntr).
+Adding EN signal on $procdff$1290 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$1144_Y, Q = \tmr_run).
+Adding EN signal on $procdff$1270 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$608_Y, Q = \pwm1_reg).
+Adding EN signal on $procdff$1245 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$596_Y, Q = \fault_clr_reg).
+Adding EN signal on $procdff$1240 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = $procmux$591_Y, Q = \fault_reg).
+Adding EN signal on $procdff$1260 ($adff) from module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (D = \pwm0_reg, Q = \pwm0_delayed).
+Adding EN signal on $procdff$1342 ($adff) from module EF_TMR32_APB (D = \PWDATA [11:0], Q = \PWM0CFG_REG).
+Adding EN signal on $procdff$1357 ($adff) from module EF_TMR32_APB (D = \PWDATA, Q = \CMPY_REG).
+Adding EN signal on $procdff$1300 ($adff) from module EF_TMR32_APB (D = $procmux$1160_Y, Q = \RIS_REG [1]).
+Adding EN signal on $procdff$1300 ($adff) from module EF_TMR32_APB (D = $procmux$1155_Y, Q = \RIS_REG [2]).
+Adding EN signal on $procdff$1300 ($adff) from module EF_TMR32_APB (D = $procmux$1165_Y, Q = \RIS_REG [0]).
+Adding EN signal on $procdff$1327 ($adff) from module EF_TMR32_APB (D = \PWDATA [15:0], Q = \PWMFC_REG).
+Adding EN signal on $procdff$1372 ($adff) from module EF_TMR32_APB (D = \PWDATA, Q = \RELOAD_REG).
+Adding EN signal on $procdff$1307 ($dff) from module EF_TMR32_APB (D = 3, Q = \_i_).
+Adding EN signal on $procdff$1337 ($adff) from module EF_TMR32_APB (D = \PWDATA [15:0], Q = \PWM1CFG_REG).
+Adding EN signal on $procdff$1352 ($adff) from module EF_TMR32_APB (D = \PWDATA [6:0], Q = \CTRL_REG).
+Adding EN signal on $procdff$1332 ($adff) from module EF_TMR32_APB (D = \PWDATA [7:0], Q = \PWMDT_REG).
+Adding EN signal on $procdff$1317 ($adff) from module EF_TMR32_APB (D = \PWDATA [2:0], Q = \IM_REG).
+Adding EN signal on $procdff$1362 ($adff) from module EF_TMR32_APB (D = \PWDATA, Q = \CMPX_REG).
+Adding EN signal on $procdff$1347 ($adff) from module EF_TMR32_APB (D = \PWDATA [2:0], Q = \CFG_REG).
+Adding EN signal on $procdff$1367 ($adff) from module EF_TMR32_APB (D = \PWDATA [15:0], Q = \PR_REG).
+Adding EN signal on $procdff$1322 ($adff) from module EF_TMR32_APB (D = \PWDATA [0], Q = \GCLK_REG).
+Setting constant 1-bit at position 0 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 1-bit at position 1 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 4 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 5 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 6 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 7 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 8 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 9 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 10 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 11 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 12 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 13 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 14 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 15 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 16 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 17 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 18 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 19 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 20 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 21 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 22 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 23 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 24 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 25 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 26 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 27 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 28 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 29 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 30 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+Setting constant 0-bit at position 31 on $auto$ff.cc:337:slice$1465 ($dffe) from module EF_TMR32_APB.
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 36 unused cells and 624 unused wires.
+<suppressed ~58 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~10 debug messages>
+Optimizing module EF_TMR32_APB.
+<suppressed ~3 debug messages>
+Optimizing module pwm_wrapper.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~110 debug messages>
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 195 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 2 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+8.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~110 debug messages>
+
+8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+8.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+8.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+8.23. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing FSM pass (extract and optimize FSM).
+
+9.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+9.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+9.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+9.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+9.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+9.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+9.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~110 debug messages>
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+10.9. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing MEMORY pass.
+
+11.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+11.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+11.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+11.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+11.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+11.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+11.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+11.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+11.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+11.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+11.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+12. Executing OPT pass (performing simple optimizations).
+
+12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~110 debug messages>
+
+12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 6 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 35 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 193 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 76 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+12.9. Finished fast OPT passes. (There is nothing left to do.)
+
+13. Executing TECHMAP pass (map to technology primitives).
+
+13.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+13.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $ne.
+Running "alumacc" on wrapper $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=16:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=16:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=16:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $not.
+Running "alumacc" on wrapper $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=32:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=8:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=8:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:Y_WIDTH=32:B_WIDTH=32:A_WIDTH=8:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$b3b6ac92d800c6f07aa48f510f923d86a674e5a7\_90_pmux for cells of type $pmux.
+Using template $paramod$eaeb96106163dbf82031649d189817109fe07c69\_90_pmux for cells of type $pmux.
+Using template $paramod$91f82ead1edc61e0a1452110f15ef747116b421b\_90_alu for cells of type $alu.
+Using template $paramod$fbc7873bff55778c0b3173955b7e4bce1d9d6834\_90_alu for cells of type $alu.
+Using template $paramod$2bd81f420048247ff6903399c560fe0f8bd48ccc\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~1707 debug messages>
+
+14. Executing OPT pass (performing simple optimizations).
+
+14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+<suppressed ~228 debug messages>
+Optimizing module EF_WDT32_APB.
+<suppressed ~399 debug messages>
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~2069 debug messages>
+Optimizing module EF_TMR32_APB.
+<suppressed ~805 debug messages>
+Optimizing module pwm_wrapper.
+
+14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 332 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 387 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 299 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 247 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 212 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 184 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+<suppressed ~609 debug messages>
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 2067 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1934 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1921 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1916 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1915 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~456 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 931 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 780 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 699 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 646 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 628 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 618 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 608 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 598 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 588 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 578 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+<suppressed ~1059 debug messages>
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 708 cells.
+
+14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 332 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 184 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1915 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 578 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 74 unused cells and 1389 unused wires.
+<suppressed ~78 debug messages>
+
+14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~1 debug messages>
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 318 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 181 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 1860 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 575 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+14.16. Finished fast OPT passes. (There is nothing left to do.)
+
+15. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_1 (noninv, pins=3, area=20.02) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtn_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_NN0_.
+  cell sky130_fd_sc_hd__dfrtp_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__edfxtp_1 (noninv, pins=4, area=30.03) is a direct match for cell type $_DFFE_PP_.
+  cell sky130_fd_sc_hd__dfbbn_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_NNN_.
+  cell sky130_fd_sc_hd__dfbbp_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \sky130_fd_sc_hd__dfrtn_1 _DFF_NN0_ (.CLK_N( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    \sky130_fd_sc_hd__edfxtp_1 _DFFE_PP_ (.CLK( C), .D( D), .DE( E), .Q( Q));
+    \sky130_fd_sc_hd__dfbbn_1 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \sky130_fd_sc_hd__dfbbp_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+15.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~24 debug messages>
+Mapping DFF cells in module `\EF_WDT32':
+  mapped 32 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+Mapping DFF cells in module `\EF_WDT32_APB':
+  mapped 37 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+Mapping DFF cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000':
+  mapped 63 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+  mapped 2 $_DFF_PN1_ cells to \sky130_fd_sc_hd__dfstp_2 cells.
+Mapping DFF cells in module `\EF_TMR32_APB':
+  mapped 184 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+Mapping DFF cells in module `\pwm_wrapper':
+
+16. Executing ABC pass (technology mapping using ABC).
+
+16.1. Extracting gate netlist of module `\EF_WDT32' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+
+16.1.1. Executed ABC.
+Extracted 286 gates and 351 wires to a netlist network with 65 inputs and 33 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Apr 26 2026 04:19:40)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+16.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__clkinv_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       28
+ABC RESULTS:   sky130_fd_sc_hd__mux2i_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o21a_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_1 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__xor2_1 cells:       17
+ABC RESULTS:        internal signals:      253
+ABC RESULTS:           input signals:       65
+ABC RESULTS:          output signals:       33
+Removing temp directory.
+
+16.2. Extracting gate netlist of module `\EF_WDT32_APB' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+Replacing 1 occurrences of constant undef bits with constant zero bits
+
+16.2.1. Executed ABC.
+Extracted 178 gates and 302 wires to a netlist network with 121 inputs and 70 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Apr 26 2026 04:19:40)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+16.2.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:       49
+ABC RESULTS:   sky130_fd_sc_hd__a22o_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__a32oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_0 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__and4b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       35
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nand4b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:       30
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_1 cells:        1
+ABC RESULTS:        internal signals:      111
+ABC RESULTS:           input signals:      121
+ABC RESULTS:          output signals:       70
+Removing temp directory.
+
+16.3. Extracting gate netlist of module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+Replacing 149 occurrences of constant undef bits with constant zero bits
+
+16.3.1. Executed ABC.
+Extracted 1841 gates and 2081 wires to a netlist network with 237 inputs and 70 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Apr 26 2026 04:19:40)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+16.3.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_0 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21o_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:       92
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a22o_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a31o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_1 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a32o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a32oi_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a41o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_0 cells:       12
+ABC RESULTS:   sky130_fd_sc_hd__and3_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__and4_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__and4b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__clkinv_1 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_inputiso1p_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2i_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:      103
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_1 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:       21
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4_1 cells:       16
+ABC RESULTS:   sky130_fd_sc_hd__nand4b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4bb_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:       79
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:       41
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:       32
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2111ai_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o21a_1 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:       72
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o311a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o311ai_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_1 cells:       23
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_1 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__o41ai_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or3_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__or4_1 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_1 cells:       60
+ABC RESULTS:   sky130_fd_sc_hd__xor2_1 cells:       67
+ABC RESULTS:        internal signals:     1774
+ABC RESULTS:           input signals:      237
+ABC RESULTS:          output signals:       70
+Removing temp directory.
+
+16.4. Extracting gate netlist of module `\EF_TMR32_APB' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+Replacing 3 occurrences of constant undef bits with constant zero bits
+
+16.4.1. Executed ABC.
+Extracted 570 gates and 843 wires to a netlist network with 270 inputs and 217 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Apr 26 2026 04:19:40)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+16.4.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_1 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__a21o_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:       52
+ABC RESULTS:   sky130_fd_sc_hd__a221o_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a222oi_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a22o_1 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and2_0 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and3_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and4_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__clkinv_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:      177
+ABC RESULTS:   sky130_fd_sc_hd__mux2i_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:       53
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__nand4_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:       66
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:       48
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o22a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o311ai_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o41ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_1 cells:        1
+ABC RESULTS:        internal signals:      356
+ABC RESULTS:           input signals:      270
+ABC RESULTS:          output signals:      217
+Removing temp directory.
+
+16.5. Extracting gate netlist of module `\pwm_wrapper' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+
+16.5.1. Executed ABC.
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+Removing global temp directory.
+
+17. Executing OPT pass (performing simple optimizations).
+
+17.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+17.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 128 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 206 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 876 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 714 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+17.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+17.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+17.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 128 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 206 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 876 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 714 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+17.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+17.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 0 unused cells and 1984 unused wires.
+<suppressed ~17 debug messages>
+
+17.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+17.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+17.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \EF_WDT32..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_WDT32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_TMR32_APB..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \pwm_wrapper..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+17.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \EF_WDT32.
+  Optimizing cells in module \EF_WDT32_APB.
+  Optimizing cells in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+  Optimizing cells in module \EF_TMR32_APB.
+  Optimizing cells in module \pwm_wrapper.
+Performed a total of 0 changes.
+
+17.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 128 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 206 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 876 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 714 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 0 cells.
+
+17.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+17.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \pwm_wrapper..
+
+17.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module EF_TMR32_APB.
+Optimizing module pwm_wrapper.
+
+17.16. Finished fast OPT passes. (There is nothing left to do.)
+
+18. Printing statistics.
+
+=== EF_WDT32 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       70        - wires
+      163        - wire bits
+        6        - public wires
+       68        - public wire bits
+        6        - ports
+       68        - port bits
+      128 1.61E+03 cells
+        1    8.758   sky130_fd_sc_hd__a2bb2oi_1
+        2    7.507   sky130_fd_sc_hd__clkinv_1
+       32  800.768   sky130_fd_sc_hd__dfrtp_1
+        2   12.512   sky130_fd_sc_hd__lpflow_isobufsrc_1
+       28  315.302   sky130_fd_sc_hd__mux2_1
+        1    10.01   sky130_fd_sc_hd__mux2i_1
+        2    7.507   sky130_fd_sc_hd__nand2_1
+        7   43.792   sky130_fd_sc_hd__nand2b_1
+        1    5.005   sky130_fd_sc_hd__nand3_1
+        7   26.275   sky130_fd_sc_hd__nor2_1
+        1    5.005   sky130_fd_sc_hd__nor3_1
+        1    6.256   sky130_fd_sc_hd__nor4_1
+        7   61.309   sky130_fd_sc_hd__nor4b_1
+        2   15.014   sky130_fd_sc_hd__o21a_1
+        2    10.01   sky130_fd_sc_hd__o21ai_0
+        1    8.758   sky130_fd_sc_hd__o2bb2ai_1
+        1    8.758   sky130_fd_sc_hd__o31a_1
+        1    7.507   sky130_fd_sc_hd__o31ai_1
+        1    6.256   sky130_fd_sc_hd__or3_1
+        1    7.507   sky130_fd_sc_hd__or4_1
+        1    10.01   sky130_fd_sc_hd__or4b_1
+        9   78.826   sky130_fd_sc_hd__xnor2_1
+       17  148.893   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\EF_WDT32': 1611.545600
+     of which used for sequential elements: 800.768000 (49.69%)
+
+=== EF_WDT32_APB ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      161        - wires
+      378        - wire bits
+       27        - public wires
+      244        - public wire bits
+       10        - ports
+      103        - port bits
+      205 2.02E+03 cells
+        1        -   ef_util_gating_cell
+        1    7.507   sky130_fd_sc_hd__a211oi_1
+       49  245.235   sky130_fd_sc_hd__a21oi_1
+        8   70.067   sky130_fd_sc_hd__a22o_1
+        1    8.758   sky130_fd_sc_hd__a32oi_1
+        3   18.768   sky130_fd_sc_hd__and2_0
+        2   20.019   sky130_fd_sc_hd__and4b_1
+       37  925.888   sky130_fd_sc_hd__dfrtp_1
+        1    6.256   sky130_fd_sc_hd__lpflow_isobufsrc_1
+       35  394.128   sky130_fd_sc_hd__mux2_1
+        8   30.029   sky130_fd_sc_hd__nand2_1
+        3   15.014   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+        6   37.536   sky130_fd_sc_hd__nand4_1
+        2   17.517   sky130_fd_sc_hd__nand4b_1
+       30  112.608   sky130_fd_sc_hd__nor2_1
+        1    6.256   sky130_fd_sc_hd__nor2b_1
+        6   30.029   sky130_fd_sc_hd__nor3_1
+        5    31.28   sky130_fd_sc_hd__nor4_1
+        1   11.261   sky130_fd_sc_hd__o2111a_1
+        1    5.005   sky130_fd_sc_hd__o21ai_0
+        1    7.507   sky130_fd_sc_hd__o21bai_1
+        1    6.256   sky130_fd_sc_hd__or3_1
+        1    10.01   sky130_fd_sc_hd__or4b_1
+        1        - submodules
+        1        -   EF_WDT32
+
+   Area for cell type \ef_util_gating_cell is unknown!
+
+   Chip area for module '\EF_WDT32_APB': 2024.441600
+     of which used for sequential elements: 925.888000 (45.74%)
+
+=== $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      857        - wires
+     1123        - wire bits
+       67        - public wires
+      318        - public wire bits
+       25        - ports
+      210        - port bits
+      876 6.52E+03 cells
+        1        -   ef_util_ped
+       11   96.342   sky130_fd_sc_hd__a2111oi_0
+        5   37.536   sky130_fd_sc_hd__a211oi_1
+        1    7.507   sky130_fd_sc_hd__a21boi_0
+        5   37.536   sky130_fd_sc_hd__a21o_1
+       92  460.442   sky130_fd_sc_hd__a21oi_1
+        2   17.517   sky130_fd_sc_hd__a221oi_1
+        2   17.517   sky130_fd_sc_hd__a22o_1
+        1    8.758   sky130_fd_sc_hd__a2bb2oi_1
+        6    52.55   sky130_fd_sc_hd__a311oi_1
+        1    8.758   sky130_fd_sc_hd__a31o_1
+       10    62.56   sky130_fd_sc_hd__a31oi_1
+        1    10.01   sky130_fd_sc_hd__a32o_1
+        6    52.55   sky130_fd_sc_hd__a32oi_1
+        1    10.01   sky130_fd_sc_hd__a41o_1
+       12   75.072   sky130_fd_sc_hd__and2_0
+        7   43.792   sky130_fd_sc_hd__and3_1
+        6    52.55   sky130_fd_sc_hd__and4_1
+        1    10.01   sky130_fd_sc_hd__and4b_1
+       14    52.55   sky130_fd_sc_hd__clkinv_1
+       63 1.58E+03   sky130_fd_sc_hd__dfrtp_1
+        2    52.55   sky130_fd_sc_hd__dfstp_2
+        6   37.536   sky130_fd_sc_hd__lpflow_inputiso1p_1
+        7   43.792   sky130_fd_sc_hd__lpflow_isobufsrc_1
+        1   11.261   sky130_fd_sc_hd__mux2_1
+        1    10.01   sky130_fd_sc_hd__mux2i_1
+      103  386.621   sky130_fd_sc_hd__nand2_1
+       10    62.56   sky130_fd_sc_hd__nand2b_1
+       21  105.101   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+       16  100.096   sky130_fd_sc_hd__nand4_1
+        1    8.758   sky130_fd_sc_hd__nand4b_1
+        1   11.261   sky130_fd_sc_hd__nand4bb_1
+       79  296.534   sky130_fd_sc_hd__nor2_1
+        5    31.28   sky130_fd_sc_hd__nor2b_1
+       41  205.197   sky130_fd_sc_hd__nor3_1
+        3   22.522   sky130_fd_sc_hd__nor3b_1
+       32  200.192   sky130_fd_sc_hd__nor4_1
+        2   17.517   sky130_fd_sc_hd__nor4b_1
+        1   11.261   sky130_fd_sc_hd__o2111a_1
+        7   61.309   sky130_fd_sc_hd__o2111ai_1
+        4   30.029   sky130_fd_sc_hd__o211ai_1
+       13   97.594   sky130_fd_sc_hd__o21a_1
+       72  360.346   sky130_fd_sc_hd__o21ai_0
+        1    8.758   sky130_fd_sc_hd__o221ai_1
+        1    8.758   sky130_fd_sc_hd__o22a_1
+        5    31.28   sky130_fd_sc_hd__o22ai_1
+        1    8.758   sky130_fd_sc_hd__o2bb2ai_1
+        1    10.01   sky130_fd_sc_hd__o311a_1
+        1    8.758   sky130_fd_sc_hd__o311ai_0
+        1    8.758   sky130_fd_sc_hd__o31a_1
+       23  172.666   sky130_fd_sc_hd__o31ai_1
+        9   78.826   sky130_fd_sc_hd__o32ai_1
+        3   26.275   sky130_fd_sc_hd__o41ai_1
+        8   50.048   sky130_fd_sc_hd__or3_1
+       18   135.13   sky130_fd_sc_hd__or4_1
+       60  525.504   sky130_fd_sc_hd__xnor2_1
+       67  586.813   sky130_fd_sc_hd__xor2_1
+
+   Area for cell type \ef_util_ped is unknown!
+
+   Chip area for module '$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000': 6521.254400
+     of which used for sequential elements: 1629.062400 (24.98%)
+
+=== EF_TMR32_APB ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      548        - wires
+     1029        - wire bits
+       55        - public wires
+      534        - public wire bits
+       13        - ports
+      106        - port bits
+      713  8518.17 cells
+        1        -   ef_util_gating_cell
+        1    8.758   sky130_fd_sc_hd__a2111oi_0
+        1    8.758   sky130_fd_sc_hd__a211o_1
+       19  142.637   sky130_fd_sc_hd__a211oi_1
+        2   15.014   sky130_fd_sc_hd__a21o_1
+       52   260.25   sky130_fd_sc_hd__a21oi_1
+        6   60.058   sky130_fd_sc_hd__a221o_1
+        7   61.309   sky130_fd_sc_hd__a221oi_1
+        5   50.048   sky130_fd_sc_hd__a222oi_1
+       10   87.584   sky130_fd_sc_hd__a22o_1
+        5   37.536   sky130_fd_sc_hd__a22oi_1
+        4   25.024   sky130_fd_sc_hd__a31oi_1
+        4   25.024   sky130_fd_sc_hd__and2_0
+        4   25.024   sky130_fd_sc_hd__and3_1
+        2   17.517   sky130_fd_sc_hd__and4_1
+        2    7.507   sky130_fd_sc_hd__clkinv_1
+      184  4.6E+03   sky130_fd_sc_hd__dfrtp_1
+        4   25.024   sky130_fd_sc_hd__lpflow_isobufsrc_1
+      177 1.99E+03   sky130_fd_sc_hd__mux2_1
+        1    10.01   sky130_fd_sc_hd__mux2i_1
+       53  198.941   sky130_fd_sc_hd__nand2_1
+        2   12.512   sky130_fd_sc_hd__nand2b_1
+       15   75.072   sky130_fd_sc_hd__nand3_1
+        6   37.536   sky130_fd_sc_hd__nand4_1
+       66  247.738   sky130_fd_sc_hd__nor2_1
+        5   25.024   sky130_fd_sc_hd__nor3_1
+        1    7.507   sky130_fd_sc_hd__nor3b_1
+        4   25.024   sky130_fd_sc_hd__nor4_1
+        4   35.034   sky130_fd_sc_hd__nor4b_1
+        4   30.029   sky130_fd_sc_hd__o211ai_1
+       48   240.23   sky130_fd_sc_hd__o21ai_0
+        5   43.792   sky130_fd_sc_hd__o221ai_1
+        1    8.758   sky130_fd_sc_hd__o22a_1
+        1    6.256   sky130_fd_sc_hd__o22ai_1
+        2   17.517   sky130_fd_sc_hd__o2bb2ai_1
+        1    8.758   sky130_fd_sc_hd__o311ai_0
+        1    7.507   sky130_fd_sc_hd__o31ai_1
+        1    8.758   sky130_fd_sc_hd__o41ai_1
+        1    7.507   sky130_fd_sc_hd__or4_1
+        1    10.01   sky130_fd_sc_hd__or4b_1
+        1        - submodules
+        1        -   $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+
+   Area for cell type \ef_util_gating_cell is unknown!
+   Area for cell type \ef_util_ped is unknown!
+
+   Chip area for module '\EF_TMR32_APB': 8518.169600
+     of which used for sequential elements: 4604.416000 (54.05%)
+
+=== pwm_wrapper ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       21        - wires
+      207        - wire bits
+       21        - public wires
+      207        - public wire bits
+       21        - ports
+      207        - port bits
+        2        - submodules
+        1        -   EF_TMR32_APB
+        1        -   EF_WDT32_APB
+
+   Area for cell type \ef_util_gating_cell is unknown!
+   Area for cell type \ef_util_ped is unknown!
+
+   Chip area for module '\pwm_wrapper': 0.000000
+     of which used for sequential elements: 0.000000 (-nan%)
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        |        +-Area including submodules.
+        |        | 
+     1922 1.87E+04 pwm_wrapper
+      713  8518.17 EF_TMR32_APB
+      876 6.52E+03   $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+      205 2.02E+03 EF_WDT32_APB
+      128 1.61E+03   EF_WDT32
+
+        +----------Count including submodules.
+        |        +-Area including submodules.
+        |        | 
+     1657        - wires
+     2900        - wire bits
+      176        - public wires
+     1371        - public wire bits
+       75        - ports
+      694        - port bits
+        -        - memories
+        -        - memory bits
+        -        - processes
+     1922 1.87E+04 cells
+        2        -   ef_util_gating_cell
+        1        -   ef_util_ped
+       12  105.101   sky130_fd_sc_hd__a2111oi_0
+        1    8.758   sky130_fd_sc_hd__a211o_1
+       25   187.68   sky130_fd_sc_hd__a211oi_1
+        1    7.507   sky130_fd_sc_hd__a21boi_0
+        7    52.55   sky130_fd_sc_hd__a21o_1
+      193  965.926   sky130_fd_sc_hd__a21oi_1
+        6   60.058   sky130_fd_sc_hd__a221o_1
+        9   78.826   sky130_fd_sc_hd__a221oi_1
+        5   50.048   sky130_fd_sc_hd__a222oi_1
+       20  175.168   sky130_fd_sc_hd__a22o_1
+        5   37.536   sky130_fd_sc_hd__a22oi_1
+        2   17.517   sky130_fd_sc_hd__a2bb2oi_1
+        6    52.55   sky130_fd_sc_hd__a311oi_1
+        1    8.758   sky130_fd_sc_hd__a31o_1
+       14   87.584   sky130_fd_sc_hd__a31oi_1
+        1    10.01   sky130_fd_sc_hd__a32o_1
+        7   61.309   sky130_fd_sc_hd__a32oi_1
+        1    10.01   sky130_fd_sc_hd__a41o_1
+       19  118.864   sky130_fd_sc_hd__and2_0
+       11   68.816   sky130_fd_sc_hd__and3_1
+        8   70.067   sky130_fd_sc_hd__and4_1
+        3   30.029   sky130_fd_sc_hd__and4b_1
+       18   67.565   sky130_fd_sc_hd__clkinv_1
+      316 7.91E+03   sky130_fd_sc_hd__dfrtp_1
+        2    52.55   sky130_fd_sc_hd__dfstp_2
+        6   37.536   sky130_fd_sc_hd__lpflow_inputiso1p_1
+       14   87.584   sky130_fd_sc_hd__lpflow_isobufsrc_1
+      241 2.71E+03   sky130_fd_sc_hd__mux2_1
+        3   30.029   sky130_fd_sc_hd__mux2i_1
+      166  623.098   sky130_fd_sc_hd__nand2_1
+       19  118.864   sky130_fd_sc_hd__nand2b_1
+       40  200.192   sky130_fd_sc_hd__nand3_1
+        2   15.014   sky130_fd_sc_hd__nand3b_1
+       28  175.168   sky130_fd_sc_hd__nand4_1
+        3   26.275   sky130_fd_sc_hd__nand4b_1
+        1   11.261   sky130_fd_sc_hd__nand4bb_1
+      182  683.155   sky130_fd_sc_hd__nor2_1
+        6   37.536   sky130_fd_sc_hd__nor2b_1
+       53  265.254   sky130_fd_sc_hd__nor3_1
+        4   30.029   sky130_fd_sc_hd__nor3b_1
+       42  262.752   sky130_fd_sc_hd__nor4_1
+       13  113.859   sky130_fd_sc_hd__nor4b_1
+        2   22.522   sky130_fd_sc_hd__o2111a_1
+        7   61.309   sky130_fd_sc_hd__o2111ai_1
+        8   60.058   sky130_fd_sc_hd__o211ai_1
+       15  112.608   sky130_fd_sc_hd__o21a_1
+      123   615.59   sky130_fd_sc_hd__o21ai_0
+        1    7.507   sky130_fd_sc_hd__o21bai_1
+        6    52.55   sky130_fd_sc_hd__o221ai_1
+        2   17.517   sky130_fd_sc_hd__o22a_1
+        6   37.536   sky130_fd_sc_hd__o22ai_1
+        4   35.034   sky130_fd_sc_hd__o2bb2ai_1
+        1    10.01   sky130_fd_sc_hd__o311a_1
+        2   17.517   sky130_fd_sc_hd__o311ai_0
+        2   17.517   sky130_fd_sc_hd__o31a_1
+       25   187.68   sky130_fd_sc_hd__o31ai_1
+        9   78.826   sky130_fd_sc_hd__o32ai_1
+        4   35.034   sky130_fd_sc_hd__o41ai_1
+       10    62.56   sky130_fd_sc_hd__or3_1
+       20  150.144   sky130_fd_sc_hd__or4_1
+        3   30.029   sky130_fd_sc_hd__or4b_1
+       69   604.33   sky130_fd_sc_hd__xnor2_1
+       84  735.706   sky130_fd_sc_hd__xor2_1
+        2 1.87E+04 submodules
+        1  1.5E+04   EF_TMR32_APB
+        1 3.64E+03   EF_WDT32_APB
+
+   Area for cell type \ef_util_gating_cell is unknown!
+   Area for cell type \ef_util_ped is unknown!
+
+   Chip area for top module '\pwm_wrapper': 18675.411200
+     of which used for sequential elements: 7960.134400 (42.62%)
+
+19. Executing Verilog backend.
+
+19.1. Executing BMUXMAP pass.
+
+19.2. Executing DEMUXMAP pass.
+Dumping module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Dumping module `\EF_TMR32_APB'.
+Dumping module `\EF_WDT32'.
+Dumping module `\EF_WDT32_APB'.
+Dumping module `\pwm_wrapper'.
+
+End of script. Logfile hash: 4bcea0dc28, time: 1.70s, user: 0.63s, system: 0.04s, MEM: 50.45 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 64% 1x abc (1 sec), 5% 17x opt_expr (0 sec), ...
+EXIT:0

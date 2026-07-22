@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc z3
+
+[script]
+read_verilog -formal -sv wb_bridge.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top wb_bridge
+
+[files]
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v

@@ -1,0 +1,186 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `EF_GPIO8_APB'. Setting top module to EF_GPIO8_APB.
+
+2.1. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \ef_util_gating_cell
+Used module:     \EF_GPIO8
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:         \ef_util_sync
+
+2.2. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \ef_util_gating_cell
+Used module:     \EF_GPIO8
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:         \ef_util_sync
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== EF_GPIO8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+       90 wire bits
+       41 public wires
+       90 public wire bits
+       40 ports
+       82 port bits
+        8 cells
+        8   $not
+       24 submodules
+        8   ef_util_ned
+        8   ef_util_ped
+        8   ef_util_sync
+
+=== EF_GPIO8_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      164 wires
+      951 wire bits
+      100 public wires
+      487 public wire bits
+       13 ports
+      127 port bits
+      113 cells
+        8   $and
+        6   $anyinit
+        1   $assume
+        7   $eq
+        1   $logic_not
+       88   $mux
+        1   $not
+        1   $reduce_or
+        2 submodules
+        1   EF_GPIO8
+        1   ef_util_gating_cell
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ned ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        5 cells
+        1   $and
+        1   $anyinit
+        1   $assume
+        2   $not
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        5 cells
+        1   $and
+        1   $anyinit
+        1   $assume
+        2   $not
+
+=== ef_util_sync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        6 wire bits
+        4 public wires
+        5 public wire bits
+        3 ports
+        3 port bits
+        3 cells
+        1   $anyinit
+        1   $assume
+        1   $not
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      225 EF_GPIO8_APB
+        8 EF_GPIO8
+        5   ef_util_ned
+        5   ef_util_ped
+        3   ef_util_sync
+
+        +----------Count including submodules.
+        | 
+      345 wires
+     1189 wire bits
+      241 public wires
+      685 public wire bits
+      129 ports
+      285 port bits
+        - memories
+        - memory bits
+        - processes
+      225 cells
+       24   $and
+       30   $anyinit
+       25   $assume
+        7   $eq
+        1   $logic_not
+       88   $mux
+       49   $not
+        1   $reduce_or
+        2 submodules
+        1   EF_GPIO8
+        1   ef_util_gating_cell
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module ef_util_sync.
+Creating SMT-LIBv2 representation of module ef_util_ped.
+Creating SMT-LIBv2 representation of module ef_util_ned.
+Creating SMT-LIBv2 representation of module ef_util_gating_cell.
+Creating SMT-LIBv2 representation of module EF_GPIO8.
+Creating SMT-LIBv2 representation of module EF_GPIO8_APB.
+
+End of script. Logfile hash: 2b537638cf, time: 0.01s, user: 0.01s, system: 0.01s, MEM: 15.02 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 64% 2x write_smt2 (0 sec), 18% 2x read_rtlil (0 sec), ...

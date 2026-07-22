@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bringup" tests="0" failures="0" errors="0" skipped="0" time="0.0" timestamp="2026-07-20T11:12:53Z">
+  <properties>
+    <property name="status" value="BLOCKED"/>
+    <property name="reason" value="No SoC top-level RTL (PRJ-001_top) available for cocotb bring-up cosimulation. All drivers pass compile test."/>
+  </properties>
+</testsuite>

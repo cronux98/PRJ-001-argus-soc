@@ -1,0 +1,73 @@
+{
+  "verdict": "PASS",
+  "stage": "01_business_stage",
+  "project": "PRJ-001",
+  "retry": 0,
+  "model": "claude-opus-4-8",
+  "checks": [
+    {
+      "check": "0.1 BA report exists (market_validation.md)",
+      "result": "PASS",
+      "evidence": "assert_exists 0.1-ba-report: market_validation.md exists (6709 bytes)"
+    },
+    {
+      "check": "0.2 Competitive landscape documented (competitive_analysis.md)",
+      "result": "PASS",
+      "evidence": "assert_exists 0.2-competitive: competitive_analysis.md exists (7074 bytes); 5 comparables (OpenTitan, NEORV32, MSP430FR2355, STM32L011D4, EFM8BB10)"
+    },
+    {
+      "check": "0.3 Market segment identified (market_requirements.md)",
+      "result": "PASS",
+      "evidence": "assert_exists 0.3-market-seg: market_requirements.md exists (7611 bytes); MoSCoW MUST/SHOULD/COULD/WONT tables present"
+    },
+    {
+      "check": "0.4 Technical feasibility assessment (domain_report.md)",
+      "result": "PASS",
+      "evidence": "assert_exists 0.4-feasibility: domain_report.md exists (4617 bytes); challenges + standards + domain metrics documented"
+    },
+    {
+      "check": "0.5 Cost/benefit analysis (baseline_metrics.json)",
+      "result": "PASS",
+      "evidence": "assert_exists 0.5-cost-benefit: baseline_metrics.json exists (4314 bytes); valid JSON (python json.load); ppa_baselines + feature_baseline + caravel_area_budget present"
+    },
+    {
+      "check": "0.6 Every quantitative PPA/market claim cites a source (http/doi/IP-NNN)",
+      "result": "PASS",
+      "evidence": "assert_files min_count=1 satisfied; market_validation.md=2 citation lines (embedded.com ST deal, opentitan.org), competitive_analysis.md=5 (one Source URL per comparable), domain_report.md=1+ (embedded.com, linkedin market outlook). Every numeric claim table cites >=1 source."
+    },
+    {
+      "check": "0.7 baseline_metrics.json reconciles with prose (market_requirements.md)",
+      "result": "PASS",
+      "evidence": "freq: prose target 50/fallback 25 == json scaled=50/cons=25; active power: prose <=10 cons/<=5 target == json cons=10/scaled=5; sleep: prose <=50 cons/<=10 target == json cons=50/scaled=10; comparables_count=5 == 5 competitive entries. All match within +/-0."
+    },
+    {
+      "check": "0.8 No agent-minted verdict (grep -ci CONDITIONAL on stage *.md = 0)",
+      "result": "PASS",
+      "evidence": "assert_files *.md min_count=1 satisfied (5 files); grep -ci 'CONDITIONAL' = 0 across all; PARTIAL scan = 0. Only rubric-defined vocabulary (STATUS: PASS) used (G.8)."
+    },
+    {
+      "check": "G.1 Dispatch gating (Stage 01 is first stage, no upstream gate required)",
+      "result": "PASS",
+      "evidence": "01_business_stage is the first pipeline stage; no Stage N-1 audit_pass.json prerequisite applies."
+    },
+    {
+      "check": "G.3 Reserved auditor filenames not authored by stage agent",
+      "result": "PASS",
+      "evidence": "No validation_report.md / audit_pass.json / fix_instructions.json present at stage root before audit; auditor-owned files written only under audit/."
+    },
+    {
+      "check": "G.4 Empty-glob protection (assert_files min_count=1 before count checks)",
+      "result": "PASS",
+      "evidence": "Every count-based check (0.6, 0.8) prefixed with assert_files min_count=1."
+    }
+  ],
+  "findings": [
+    "All 5 required stage artifacts present and non-empty.",
+    "baseline_metrics.json is valid JSON and reconciles with market_requirements.md prose (freq, active power, sleep power, comparables count all match within +/-0).",
+    "Every quantitative claim table cites at least one source (http/IP-INDEX).",
+    "No agent-minted verdict vocabulary (0 CONDITIONAL, 0 PARTIAL).",
+    "Non-blocking: 00_business_index.md links to legacy filenames (business_validation.md / business_postmortem.md) instead of the v6a NN_ convention; auditor writes to canonical 01_ paths."
+  ],
+  "summary": "8 of 8 mandatory Stage 0 checks PASS (0.1-0.8); applicable global rules (G.1, G.3, G.4, G.8) PASS. No fixes required.",
+  "fix_count": 0
+}

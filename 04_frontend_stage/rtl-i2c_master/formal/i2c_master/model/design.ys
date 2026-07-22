@@ -1,0 +1,15 @@
+# running in i2c_master/src/
+read_verilog -formal -sv EF_I2C_APB.v
+read_verilog -formal -sv i2c_master_wbs_16.v
+read_verilog -formal -sv i2c_master.v
+read_verilog -formal -sv i2c_init.v
+read_verilog -formal -sv axis_fifo.v
+read_verilog -formal -sv i2c_single_reg.v
+read_verilog -formal -sv i2c_master_axil.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_I2C_APB
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

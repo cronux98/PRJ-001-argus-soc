@@ -1,0 +1,28 @@
+{
+  "audit_session": "ca46f08b-d486-41e6-9964-ac8e08b22cf2",
+  "retry": 1,
+  "verdict": "FAIL",
+  "timestamp": "2026-07-20T12:22:40Z",
+  "cost_usd": 0.2096745,
+  "total_audit_cost_usd": 0.4836745,
+  "findings": [
+    "BLOCKER-1: 5 Tier B modules have 8/15 tests",
+    "BLOCKER-2: Tier C argus_soc has 12/40 tests",
+    "RESOLVED: ibex_core 7\u21928 tests, ISA waiver accepted",
+    "24 failures traced to TB driver issues (pwm 7, sram 7)"
+  ],
+  "fixes": [
+    {
+      "type": "STAGE_FIX",
+      "desc": "Expand Tier B module tests to \u226515 each"
+    },
+    {
+      "type": "STAGE_FIX",
+      "desc": "Expand argus_soc tests to \u226540"
+    },
+    {
+      "type": "STAGE_FIX",
+      "desc": "Fix pwm/sram TB drivers"
+    }
+  ]
+}

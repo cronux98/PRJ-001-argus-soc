@@ -1,0 +1,15 @@
+Re-audit complete: **verdict PASS, 11/11 checks**.
+
+All three previously-failed items were independently re-verified with genuine evidence, not just superficial grep hits:
+- **1.6** — `planning_validator.log` ends `RESULT: PASS` with 5 substantive sub-checks (ID uniqueness, memory-map overlap, module cross-reference, arithmetic reconciliation, config-key coverage); `PASS` marker present.
+- **1.8a** — `traceability_matrix.md` provides a full bidirectional binding (61 requirements ↔ 29 config keys) with a self-verifying integrity table (0 orphan keys).
+- **G.3** — the previously self-authored `audit_pass.json` was deleted and not replaced by the stage agent; this file is now written exclusively by the auditor.
+- Spot-check: `determinism.json` still shows `identical: true` — no regression.
+
+All four mandatory audit deliverables (§G.18) are now in place:
+- `02_specification_stage/audit/audit_pass.json` (new, verdict PASS)
+- `02_specification_stage/audit/stage_metrics.json` (new)
+- `00_validation_report/02_specification_validation.md` (updated with a RETRY 1 section, retry-0 history preserved)
+- `11_postmortem_audit/02_specification_postmortem.md` (updated with retry-1 resolution, action items closed)
+
+Both indices (`00_validation_index.md`, `00_postmortem_index.md`) were updated to reflect PASS — the Step E guard is satisfied since both row edits matched and applied. The gate is now open for `03_architecture_stage` to dispatch (§G.1).

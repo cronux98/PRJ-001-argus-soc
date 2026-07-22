@@ -1,0 +1,30 @@
+Audit complete. All deliverables verified on disk.
+
+## Stage-Gate Audit: 01_business_stage — **PASS**
+
+**Mandatory checks (8/8):**
+
+| Check | Result | Evidence |
+|-------|--------|----------|
+| 0.1 BA report | PASS | `market_validation.md` (6709 B) |
+| 0.2 Competitive landscape | PASS | `competitive_analysis.md` — 5 comparables |
+| 0.3 Market segment | PASS | `market_requirements.md` — MoSCoW tables |
+| 0.4 Technical feasibility | PASS | `domain_report.md` |
+| 0.5 Cost/benefit | PASS | `baseline_metrics.json` — valid JSON |
+| 0.6 Sources cited | PASS | mv=2, ca=5, dr=1+ citation lines; every numeric table sourced |
+| 0.7 Metrics reconcile | PASS | freq 50/25, power 10/5 mW, sleep 50/10 µW, comparables=5 all match ±0 |
+| 0.8 No minted verdict | PASS | 0 CONDITIONAL, 0 PARTIAL |
+
+Applicable global rules G.1, G.3, G.4, G.8 also PASS. Used `assert_files` min_count=1 before every count-based check (§G.4). `jq` was absent — validated JSON and reconciled metrics via python3 fallback.
+
+**Deliverables written (5 + stage_metrics.json for §G.18):**
+1. `audit/audit_pass.json` (PASS gate; no `fix_instructions.json`)
+2. `00_validation_report/01_business_validation.md`
+3. `11_postmortem_audit/01_business_postmortem.md`
+4. Validation index — business row added, ✅ DONE
+5. Postmortem index — business row added, ✅ DONE
+- `audit/stage_metrics.json` (atomic-output rule)
+
+**One non-blocking note:** `00_business_index.md` still links to legacy filenames (`business_validation.md`/`business_postmortem.md`) instead of the v6a `01_`-prefixed paths — recorded as an action item, not a gate failure.
+
+**PASS (8/8)**

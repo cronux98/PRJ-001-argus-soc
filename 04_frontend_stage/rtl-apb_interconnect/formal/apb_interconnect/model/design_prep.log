@@ -1,0 +1,88 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module apb_interconnect.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing apb_interconnect.$procdff$304 ($adff): ARST=\rst_ni, D=$0\s0_psel[0:0], Q=\s0_psel
+Replacing apb_interconnect.$procdff$309 ($adff): ARST=\rst_ni, D=$0\s0_penable[0:0], Q=\s0_penable
+Replacing apb_interconnect.$procdff$314 ($adff): ARST=\rst_ni, D=$0\s1_psel[0:0], Q=\s1_psel
+Replacing apb_interconnect.$procdff$319 ($adff): ARST=\rst_ni, D=$0\s1_penable[0:0], Q=\s1_penable
+Replacing apb_interconnect.$procdff$324 ($adff): ARST=\rst_ni, D=$0\s2_psel[0:0], Q=\s2_psel
+Replacing apb_interconnect.$procdff$329 ($adff): ARST=\rst_ni, D=$0\s2_penable[0:0], Q=\s2_penable
+Replacing apb_interconnect.$procdff$334 ($adff): ARST=\rst_ni, D=$0\s3_psel[0:0], Q=\s3_psel
+Replacing apb_interconnect.$procdff$339 ($adff): ARST=\rst_ni, D=$0\s3_penable[0:0], Q=\s3_penable
+Replacing apb_interconnect.$procdff$344 ($adff): ARST=\rst_ni, D=$0\s4_psel[0:0], Q=\s4_psel
+Replacing apb_interconnect.$procdff$349 ($adff): ARST=\rst_ni, D=$0\s4_penable[0:0], Q=\s4_penable
+Replacing apb_interconnect.$procdff$354 ($adff): ARST=\rst_ni, D=$0\s5_psel[0:0], Q=\s5_psel
+Replacing apb_interconnect.$procdff$359 ($adff): ARST=\rst_ni, D=$0\s5_penable[0:0], Q=\s5_penable
+Replacing apb_interconnect.$procdff$364 ($adff): ARST=\rst_ni, D=$0\s6_psel[0:0], Q=\s6_psel
+Replacing apb_interconnect.$procdff$369 ($adff): ARST=\rst_ni, D=$0\s6_penable[0:0], Q=\s6_penable
+Replacing apb_interconnect.$procdff$374 ($adff): ARST=\rst_ni, D=$0\s7_psel[0:0], Q=\s7_psel
+Replacing apb_interconnect.$procdff$379 ($adff): ARST=\rst_ni, D=$0\s7_penable[0:0], Q=\s7_penable
+Replacing apb_interconnect.$procdff$384 ($adff): ARST=\rst_ni, D=$0\s8_psel[0:0], Q=\s8_psel
+Replacing apb_interconnect.$procdff$389 ($adff): ARST=\rst_ni, D=$0\s8_penable[0:0], Q=\s8_penable
+Replacing apb_interconnect.$procdff$394 ($adff): ARST=\rst_ni, D=$0\s9_psel[0:0], Q=\s9_psel
+Replacing apb_interconnect.$procdff$399 ($adff): ARST=\rst_ni, D=$0\s9_penable[0:0], Q=\s9_penable
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module apb_interconnect...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 141 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+Removed 0 unused cells and 20 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 63740eadbf, time: 0.02s, user: 0.02s, system: 0.01s, MEM: 15.17 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 43% 4x opt_clean (0 sec), 10% 1x opt_dff (0 sec), ...

@@ -1,0 +1,25 @@
+# Gold: RTL + common lib
+design -push
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+hierarchy -check -top sys_ctrl
+proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
+design -save gold
+design -pop
+
+# Gate: Netlist only (common lib already loaded)
+design -push
+read_liberty -ignore_miss_func /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/synth/sys_ctrl_netlist.v
+hierarchy -check -top sys_ctrl
+proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
+design -save gate
+design -pop
+
+# Equivalence check
+design -copy-from gate -as gate_sys_ctrl sys_ctrl
+design -copy-from gold -as gold_sys_ctrl sys_ctrl
+equiv_make -inames gold_sys_ctrl gate_sys_ctrl equiv_sys_ctrl
+equiv_simple
+equiv_induct
+equiv_status

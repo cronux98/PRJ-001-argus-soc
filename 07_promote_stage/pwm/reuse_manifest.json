@@ -1,0 +1,53 @@
+{
+  "module": "pwm",
+  "version": "1.0.0",
+  "provenance_type": "self",
+  "source_project": "PRJ-001",
+  "source_version": "v0",
+  "promotion_date": "2026-07-20T14:07:59Z",
+  "category": "peripherals",
+  "research_path": "research/peripherals/pwm/",
+  "type": "REUSE_STAR",
+  "license": "Apache-2.0",
+  "description": "2-ch PWM 10-bit + watchdog timer. Adapted from EF_TMR32.",
+  "qualification": {
+    "lint": {
+      "status": "PASS",
+      "errors": 0,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/lint/pwm_verilator.log"
+    },
+    "synthesis": {
+      "status": "PASS",
+      "cell_count": 1922,
+      "dff_count": 69,
+      "latch_count": 0,
+      "area_um2": 1611.5456,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/synth/pwm_synth.log"
+    },
+    "formal": {
+      "status": "PASS",
+      "depth": 20,
+      "mode": "bmc",
+      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/formal/pwm/PASS"
+    },
+    "equivalence": {
+      "status": "PASS",
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/equiv_check/pwm_equiv.log"
+    },
+    "verification": {
+      "status": "PASS",
+      "tests_total": 15,
+      "tests_pass": 15,
+      "tests_fail": 0,
+      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-pwm/results.xml"
+    }
+  },
+  "promotion": {
+    "status": "PASS",
+    "reasons": []
+  },
+  "ports": [],
+  "dependencies": [],
+  "generated_by": "gen_reuse_manifest.py",
+  "generated_at": "2026-07-20T14:07:59Z"
+}

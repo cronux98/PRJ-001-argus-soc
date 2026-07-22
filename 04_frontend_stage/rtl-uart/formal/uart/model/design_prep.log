@@ -1,0 +1,195 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+Found 0 SCCs in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Found 0 SCCs in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Found 0 SCCs in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Found 0 SCCs in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+Found 0 SCCs in module BAUDGEN.
+Found 0 SCCs in module EF_UART_APB.
+Found 0 SCCs in module ef_util_gating_cell.
+Found 0 SCCs in module ef_util_sync.
+Found 0 SCCs in module ef_util_ticker.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$procdff$1776 ($adff): ARST=\rst_n, D=$0\w_ptr_reg[3:0], Q=\w_ptr_reg
+Replacing $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$procdff$1781 ($adff): ARST=\rst_n, D=$0\r_ptr_reg[3:0], Q=\r_ptr_reg
+Replacing $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$procdff$1786 ($adff): ARST=\rst_n, D=$0\level_reg[3:0], Q=\level_reg
+Replacing $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$procdff$1791 ($adff): ARST=\rst_n, D=$0\full_reg[0:0], Q=\full_reg
+Replacing $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$procdff$1796 ($adff): ARST=\rst_n, D=$0\empty_reg[0:0], Q=\empty_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1678 ($adff): ARST=\resetn, D=$0\brk[11:0], Q=\brk
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1683 ($adff): ARST=\resetn, D=\count_next, Q=\count_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1688 ($adff): ARST=\resetn, D=\next_state, Q=\current_state
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1693 ($adff): ARST=\resetn, D=\b_next, Q=\b_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1698 ($adff): ARST=\resetn, D=\data_next, Q=\data_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$procdff$1703 ($adff): ARST=\resetn, D=$0\p_error_reg[0:0], Q=\p_error_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$procdff$1746 ($adff): ARST=\resetn, D=\count_next, Q=\count_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$procdff$1751 ($adff): ARST=\resetn, D=\next_state, Q=\current_state
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$procdff$1756 ($adff): ARST=\resetn, D=\b_next, Q=\b_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$procdff$1761 ($adff): ARST=\resetn, D=\data_next, Q=\data_reg
+Replacing $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$procdff$1766 ($adff): ARST=\resetn, D=\tx_next, Q=\tx_reg
+Replacing $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$procdff$1725 ($adff): ARST=\rst_n, D=$0\bits_count[5:0], Q=\bits_count
+Replacing $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$procdff$1730 ($adff): ARST=\rst_n, D=$0\samples_count[4:0], Q=\samples_count
+Replacing $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.$procdff$1736 ($adff): ARST=\rst_n, D=$0\out[0:0], Q=\out
+Replacing $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.$procdff$1741 ($adff): ARST=\rst_n, D=$0\shifter[7:0], Q=\shifter
+Replacing BAUDGEN.$procdff$1771 ($adff): ARST=\rst_n, D=$0\count_reg[15:0], Q=\count_reg
+Replacing EF_UART_APB.$procdff$1804 ($adff): ARST=\PRESETn, D=$0\RIS_REG[9:0], Q=\RIS_REG
+Replacing EF_UART_APB.$procdff$1816 ($adff): ARST=\PRESETn, D=$0\IC_REG[9:0], Q=\IC_REG
+Replacing EF_UART_APB.$procdff$1821 ($adff): ARST=\PRESETn, D=$0\IM_REG[9:0], Q=\IM_REG
+Replacing EF_UART_APB.$procdff$1826 ($adff): ARST=\PRESETn, D=$0\GCLK_REG[0:0], Q=\GCLK_REG
+Replacing EF_UART_APB.$procdff$1831 ($adff): ARST=\PRESETn, D=$0\TX_FIFO_FLUSH_REG[0:0], Q=\TX_FIFO_FLUSH_REG
+Replacing EF_UART_APB.$procdff$1836 ($adff): ARST=\PRESETn, D=$0\TX_FIFO_THRESHOLD_REG[3:0], Q=\TX_FIFO_THRESHOLD_REG
+Replacing EF_UART_APB.$procdff$1841 ($adff): ARST=\PRESETn, D=$0\RX_FIFO_FLUSH_REG[0:0], Q=\RX_FIFO_FLUSH_REG
+Replacing EF_UART_APB.$procdff$1846 ($adff): ARST=\PRESETn, D=$0\RX_FIFO_THRESHOLD_REG[3:0], Q=\RX_FIFO_THRESHOLD_REG
+Replacing EF_UART_APB.$procdff$1851 ($adff): ARST=\PRESETn, D=$0\MATCH_REG[8:0], Q=\MATCH_REG
+Replacing EF_UART_APB.$procdff$1856 ($adff): ARST=\PRESETn, D=$0\CFG_REG[13:0], Q=\CFG_REG
+Replacing EF_UART_APB.$procdff$1861 ($adff): ARST=\PRESETn, D=$0\CTRL_REG[4:0], Q=\CTRL_REG
+Replacing EF_UART_APB.$procdff$1866 ($adff): ARST=\PRESETn, D=$0\PR_REG[15:0], Q=\PR_REG
+Replacing ef_util_ticker.$procdff$1715 ($adff): ARST=\rst_n, D=$0\tick_reg[0:0], Q=\tick_reg
+Replacing ef_util_ticker.$procdff$1720 ($adff): ARST=\rst_n, D=$0\counter[7:0], Q=\counter
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Removed 9 unused cells and 9 unused wires.
+<suppressed ~18 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo...
+Checking module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX...
+Checking module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX...
+Checking module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART...
+Checking module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000...
+Checking module BAUDGEN...
+Checking module EF_UART_APB...
+Checking module ef_util_gating_cell...
+Checking module ef_util_sync...
+Checking module ef_util_ticker...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Optimizing module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Optimizing module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+Optimizing module BAUDGEN.
+Optimizing module EF_UART_APB.
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_sync.
+Optimizing module ef_util_ticker.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Computing hashes of 80 cells of `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding duplicate cells in `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Computing hashes of 106 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Computing hashes of 77 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding identical cells in module `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Computing hashes of 35 cells of `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding duplicate cells in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding identical cells in module `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Computing hashes of 12 cells of `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\BAUDGEN'.
+Computing hashes of 8 cells of `\BAUDGEN'.
+Finding duplicate cells in `\BAUDGEN'.
+Finding identical cells in module `\EF_UART_APB'.
+Computing hashes of 120 cells of `\EF_UART_APB'.
+Finding duplicate cells in `\EF_UART_APB'.
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 1 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\ef_util_ticker'.
+Computing hashes of 30 cells of `\ef_util_ticker'.
+Finding duplicate cells in `\ef_util_ticker'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Removed 45 unused cells and 45 unused wires.
+<suppressed ~47 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Removed 0 unused cells and 37 unused wires.
+<suppressed ~8 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 0479d2e61f, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 15.56 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 39% 4x opt_clean (0 sec), 10% 1x check (0 sec), ...

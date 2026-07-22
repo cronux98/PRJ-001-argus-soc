@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc z3
+
+[script]
+read_verilog -formal -sv interrupt_ctrl.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top interrupt_ctrl
+
+[files]
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/rtl/interrupt_ctrl.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v

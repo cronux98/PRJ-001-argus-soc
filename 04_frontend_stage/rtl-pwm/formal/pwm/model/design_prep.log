@@ -1,0 +1,147 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Found 0 SCCs in module EF_TMR32_APB.
+Found 0 SCCs in module EF_WDT32.
+Found 0 SCCs in module EF_WDT32_APB.
+Found 0 SCCs in module ef_util_gating_cell.
+Found 0 SCCs in module ef_util_ped.
+Found 0 SCCs in module pwm_wrapper.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \pwm_wrapper..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \pwm_wrapper..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000...
+Checking module EF_TMR32_APB...
+Checking module EF_WDT32...
+Checking module EF_WDT32_APB...
+Checking module ef_util_gating_cell...
+Checking module ef_util_ped...
+Checking module pwm_wrapper...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~12 debug messages>
+Optimizing module EF_TMR32_APB.
+<suppressed ~14 debug messages>
+Optimizing module EF_WDT32.
+<suppressed ~1 debug messages>
+Optimizing module EF_WDT32_APB.
+<suppressed ~6 debug messages>
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module pwm_wrapper.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 333 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 311 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 289 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~132 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 195 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 169 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 143 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+<suppressed ~156 debug messages>
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 14 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 86 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 76 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 66 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+<suppressed ~60 debug messages>
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 7 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Removed a total of 116 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 55 unused cells and 195 unused wires.
+<suppressed ~82 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \pwm_wrapper..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 3d7a55ca50, time: 0.05s, user: 0.05s, system: 0.01s, MEM: 16.14 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 36% 4x opt_clean (0 sec), 13% 1x check (0 sec), ...

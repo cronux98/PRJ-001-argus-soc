@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, initial-scale=1.0">
+<title>PRJ-001 Argus — Top-Level Block Diagram</title>
+<style>
+body { background: #1a1a2e; color: #e0e0e0; font-family: monospace; margin: 0; padding: 20px; }
+.diagram { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.box { border: 2px solid; border-radius: 8px; padding: 10px 14px; text-align: center; min-width: 100px; }
+.box h3 { margin: 0 0 4px 0; font-size: 12px; }
+.box p { margin: 0; font-size: 10px; opacity: 0.7; }
+.core { border-color: #e74c3c; background: #2c1a1a; }
+.bus { border-color: #3498db; background: #1a1a2c; }
+.periph { border-color: #2ecc71; background: #1a2c1a; }
+.mem { border-color: #f39c12; background: #2c2a1a; }
+.create { border-color: #9b59b6; background: #2a1a2c; }
+.wrapper { border-color: #1abc9c; background: #1a2c2c; }
+.arrow { color: #888; font-size: 14px; margin: 0 4px; }
+.conn { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.legend { margin-top: 30px; border-top: 1px solid #444; padding-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; }
+.legend span { border: 2px solid; border-radius: 4px; padding: 2px 10px; font-size: 11px; }
+.section-title { color: #888; font-size: 13px; margin: 16px 0 4px 0; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<div class="diagram">
+<h2>PRJ-001 Argus — Environmental Sensor-Hub SoC</h2>
+<p style="color:#888;font-size:11px">sky130A | 50 MHz | RV32I | 4 KB SRAM | APB v2.0 | Caravel Harness</p>
+
+<!-- Caravel boundary -->
+<div class="box wrapper" style="min-width:800px">
+  <h3>caravel_wrapper (M11)</h3>
+  <p>user_clock2, user_reset_n, IO pads[37:0], LA probes</p>
+
+  <!-- Two clock domains -->
+  <div class="row" style="justify-content:center;margin-top:8px">
+
+    <!-- clk_sys domain -->
+    <div class="conn">
+      <span class="section-title">clk_sys (50 MHz)</span>
+
+      <!-- Core + SRAM -->
+      <div class="row">
+        <div class="box core">
+          <h3>ibex_core (M01)</h3>
+          <p>RV32I · 2-stage "maxperf" · REUSE</p>
+        </div>
+        <span class="arrow">instr↔</span>
+        <div class="box mem">
+          <h3>sram (M08)</h3>
+          <p>4 KB OpenRAM · REUSE</p>
+        </div>
+        <span class="arrow">↔data</span>
+        <span style="color:#888;font-size:9px">(Harvard split)</span>
+      </div>
+
+      <!-- APB interconnect -->
+      <div class="box bus" style="min-width:500px;margin-top:6px">
+        <h3>apb_interconnect (M02) — APB v2.0 · CREATE</h3>
+        <div class="row" style="flex-wrap:wrap;justify-content:center;margin-top:4px">
+
+          <div class="conn">
+            <div class="box periph"><h3>uart (M03)</h3><p>EF_UART · REUSE</p></div>
+            <span style="font-size:9px;color:#888">TX/RX → io[1:0]</span>
+          </div>
+
+          <div class="conn">
+            <div class="box periph"><h3>spi_master (M04)</h3><p>EF_SPI · REUSE</p></div>
+            <span style="font-size:9px;color:#888">SCK/MOSI/MISO/CS → io[5:2]</span>
+          </div>
+
+          <div class="conn">
+            <div class="box periph"><h3>i2c_master (M05)</h3><p>EF_I2C · REUSE</p></div>
+            <span style="font-size:9px;color:#888">SCL/SDA → io[7:6]</span>
+          </div>
+
+          <div class="conn">
+            <div class="box periph"><h3>gpio (M06)</h3><p>EF_GPIO8 · REUSE</p></div>
+            <span style="font-size:9px;color:#888">gpio[7:0] → io[15:8]</span>
+          </div>
+
+          <div class="conn">
+            <div class="box periph"><h3>pwm + wdt (M07)</h3><p>EF_TMR32 · REUSE*</p></div>
+            <span style="font-size:9px;color:#888">pwm[1:0] → io[17:16]</span>
+          </div>
+
+          <div class="conn">
+            <div class="box create"><h3>interrupt_ctrl (M09)</h3><p>13-source · CREATE</p></div>
+          </div>
+
+          <div class="conn">
+            <div class="box create"><h3>sys_ctrl (M12)</h3><p>Chip ID · Reset · Sleep · CREATE</p></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- IRQ routing -->
+      <div style="margin-top:8px;border:1px dashed #e74c3c;border-radius:4px;padding:6px;font-size:10px">
+        IRQ routing: UART|SPI|I2C|GPIO[7:0]|PWM|WDT → M09 → cpu_irq → Ibex irq_external_i
+      </div>
+
+      <!-- Rest of wrapper connections -->
+      <div style="margin-top:4px;font-size:9px;color:#888">
+        wdt_rst_n → sys_ctrl · clk_gate_en[11:0] → all peripherals
+      </div>
+
+    </div>
+
+    <!-- clk_wb domain -->
+    <div class="conn" style="margin-left:24px">
+      <span class="section-title">clk_wb (10–25 MHz)</span>
+      <div class="box create">
+        <h3>wb_bridge (M10)</h3>
+        <p>APB↔Wishbone B4 · CREATE</p>
+        <p style="font-size:9px">Async FIFOs for CDC</p>
+      </div>
+      <span style="font-size:9px;color:#888">↔ Caravel mgmt SoC (Wishbone B4)</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Legend -->
+<div class="legend">
+  <span class="core">Core (REUSE)</span>
+  <span class="bus">Bus (CREATE)</span>
+  <span class="periph">Peripheral (REUSE)</span>
+  <span class="mem">Memory (REUSE)</span>
+  <span class="create">Controller/Bridge (CREATE)</span>
+  <span class="wrapper">Wrapper/Integration (CREATE)</span>
+</div>
+
+<!-- Specs table -->
+<div style="margin-top:20px;font-size:11px">
+  <table style="border-collapse:collapse;color:#ccc">
+    <tr style="background:#2a2a3e"><th style="padding:4px 12px;text-align:left">Module</th><th style="padding:4px 12px">Type</th><th style="padding:4px 12px">Area</th><th style="padding:4px 12px">Clock</th></tr>
+    <tr><td style="padding:4px 12px">M01 ibex_core</td><td>REUSE</td><td>~15 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M02 apb_interconnect</td><td>CREATE</td><td>~3 kGE</td><td>clk_sys</td></tr>
+    <tr><td style="padding:4px 12px">M03 uart</td><td>REUSE</td><td>~2 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M04 spi_master</td><td>REUSE</td><td>~2 kGE</td><td>clk_sys</td></tr>
+    <tr><td style="padding:4px 12px">M05 i2c_master</td><td>REUSE</td><td>~2 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M06 gpio</td><td>REUSE</td><td>~1 kGE</td><td>clk_sys</td></tr>
+    <tr><td style="padding:4px 12px">M07 pwm + wdt</td><td>REUSE*</td><td>~4 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M08 sram</td><td>REUSE</td><td>~40 kGE</td><td>clk_sys</td></tr>
+    <tr><td style="padding:4px 12px">M09 interrupt_ctrl</td><td>CREATE</td><td>~1 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M10 wb_bridge</td><td>CREATE</td><td>~5 kGE</td><td>clk_wb/clk_sys</td></tr>
+    <tr><td style="padding:4px 12px">M11 caravel_wrapper</td><td>CREATE</td><td>~5 kGE</td><td>clk_sys</td></tr>
+    <tr style="background:#22223a"><td style="padding:4px 12px">M12 sys_ctrl</td><td>CREATE</td><td>~2 kGE</td><td>clk_sys</td></tr>
+    <tr style="font-weight:bold;border-top:2px solid #888"><td style="padding:4px 12px">TOTAL</td><td>5R+1R*+6C</td><td>~83 kGE</td><td>—</td></tr>
+  </table>
+</div>
+
+</div>
+</body>
+</html>

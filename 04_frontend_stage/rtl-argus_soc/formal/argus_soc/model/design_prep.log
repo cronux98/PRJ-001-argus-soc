@@ -1,0 +1,1167 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+Found 0 SCCs in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Found 0 SCCs in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+Found 0 SCCs in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Found 0 SCCs in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Found 0 SCCs in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Found 0 SCCs in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Found 0 SCCs in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Found 0 SCCs in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Found 0 SCCs in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Found 0 SCCs in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Found 0 SCCs in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+Found 0 SCCs in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Found 0 SCCs in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Found 0 SCCs in module BAUDGEN.
+Found 0 SCCs in module EF_GPIO8.
+Found 0 SCCs in module EF_GPIO8_APB.
+Found 0 SCCs in module EF_I2C_APB.
+Found 0 SCCs in module EF_SPI_APB.
+Found 0 SCCs in module EF_TMR32_APB.
+Found 0 SCCs in module EF_UART_APB.
+Found 0 SCCs in module EF_WDT32.
+Found 0 SCCs in module EF_WDT32_APB.
+Found 0 SCCs in module alu.
+Found 0 SCCs in module alu_ctrl.
+Found 0 SCCs in module apb_interconnect.
+Found 0 SCCs in module argus_soc.
+Found 0 SCCs in module branch_unit.
+Found 0 SCCs in module ctrl_unit.
+Found 0 SCCs in module ef_util_gating_cell.
+Found 0 SCCs in module ef_util_ned.
+Found 0 SCCs in module ef_util_ped.
+Found 0 SCCs in module ef_util_sync.
+Found 0 SCCs in module ef_util_ticker.
+Found 0 SCCs in module ex_mem.
+Found 0 SCCs in module forwarding_unit.
+Found 0 SCCs in module hazard_unit.
+Found 0 SCCs in module i2c_master.
+Found 0 SCCs in module ibex_core.
+Found 0 SCCs in module ibex_core_inner.
+Found 0 SCCs in module id_ex.
+Found 0 SCCs in module if_id.
+Found 0 SCCs in module imm_gen.
+Found 0 SCCs in module interrupt_ctrl.
+Found 0 SCCs in module mem_wb.
+Found 0 SCCs in module pc.
+Found 0 SCCs in module pwm_wrapper.
+Found 0 SCCs in module reg_file.
+Found 0 SCCs in module sram.
+Found 0 SCCs in module sys_ctrl.
+Found 0 SCCs in module wb_bridge.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo..
+Finding unused cells or wires in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Finding unused cells or wires in module \EF_I2C_APB..
+Finding unused cells or wires in module \EF_SPI_APB..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \apb_interconnect..
+Finding unused cells or wires in module \argus_soc..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \i2c_master..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \interrupt_ctrl..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \pwm_wrapper..
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \sram..
+Finding unused cells or wires in module \sys_ctrl..
+Finding unused cells or wires in module \wb_bridge..
+Removed 440 unused cells and 4476 unused wires.
+<suppressed ~554 debug messages>
+
+7. Executing FORMALFF pass.
+Setting unused undefined initial value of $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.$auto$clk2fflogic.cc:207:execute$18514 ($ff) from 9'x to 9'000000000
+Setting unused undefined initial value of $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$auto$clk2fflogic.cc:207:execute$13666 ($ff) from 8'x to 8'00000000
+Setting unused undefined initial value of sram.$auto$clk2fflogic.cc:207:execute$14122 ($ff) from 32'x to 0
+Setting unused undefined initial value of sram.$auto$clk2fflogic.cc:207:execute$14134 ($ff) from 32'x to 0
+Setting unused undefined initial value of sram.$auto$clk2fflogic.cc:207:execute$14146 ($ff) from 32'x to 0
+Setting unused undefined initial value of sram.$auto$clk2fflogic.cc:207:execute$14158 ($ff) from 32'x to 0
+Setting unused undefined initial value of sram.$auto$clk2fflogic.cc:207:execute$14170 ($ff) from 32'x to 0
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo..
+Finding unused cells or wires in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Finding unused cells or wires in module \EF_I2C_APB..
+Finding unused cells or wires in module \EF_SPI_APB..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \apb_interconnect..
+Finding unused cells or wires in module \argus_soc..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \i2c_master..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \interrupt_ctrl..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \pwm_wrapper..
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \sram..
+Finding unused cells or wires in module \sys_ctrl..
+Finding unused cells or wires in module \wb_bridge..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo...
+Checking module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master...
+Checking module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16...
+Checking module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo...
+Checking module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX...
+Checking module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX...
+Checking module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI...
+Checking module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART...
+Checking module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo...
+Checking module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo...
+Checking module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000...
+Checking module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000...
+Checking module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module BAUDGEN...
+Checking module EF_GPIO8...
+Checking module EF_GPIO8_APB...
+Checking module EF_I2C_APB...
+Checking module EF_SPI_APB...
+Checking module EF_TMR32_APB...
+Checking module EF_UART_APB...
+Checking module EF_WDT32...
+Checking module EF_WDT32_APB...
+Checking module alu...
+Checking module alu_ctrl...
+Checking module apb_interconnect...
+Checking module argus_soc...
+Warning: Wire argus_soc.\wb_apb_pready is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [31] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [30] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [29] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [28] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [27] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [26] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [25] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [24] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [23] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [22] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [21] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [20] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [19] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [18] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [17] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [16] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [15] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [14] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [13] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [12] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [11] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [10] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [9] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [8] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [7] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [6] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [5] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [4] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [3] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [2] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [1] is used but has no driver.
+Warning: Wire argus_soc.\wb_apb_prdata [0] is used but has no driver.
+Checking module branch_unit...
+Checking module ctrl_unit...
+Checking module ef_util_gating_cell...
+Checking module ef_util_ned...
+Checking module ef_util_ped...
+Checking module ef_util_sync...
+Checking module ef_util_ticker...
+Checking module ex_mem...
+Checking module forwarding_unit...
+Checking module hazard_unit...
+Checking module i2c_master...
+Checking module ibex_core...
+Checking module ibex_core_inner...
+Checking module id_ex...
+Checking module if_id...
+Checking module imm_gen...
+Checking module interrupt_ctrl...
+Checking module mem_wb...
+Checking module pc...
+Checking module pwm_wrapper...
+Checking module reg_file...
+Checking module sram...
+Checking module sys_ctrl...
+Checking module wb_bridge...
+Found and reported 33 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+<suppressed ~5 debug messages>
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+<suppressed ~8 debug messages>
+Optimizing module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+<suppressed ~5 debug messages>
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+<suppressed ~6 debug messages>
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+<suppressed ~5 debug messages>
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Optimizing module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+<suppressed ~12 debug messages>
+Optimizing module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+<suppressed ~2 debug messages>
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+<suppressed ~2 debug messages>
+Optimizing module BAUDGEN.
+<suppressed ~1 debug messages>
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+<suppressed ~6 debug messages>
+Optimizing module EF_I2C_APB.
+<suppressed ~3 debug messages>
+Optimizing module EF_SPI_APB.
+<suppressed ~11 debug messages>
+Optimizing module EF_TMR32_APB.
+<suppressed ~14 debug messages>
+Optimizing module EF_UART_APB.
+<suppressed ~12 debug messages>
+Optimizing module EF_WDT32.
+<suppressed ~1 debug messages>
+Optimizing module EF_WDT32_APB.
+<suppressed ~6 debug messages>
+Optimizing module alu.
+Optimizing module alu_ctrl.
+Optimizing module apb_interconnect.
+<suppressed ~20 debug messages>
+Optimizing module argus_soc.
+Optimizing module branch_unit.
+Optimizing module ctrl_unit.
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module ef_util_ticker.
+<suppressed ~2 debug messages>
+Optimizing module ex_mem.
+<suppressed ~9 debug messages>
+Optimizing module forwarding_unit.
+Optimizing module hazard_unit.
+Optimizing module i2c_master.
+Optimizing module ibex_core.
+<suppressed ~7 debug messages>
+Optimizing module ibex_core_inner.
+Optimizing module id_ex.
+<suppressed ~20 debug messages>
+Optimizing module if_id.
+<suppressed ~3 debug messages>
+Optimizing module imm_gen.
+Optimizing module interrupt_ctrl.
+<suppressed ~1 debug messages>
+Optimizing module mem_wb.
+<suppressed ~6 debug messages>
+Optimizing module pc.
+<suppressed ~1 debug messages>
+Optimizing module pwm_wrapper.
+Optimizing module reg_file.
+<suppressed ~34 debug messages>
+Optimizing module sram.
+Optimizing module sys_ctrl.
+<suppressed ~9 debug messages>
+Optimizing module wb_bridge.
+<suppressed ~3 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Computing hashes of 145 cells of `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding duplicate cells in `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Computing hashes of 115 cells of `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding duplicate cells in `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Computing hashes of 104 cells of `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding duplicate cells in `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+<suppressed ~123 debug messages>
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 129 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 111 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 96 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+<suppressed ~99 debug messages>
+Finding identical cells in module `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Computing hashes of 642 cells of `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Finding duplicate cells in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Computing hashes of 518 cells of `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Finding duplicate cells in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Computing hashes of 502 cells of `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Finding duplicate cells in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+<suppressed ~420 debug messages>
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 145 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 115 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 104 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+<suppressed ~123 debug messages>
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Computing hashes of 427 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Computing hashes of 336 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Computing hashes of 322 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+<suppressed ~315 debug messages>
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Computing hashes of 305 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Computing hashes of 233 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Computing hashes of 222 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+<suppressed ~249 debug messages>
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 14 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 12 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Computing hashes of 47 cells of `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding duplicate cells in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Computing hashes of 45 cells of `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding duplicate cells in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Computing hashes of 43 cells of `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding duplicate cells in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Computing hashes of 315 cells of `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Finding duplicate cells in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Computing hashes of 266 cells of `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Finding duplicate cells in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Computing hashes of 236 cells of `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Finding duplicate cells in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+<suppressed ~237 debug messages>
+Finding identical cells in module `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Computing hashes of 315 cells of `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Finding duplicate cells in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Computing hashes of 266 cells of `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Finding duplicate cells in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Computing hashes of 236 cells of `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Finding duplicate cells in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+<suppressed ~237 debug messages>
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 449 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 383 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 360 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+<suppressed ~267 debug messages>
+Finding identical cells in module `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Computing hashes of 24 cells of `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Computing hashes of 22 cells of `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Computing hashes of 20 cells of `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 11 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 19 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 17 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 15 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\BAUDGEN'.
+Computing hashes of 15 cells of `\BAUDGEN'.
+Finding duplicate cells in `\BAUDGEN'.
+Computing hashes of 14 cells of `\BAUDGEN'.
+Finding duplicate cells in `\BAUDGEN'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 159 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Computing hashes of 144 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Computing hashes of 133 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+<suppressed ~78 debug messages>
+Finding identical cells in module `\EF_I2C_APB'.
+Computing hashes of 76 cells of `\EF_I2C_APB'.
+Finding duplicate cells in `\EF_I2C_APB'.
+Computing hashes of 65 cells of `\EF_I2C_APB'.
+Finding duplicate cells in `\EF_I2C_APB'.
+Computing hashes of 59 cells of `\EF_I2C_APB'.
+Finding duplicate cells in `\EF_I2C_APB'.
+<suppressed ~51 debug messages>
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 189 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Computing hashes of 158 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Computing hashes of 137 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+<suppressed ~156 debug messages>
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 213 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 174 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Computing hashes of 147 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+<suppressed ~198 debug messages>
+Finding identical cells in module `\EF_UART_APB'.
+Computing hashes of 209 cells of `\EF_UART_APB'.
+Finding duplicate cells in `\EF_UART_APB'.
+Computing hashes of 175 cells of `\EF_UART_APB'.
+Finding duplicate cells in `\EF_UART_APB'.
+Computing hashes of 152 cells of `\EF_UART_APB'.
+Finding duplicate cells in `\EF_UART_APB'.
+<suppressed ~171 debug messages>
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 14 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 96 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 81 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Computing hashes of 70 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+<suppressed ~78 debug messages>
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Computing hashes of 26 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 35 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Computing hashes of 24 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+<suppressed ~33 debug messages>
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 351 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Computing hashes of 313 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Computing hashes of 275 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+<suppressed ~228 debug messages>
+Finding identical cells in module `\argus_soc'.
+Computing hashes of 59 cells of `\argus_soc'.
+Finding duplicate cells in `\argus_soc'.
+Computing hashes of 58 cells of `\argus_soc'.
+Finding duplicate cells in `\argus_soc'.
+Computing hashes of 57 cells of `\argus_soc'.
+Finding duplicate cells in `\argus_soc'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 16 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 43 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Computing hashes of 21 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Computing hashes of 20 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+<suppressed ~69 debug messages>
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 7 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 7 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 5 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\ef_util_ticker'.
+Computing hashes of 25 cells of `\ef_util_ticker'.
+Finding duplicate cells in `\ef_util_ticker'.
+Computing hashes of 23 cells of `\ef_util_ticker'.
+Finding duplicate cells in `\ef_util_ticker'.
+Computing hashes of 21 cells of `\ef_util_ticker'.
+Finding duplicate cells in `\ef_util_ticker'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 81 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Computing hashes of 65 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Computing hashes of 49 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+<suppressed ~96 debug messages>
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 24 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Computing hashes of 22 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Computing hashes of 20 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\i2c_master'.
+Computing hashes of 1644 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Computing hashes of 1346 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Computing hashes of 1311 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Computing hashes of 1300 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Computing hashes of 1299 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Computing hashes of 1298 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+<suppressed ~1038 debug messages>
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 110 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Computing hashes of 95 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Computing hashes of 83 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+<suppressed ~81 debug messages>
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 61 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Computing hashes of 59 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\id_ex'.
+Computing hashes of 200 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Computing hashes of 162 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Computing hashes of 124 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+<suppressed ~228 debug messages>
+Finding identical cells in module `\if_id'.
+Computing hashes of 33 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Computing hashes of 29 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Computing hashes of 25 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+<suppressed ~24 debug messages>
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\interrupt_ctrl'.
+Computing hashes of 26 cells of `\interrupt_ctrl'.
+Finding duplicate cells in `\interrupt_ctrl'.
+Computing hashes of 24 cells of `\interrupt_ctrl'.
+Finding duplicate cells in `\interrupt_ctrl'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 54 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Computing hashes of 44 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Computing hashes of 34 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+<suppressed ~60 debug messages>
+Finding identical cells in module `\pc'.
+Computing hashes of 10 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Finding identical cells in module `\reg_file'.
+Computing hashes of 494 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Computing hashes of 425 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Computing hashes of 358 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+<suppressed ~408 debug messages>
+Finding identical cells in module `\sram'.
+Computing hashes of 236 cells of `\sram'.
+Finding duplicate cells in `\sram'.
+Computing hashes of 209 cells of `\sram'.
+Finding duplicate cells in `\sram'.
+Computing hashes of 188 cells of `\sram'.
+Finding duplicate cells in `\sram'.
+<suppressed ~144 debug messages>
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 127 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Computing hashes of 107 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Computing hashes of 91 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+<suppressed ~108 debug messages>
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 59 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 47 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 42 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+<suppressed ~51 debug messages>
+Removed a total of 1821 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:108:sample_data$14892 ($ff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:108:sample_data$15286 ($ff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo..
+Finding unused cells or wires in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Finding unused cells or wires in module \EF_I2C_APB..
+Finding unused cells or wires in module \EF_SPI_APB..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \apb_interconnect..
+Finding unused cells or wires in module \argus_soc..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \i2c_master..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \interrupt_ctrl..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \pwm_wrapper..
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \sram..
+Finding unused cells or wires in module \sys_ctrl..
+Finding unused cells or wires in module \wb_bridge..
+Removed 24 unused cells and 1897 unused wires.
+<suppressed ~87 debug messages>
+
+11.5. Rerunning OPT passes. (Removed registers in this run.)
+
+11.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Optimizing module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Optimizing module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+<suppressed ~5 debug messages>
+Optimizing module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+<suppressed ~5 debug messages>
+Optimizing module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Optimizing module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module BAUDGEN.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+Optimizing module EF_I2C_APB.
+Optimizing module EF_SPI_APB.
+Optimizing module EF_TMR32_APB.
+Optimizing module EF_UART_APB.
+Optimizing module EF_WDT32.
+Optimizing module EF_WDT32_APB.
+Optimizing module alu.
+Optimizing module alu_ctrl.
+Optimizing module apb_interconnect.
+Optimizing module argus_soc.
+Optimizing module branch_unit.
+Optimizing module ctrl_unit.
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module ef_util_ticker.
+Optimizing module ex_mem.
+Optimizing module forwarding_unit.
+Optimizing module hazard_unit.
+Optimizing module i2c_master.
+Optimizing module ibex_core.
+Optimizing module ibex_core_inner.
+Optimizing module id_ex.
+Optimizing module if_id.
+Optimizing module imm_gen.
+Optimizing module interrupt_ctrl.
+Optimizing module mem_wb.
+Optimizing module pc.
+Optimizing module pwm_wrapper.
+Optimizing module reg_file.
+Optimizing module sram.
+Optimizing module sys_ctrl.
+Optimizing module wb_bridge.
+
+11.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Computing hashes of 104 cells of `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding duplicate cells in `$paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo'.
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 96 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding identical cells in module `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Computing hashes of 501 cells of `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Finding duplicate cells in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 104 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Computing hashes of 322 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX'.
+Finding identical cells in module `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Computing hashes of 222 cells of `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding duplicate cells in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX'.
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding identical cells in module `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Computing hashes of 43 cells of `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding duplicate cells in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART'.
+Finding identical cells in module `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Computing hashes of 230 cells of `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Finding duplicate cells in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
+Finding identical cells in module `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Computing hashes of 230 cells of `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Finding duplicate cells in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
+Finding identical cells in module `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Computing hashes of 336 cells of `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding duplicate cells in `$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000'.
+Finding identical cells in module `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Computing hashes of 20 cells of `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 11 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 15 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `\BAUDGEN'.
+Computing hashes of 14 cells of `\BAUDGEN'.
+Finding duplicate cells in `\BAUDGEN'.
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 133 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Finding identical cells in module `\EF_I2C_APB'.
+Computing hashes of 59 cells of `\EF_I2C_APB'.
+Finding duplicate cells in `\EF_I2C_APB'.
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 137 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Finding identical cells in module `\EF_TMR32_APB'.
+Computing hashes of 147 cells of `\EF_TMR32_APB'.
+Finding duplicate cells in `\EF_TMR32_APB'.
+Finding identical cells in module `\EF_UART_APB'.
+Computing hashes of 152 cells of `\EF_UART_APB'.
+Finding duplicate cells in `\EF_UART_APB'.
+Finding identical cells in module `\EF_WDT32'.
+Computing hashes of 14 cells of `\EF_WDT32'.
+Finding duplicate cells in `\EF_WDT32'.
+Finding identical cells in module `\EF_WDT32_APB'.
+Computing hashes of 70 cells of `\EF_WDT32_APB'.
+Finding duplicate cells in `\EF_WDT32_APB'.
+Finding identical cells in module `\alu'.
+Computing hashes of 26 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 24 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 275 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Finding identical cells in module `\argus_soc'.
+Computing hashes of 57 cells of `\argus_soc'.
+Finding duplicate cells in `\argus_soc'.
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 16 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 20 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 7 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 7 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 5 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\ef_util_ticker'.
+Computing hashes of 21 cells of `\ef_util_ticker'.
+Finding duplicate cells in `\ef_util_ticker'.
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 49 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 20 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\i2c_master'.
+Computing hashes of 1298 cells of `\i2c_master'.
+Finding duplicate cells in `\i2c_master'.
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 83 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 59 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 124 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 25 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\interrupt_ctrl'.
+Computing hashes of 24 cells of `\interrupt_ctrl'.
+Finding duplicate cells in `\interrupt_ctrl'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 34 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\pc'.
+Computing hashes of 10 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\pwm_wrapper'.
+Computing hashes of 2 cells of `\pwm_wrapper'.
+Finding duplicate cells in `\pwm_wrapper'.
+Finding identical cells in module `\reg_file'.
+Computing hashes of 358 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Finding identical cells in module `\sram'.
+Computing hashes of 188 cells of `\sram'.
+Finding duplicate cells in `\sram'.
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 91 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 42 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+11.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo..
+Finding unused cells or wires in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Finding unused cells or wires in module \EF_I2C_APB..
+Finding unused cells or wires in module \EF_SPI_APB..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \apb_interconnect..
+Finding unused cells or wires in module \argus_soc..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \i2c_master..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \interrupt_ctrl..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \pwm_wrapper..
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \sram..
+Finding unused cells or wires in module \sys_ctrl..
+Finding unused cells or wires in module \wb_bridge..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~3 debug messages>
+
+11.10. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX..
+Finding unused cells or wires in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART..
+Finding unused cells or wires in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo..
+Finding unused cells or wires in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo..
+Finding unused cells or wires in module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000..
+Finding unused cells or wires in module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \BAUDGEN..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Finding unused cells or wires in module \EF_I2C_APB..
+Finding unused cells or wires in module \EF_SPI_APB..
+Finding unused cells or wires in module \EF_TMR32_APB..
+Finding unused cells or wires in module \EF_UART_APB..
+Finding unused cells or wires in module \EF_WDT32..
+Finding unused cells or wires in module \EF_WDT32_APB..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \apb_interconnect..
+Finding unused cells or wires in module \argus_soc..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \ef_util_ticker..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \i2c_master..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \interrupt_ctrl..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \pwm_wrapper..
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \sram..
+Finding unused cells or wires in module \sys_ctrl..
+Finding unused cells or wires in module \wb_bridge..
+Removed 0 unused cells and 1008 unused wires.
+<suppressed ~19 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+Warnings: 33 unique messages, 33 total
+End of script. Logfile hash: dc67c0df53, time: 0.84s, user: 0.81s, system: 0.04s, MEM: 32.95 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 40% 5x opt_clean (0 sec), 16% 2x opt_dff (0 sec), ...

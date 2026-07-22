@@ -1,0 +1,1051 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: EF_SPI_APB.v
+Parsing formal SystemVerilog input from `EF_SPI_APB.v' to AST representation.
+Generating RTLIL representation for module `\EF_SPI_APB'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: spi_master.v
+Parsing formal SystemVerilog input from `spi_master.v' to AST representation.
+Generating RTLIL representation for module `\spi_master'.
+Generating RTLIL representation for module `\sri'.
+Generating RTLIL representation for module `\sro'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: EF_SPI.v
+Parsing formal SystemVerilog input from `EF_SPI.v' to AST representation.
+Generating RTLIL representation for module `\EF_SPI'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ef_util_lib.v
+Parsing formal SystemVerilog input from `ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+5. Executing PREP pass.
+
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1.1. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     \EF_SPI
+Used module:         \spi_master
+Used module:             \sri
+Used module:             \sro
+Used module:         \ef_util_fifo
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+Parameter \CDW = 8
+Parameter \FAW = 4
+
+5.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\EF_SPI'.
+Parameter \CDW = 8
+Parameter \FAW = 4
+Generating RTLIL representation for module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Parameter \DATA_WIDTH = 8
+Parameter \NUM_PORTS = 1
+Parameter \CLK_DIVIDER_WIDTH = 8
+Parameter \SAMPLE_PHASE = 0
+
+5.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_master'.
+Parameter \DATA_WIDTH = 8
+Parameter \NUM_PORTS = 1
+Parameter \CLK_DIVIDER_WIDTH = 8
+Parameter \SAMPLE_PHASE = 0
+Generating RTLIL representation for module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Parameter \DW = 8
+Parameter \AW = 4
+
+5.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\ef_util_fifo'.
+Parameter \DW = 8
+Parameter \AW = 4
+Generating RTLIL representation for module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Parameter \DW = 8
+Parameter \AW = 4
+Found cached RTLIL representation for module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Parameter \DATA_WIDTH = 16
+
+5.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\sri'.
+Parameter \DATA_WIDTH = 16
+Generating RTLIL representation for module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000010000'.
+Parameter \DATA_WIDTH = 16
+
+5.1.6. Executing AST frontend in derive mode using pre-parsed AST for module `\sro'.
+Parameter \DATA_WIDTH = 16
+Generating RTLIL representation for module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000010000'.
+
+5.1.7. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         \spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000010000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000010000
+Used module:         \ef_util_fifo
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+Parameter \DATA_WIDTH = 8
+Parameter \NUM_PORTS = 1
+Parameter \CLK_DIVIDER_WIDTH = 8
+Parameter \SAMPLE_PHASE = 0
+Found cached RTLIL representation for module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Parameter \DW = 8
+Parameter \AW = 4
+Found cached RTLIL representation for module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Parameter \DW = 8
+Parameter \AW = 4
+Found cached RTLIL representation for module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+
+5.1.8. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             \sri
+Used module:             \sro
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+Parameter \DATA_WIDTH = 8
+
+5.1.9. Executing AST frontend in derive mode using pre-parsed AST for module `\sri'.
+Parameter \DATA_WIDTH = 8
+Generating RTLIL representation for module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+
+5.1.10. Executing AST frontend in derive mode using pre-parsed AST for module `\sro'.
+Parameter \DATA_WIDTH = 8
+Generating RTLIL representation for module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+
+5.1.11. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+
+5.1.12. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+Removing unused module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000010000'.
+Removing unused module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000010000'.
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removing unused module `\ef_util_ned'.
+Removing unused module `\ef_util_sync'.
+Removing unused module `\EF_SPI'.
+Removing unused module `\sro'.
+Removing unused module `\sri'.
+Removing unused module `\spi_master'.
+Removed 13 unused modules.
+
+5.2. Executing PROC pass (convert processes to netlists).
+
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$spi_master.v:236$308 in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 2 switch rules as full_case in process $proc$spi_master.v:207$305 in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 5 switch rules as full_case in process $proc$ef_util_lib.v:229$291 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 2 switch rules as full_case in process $proc$ef_util_lib.v:201$289 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 1 switch rules as full_case in process $proc$ef_util_lib.v:192$279 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 7 switch rules as full_case in process $proc$spi_master.v:124$245 in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Marked 7 switch rules as full_case in process $proc$EF_SPI_APB.v:203$54 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$EF_SPI_APB.v:190$50 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:187$46 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:178$41 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$EF_SPI_APB.v:171$36 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:164$32 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$EF_SPI_APB.v:153$27 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:146$23 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:127$19 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:121$15 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$EF_SPI_APB.v:113$11 in module EF_SPI_APB.
+Removed a total of 0 dead cases.
+
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 10 redundant assignments.
+Promoted 12 assignments to connections.
+
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \resetb in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+Found async reset \resetb in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:207$305'.
+Found async reset \rst_n in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+Found async reset \resetb in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:190$50'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:187$46'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:178$41'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:171$36'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:164$32'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:153$27'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:146$23'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:127$19'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:121$15'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$EF_SPI_APB.v:113$11'.
+
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~41 debug messages>
+
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ef_util_ped.$proc$ef_util_lib.v:54$169'.
+Creating decoders for process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+     1/2: $0\dout_s[0:0]
+     2/2: $0\datao[7:0]
+Creating decoders for process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:207$305'.
+     1/1: $0\sr_reg[7:0]
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+     1/15: $4\full_next[0:0]
+     2/15: $3\full_next[0:0]
+     3/15: $3\level_next[3:0]
+     4/15: $4\empty_next[0:0]
+     5/15: $2\w_ptr_next[3:0]
+     6/15: $3\empty_next[0:0]
+     7/15: $2\empty_next[0:0]
+     8/15: $2\level_next[3:0]
+     9/15: $2\full_next[0:0]
+    10/15: $2\r_ptr_next[3:0]
+    11/15: $1\empty_next[0:0]
+    12/15: $1\full_next[0:0]
+    13/15: $1\level_next[3:0]
+    14/15: $1\r_ptr_next[3:0]
+    15/15: $1\w_ptr_next[3:0]
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+     1/5: $0\level_reg[3:0]
+     2/5: $0\empty_reg[0:0]
+     3/5: $0\full_reg[0:0]
+     4/5: $0\r_ptr_reg[3:0]
+     5/5: $0\w_ptr_reg[3:0]
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+     1/3: $1$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$285
+     2/3: $1$memwr$\array_reg$ef_util_lib.v:194$278_DATA[7:0]$284
+     3/3: $1$memwr$\array_reg$ef_util_lib.v:194$278_ADDR[3:0]$283
+Creating decoders for process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+     1/8: $0\clk_count[7:0]
+     2/8: $0\stop_s[0:0]
+     3/8: $0\shift_count[4:0]
+     4/8: $0\state[0:0]
+     5/8: $0\busy[0:0]
+     6/8: $0\done[0:0]
+     7/8: $0\sclk[0:0]
+     8/8: $0\csb[0:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+     1/7: $0\RIS_REG[5:0] [5]
+     2/7: $0\RIS_REG[5:0] [4]
+     3/7: $0\RIS_REG[5:0] [3]
+     4/7: $0\RIS_REG[5:0] [2]
+     5/7: $0\RIS_REG[5:0] [1]
+     6/7: $0\RIS_REG[5:0] [0]
+     7/7: $1\_i_[31:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:190$50'.
+     1/1: $0\IC_REG[5:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:187$46'.
+     1/1: $0\IM_REG[5:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:178$41'.
+     1/1: $0\GCLK_REG[0:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:171$36'.
+     1/1: $0\TX_FIFO_FLUSH_REG[0:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:164$32'.
+     1/1: $0\TX_FIFO_THRESHOLD_REG[3:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:153$27'.
+     1/1: $0\RX_FIFO_FLUSH_REG[0:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:146$23'.
+     1/1: $0\RX_FIFO_THRESHOLD_REG[3:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:127$19'.
+     1/1: $0\PR_REG[7:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:121$15'.
+     1/1: $0\CTRL_REG[2:0]
+Creating decoders for process `\EF_SPI_APB.$proc$EF_SPI_APB.v:113$11'.
+     1/1: $0\CFG_REG[1:0]
+
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$ef_util_lib.v:54$169'.
+  created $dff cell `$procdff$566' with positive edge clock.
+Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\datao' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+  created $adff cell `$procdff$571' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\dout_s' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+  created $adff cell `$procdff$576' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.\sr_reg' using process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:207$305'.
+  created $adff cell `$procdff$581' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+  created $adff cell `$procdff$586' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+  created $adff cell `$procdff$591' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+  created $adff cell `$procdff$596' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+  created $adff cell `$procdff$601' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+  created $adff cell `$procdff$606' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$ef_util_lib.v:194$278_ADDR' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+  created $dff cell `$procdff$607' with positive edge clock.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$ef_util_lib.v:194$278_DATA' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+  created $dff cell `$procdff$608' with positive edge clock.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$ef_util_lib.v:194$278_EN' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+  created $dff cell `$procdff$609' with positive edge clock.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\csb' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$614' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\sclk' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$619' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\done' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$624' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\busy' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$629' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\clk_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$634' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\state' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$639' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\shift_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$644' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\stop_s' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+  created $adff cell `$procdff$649' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\RIS_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+  created $adff cell `$procdff$654' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\_i_' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\EF_SPI_APB.\IC_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:190$50'.
+  created $adff cell `$procdff$666' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\IM_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:187$46'.
+  created $adff cell `$procdff$671' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\GCLK_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:178$41'.
+  created $adff cell `$procdff$676' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\TX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:171$36'.
+  created $adff cell `$procdff$681' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\TX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:164$32'.
+  created $adff cell `$procdff$686' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\RX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:153$27'.
+  created $adff cell `$procdff$691' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\RX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:146$23'.
+  created $adff cell `$procdff$696' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\PR_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:127$19'.
+  created $adff cell `$procdff$701' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\CTRL_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:121$15'.
+  created $adff cell `$procdff$706' with positive edge clock and positive level reset.
+Creating register for signal `\EF_SPI_APB.\CFG_REG' using process `\EF_SPI_APB.$proc$EF_SPI_APB.v:113$11'.
+  created $adff cell `$procdff$711' with positive edge clock and positive level reset.
+
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ef_util_ped.$proc$ef_util_lib.v:54$169'.
+Found and cleaned up 1 empty switch in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+Removing empty process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:236$308'.
+Found and cleaned up 2 empty switches in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:207$305'.
+Removing empty process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$spi_master.v:207$305'.
+Found and cleaned up 5 empty switches in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:229$291'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:201$289'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$ef_util_lib.v:192$279'.
+Found and cleaned up 9 empty switches in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+Removing empty process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$spi_master.v:124$245'.
+Found and cleaned up 12 empty switches in `\EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:203$54'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:190$50'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:190$50'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:187$46'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:187$46'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:178$41'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:178$41'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:171$36'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:171$36'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:164$32'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:164$32'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:153$27'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:153$27'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:146$23'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:146$23'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:127$19'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:127$19'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:121$15'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:121$15'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$EF_SPI_APB.v:113$11'.
+Removing empty process `EF_SPI_APB.$proc$EF_SPI_APB.v:113$11'.
+Cleaned up 41 empty switches.
+
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+<suppressed ~4 debug messages>
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+<suppressed ~3 debug messages>
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+<suppressed ~20 debug messages>
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+<suppressed ~31 debug messages>
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+<suppressed ~34 debug messages>
+
+5.3. Executing FUTURE pass.
+
+5.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+
+5.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module \EF_SPI_APB..
+Removed 53 unused cells and 267 unused wires.
+<suppressed ~76 debug messages>
+
+5.6. Executing CHECK pass (checking for obvious problems).
+Checking module ef_util_gating_cell...
+Checking module ef_util_ped...
+Checking module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo...
+Checking module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master...
+Checking module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI...
+Checking module EF_SPI_APB...
+Found and reported 0 problems.
+
+5.7. Executing OPT pass (performing simple optimizations).
+
+5.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+
+5.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 70 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 53 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+<suppressed ~51 debug messages>
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 65 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 61 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 60 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+<suppressed ~15 debug messages>
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 14 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 12 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 95 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Computing hashes of 85 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+<suppressed ~30 debug messages>
+Removed a total of 35 cells.
+
+5.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ef_util_gating_cell..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ped..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $procmux$330: \full_reg -> 1'1
+      Replacing known input bits on port A of cell $procmux$321: \full_reg -> 1'0
+      Replacing known input bits on port B of cell $procmux$370: \empty_reg -> 1'1
+      Replacing known input bits on port A of cell $procmux$360: \empty_reg -> 1'0
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$396.
+    dead port 2/2 on $mux $procmux$388.
+    dead port 2/2 on $mux $procmux$380.
+    dead port 2/2 on $mux $procmux$372.
+    dead port 2/2 on $mux $procmux$364.
+    dead port 1/2 on $mux $procmux$362.
+    dead port 2/2 on $mux $procmux$353.
+    dead port 2/2 on $mux $procmux$346.
+    dead port 2/2 on $mux $procmux$339.
+    dead port 2/2 on $mux $procmux$332.
+    dead port 2/2 on $mux $procmux$325.
+    dead port 1/2 on $mux $procmux$323.
+Running muxtree optimizer on module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$467: \state -> 1'1
+      Replacing known input bits on port A of cell $procmux$465: \state -> 1'1
+      Replacing known input bits on port A of cell $procmux$463: \state -> 1'1
+      Replacing known input bits on port A of cell $procmux$471: \state -> 1'0
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_SPI_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 12 multiplexer ports.
+<suppressed ~135 debug messages>
+
+5.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ef_util_gating_cell.
+  Optimizing cells in module \ef_util_ped.
+  Optimizing cells in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+  Optimizing cells in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+  Optimizing cells in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+    Consolidated identical input bits for $mux cell $procmux$437:
+      Old ports: A=8'00000000, B=8'11111111, Y=$0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282
+      New ports: A=1'0, B=1'1, Y=$0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0]
+      New connections: $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [7:1] = { $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] $0$memwr$\array_reg$ef_util_lib.v:194$278_EN[7:0]$282 [0] }
+  Optimizing cells in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+  Optimizing cells in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+  Optimizing cells in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+  Optimizing cells in module \EF_SPI_APB.
+Performed a total of 1 changes.
+
+5.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 41 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 60 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 58 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 85 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Removed a total of 2 cells.
+
+5.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module \EF_SPI_APB..
+Removed 0 unused cells and 48 unused wires.
+<suppressed ~4 debug messages>
+
+5.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+
+5.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ef_util_gating_cell..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ped..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_SPI_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~127 debug messages>
+
+5.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ef_util_gating_cell.
+  Optimizing cells in module \ef_util_ped.
+  Optimizing cells in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+  Optimizing cells in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+  Optimizing cells in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+  Optimizing cells in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+  Optimizing cells in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+  Optimizing cells in module \EF_SPI_APB.
+Performed a total of 0 changes.
+
+5.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 41 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 58 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 85 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Removed a total of 0 cells.
+
+5.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module \EF_SPI_APB..
+
+5.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+
+5.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+5.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:230$292 ($add).
+Removed top 28 bits (of 32) from port Y of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:230$292 ($add).
+Removed top 31 bits (of 32) from port B of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:231$293 ($add).
+Removed top 28 bits (of 32) from port Y of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:231$293 ($add).
+Removed top 31 bits (of 32) from port B of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$sub$ef_util_lib.v:244$295 ($sub).
+Removed top 28 bits (of 32) from port Y of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$sub$ef_util_lib.v:244$295 ($sub).
+Removed top 31 bits (of 32) from port B of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:253$298 ($add).
+Removed top 28 bits (of 32) from port Y of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:253$298 ($add).
+Removed top 1 bits (of 2) from port B of cell $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$procmux$416_CMP0 ($eq).
+Removed top 28 bits (of 32) from wire $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$add$ef_util_lib.v:253$298_Y.
+Removed top 28 bits (of 32) from wire $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$sub$ef_util_lib.v:244$295_Y.
+Removed top 31 bits (of 32) from port B of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$add$spi_master.v:75$239 ($add).
+Removed top 24 bits (of 32) from port Y of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$add$spi_master.v:75$239 ($add).
+Removed top 1 bits (of 8) from port B of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$eq$spi_master.v:76$241 ($eq).
+Removed top 28 bits (of 32) from port B of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$ge$spi_master.v:99$244 ($ge).
+Removed top 31 bits (of 32) from port B of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$add$spi_master.v:170$251 ($add).
+Removed top 27 bits (of 32) from port Y of cell $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$add$spi_master.v:170$251 ($add).
+Removed top 27 bits (of 32) from wire $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$add$spi_master.v:170$251_Y.
+Removed top 12 bits (of 16) from port B of cell EF_SPI_APB.$eq$EF_SPI_APB.v:272$64 ($eq).
+Removed top 12 bits (of 16) from port B of cell EF_SPI_APB.$eq$EF_SPI_APB.v:273$65 ($eq).
+Removed top 11 bits (of 16) from port B of cell EF_SPI_APB.$eq$EF_SPI_APB.v:274$66 ($eq).
+Removed top 11 bits (of 16) from port B of cell EF_SPI_APB.$eq$EF_SPI_APB.v:275$67 ($eq).
+Removed top 13 bits (of 16) from port B of cell EF_SPI_APB.$eq$EF_SPI_APB.v:293$110 ($eq).
+
+5.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module \EF_SPI_APB..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~2 debug messages>
+
+5.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.11. Executing OPT pass (performing simple optimizations).
+
+5.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ped.
+Optimizing module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Optimizing module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Optimizing module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Optimizing module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Optimizing module EF_SPI_APB.
+
+5.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Computing hashes of 3 cells of `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding duplicate cells in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Finding identical cells in module `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Computing hashes of 40 cells of `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding duplicate cells in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo'.
+Finding identical cells in module `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Computing hashes of 58 cells of `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding duplicate cells in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
+Finding identical cells in module `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Computing hashes of 11 cells of `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding duplicate cells in `$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
+Finding identical cells in module `\EF_SPI_APB'.
+Computing hashes of 85 cells of `\EF_SPI_APB'.
+Finding duplicate cells in `\EF_SPI_APB'.
+Removed a total of 0 cells.
+
+5.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo..
+Finding unused cells or wires in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master..
+Finding unused cells or wires in module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI..
+Finding unused cells or wires in module \EF_SPI_APB..
+
+5.11.4. Finished fast OPT passes.
+
+5.12. Executing SORT pass.
+
+5.13. Printing statistics.
+
+=== $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       67 wires
+      133 wire bits
+       22 public wires
+       61 public wire bits
+       15 ports
+       36 port bits
+       56 cells
+        2   $add
+        8   $adff
+        1   $and
+        1   $eq
+        1   $ge
+       11   $logic_and
+        5   $logic_not
+        1   $logic_or
+       23   $mux
+        3   $not
+        2 submodules
+        1   $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+        1   $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+
+=== $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       49 wires
+      162 wire bits
+       23 public wires
+       64 public wire bits
+       10 ports
+       27 port bits
+       40 cells
+        3   $add
+        5   $adff
+        1   $and
+        5   $eq
+        1   $mem_v2
+       18   $mux
+        1   $not
+        5   $pmux
+        1   $sub
+
+=== $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+      111 wire bits
+       41 public wires
+      109 public wire bits
+       30 ports
+       63 port bits
+        7 cells
+        2   $and
+        1   $gt
+        2   $logic_not
+        1   $lt
+        1   $not
+        4 submodules
+        1   $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+        2   $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        1   ef_util_ped
+
+=== $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       37 wire bits
+        7 public wires
+       21 public wire bits
+        6 ports
+       13 port bits
+        3 cells
+        1   $adff
+        2   $mux
+
+=== $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       21 wire bits
+        6 public wires
+       13 public wire bits
+        5 ports
+       12 port bits
+        3 cells
+        2   $adff
+        1   $mux
+
+=== EF_SPI_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      126 wires
+      773 wire bits
+       67 public wires
+      249 public wire bits
+       14 ports
+      107 port bits
+       83 cells
+       11   $adff
+       16   $and
+       16   $eq
+        1   $logic_not
+       37   $mux
+        1   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+        1   ef_util_gating_cell
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        3 cells
+        1   $and
+        1   $dff
+        1   $not
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      235 EF_SPI_APB
+        7 $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+       56   $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+        3     $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+        3     $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+       40   $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        3   ef_util_ped
+
+        +----------Count including submodules.
+        | 
+      359 wires
+     1408 wire bits
+      197 public wires
+      589 public wire bits
+       97 ports
+      292 port bits
+        - memories
+        - memory bits
+        - processes
+      235 cells
+        8   $add
+       32   $adff
+       22   $and
+        1   $dff
+       27   $eq
+        1   $ge
+        1   $gt
+       11   $logic_and
+        8   $logic_not
+        1   $logic_or
+        1   $lt
+        2   $mem_v2
+       99   $mux
+        8   $not
+       10   $pmux
+        1   $reduce_or
+        2   $sub
+        2 submodules
+        1   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+        1   ef_util_gating_cell
+
+5.14. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master...
+Checking module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo...
+Checking module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI...
+Checking module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000...
+Checking module EF_SPI_APB...
+Checking module ef_util_gating_cell...
+Checking module ef_util_ped...
+Found and reported 0 problems.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `EF_SPI_APB'. Setting top module to EF_SPI_APB.
+
+6.1. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     \ef_util_gating_cell
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         \ef_util_ped
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+
+6.2. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     \ef_util_gating_cell
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         \ef_util_ped
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Removed 0 unused modules.
+
+7. Executing jny backend.
+
+8. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 2c3d98e8f8, time: 0.07s, user: 0.07s, system: 0.01s, MEM: 16.93 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 28% 8x read_verilog (0 sec), 16% 5x opt_clean (0 sec), ...

@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS",
+  "stage": "04_frontend_stage",
+  "project": "PRJ-001",
+  "retry": 1,
+  "timestamp": "2026-07-20T10:02:00Z",
+  "audit_engine": "claude-opus-4-8",
+  "audit_session_id": "47a6c4ed-01de-4666-9d0e-acedfb825d9a",
+  "audit_cost_usd": 0.28,
+  "total_audit_cost_usd": 2.75,
+  "checks": [
+    {"check": "Module inventory (12 modules)", "result": "PASS", "evidence": "12/12 rtl-*/ directories present: apb_interconnect, argus_soc, gpio, i2c_master, ibex_core, interrupt_ctrl, pwm, spi_master, sram, sys_ctrl, uart, wb_bridge"},
+    {"check": "RTL files (42 total)", "result": "PASS", "evidence": "42 RTL source files across 12 modules"},
+    {"check": "Lint logs exist", "result": "PASS", "evidence": "12/12 verilator lint logs at rtl-*/logs/lint/*_verilator.log"},
+    {"check": "Lint clean (0 errors)", "result": "PASS", "evidence": "12/12 modules: %Error=0. Confirmed by verify_frontend_artifacts.sh"},
+    {"check": "Formal results exist", "result": "PASS", "evidence": "12/12 formal PASS files at rtl-*/formal/*/PASS"},
+    {"check": "argus_soc formal gap FIXED", "result": "PASS", "evidence": "argus_soc: k-induction proof (mode prove, depth 4, basecase+induction both PASS). 6 safety assertions on WB ack/err, UART TX, SPI/CS/MOSI, PWM0/PWM1. clk2fflogic enabled for EF_WDT32_APB clock gating cell. Vera waiver accepted via kanban comment t_953eb7c3."},
+    {"check": "Synthesis complete", "result": "PASS", "evidence": "12/12 modules have synthesized netlists in rtl-*/synth/"},
+    {"check": "Equivalence check", "result": "PASS", "evidence": "12/12 equiv check logs exist at rtl-*/logs/equiv_check/*_equiv.log. Conditional passes documented for sky130 designs."},
+    {"check": "GLS artifacts removed", "result": "PASS", "evidence": "0 GLS artifacts across entire stage dir. GLS belongs in Stage 5 Verification."},
+    {"check": "verify_frontend_artifacts.sh", "result": "PASS", "evidence": "Script exists and executes. All 12 lint checks PASS, all 12 formal checks PASS."}
+  ],
+  "findings": [],
+  "waiver": {
+    "active": true,
+    "scope": "argus_soc formal: k-induction proof replaces deep BMC on top-level SoC. 11/12 leaf modules retain BMC depth 20.",
+    "issued_by": "Vera (Luqman) via kanban comment on t_953eb7c3, 2026-07-20 09:45",
+    "rationale": "Full BMC depth 20 on 50-file SoC is computationally infeasible with Z3 solver. Top-level formal scope is interconnect-safety proof, not functional BMC — leaf modules carry functional verification burden. Assertion-based prove with k-induction is the correct mode for top-level integration formal.",
+    "formal_config": "mode prove, depth 4 basecase, clk2fflogic enabled, 6 safety assertions via SV bind"
+  },
+  "summary": "All 10 mandatory frontend checks PASS across 12/12 modules. FIX 1 (argus_soc formal) resolved with k-induction proof + Vera waiver. FIX 2 (GLS artifacts) verified clean. Claude Opus audit ($0.28) confirms PASS. Total audit spend: $2.75 across 7 Claude sessions."
+}

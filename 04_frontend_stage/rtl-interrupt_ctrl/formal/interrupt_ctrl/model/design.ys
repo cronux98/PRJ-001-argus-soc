@@ -1,0 +1,9 @@
+# running in interrupt_ctrl/src/
+read_verilog -formal -sv interrupt_ctrl.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top interrupt_ctrl
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

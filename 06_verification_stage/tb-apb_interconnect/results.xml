@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.apb_interconnect" tests="8" failures="0" errors="0" skipped="0" time="334" timestamp="2026-07-20T12:15:17.546055">
+  <testcase name="test_apb_interconnect.test_sram_decode" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_uart_decode" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_peripheral_decode_range" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_wb_window_decode" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_unmapped_pslverr" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_psel_exclusive" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_prdata_mux" classname="apb_interconnect" time="0.000" />
+  <testcase name="test_apb_interconnect.test_addr_pass_through" classname="apb_interconnect" time="0.000" />
+</testsuite>

@@ -1,0 +1,15 @@
+# running in pwm/src/
+read_verilog -formal -sv pwm_wrapper.v
+read_verilog -formal -sv EF_TMR32_APB.v
+read_verilog -formal -sv EF_TMR32.v
+read_verilog -formal -sv EF_WDT32_APB.v
+read_verilog -formal -sv EF_WDT32.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top pwm_wrapper -nordff
+clk2fflogic
+memory -nordff
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="452" timestamp="2026-07-20T13:08:45.340273">
+  <testcase name="test_gpio.test_defaults" classname="." time="0.000" />
+  <testcase name="test_gpio.test_datao_rw" classname="." time="0.000" />
+  <testcase name="test_gpio.test_dir_rw" classname="." time="0.000" />
+  <testcase name="test_gpio.test_datai_reads_io_in" classname="." time="0.000" />
+  <testcase name="test_gpio.test_output_driven" classname="." time="0.000" />
+  <testcase name="test_gpio.test_interrupt_mask_rw" classname="." time="0.000" />
+  <testcase name="test_gpio.test_interrupt_status" classname="." time="0.000" />
+  <testcase name="test_gpio.test_interrupt_clear" classname="." time="0.000" />
+  <testcase name="test_gpio.test_datao_all_ones" classname="." time="0.000" />
+  <testcase name="test_gpio.test_dir_toggle" classname="." time="0.000" />
+  <testcase name="test_gpio.test_im_reset_default" classname="." time="0.000" />
+  <testcase name="test_gpio.test_datai_all_inputs" classname="." time="0.000" />
+  <testcase name="test_gpio.test_output_high_z_when_input" classname="." time="0.000" />
+  <testcase name="test_gpio.test_output_enabled_when_output" classname="." time="0.000" />
+  <testcase name="test_gpio.test_interrupt_edge_detect" classname="." time="0.000" />
+</testsuite>

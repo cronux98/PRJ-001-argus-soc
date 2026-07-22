@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="565" timestamp="2026-07-20T13:08:46.853288">
+  <testcase name="test_i2c_master.test_prescale_defaults" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_prescale_rw" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_ctrl_rw" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_status_readable" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_scl_sda_tristate" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_scl_o_default" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_command_register_write" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_interrupt_regs" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_prescale_diff_values" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_ctrl_disable" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_status_after_enable" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_sda_oen_disabled" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_sequential_prescale_update" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_data_cmd_write_read" classname="." time="0.000" />
+  <testcase name="test_i2c_master.test_interrupt_mask_readback" classname="." time="0.000" />
+</testsuite>

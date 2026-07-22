@@ -1,0 +1,652 @@
+GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3) synth_sys_ctrl.ys 2026-07-20T06:45:12+00:00
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/synth/synth_sys_ctrl.ys' --
+
+1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v' to AST representation.
+Generating RTLIL representation for module `\sys_ctrl'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \sys_ctrl
+
+2.2. Analyzing design hierarchy..
+Top module:  \sys_ctrl
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:105$22 in module sys_ctrl.
+Marked 5 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6 in module sys_ctrl.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 1 assignment to connection.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:105$22'.
+     1/2: $2\prdata[31:0]
+     2/2: $1\prdata[31:0]
+Creating decoders for process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+     1/10: $0\sleep_ctrl[7:0] [7:1]
+     2/10: $0\sleep_ctrl[7:0] [0]
+     3/10: $0\wdt_was_low[0:0]
+     4/10: $0\ext_was_low[0:0]
+     5/10: $0\cause_captured[0:0]
+     6/10: $0\in_sleep[0:0]
+     7/10: $0\wake_source[3:0]
+     8/10: $0\rst_ni_d[0:0]
+     9/10: $0\reset_cause[2:0]
+    10/10: $0\clk_div[7:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sys_ctrl.\prdata' from process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:105$22'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sys_ctrl.\clk_div' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$81' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\reset_cause' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$86' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\sleep_ctrl' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$91' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\wake_source' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$96' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\in_sleep' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$101' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\rst_ni_d' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$106' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\cause_captured' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$111' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\ext_was_low' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$116' with positive edge clock and positive level reset.
+Creating register for signal `\sys_ctrl.\wdt_was_low' using process `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+  created $adff cell `$procdff$121' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:105$22'.
+Removing empty process `sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:105$22'.
+Found and cleaned up 8 empty switches in `\sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+Removing empty process `sys_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:57$6'.
+Cleaned up 10 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+<suppressed ~21 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 66 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Computing hashes of 52 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+<suppressed ~42 debug messages>
+Removed a total of 14 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$31.
+Removed 1 multiplexer ports.
+<suppressed ~35 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 51 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Handling D = Q on $procdff$121 ($adff) from module sys_ctrl (removing D path).
+Adding EN signal on $procdff$86 ($adff) from module sys_ctrl (D = $procmux$68_Y, Q = \reset_cause).
+Adding EN signal on $procdff$101 ($adff) from module sys_ctrl (D = $procmux$54_Y, Q = \in_sleep).
+Adding EN signal on $procdff$111 ($adff) from module sys_ctrl (D = 1'1, Q = \cause_captured).
+Adding EN signal on $procdff$91 ($adff) from module sys_ctrl (D = \pwdata [7:1], Q = \sleep_ctrl [7:1]).
+Handling D = Q on $procdff$116 ($adff) from module sys_ctrl (removing D path).
+Adding EN signal on $procdff$96 ($adff) from module sys_ctrl (D = { 2'00 \wake_event_i }, Q = \wake_source).
+Adding EN signal on $procdff$81 ($adff) from module sys_ctrl (D = \pwdata [7:0], Q = \clk_div).
+Setting constant 0-bit at position 0 on $procdff$116 ($dlatch) from module sys_ctrl.
+Setting constant 0-bit at position 0 on $procdff$121 ($dlatch) from module sys_ctrl.
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$131 ($adffe) from module sys_ctrl.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$131 ($adffe) from module sys_ctrl.
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+Removed 10 unused cells and 66 unused wires.
+<suppressed ~11 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+<suppressed ~1 debug messages>
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 45 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+4.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing FSM pass (extract and optimize FSM).
+
+5.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+5.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 45 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 45 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing MEMORY pass.
+
+7.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+7.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+7.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+7.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+7.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+7.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 45 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 45 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod$b098bc6f249c0ac91c4d6e19d54b23c285914115\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~173 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+<suppressed ~255 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 169 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Computing hashes of 140 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Computing hashes of 131 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+<suppressed ~114 debug messages>
+Removed a total of 38 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 131 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $auto$ff.cc:337:slice$246 ($_DFFE_PN0P_) from module sys_ctrl.
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+Removed 4 unused cells and 153 unused wires.
+<suppressed ~5 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+<suppressed ~2 debug messages>
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 124 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_1 (noninv, pins=3, area=20.02) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtn_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_NN0_.
+  cell sky130_fd_sc_hd__dfrtp_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__edfxtp_1 (noninv, pins=4, area=30.03) is a direct match for cell type $_DFFE_PP_.
+  cell sky130_fd_sc_hd__dfbbn_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_NNN_.
+  cell sky130_fd_sc_hd__dfbbp_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \sky130_fd_sc_hd__dfrtn_1 _DFF_NN0_ (.CLK_N( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    \sky130_fd_sc_hd__edfxtp_1 _DFFE_PP_ (.CLK( C), .D( D), .DE( E), .Q( Q));
+    \sky130_fd_sc_hd__dfbbn_1 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \sky130_fd_sc_hd__dfbbp_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+11.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~24 debug messages>
+Mapping DFF cells in module `\sys_ctrl':
+  mapped 18 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+  mapped 1 $_DFF_PN1_ cells to \sky130_fd_sc_hd__dfstp_2 cells.
+
+12. Executing ABC pass (technology mapping using ABC).
+
+12.1. Extracting gate netlist of module `\sys_ctrl' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl (1 files)
+Replacing 1 occurrences of constant undef bits with constant zero bits
+
+12.1.1. Executed ABC.
+Extracted 122 gates and 169 wires to a netlist network with 44 inputs and 30 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Apr 26 2026 04:19:40)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache/yosys_merged_f46f2c32.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+12.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31o_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a41oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and3_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__and4_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__clkinv_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4_1 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4_1 cells:        1
+ABC RESULTS:        internal signals:       95
+ABC RESULTS:           input signals:       44
+ABC RESULTS:          output signals:       30
+Removing temp directory.
+Removing global temp directory.
+
+13. Executing OPT pass (performing simple optimizations).
+
+13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 88 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 88 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+Removed 0 unused cells and 124 unused wires.
+<suppressed ~3 debug messages>
+
+13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sys_ctrl..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sys_ctrl.
+Performed a total of 0 changes.
+
+13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sys_ctrl'.
+Computing hashes of 88 cells of `\sys_ctrl'.
+Finding duplicate cells in `\sys_ctrl'.
+Removed a total of 0 cells.
+
+13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sys_ctrl..
+
+13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sys_ctrl.
+
+13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+14. Printing statistics.
+
+=== sys_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       82        - wires
+      211        - wire bits
+       25        - public wires
+      147        - public wire bits
+       14        - ports
+       95        - port bits
+       88  942.154 cells
+        1    7.507   sky130_fd_sc_hd__a21o_1
+        2    10.01   sky130_fd_sc_hd__a21oi_1
+        1    8.758   sky130_fd_sc_hd__a311oi_1
+        4   35.034   sky130_fd_sc_hd__a31o_1
+        2   12.512   sky130_fd_sc_hd__a31oi_1
+        2   17.517   sky130_fd_sc_hd__a41oi_1
+        5    31.28   sky130_fd_sc_hd__and3_1
+        1    8.758   sky130_fd_sc_hd__and4_1
+        5   18.768   sky130_fd_sc_hd__clkinv_1
+       18  450.432   sky130_fd_sc_hd__dfrtp_1
+        1   26.275   sky130_fd_sc_hd__dfstp_2
+       11  123.869   sky130_fd_sc_hd__mux2_1
+        8   30.029   sky130_fd_sc_hd__nand2_1
+        1    5.005   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+       11   68.816   sky130_fd_sc_hd__nand4_1
+        4   15.014   sky130_fd_sc_hd__nor2_1
+        1    5.005   sky130_fd_sc_hd__nor3_1
+        2   15.014   sky130_fd_sc_hd__nor3b_1
+        2   12.512   sky130_fd_sc_hd__nor4_1
+        1    7.507   sky130_fd_sc_hd__o21a_1
+        1    5.005   sky130_fd_sc_hd__o21ai_0
+        1    6.256   sky130_fd_sc_hd__o22ai_1
+        1    6.256   sky130_fd_sc_hd__or3_1
+        1    7.507   sky130_fd_sc_hd__or4_1
+
+   Chip area for module '\sys_ctrl': 942.153600
+     of which used for sequential elements: 476.707200 (50.60%)
+
+15. Executing Verilog backend.
+
+15.1. Executing BMUXMAP pass.
+
+15.2. Executing DEMUXMAP pass.
+Dumping module `\sys_ctrl'.
+
+End of script. Logfile hash: 58703c7842, time: 0.32s, user: 0.18s, system: 0.02s, MEM: 43.85 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 41% 1x abc (0 sec), 22% 1x stat (0 sec), ...
+EXIT:0

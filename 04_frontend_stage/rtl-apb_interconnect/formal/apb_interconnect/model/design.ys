@@ -1,0 +1,9 @@
+# running in apb_interconnect/src/
+read_verilog -formal -sv apb_interconnect.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top apb_interconnect
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

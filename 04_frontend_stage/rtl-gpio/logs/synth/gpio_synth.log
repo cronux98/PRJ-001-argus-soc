@@ -1,0 +1,28 @@
+GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3) synth_gpio.ys 2026-07-20T06:45:11+00:00
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/synth/synth_gpio.ys' --
+
+1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v' to AST representation.
+Generating RTLIL representation for module `\EF_GPIO8_APB'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v' to AST representation.
+Generating RTLIL representation for module `\EF_GPIO8'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \EF_GPIO8
+ERROR: Array cell `EF_GPIO8.synchronizer[2]' of unknown type `ef_util_sync'.
+EXIT:0

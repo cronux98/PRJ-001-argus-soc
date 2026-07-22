@@ -1,0 +1,53 @@
+{
+  "module": "sys_ctrl",
+  "version": "1.0.0",
+  "provenance_type": "self",
+  "source_project": "PRJ-001",
+  "source_version": "v0",
+  "promotion_date": "2026-07-20T14:07:59Z",
+  "category": "system",
+  "research_path": "research/system/sys_ctrl/",
+  "type": "CREATE",
+  "license": "Apache-2.0",
+  "description": "Chip ID, clock divider, reset cause, sleep/wake control.",
+  "qualification": {
+    "lint": {
+      "status": "PASS",
+      "errors": 0,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/lint/sys_ctrl_verilator.log"
+    },
+    "synthesis": {
+      "status": "PASS",
+      "cell_count": 88,
+      "dff_count": 18,
+      "latch_count": 0,
+      "area_um2": 942.1536,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/synth/sys_ctrl_synth.log"
+    },
+    "formal": {
+      "status": "PASS",
+      "depth": 20,
+      "mode": "bmc",
+      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/formal/sys_ctrl/PASS"
+    },
+    "equivalence": {
+      "status": "PASS",
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/equiv_check/sys_ctrl_equiv.log"
+    },
+    "verification": {
+      "status": "PASS",
+      "tests_total": 8,
+      "tests_pass": 8,
+      "tests_fail": 0,
+      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sys_ctrl/results.xml"
+    }
+  },
+  "promotion": {
+    "status": "PASS",
+    "reasons": []
+  },
+  "ports": [],
+  "dependencies": [],
+  "generated_by": "gen_reuse_manifest.py",
+  "generated_at": "2026-07-20T14:07:59Z"
+}

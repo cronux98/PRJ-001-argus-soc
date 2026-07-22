@@ -1,0 +1,51 @@
+# running in argus_soc/src/
+read_verilog -formal -sv apb_interconnect.v
+read_verilog -formal -sv argus_soc.v
+read_verilog -formal -sv EF_GPIO8.v
+read_verilog -formal -sv EF_GPIO8_APB.v
+read_verilog -formal -sv EF_I2C_APB.v
+read_verilog -formal -sv axis_fifo.v
+read_verilog -formal -sv i2c_init.v
+read_verilog -formal -sv i2c_master.v
+read_verilog -formal -sv i2c_master_axil.v
+read_verilog -formal -sv i2c_master_wbs_16.v
+read_verilog -formal -sv i2c_single_reg.v
+read_verilog -formal -sv alu.v
+read_verilog -formal -sv alu_ctrl.v
+read_verilog -formal -sv branch_unit.v
+read_verilog -formal -sv ctrl_unit.v
+read_verilog -formal -sv ex_mem.v
+read_verilog -formal -sv forwarding_unit.v
+read_verilog -formal -sv hazard_unit.v
+read_verilog -formal -sv ibex_core.v
+read_verilog -formal -sv ibex_core_inner.v
+read_verilog -formal -sv id_ex.v
+read_verilog -formal -sv if_id.v
+read_verilog -formal -sv imm_gen.v
+read_verilog -formal -sv mem_wb.v
+read_verilog -formal -sv pc.v
+read_verilog -formal -sv reg_file.v
+read_verilog -formal -sv interrupt_ctrl.v
+read_verilog -formal -sv EF_TMR32.v
+read_verilog -formal -sv EF_TMR32_APB.v
+read_verilog -formal -sv EF_WDT32.v
+read_verilog -formal -sv EF_WDT32_APB.v
+read_verilog -formal -sv pwm_wrapper.v
+read_verilog -formal -sv EF_SPI.v
+read_verilog -formal -sv EF_SPI_APB.v
+read_verilog -formal -sv spi_master.v
+read_verilog -formal -sv sram.v
+read_verilog -formal -sv sys_ctrl.v
+read_verilog -formal -sv EF_UART.v
+read_verilog -formal -sv EF_UART_APB.v
+read_verilog -formal -sv wb_bridge.v
+read_verilog -formal -sv ef_util_lib.v
+read_verilog -formal -sv argus_soc_asserts.sv
+hierarchy -top argus_soc
+proc
+clk2fflogic
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

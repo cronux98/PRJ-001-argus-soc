@@ -1,0 +1,1698 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: ibex_core.v
+Parsing formal SystemVerilog input from `ibex_core.v' to AST representation.
+Generating RTLIL representation for module `\ibex_core'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ibex_core_inner.v
+Parsing formal SystemVerilog input from `ibex_core_inner.v' to AST representation.
+Generating RTLIL representation for module `\ibex_core_inner'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: alu.v
+Parsing formal SystemVerilog input from `alu.v' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: alu_ctrl.v
+Parsing formal SystemVerilog input from `alu_ctrl.v' to AST representation.
+Generating RTLIL representation for module `\alu_ctrl'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: branch_unit.v
+Parsing formal SystemVerilog input from `branch_unit.v' to AST representation.
+Generating RTLIL representation for module `\branch_unit'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: ctrl_unit.v
+Parsing formal SystemVerilog input from `ctrl_unit.v' to AST representation.
+Generating RTLIL representation for module `\ctrl_unit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: ex_mem.v
+Parsing formal SystemVerilog input from `ex_mem.v' to AST representation.
+Generating RTLIL representation for module `\ex_mem'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: forwarding_unit.v
+Parsing formal SystemVerilog input from `forwarding_unit.v' to AST representation.
+Generating RTLIL representation for module `\forwarding_unit'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: hazard_unit.v
+Parsing formal SystemVerilog input from `hazard_unit.v' to AST representation.
+Generating RTLIL representation for module `\hazard_unit'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: id_ex.v
+Parsing formal SystemVerilog input from `id_ex.v' to AST representation.
+Generating RTLIL representation for module `\id_ex'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: if_id.v
+Parsing formal SystemVerilog input from `if_id.v' to AST representation.
+Generating RTLIL representation for module `\if_id'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: imm_gen.v
+Parsing formal SystemVerilog input from `imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: mem_wb.v
+Parsing formal SystemVerilog input from `mem_wb.v' to AST representation.
+Generating RTLIL representation for module `\mem_wb'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: pc.v
+Parsing formal SystemVerilog input from `pc.v' to AST representation.
+Generating RTLIL representation for module `\pc'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: reg_file.v
+Parsing formal SystemVerilog input from `reg_file.v' to AST representation.
+Generating RTLIL representation for module `\reg_file'.
+Warning: Replacing memory \regs with list of registers. See reg_file.v:30
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: ef_util_lib.v
+Parsing formal SystemVerilog input from `ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+17. Executing PREP pass.
+
+17.1. Executing HIERARCHY pass (managing design hierarchy).
+
+17.1.1. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \hazard_unit
+Used module:         \mem_wb
+Used module:         \ex_mem
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \forwarding_unit
+Used module:         \id_ex
+Used module:         \branch_unit
+Used module:         \imm_gen
+Used module:         \reg_file
+Used module:         \ctrl_unit
+Used module:         \if_id
+Used module:         \pc
+
+17.1.2. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \hazard_unit
+Used module:         \mem_wb
+Used module:         \ex_mem
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \forwarding_unit
+Used module:         \id_ex
+Used module:         \branch_unit
+Used module:         \imm_gen
+Used module:         \reg_file
+Used module:         \ctrl_unit
+Used module:         \if_id
+Used module:         \pc
+Removing unused module `\ef_util_gating_cell'.
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removing unused module `\ef_util_ned'.
+Removing unused module `\ef_util_ped'.
+Removing unused module `\ef_util_sync'.
+Removed 9 unused modules.
+
+17.2. Executing PROC pass (convert processes to netlists).
+
+17.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+17.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$reg_file.v:24$147 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$reg_file.v:24$147 in module reg_file.
+Removed 1 dead cases from process $proc$reg_file.v:20$144 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$reg_file.v:20$144 in module reg_file.
+Marked 3 switch rules as full_case in process $proc$reg_file.v:27$134 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$pc.v:12$117 in module pc.
+Marked 1 switch rules as full_case in process $proc$mem_wb.v:21$115 in module mem_wb.
+Marked 1 switch rules as full_case in process $proc$imm_gen.v:17$114 in module imm_gen.
+Marked 2 switch rules as full_case in process $proc$if_id.v:17$111 in module if_id.
+Marked 2 switch rules as full_case in process $proc$id_ex.v:50$109 in module id_ex.
+Marked 2 switch rules as full_case in process $proc$forwarding_unit.v:26$93 in module forwarding_unit.
+Marked 2 switch rules as full_case in process $proc$forwarding_unit.v:15$84 in module forwarding_unit.
+Marked 1 switch rules as full_case in process $proc$ex_mem.v:27$82 in module ex_mem.
+Marked 1 switch rules as full_case in process $proc$ctrl_unit.v:30$81 in module ctrl_unit.
+Marked 2 switch rules as full_case in process $proc$branch_unit.v:12$74 in module branch_unit.
+Removed 3 dead cases from process $proc$alu_ctrl.v:12$70 in module alu_ctrl.
+Marked 3 switch rules as full_case in process $proc$alu_ctrl.v:12$70 in module alu_ctrl.
+Marked 1 switch rules as full_case in process $proc$alu.v:27$56 in module alu.
+Marked 1 switch rules as full_case in process $proc$ibex_core_inner.v:386$54 in module ibex_core_inner.
+Removed 2 dead cases from process $proc$ibex_core_inner.v:345$53 in module ibex_core_inner.
+Marked 3 switch rules as full_case in process $proc$ibex_core_inner.v:345$53 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$ibex_core_inner.v:276$42 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$ibex_core_inner.v:267$41 in module ibex_core_inner.
+Marked 2 switch rules as full_case in process $proc$ibex_core_inner.v:125$33 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$ibex_core.v:118$17 in module ibex_core.
+Removed a total of 7 dead cases.
+
+17.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 35 redundant assignments.
+Promoted 28 assignments to connections.
+
+17.2.4. Executing PROC_INIT pass (extract init attributes).
+
+17.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\reg_file.$proc$reg_file.v:27$134'.
+Found async reset \rst_ni in `\pc.$proc$pc.v:12$117'.
+Found async reset \rst_ni in `\mem_wb.$proc$mem_wb.v:21$115'.
+Found async reset \rst_ni in `\if_id.$proc$if_id.v:17$111'.
+Found async reset \rst_ni in `\id_ex.$proc$id_ex.v:50$109'.
+Found async reset \rst_ni in `\ex_mem.$proc$ex_mem.v:27$82'.
+Found async reset \rst_ni in `\ibex_core.$proc$ibex_core.v:118$17'.
+
+17.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~34 debug messages>
+
+17.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\reg_file.$proc$reg_file.v:24$147'.
+     1/1: $1$mem2reg_rd$\regs$reg_file.v:24$122_DATA[31:0]$149
+Creating decoders for process `\reg_file.$proc$reg_file.v:20$144'.
+     1/1: $1$mem2reg_rd$\regs$reg_file.v:20$121_DATA[31:0]$146
+Creating decoders for process `\reg_file.$proc$reg_file.v:27$134'.
+     1/37: $2$mem2reg_wr$\regs$reg_file.v:33$123_ADDR[4:0]$142
+     2/37: $2$mem2reg_wr$\regs$reg_file.v:33$123_DATA[31:0]$143
+     3/37: $1$mem2reg_wr$\regs$reg_file.v:33$123_DATA[31:0]$139
+     4/37: $1$mem2reg_wr$\regs$reg_file.v:33$123_ADDR[4:0]$138
+     5/37: $1\i[31:0]
+     6/37: $0\regs[31][31:0]
+     7/37: $0\regs[30][31:0]
+     8/37: $0\regs[29][31:0]
+     9/37: $0\regs[28][31:0]
+    10/37: $0\regs[27][31:0]
+    11/37: $0\regs[26][31:0]
+    12/37: $0\regs[25][31:0]
+    13/37: $0\regs[24][31:0]
+    14/37: $0\regs[23][31:0]
+    15/37: $0\regs[22][31:0]
+    16/37: $0\regs[21][31:0]
+    17/37: $0\regs[20][31:0]
+    18/37: $0\regs[19][31:0]
+    19/37: $0\regs[18][31:0]
+    20/37: $0\regs[17][31:0]
+    21/37: $0\regs[16][31:0]
+    22/37: $0\regs[15][31:0]
+    23/37: $0\regs[14][31:0]
+    24/37: $0\regs[13][31:0]
+    25/37: $0\regs[12][31:0]
+    26/37: $0\regs[11][31:0]
+    27/37: $0\regs[10][31:0]
+    28/37: $0\regs[9][31:0]
+    29/37: $0\regs[8][31:0]
+    30/37: $0\regs[7][31:0]
+    31/37: $0\regs[6][31:0]
+    32/37: $0\regs[5][31:0]
+    33/37: $0\regs[4][31:0]
+    34/37: $0\regs[3][31:0]
+    35/37: $0\regs[2][31:0]
+    36/37: $0\regs[1][31:0]
+    37/37: $0\regs[0][31:0]
+Creating decoders for process `\pc.$proc$pc.v:12$117'.
+     1/1: $0\pc_o[31:0]
+Creating decoders for process `\mem_wb.$proc$mem_wb.v:21$115'.
+     1/6: $0\wb_result_src_o[1:0]
+     2/6: $0\wb_mem_to_reg_o[0:0]
+     3/6: $0\wb_reg_write_o[0:0]
+     4/6: $0\wb_rd_addr_o[4:0]
+     5/6: $0\wb_mem_data_o[31:0]
+     6/6: $0\wb_alu_result_o[31:0]
+Creating decoders for process `\imm_gen.$proc$imm_gen.v:17$114'.
+     1/1: $1\imm_o[31:0]
+Creating decoders for process `\if_id.$proc$if_id.v:17$111'.
+     1/3: $0\id_instr_o[31:0]
+     2/3: $0\id_pc_plus4_o[31:0]
+     3/3: $0\id_pc_o[31:0]
+Creating decoders for process `\id_ex.$proc$id_ex.v:50$109'.
+     1/20: $0\ex_is_auipc_o[0:0]
+     2/20: $0\ex_is_lui_o[0:0]
+     3/20: $0\ex_result_src_o[1:0]
+     4/20: $0\ex_jump_o[0:0]
+     5/20: $0\ex_mem_to_reg_o[0:0]
+     6/20: $0\ex_reg_write_o[0:0]
+     7/20: $0\ex_branch_o[0:0]
+     8/20: $0\ex_mem_write_o[0:0]
+     9/20: $0\ex_mem_read_o[0:0]
+    10/20: $0\ex_alu_src_o[0:0]
+    11/20: $0\ex_alu_op_o[1:0]
+    12/20: $0\ex_funct7_o[6:0]
+    13/20: $0\ex_funct3_o[2:0]
+    14/20: $0\ex_rd_addr_o[4:0]
+    15/20: $0\ex_rs2_addr_o[4:0]
+    16/20: $0\ex_rs1_addr_o[4:0]
+    17/20: $0\ex_imm_o[31:0]
+    18/20: $0\ex_rs2_data_o[31:0]
+    19/20: $0\ex_rs1_data_o[31:0]
+    20/20: $0\ex_pc_o[31:0]
+Creating decoders for process `\forwarding_unit.$proc$forwarding_unit.v:26$93'.
+     1/2: $2\forward_b_o[1:0]
+     2/2: $1\forward_b_o[1:0]
+Creating decoders for process `\forwarding_unit.$proc$forwarding_unit.v:15$84'.
+     1/2: $2\forward_a_o[1:0]
+     2/2: $1\forward_a_o[1:0]
+Creating decoders for process `\ex_mem.$proc$ex_mem.v:27$82'.
+     1/9: $0\mem_result_src_o[1:0]
+     2/9: $0\mem_mem_to_reg_o[0:0]
+     3/9: $0\mem_reg_write_o[0:0]
+     4/9: $0\mem_mem_write_o[0:0]
+     5/9: $0\mem_mem_read_o[0:0]
+     6/9: $0\mem_funct3_o[2:0]
+     7/9: $0\mem_rd_addr_o[4:0]
+     8/9: $0\mem_rs2_data_o[31:0]
+     9/9: $0\mem_alu_result_o[31:0]
+Creating decoders for process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+     1/12: $1\reg_write_o[0:0]
+     2/12: $1\alu_op_o[1:0]
+     3/12: $1\is_auipc_o[0:0]
+     4/12: $1\is_lui_o[0:0]
+     5/12: $1\imm_src_o[2:0]
+     6/12: $1\result_src_o[1:0]
+     7/12: $1\jump_o[0:0]
+     8/12: $1\mem_to_reg_o[0:0]
+     9/12: $1\branch_o[0:0]
+    10/12: $1\mem_write_o[0:0]
+    11/12: $1\mem_read_o[0:0]
+    12/12: $1\alu_src_o[0:0]
+Creating decoders for process `\branch_unit.$proc$branch_unit.v:12$74'.
+     1/2: $2\branch_taken_o[0:0]
+     2/2: $1\branch_taken_o[0:0]
+Creating decoders for process `\alu_ctrl.$proc$alu_ctrl.v:12$70'.
+     1/3: $3\alu_operation_o[3:0]
+     2/3: $2\alu_operation_o[3:0]
+     3/3: $1\alu_operation_o[3:0]
+Creating decoders for process `\alu.$proc$alu.v:27$56'.
+     1/1: $1\result_o[31:0]
+Creating decoders for process `\ibex_core_inner.$proc$ibex_core_inner.v:386$54'.
+     1/1: $1\wb_data[31:0]
+Creating decoders for process `\ibex_core_inner.$proc$ibex_core_inner.v:345$53'.
+     1/3: $3\be_gen[3:0]
+     2/3: $2\be_gen[3:0]
+     3/3: $1\be_gen[3:0]
+Creating decoders for process `\ibex_core_inner.$proc$ibex_core_inner.v:276$42'.
+     1/1: $1\fwd_mux_b[31:0]
+Creating decoders for process `\ibex_core_inner.$proc$ibex_core_inner.v:267$41'.
+     1/1: $1\fwd_mux_a[31:0]
+Creating decoders for process `\ibex_core_inner.$proc$ibex_core_inner.v:125$33'.
+     1/2: $2\pc_next_r[31:0]
+     2/2: $1\pc_next_r[31:0]
+Creating decoders for process `\ibex_core.$proc$ibex_core.v:118$17'.
+     1/7: $0\taking_trap[0:0]
+     2/7: $0\mcause[31:0]
+     3/7: $0\mtvec[31:0]
+     4/7: $0\mepc[31:0]
+     5/7: $0\in_wfi[0:0]
+     6/7: $0\mstatus_mie[0:0]
+     7/7: $0\mie_meie[0:0]
+
+17.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$reg_file.v:24$122_DATA' from process `\reg_file.$proc$reg_file.v:24$147'.
+No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$reg_file.v:20$121_DATA' from process `\reg_file.$proc$reg_file.v:20$144'.
+No latch inferred for signal `\imm_gen.\imm_o' from process `\imm_gen.$proc$imm_gen.v:17$114'.
+No latch inferred for signal `\forwarding_unit.\forward_b_o' from process `\forwarding_unit.$proc$forwarding_unit.v:26$93'.
+No latch inferred for signal `\forwarding_unit.\forward_a_o' from process `\forwarding_unit.$proc$forwarding_unit.v:15$84'.
+No latch inferred for signal `\ctrl_unit.\alu_op_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\alu_src_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_read_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_write_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\branch_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\reg_write_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_to_reg_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\jump_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\result_src_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\imm_src_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\is_lui_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\is_auipc_o' from process `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+No latch inferred for signal `\branch_unit.\branch_taken_o' from process `\branch_unit.$proc$branch_unit.v:12$74'.
+No latch inferred for signal `\alu_ctrl.\alu_operation_o' from process `\alu_ctrl.$proc$alu_ctrl.v:12$70'.
+No latch inferred for signal `\alu.\result_o' from process `\alu.$proc$alu.v:27$56'.
+No latch inferred for signal `\ibex_core_inner.\wb_data' from process `\ibex_core_inner.$proc$ibex_core_inner.v:386$54'.
+No latch inferred for signal `\ibex_core_inner.\be_gen' from process `\ibex_core_inner.$proc$ibex_core_inner.v:345$53'.
+No latch inferred for signal `\ibex_core_inner.\fwd_mux_b' from process `\ibex_core_inner.$proc$ibex_core_inner.v:276$42'.
+No latch inferred for signal `\ibex_core_inner.\fwd_mux_a' from process `\ibex_core_inner.$proc$ibex_core_inner.v:267$41'.
+No latch inferred for signal `\ibex_core_inner.\pc_next_r' from process `\ibex_core_inner.$proc$ibex_core_inner.v:125$33'.
+
+17.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\reg_file.\i' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1257' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[0]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $dff cell `$procdff$1264' with positive edge clock.
+Creating register for signal `\reg_file.\regs[1]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1269' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[2]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1274' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[3]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1279' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[4]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1284' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[5]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1289' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[6]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1294' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[7]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1299' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[8]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1304' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[9]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1309' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[10]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1314' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[11]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1319' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[12]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1324' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[13]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1329' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[14]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1334' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[15]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1339' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[16]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1344' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[17]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1349' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[18]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1354' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[19]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1359' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[20]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1364' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[21]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1369' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[22]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1374' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[23]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1379' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[24]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1384' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[25]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1389' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[26]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1394' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[27]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1399' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[28]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1404' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[29]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1409' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[30]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1414' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.\regs[31]' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1419' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.$mem2reg_wr$\regs$reg_file.v:33$123_ADDR' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1424' with positive edge clock and positive level reset.
+Creating register for signal `\reg_file.$mem2reg_wr$\regs$reg_file.v:33$123_DATA' using process `\reg_file.$proc$reg_file.v:27$134'.
+  created $adff cell `$procdff$1429' with positive edge clock and positive level reset.
+Creating register for signal `\pc.\pc_o' using process `\pc.$proc$pc.v:12$117'.
+  created $adff cell `$procdff$1434' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_alu_result_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1439' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_mem_data_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1444' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_rd_addr_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1449' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_reg_write_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1454' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_mem_to_reg_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1459' with positive edge clock and positive level reset.
+Creating register for signal `\mem_wb.\wb_result_src_o' using process `\mem_wb.$proc$mem_wb.v:21$115'.
+  created $adff cell `$procdff$1464' with positive edge clock and positive level reset.
+Creating register for signal `\if_id.\id_pc_o' using process `\if_id.$proc$if_id.v:17$111'.
+  created $adff cell `$procdff$1469' with positive edge clock and positive level reset.
+Creating register for signal `\if_id.\id_pc_plus4_o' using process `\if_id.$proc$if_id.v:17$111'.
+  created $adff cell `$procdff$1474' with positive edge clock and positive level reset.
+Creating register for signal `\if_id.\id_instr_o' using process `\if_id.$proc$if_id.v:17$111'.
+  created $adff cell `$procdff$1479' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_pc_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1484' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_rs1_data_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1489' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_rs2_data_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1494' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_imm_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1499' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_rs1_addr_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1504' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_rs2_addr_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1509' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_rd_addr_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1514' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_funct3_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1519' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_funct7_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1524' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_alu_op_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1529' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_alu_src_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1534' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_mem_read_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1539' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_mem_write_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1544' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_branch_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1549' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_reg_write_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1554' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_mem_to_reg_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1559' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_jump_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1564' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_result_src_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1569' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_is_lui_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1574' with positive edge clock and positive level reset.
+Creating register for signal `\id_ex.\ex_is_auipc_o' using process `\id_ex.$proc$id_ex.v:50$109'.
+  created $adff cell `$procdff$1579' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_alu_result_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1584' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_rs2_data_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1589' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_rd_addr_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1594' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_funct3_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1599' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_mem_read_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1604' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_mem_write_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1609' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_reg_write_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1614' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_mem_to_reg_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1619' with positive edge clock and positive level reset.
+Creating register for signal `\ex_mem.\mem_result_src_o' using process `\ex_mem.$proc$ex_mem.v:27$82'.
+  created $adff cell `$procdff$1624' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\mie_meie' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1629' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\mstatus_mie' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1634' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\in_wfi' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1639' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\mepc' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1644' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\mtvec' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1649' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\mcause' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1654' with positive edge clock and positive level reset.
+Creating register for signal `\ibex_core.\taking_trap' using process `\ibex_core.$proc$ibex_core.v:118$17'.
+  created $adff cell `$procdff$1659' with positive edge clock and positive level reset.
+
+17.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+17.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\reg_file.$proc$reg_file.v:24$147'.
+Removing empty process `reg_file.$proc$reg_file.v:24$147'.
+Found and cleaned up 1 empty switch in `\reg_file.$proc$reg_file.v:20$144'.
+Removing empty process `reg_file.$proc$reg_file.v:20$144'.
+Found and cleaned up 2 empty switches in `\reg_file.$proc$reg_file.v:27$134'.
+Removing empty process `reg_file.$proc$reg_file.v:27$134'.
+Found and cleaned up 1 empty switch in `\pc.$proc$pc.v:12$117'.
+Removing empty process `pc.$proc$pc.v:12$117'.
+Removing empty process `mem_wb.$proc$mem_wb.v:21$115'.
+Found and cleaned up 1 empty switch in `\imm_gen.$proc$imm_gen.v:17$114'.
+Removing empty process `imm_gen.$proc$imm_gen.v:17$114'.
+Found and cleaned up 2 empty switches in `\if_id.$proc$if_id.v:17$111'.
+Removing empty process `if_id.$proc$if_id.v:17$111'.
+Found and cleaned up 1 empty switch in `\id_ex.$proc$id_ex.v:50$109'.
+Removing empty process `id_ex.$proc$id_ex.v:50$109'.
+Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$forwarding_unit.v:26$93'.
+Removing empty process `forwarding_unit.$proc$forwarding_unit.v:26$93'.
+Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$forwarding_unit.v:15$84'.
+Removing empty process `forwarding_unit.$proc$forwarding_unit.v:15$84'.
+Removing empty process `ex_mem.$proc$ex_mem.v:27$82'.
+Found and cleaned up 1 empty switch in `\ctrl_unit.$proc$ctrl_unit.v:30$81'.
+Removing empty process `ctrl_unit.$proc$ctrl_unit.v:30$81'.
+Found and cleaned up 2 empty switches in `\branch_unit.$proc$branch_unit.v:12$74'.
+Removing empty process `branch_unit.$proc$branch_unit.v:12$74'.
+Found and cleaned up 3 empty switches in `\alu_ctrl.$proc$alu_ctrl.v:12$70'.
+Removing empty process `alu_ctrl.$proc$alu_ctrl.v:12$70'.
+Found and cleaned up 1 empty switch in `\alu.$proc$alu.v:27$56'.
+Removing empty process `alu.$proc$alu.v:27$56'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$ibex_core_inner.v:386$54'.
+Removing empty process `ibex_core_inner.$proc$ibex_core_inner.v:386$54'.
+Found and cleaned up 3 empty switches in `\ibex_core_inner.$proc$ibex_core_inner.v:345$53'.
+Removing empty process `ibex_core_inner.$proc$ibex_core_inner.v:345$53'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$ibex_core_inner.v:276$42'.
+Removing empty process `ibex_core_inner.$proc$ibex_core_inner.v:276$42'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$ibex_core_inner.v:267$41'.
+Removing empty process `ibex_core_inner.$proc$ibex_core_inner.v:267$41'.
+Found and cleaned up 2 empty switches in `\ibex_core_inner.$proc$ibex_core_inner.v:125$33'.
+Removing empty process `ibex_core_inner.$proc$ibex_core_inner.v:125$33'.
+Found and cleaned up 6 empty switches in `\ibex_core.$proc$ibex_core.v:118$17'.
+Removing empty process `ibex_core.$proc$ibex_core.v:118$17'.
+Cleaned up 34 empty switches.
+
+17.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+<suppressed ~76 debug messages>
+Optimizing module pc.
+<suppressed ~3 debug messages>
+Optimizing module mem_wb.
+<suppressed ~12 debug messages>
+Optimizing module imm_gen.
+<suppressed ~1 debug messages>
+Optimizing module if_id.
+<suppressed ~9 debug messages>
+Optimizing module id_ex.
+<suppressed ~40 debug messages>
+Optimizing module hazard_unit.
+<suppressed ~1 debug messages>
+Optimizing module forwarding_unit.
+<suppressed ~4 debug messages>
+Optimizing module ex_mem.
+<suppressed ~18 debug messages>
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+<suppressed ~1 debug messages>
+Optimizing module alu_ctrl.
+<suppressed ~3 debug messages>
+Optimizing module alu.
+<suppressed ~2 debug messages>
+Optimizing module ibex_core_inner.
+<suppressed ~4 debug messages>
+Optimizing module ibex_core.
+<suppressed ~15 debug messages>
+
+17.3. Executing FUTURE pass.
+
+17.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+Optimizing module pc.
+Optimizing module mem_wb.
+Optimizing module imm_gen.
+Optimizing module if_id.
+Optimizing module id_ex.
+Optimizing module hazard_unit.
+Optimizing module forwarding_unit.
+Optimizing module ex_mem.
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+Optimizing module alu_ctrl.
+Optimizing module alu.
+Optimizing module ibex_core_inner.
+Optimizing module ibex_core.
+
+17.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \ibex_core..
+Removed 103 unused cells and 457 unused wires.
+<suppressed ~122 debug messages>
+
+17.6. Executing CHECK pass (checking for obvious problems).
+Checking module reg_file...
+Checking module pc...
+Checking module mem_wb...
+Checking module imm_gen...
+Checking module if_id...
+Checking module id_ex...
+Checking module hazard_unit...
+Checking module forwarding_unit...
+Checking module ex_mem...
+Checking module ctrl_unit...
+Checking module branch_unit...
+Checking module alu_ctrl...
+Checking module alu...
+Checking module ibex_core_inner...
+Checking module ibex_core...
+Found and reported 0 problems.
+
+17.7. Executing OPT pass (performing simple optimizations).
+
+17.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+Optimizing module pc.
+Optimizing module mem_wb.
+Optimizing module imm_gen.
+Optimizing module if_id.
+Optimizing module id_ex.
+Optimizing module hazard_unit.
+Optimizing module forwarding_unit.
+Optimizing module ex_mem.
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+Optimizing module alu_ctrl.
+Optimizing module alu.
+Optimizing module ibex_core_inner.
+Optimizing module ibex_core.
+
+17.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reg_file'.
+Computing hashes of 207 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Computing hashes of 205 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\pc'.
+Computing hashes of 2 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 6 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 9 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 40 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 22 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Computing hashes of 20 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Computing hashes of 18 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 9 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 43 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Computing hashes of 21 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+<suppressed ~66 debug messages>
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 15 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 30 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Computing hashes of 20 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+<suppressed ~30 debug messages>
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Computing hashes of 26 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 56 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Computing hashes of 54 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 46 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Computing hashes of 43 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+<suppressed ~9 debug messages>
+Removed a total of 44 cells.
+
+17.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \reg_file..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 32/33 on $pmux $procmux$243.
+    dead port 32/33 on $pmux $procmux$210.
+Running muxtree optimizer on module \pc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \mem_wb..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \imm_gen..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \if_id..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \id_ex..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \hazard_unit..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \forwarding_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$1026.
+    dead port 1/2 on $mux $procmux$1035.
+Running muxtree optimizer on module \ex_mem..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ctrl_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \branch_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1135.
+Running muxtree optimizer on module \alu_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1149.
+    dead port 2/2 on $mux $procmux$1161.
+Running muxtree optimizer on module \alu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \ibex_core_inner..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1199.
+    dead port 2/2 on $mux $procmux$1190.
+    dead port 2/2 on $mux $procmux$1217.
+Running muxtree optimizer on module \ibex_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 10 multiplexer ports.
+<suppressed ~243 debug messages>
+
+17.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \reg_file.
+  Optimizing cells in module \pc.
+  Optimizing cells in module \mem_wb.
+  Optimizing cells in module \imm_gen.
+  Optimizing cells in module \if_id.
+  Optimizing cells in module \id_ex.
+  Optimizing cells in module \hazard_unit.
+  Optimizing cells in module \forwarding_unit.
+  Optimizing cells in module \ex_mem.
+  Optimizing cells in module \ctrl_unit.
+    New ctrl vector for $pmux cell $procmux$1071: { $procmux$1085_CMP $auto$opt_reduce.cc:135:opt_pmux$1661 $procmux$1101_CMP $procmux$1123_CMP }
+    New ctrl vector for $pmux cell $procmux$1083: $auto$opt_reduce.cc:135:opt_pmux$1663
+    New ctrl vector for $pmux cell $procmux$1120: $auto$opt_reduce.cc:135:opt_pmux$1665
+    New ctrl vector for $pmux cell $procmux$1078: { $auto$opt_reduce.cc:135:opt_pmux$1667 $procmux$1124_CMP }
+    New ctrl vector for $pmux cell $procmux$1041: $auto$opt_reduce.cc:135:opt_pmux$1669
+  Optimizing cells in module \ctrl_unit.
+  Optimizing cells in module \branch_unit.
+  Optimizing cells in module \alu_ctrl.
+  Optimizing cells in module \alu.
+    New ctrl vector for $pmux cell $procmux$1169: { $auto$opt_reduce.cc:135:opt_pmux$1671 $procmux$1171_CMP $procmux$1172_CMP $procmux$1173_CMP $procmux$1174_CMP $procmux$1175_CMP $procmux$1176_CMP $procmux$1177_CMP $procmux$1178_CMP $procmux$1179_CMP $procmux$1180_CMP }
+  Optimizing cells in module \alu.
+  Optimizing cells in module \ibex_core_inner.
+  Optimizing cells in module \ibex_core.
+Performed a total of 6 changes.
+
+17.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reg_file'.
+Computing hashes of 205 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Finding identical cells in module `\pc'.
+Computing hashes of 2 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 6 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 9 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 40 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 16 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 9 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 26 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Computing hashes of 24 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 14 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 18 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Computing hashes of 17 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 51 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 43 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Removed a total of 3 cells.
+
+17.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \ibex_core..
+Removed 5 unused cells and 59 unused wires.
+<suppressed ~14 debug messages>
+
+17.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+Optimizing module pc.
+Optimizing module mem_wb.
+Optimizing module imm_gen.
+Optimizing module if_id.
+Optimizing module id_ex.
+Optimizing module hazard_unit.
+Optimizing module forwarding_unit.
+Optimizing module ex_mem.
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+Optimizing module alu_ctrl.
+Optimizing module alu.
+Optimizing module ibex_core_inner.
+Optimizing module ibex_core.
+
+17.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+17.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \reg_file..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \mem_wb..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \imm_gen..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \if_id..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \id_ex..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \hazard_unit..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \forwarding_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \ex_mem..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ctrl_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \branch_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \alu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \ibex_core_inner..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \ibex_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~231 debug messages>
+
+17.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \reg_file.
+  Optimizing cells in module \pc.
+  Optimizing cells in module \mem_wb.
+  Optimizing cells in module \imm_gen.
+  Optimizing cells in module \if_id.
+  Optimizing cells in module \id_ex.
+  Optimizing cells in module \hazard_unit.
+  Optimizing cells in module \forwarding_unit.
+  Optimizing cells in module \ex_mem.
+  Optimizing cells in module \ctrl_unit.
+  Optimizing cells in module \branch_unit.
+  Optimizing cells in module \alu_ctrl.
+  Optimizing cells in module \alu.
+  Optimizing cells in module \ibex_core_inner.
+  Optimizing cells in module \ibex_core.
+Performed a total of 0 changes.
+
+17.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reg_file'.
+Computing hashes of 200 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Finding identical cells in module `\pc'.
+Computing hashes of 2 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 6 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 9 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 40 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 16 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 9 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 24 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 14 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 17 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 51 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 43 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Removed a total of 0 cells.
+
+17.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \ibex_core..
+
+17.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+Optimizing module pc.
+Optimizing module mem_wb.
+Optimizing module imm_gen.
+Optimizing module if_id.
+Optimizing module id_ex.
+Optimizing module hazard_unit.
+Optimizing module forwarding_unit.
+Optimizing module ex_mem.
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+Optimizing module alu_ctrl.
+Optimizing module alu.
+Optimizing module ibex_core_inner.
+Optimizing module ibex_core.
+
+17.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+17.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$227_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$228_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$229_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$230_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$231_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$232_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$233_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$234_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$235_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$236_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$237_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$238_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$239_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$240_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell reg_file.$procmux$241_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$260_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$261_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$262_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$263_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$264_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$265_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$266_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$267_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$268_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$269_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$270_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$271_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$272_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$273_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell reg_file.$procmux$274_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$500_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$522_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$545_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$569_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$594_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$620_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$647_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell reg_file.$procmux$675_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$704_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$734_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$765_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell reg_file.$procmux$797_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$830_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell reg_file.$procmux$864_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell reg_file.$procmux$899_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell imm_gen.$procmux$943_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell imm_gen.$procmux$944_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell imm_gen.$procmux$945_CMP0 ($eq).
+Removed top 1 bits (of 2) from mux cell forwarding_unit.$procmux$1023 ($mux).
+Removed top 1 bits (of 2) from mux cell forwarding_unit.$procmux$1032 ($mux).
+Removed top 1 bits (of 2) from wire forwarding_unit.$2\forward_a_o[1:0].
+Removed top 1 bits (of 2) from wire forwarding_unit.$2\forward_b_o[1:0].
+Removed top 1 bits (of 7) from port B of cell ctrl_unit.$procmux$1057_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell ctrl_unit.$procmux$1073_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell ctrl_unit.$procmux$1122_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell ctrl_unit.$procmux$1123_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell ctrl_unit.$procmux$1124_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell ctrl_unit.$procmux$1125_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell branch_unit.$procmux$1133_CMP0 ($eq).
+Removed top 3 bits (of 4) from mux cell alu_ctrl.$ternary$alu_ctrl.v:18$71 ($mux).
+Removed top 3 bits (of 4) from mux cell alu_ctrl.$ternary$alu_ctrl.v:36$73 ($mux).
+Removed top 1 bits (of 3) from port B of cell alu_ctrl.$procmux$1157_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell alu_ctrl.$procmux$1158_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell alu_ctrl.$procmux$1159_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell alu_ctrl.$procmux$1166_CMP0 ($eq).
+Removed top 3 bits (of 4) from wire alu_ctrl.$ternary$alu_ctrl.v:23$72_Y.
+Removed top 3 bits (of 4) from wire alu_ctrl.$ternary$alu_ctrl.v:18$71_Y.
+Removed top 31 bits (of 32) from mux cell alu.$ternary$alu.v:31$60 ($mux).
+Removed top 31 bits (of 32) from mux cell alu.$ternary$alu.v:32$62 ($mux).
+Removed top 1 bits (of 4) from port B of cell alu.$procmux$1174_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu.$procmux$1175_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu.$procmux$1176_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell alu.$procmux$1177_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu.$procmux$1178_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell alu.$procmux$1179_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell alu.$procmux$1180_CMP0 ($eq).
+Removed top 31 bits (of 32) from wire alu.$ternary$alu.v:32$62_Y.
+Removed top 31 bits (of 32) from wire alu.$ternary$alu.v:31$60_Y.
+Removed top 29 bits (of 32) from port B of cell ibex_core_inner.$add$ibex_core_inner.v:121$32 ($add).
+Removed top 1 bits (of 2) from port B of cell ibex_core_inner.$procmux$1185_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell ibex_core_inner.$procmux$1197_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell ibex_core_inner.$procmux$1203_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell ibex_core_inner.$procmux$1208_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell ibex_core_inner.$procmux$1212_CMP0 ($eq).
+Removed top 3 bits (of 32) from port B of cell ibex_core.$eq$ibex_core.v:64$1 ($eq).
+Removed top 2 bits (of 3) from port B of cell ibex_core.$eq$ibex_core.v:65$3 ($eq).
+Removed top 2 bits (of 32) from port B of cell ibex_core.$eq$ibex_core.v:66$5 ($eq).
+Removed top 2 bits (of 12) from port B of cell ibex_core.$procmux$1241_CMP0 ($eq).
+Removed top 2 bits (of 12) from port B of cell ibex_core.$procmux$1250_CMP0 ($eq).
+
+17.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \ibex_core..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~3 debug messages>
+
+17.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+17.11. Executing OPT pass (performing simple optimizations).
+
+17.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reg_file.
+Optimizing module pc.
+Optimizing module mem_wb.
+Optimizing module imm_gen.
+Optimizing module if_id.
+Optimizing module id_ex.
+Optimizing module hazard_unit.
+Optimizing module forwarding_unit.
+Optimizing module ex_mem.
+Optimizing module ctrl_unit.
+Optimizing module branch_unit.
+Optimizing module alu_ctrl.
+Optimizing module alu.
+Optimizing module ibex_core_inner.
+Optimizing module ibex_core.
+
+17.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reg_file'.
+Computing hashes of 200 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Finding identical cells in module `\pc'.
+Computing hashes of 2 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 6 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 9 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 40 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 16 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 9 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 24 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 14 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 17 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Computing hashes of 16 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 51 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 43 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Removed a total of 1 cells.
+
+17.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reg_file..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \ibex_core..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+17.11.4. Finished fast OPT passes.
+
+17.12. Executing SORT pass.
+
+17.13. Printing statistics.
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       30 wires
+      436 wire bits
+        5 public wires
+      101 public wire bits
+        5 ports
+      101 port bits
+       27 cells
+        1   $add
+        1   $and
+       11   $eq
+        2   $logic_not
+        2   $lt
+        2   $mux
+        1   $or
+        1   $pmux
+        1   $reduce_or
+        1   $shl
+        1   $shr
+        1   $sshr
+        1   $sub
+        1   $xor
+
+=== alu_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+       40 wire bits
+        4 public wires
+       16 public wire bits
+        4 ports
+       16 port bits
+       16 cells
+       10   $eq
+        2   $logic_not
+        1   $mux
+        3   $pmux
+
+=== branch_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       82 wire bits
+        5 public wires
+       69 public wire bits
+        5 ports
+       69 port bits
+       14 cells
+        6   $eq
+        2   $ge
+        1   $logic_not
+        2   $lt
+        1   $mux
+        1   $ne
+        1   $pmux
+
+=== ctrl_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       36 wire bits
+       13 public wires
+       23 public wire bits
+       13 ports
+       23 port bits
+       24 cells
+        9   $eq
+        8   $mux
+        3   $pmux
+        4   $reduce_or
+
+=== ex_mem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       20 wires
+      158 wire bits
+       20 public wires
+      158 public wire bits
+       20 ports
+      158 port bits
+        9 cells
+        9   $adff
+
+=== forwarding_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       22 wires
+       40 wire bits
+        8 public wires
+       26 public wire bits
+        8 ports
+       26 port bits
+       16 cells
+        4   $eq
+        6   $logic_and
+        4   $mux
+        2   $reduce_bool
+
+=== hazard_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       29 wire bits
+       12 public wires
+       24 public wire bits
+       10 ports
+       22 port bits
+        7 cells
+        2   $eq
+        2   $logic_and
+        1   $logic_or
+        1   $or
+        1   $reduce_bool
+
+=== ibex_core ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       69 wires
+      412 wire bits
+       39 public wires
+      382 public wire bits
+       19 ports
+      191 port bits
+       42 cells
+        4   $adff
+        6   $eq
+       12   $logic_and
+        6   $logic_not
+        4   $logic_or
+       10   $mux
+        1 submodules
+        1   ibex_core_inner
+
+=== ibex_core_inner ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      120 wires
+     1282 wire bits
+       92 public wires
+     1062 public wire bits
+       12 ports
+      172 port bits
+       38 cells
+        3   $add
+       10   $eq
+        3   $logic_and
+        3   $logic_not
+        4   $logic_or
+        8   $mux
+        1   $not
+        1   $or
+        5   $pmux
+       13 submodules
+        1   alu
+        1   alu_ctrl
+        1   branch_unit
+        1   ctrl_unit
+        1   ex_mem
+        1   forwarding_unit
+        1   hazard_unit
+        1   id_ex
+        1   if_id
+        1   imm_gen
+        1   mem_wb
+        1   pc
+        1   reg_file
+
+=== id_ex ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       63 wires
+      501 wire bits
+       43 public wires
+      335 public wire bits
+       43 ports
+      335 port bits
+       40 cells
+       20   $adff
+       20   $mux
+
+=== if_id ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+      388 wire bits
+       10 public wires
+      196 public wire bits
+       10 ports
+      196 port bits
+        9 cells
+        3   $adff
+        6   $mux
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       72 wire bits
+        3 public wires
+       67 public wire bits
+        3 ports
+       67 port bits
+        6 cells
+        4   $eq
+        1   $logic_not
+        1   $pmux
+
+=== mem_wb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+      148 wire bits
+       14 public wires
+      148 public wire bits
+       14 ports
+      148 port bits
+        6 cells
+        6   $adff
+
+=== pc ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       99 wire bits
+        5 public wires
+       67 public wire bits
+        5 ports
+       67 port bits
+        2 cells
+        1   $adff
+        1   $mux
+
+=== reg_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      207 wires
+     3319 wire bits
+       40 public wires
+     1106 public wire bits
+        9 ports
+      114 port bits
+      200 cells
+       31   $adff
+       95   $eq
+        3   $logic_and
+        2   $logic_not
+       66   $mux
+        2   $pmux
+        1   $reduce_bool
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      456 ibex_core
+       38 ibex_core_inner
+       27   alu
+       16   alu_ctrl
+       14   branch_unit
+       24   ctrl_unit
+        9   ex_mem
+       16   forwarding_unit
+        7   hazard_unit
+       40   id_ex
+        9   if_id
+        6   imm_gen
+        6   mem_wb
+        2   pc
+      200   reg_file
+
+        +----------Count including submodules.
+        | 
+      655 wires
+     7042 wire bits
+      313 public wires
+     3780 public wire bits
+      180 ports
+     1705 port bits
+        - memories
+        - memory bits
+        - processes
+      456 cells
+        4   $add
+       74   $adff
+        1   $and
+      157   $eq
+        2   $ge
+       26   $logic_and
+       17   $logic_not
+        9   $logic_or
+        4   $lt
+      127   $mux
+        1   $ne
+        1   $not
+        3   $or
+       16   $pmux
+        4   $reduce_bool
+        5   $reduce_or
+        1   $shl
+        1   $shr
+        1   $sshr
+        1   $sub
+        1   $xor
+        1 submodules
+        1   ibex_core_inner
+
+17.14. Executing CHECK pass (checking for obvious problems).
+Checking module alu...
+Checking module alu_ctrl...
+Checking module branch_unit...
+Checking module ctrl_unit...
+Checking module ex_mem...
+Checking module forwarding_unit...
+Checking module hazard_unit...
+Checking module ibex_core...
+Checking module ibex_core_inner...
+Checking module id_ex...
+Checking module if_id...
+Checking module imm_gen...
+Checking module mem_wb...
+Checking module pc...
+Checking module reg_file...
+Found and reported 0 problems.
+
+18. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `ibex_core'. Setting top module to ibex_core.
+
+18.1. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \branch_unit
+Used module:         \ctrl_unit
+Used module:         \ex_mem
+Used module:         \forwarding_unit
+Used module:         \hazard_unit
+Used module:         \id_ex
+Used module:         \if_id
+Used module:         \imm_gen
+Used module:         \mem_wb
+Used module:         \pc
+Used module:         \reg_file
+
+18.2. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \branch_unit
+Used module:         \ctrl_unit
+Used module:         \ex_mem
+Used module:         \forwarding_unit
+Used module:         \hazard_unit
+Used module:         \id_ex
+Used module:         \if_id
+Used module:         \imm_gen
+Used module:         \mem_wb
+Used module:         \pc
+Used module:         \reg_file
+Removed 0 unused modules.
+
+19. Executing jny backend.
+
+20. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: abf80b10ad, time: 0.16s, user: 0.15s, system: 0.02s, MEM: 19.96 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 22% 5x opt_clean (0 sec), 18% 32x read_verilog (0 sec), ...

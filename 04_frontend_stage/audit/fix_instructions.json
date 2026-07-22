@@ -1,0 +1,165 @@
+{
+  "verdict": "FAIL",
+  "stage": "04_frontend_stage",
+  "project": "PRJ-001",
+  "retry": 0,
+  "module_count": 12,
+  "modules": ["uart","spi_master","i2c_master","gpio","pwm","sys_ctrl","interrupt_ctrl","apb_interconnect","wb_bridge","ibex_core","sram","argus_soc"],
+  "checks": [
+    {
+      "check": "3.1 RTL files exist for all modules",
+      "result": "PASS",
+      "evidence": "12/12 modules have rtl/*.v (e.g. rtl-uart/rtl/EF_UART.v, rtl-argus_soc/rtl/argus_soc.v, rtl-ibex_core/rtl/ibex_core.v)"
+    },
+    {
+      "check": "3.2 Lint log exists for every module",
+      "result": "FAIL",
+      "evidence": "11/12 lint logs present. rtl-argus_soc/logs/lint/ contains NO *_verilator.log (find matched 11 files, argus_soc missing).",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Run Verilator lint on argus_soc and capture the log",
+        "action": "Lint the top-level SoC. Provide the full module filelist (all leaf modules + argus_soc.v) so hierarchical elaboration succeeds. Write output to rtl-argus_soc/logs/lint/argus_soc_verilator.log with a GENERATED-FROM: banner.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/logs/lint/argus_soc_verilator.log",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && verilator --lint-only -Wall -I rtl-argus_soc/rtl $(find rtl-*/rtl -name '*.v') 2>&1 | tee rtl-argus_soc/logs/lint/argus_soc_verilator.log"
+      }
+    },
+    {
+      "check": "3.3 Lint is clean (0 errors)",
+      "result": "FAIL",
+      "evidence": "2 modules have FATAL Verilator errors. rtl-pwm/logs/lint/pwm_verilator.log:38 '%Error-PINNOTFOUND: rtl-pwm/rtl/pwm_wrapper.v:76:10: Pin not found: WDT_RESET' -> '%Error: Exiting due to 1 error(s)'. rtl-i2c_master/logs/lint/i2c_master_verilator.log:355 '%Error-MODMISSING: rtl-i2c_master/rtl/EF_I2C_APB.v:106:3: Cannot find file containing module: i2c_master_wbs_16' -> '%Error: Exiting due to 1 error(s)'. NOTE: the module i2c_master_wbs_16.v DOES exist in rtl-i2c_master/rtl/ but was not on the lint filelist. (assert_clean 'Error|ERROR' returned a false PASS — see integrity finding INT-1.)",
+      "fix": {
+        "type": "RTL_FIX",
+        "description": "Fix two fatal lint errors: pwm WDT_RESET pin mismatch and i2c missing-module filelist",
+        "action": "(1) rtl-pwm/rtl/pwm_wrapper.v:76 instantiates a timer/WDT submodule with a pin named 'WDT_RESET' that does not exist on the target module port list — correct the port name to the actual port on EF_WDT32/EF_TMR32, or add the missing port. (2) i2c_master lint failed only because i2c_master_wbs_16 was not on the compile filelist — add rtl-i2c_master/rtl/i2c_master_wbs_16.v (and i2c_master.v, i2c_init.v, axis_fifo.v, i2c_single_reg.v) to the Verilator filelist and re-lint. Re-run and confirm 0 '%Error' lines.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && verilator --lint-only -Wall rtl-pwm/rtl/*.v common/ef_util_lib.v 2>&1 | tee rtl-pwm/logs/lint/pwm_verilator.log; verilator --lint-only -Wall rtl-i2c_master/rtl/*.v common/ef_util_lib.v 2>&1 | tee rtl-i2c_master/logs/lint/i2c_master_verilator.log"
+      }
+    },
+    {
+      "check": "3.4 Formal results exist for every module",
+      "result": "FAIL",
+      "evidence": "0/12 formal results. All rtl-*/logs/formal/ directories exist but are EMPTY (0 files total). No results.xml anywhere under the stage.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Run formal property verification for all 12 modules and emit results.xml",
+        "action": "The formal step never executed — logs/formal/ is an empty scaffold. Run SymbiYosys (or equivalent) BMC for each module and write a results.xml per module under rtl-<mod>/logs/formal/. Each results.xml must record BMC depth and be reproducible with a GENERATED-FROM: banner.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/formal/results.xml",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && for m in uart spi_master i2c_master gpio pwm sys_ctrl interrupt_ctrl apb_interconnect wb_bridge ibex_core sram argus_soc; do sby -f rtl-$m/formal/$m.sby 2>&1 | tee rtl-$m/logs/formal/$m.sby.log; done  # requires per-module .sby harnesses that produce results.xml"
+      }
+    },
+    {
+      "check": "3.5 Formal BMC depth >= 20 for every module",
+      "result": "FAIL",
+      "evidence": "Cannot verify — no formal results exist (0 results.xml). Dependent on 3.4.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Ensure every module's formal run uses BMC depth >= 20",
+        "action": "In each module's formal harness set 'depth 20' (or higher) under [engines]/[options] in the .sby file, then re-run 3.4. Parse the emitted results.xml and confirm reported depth >= 20 for all 12 modules.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart.sby",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && grep -l 'depth' rtl-*/formal/*.sby || echo 'no formal harnesses exist yet — create them with depth >= 20'"
+      }
+    },
+    {
+      "check": "3.6 Synthesis log exists for every module",
+      "result": "FAIL",
+      "evidence": "0 synth *.log files (find '*/synth/*.log' = 0; find '*/logs/synth/*' = 0 — logs/synth dirs empty). Netlists exist for only 10/12 modules (ibex_core and spi_master have NO *_netlist.v). Existing netlists carry a Yosys banner but no captured synth transcript, so synth success cannot be verified.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Capture Yosys synthesis logs for all 12 modules and synthesize the 2 missing modules",
+        "action": "Re-run Yosys for every module and tee the transcript to rtl-<mod>/logs/synth/<mod>_synth.log (with GENERATED-FROM: banner). Add missing synthesis for ibex_core and spi_master (no netlist currently produced). Each run must write both the netlist and its log.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/synth/ibex_core_netlist.v",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && for m in ibex_core spi_master; do yosys -s rtl-$m/synth/synth_$m.ys 2>&1 | tee rtl-$m/logs/synth/${m}_synth.log; done  # note: synth_ibex_core.ys and synth_spi_master.ys do not yet exist — create them"
+      }
+    },
+    {
+      "check": "3.7 Synthesis completed without error",
+      "result": "FAIL",
+      "evidence": "Unverifiable — no synth logs exist to grep for ERROR (empty glob = FAIL per rubric step 4). Cannot assert clean synthesis without tool output. Dependent on 3.6.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Produce synth logs then confirm 0 ERROR",
+        "action": "After 3.6 captures synth logs, run: assert_clean on the synth logs. Empty glob currently makes this check impossible to pass.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/synth/uart_synth.log",
+        "command": "source ~/.hermes/skills/asic-workflow/evidence-assertions/scripts/evidence-assertions.sh && assert_clean '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-*/logs/synth/*.log' 'ERROR' '3.7-synth-clean'"
+      }
+    },
+    {
+      "check": "3.8 Equivalence check PASS for every module",
+      "result": "FAIL",
+      "evidence": "0/12 equivalence results. All rtl-*/logs/equiv_check/ directories exist but are EMPTY (0 files). No equiv.log anywhere. Yosys/sby equivalence between RTL and netlist was never run.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Run RTL-vs-netlist equivalence for all 12 modules",
+        "action": "Equivalence step never executed — logs/equiv_check/ is an empty scaffold. Run Yosys 'equiv' flow (read RTL + read gate netlist + equiv_make/equiv_induct/equiv_status) per module; write rtl-<mod>/logs/equiv_check/<mod>_equiv.log. Confirm each log contains 'Equivalence successfully proven!' (do NOT grep for ERROR/not equivalent — matches signal names per rubric 3.8).",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/equiv_check/uart_equiv.log",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && for m in uart i2c_master gpio pwm sys_ctrl interrupt_ctrl apb_interconnect wb_bridge sram argus_soc; do echo 'run yosys equiv RTL vs synth/'$m'_netlist.v -> logs/equiv_check/'$m'_equiv.log'; done"
+      }
+    },
+    {
+      "check": "3.9 / 3.16 verify_frontend_artifacts.sh / verify_test_artifacts.sh exists, executable, exits 0",
+      "result": "FAIL",
+      "evidence": "No verify script anywhere under the stage (find 'verify*artifacts.sh' = 0). The mandatory frontend gate was never created or run.",
+      "fix": {
+        "type": "SCRIPT_FIX",
+        "description": "Create and run verify_frontend_artifacts.sh gate",
+        "action": "Author verify_frontend_artifacts.sh at the stage root. It MUST: source evidence-assertions.sh; use assert_files min_count=1 before every count-based check (empty-glob protection, rubric step 4); assert 12 lint logs, 12 formal results.xml, 12 synth logs, 12 equiv logs; assert lint/synth clean with grep -E (not literal). Exit non-zero on any failure. Run it and record exit code.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/verify_frontend_artifacts.sh",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && bash verify_frontend_artifacts.sh; echo exit:$?"
+      }
+    },
+    {
+      "check": "3.14 / G.5 Execution provenance — every log carries GENERATED-FROM: banner",
+      "result": "FAIL",
+      "evidence": "0/11 lint logs carry a 'GENERATED-FROM:' banner (grep -L matched all 11). Netlists carry a Yosys banner but no GENERATED-FROM. No formal/synth/equiv logs exist to bear banners.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Prepend GENERATED-FROM: provenance banner to all tool-output artifacts",
+        "action": "Update the lint/formal/synth/equiv generators to emit a first-line banner 'GENERATED-FROM: <tool> <cmd> <rtl-filelist> <timestamp>' into each log. Re-emit the 11 existing lint logs with the banner and include it in all newly generated formal/synth/equiv logs.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/lint/uart_verilator.log",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && grep -L 'GENERATED-FROM:' rtl-*/logs/lint/*.log"
+      }
+    },
+    {
+      "check": "3.15 Pre-built evidence scaffold populated — lint/formal/synth/equiv non-empty",
+      "result": "FAIL",
+      "evidence": "logs/formal = 0 files (all 12 modules), logs/equiv_check = 0 files (all 12), logs/synth = 0 files (all 12). Only logs/lint is partially populated (11/12). The frontend pipeline (RTL->Lint->Sim->Formal->Synth->Equiv->GLS) halted after Lint; Formal, Synth-logging, and Equiv never ran.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Execute the remaining pipeline stages to populate the scaffold",
+        "action": "This is the umbrella failure: the stage delivered only RTL + partial lint + bare netlists. Execute fixes 3.2, 3.3, 3.4, 3.6, 3.8 in order (lint -> formal -> synth+logs -> equiv), then the verify gate (3.9). Re-audit only after find 'rtl-*/logs/{formal,synth,equiv_check}' each returns > 0 files.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage && for t in lint formal synth equiv_check; do echo $t: $(find rtl-*/logs/$t -type f | wc -l); done"
+      }
+    },
+    {
+      "check": "3.17 No PASS claim without tool output",
+      "result": "PASS",
+      "evidence": "00_frontend_index.md and 00_rtl_index.md contain empty artifact tables and [TBD]/[DATE] placeholders — no PASS verdict was minted anywhere, so there is no unbacked PASS claim. (Vacuous pass: the stage made no claims because it did not finish.)"
+    },
+    {
+      "check": "INT-1 (§G.3/tooling integrity) assert_clean regex correctness",
+      "result": "FAIL",
+      "evidence": "assert_clean() runs `grep -ci \"$pattern\"` (basic regex, no -E). Passing the rubric-specified pattern 'Error|ERROR' matches the LITERAL string 'Error|ERROR' (pipe is not alternation in BRE), which appears in no file, yielding a FALSE PASS. This masked the two fatal lint errors in check 3.3 and would equally mask ERROR in synth/DRC/LVS clean-checks across every stage.",
+      "fix": {
+        "type": "SKILL_FIX",
+        "description": "assert_clean must use grep -E for alternation patterns — escalate to Vera",
+        "action": "In evidence-assertions.sh, change the assert_clean count line to use extended regex: `grep -Eci \"$pattern\" $glob`. Without this, every '<A>|<B>' clean-check silently passes. This is a cross-stage integrity defect (false PASS on lint 3.3 here). Vera must review and patch the shared library, then re-run all prior stage audits that used pipe-alternation clean-checks.",
+        "file": "/home/smdadmin/.hermes/skills/asic-workflow/evidence-assertions/scripts/evidence-assertions.sh",
+        "command": "sed -n '/assert_clean ()/,/^}/p' /home/smdadmin/.hermes/skills/asic-workflow/evidence-assertions/scripts/evidence-assertions.sh"
+      }
+    }
+  ],
+  "findings": [
+    "Stage is a SCAFFOLD-ONLY delivery: pipeline halted after Lint. Formal (0/12), Equivalence (0/12), and Synthesis-logs (0/12) never ran — logs/formal, logs/equiv_check, logs/synth are empty across all 12 modules.",
+    "Lint is NOT clean: pwm (pwm_wrapper.v:76 PINNOTFOUND 'WDT_RESET') and i2c_master (EF_I2C_APB.v:106 MODMISSING 'i2c_master_wbs_16', file present but off the filelist) both exit with fatal %Error.",
+    "argus_soc (top) has no lint log at all (11/12).",
+    "ibex_core and spi_master have no synthesized netlist (10/12); other 10 netlists exist but with no captured synth transcript.",
+    "i2c_master and pwm netlists were produced despite their lint failing — lint and synth used inconsistent filelists.",
+    "No GENERATED-FROM provenance banner on any log or netlist (§G.5 / 3.14).",
+    "No verify_frontend_artifacts.sh gate exists or ran (3.9/3.16).",
+    "INTEGRITY (INT-1): shared assert_clean uses grep -ci (BRE) not grep -Eci, so pipe-alternation clean-checks silently false-PASS — a cross-stage auditor tooling defect; escalate to Vera.",
+    "Upstream gate OK: 03_architecture_stage/audit/audit_pass.json exists with verdict PASS (§G.1 satisfied)."
+  ],
+  "summary": "11 of 13 evaluated checks FAILED (2 PASS: 3.1, 3.17). Stage delivered RTL + partial lint + bare netlists only; formal, equivalence, synth-logs, provenance banners, and the verify gate are entirely absent, and 2 modules have fatal lint errors. Plus 1 cross-stage tooling integrity defect (assert_clean false-PASS). 12 fixes generated.",
+  "fix_count": 12
+}

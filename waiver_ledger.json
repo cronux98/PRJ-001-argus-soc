@@ -1,0 +1,8 @@
+[
+  {
+    "waiver_id": "W00-001",
+    "stage": "00",
+    "reason": "PRJ-001 is a legacy project (pre-v6a framework). Full stage-by-stage audit records and structured waiver tracking were not yet implemented. The chip completed synthesis, P&R, DRC, LVS, and Caravel precheck successfully.",
+    "resolved": true
+  }
+]

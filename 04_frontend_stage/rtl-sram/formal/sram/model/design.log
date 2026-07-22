@@ -1,0 +1,346 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: sram_formal_bmc.v
+Parsing formal SystemVerilog input from `sram_formal_bmc.v' to AST representation.
+Generating RTLIL representation for module `\sram_formal_bmc'.
+Warning: Replacing memory \mem with list of registers. See sram_formal_bmc.v:47
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \sram_formal_bmc
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \sram_formal_bmc
+Removed 0 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$sram_formal_bmc.v:43$103 in module sram_formal_bmc.
+Marked 1 switch rules as full_case in process $proc$sram_formal_bmc.v:43$103 in module sram_formal_bmc.
+Removed 1 dead cases from process $proc$sram_formal_bmc.v:42$100 in module sram_formal_bmc.
+Marked 1 switch rules as full_case in process $proc$sram_formal_bmc.v:42$100 in module sram_formal_bmc.
+Removed 1 dead cases from process $proc$sram_formal_bmc.v:41$97 in module sram_formal_bmc.
+Marked 1 switch rules as full_case in process $proc$sram_formal_bmc.v:41$97 in module sram_formal_bmc.
+Marked 19 switch rules as full_case in process $proc$sram_formal_bmc.v:45$25 in module sram_formal_bmc.
+Removed a total of 3 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 19 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~21 debug messages>
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sram_formal_bmc.$proc$sram_formal_bmc.v:43$103'.
+     1/1: $1$mem2reg_rd$\mem$sram_formal_bmc.v:43$3_DATA[31:0]$105
+Creating decoders for process `\sram_formal_bmc.$proc$sram_formal_bmc.v:42$100'.
+     1/1: $1$mem2reg_rd$\mem$sram_formal_bmc.v:42$2_DATA[31:0]$102
+Creating decoders for process `\sram_formal_bmc.$proc$sram_formal_bmc.v:41$97'.
+     1/1: $1$mem2reg_rd$\mem$sram_formal_bmc.v:41$1_DATA[31:0]$99
+Creating decoders for process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+     1/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_ADDR[1:0]$95
+     2/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_DATA[31:0]$96
+     3/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_ADDR[1:0]$93
+     4/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_DATA[31:0]$94
+     5/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_ADDR[1:0]$91
+     6/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_DATA[31:0]$92
+     7/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_ADDR[1:0]$89
+     8/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_DATA[31:0]$90
+     9/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_DATA[31:0]$88
+    10/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_ADDR[1:0]$87
+    11/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_DATA[31:0]$86
+    12/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_ADDR[1:0]$85
+    13/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_DATA[31:0]$84
+    14/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_ADDR[1:0]$83
+    15/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_DATA[31:0]$82
+    16/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_ADDR[1:0]$81
+    17/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_ADDR[1:0]$76
+    18/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_DATA[31:0]$77
+    19/64: $0\mem[3][31:0] [31:24]
+    20/64: $0\mem[3][31:0] [23:16]
+    21/64: $0\mem[2][31:0] [23:16]
+    22/64: $0\mem[1][31:0] [23:16]
+    23/64: $0\mem[0][31:0] [23:16]
+    24/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_DATA[31:0]$75
+    25/64: $0\mem[2][31:0] [31:24]
+    26/64: $0\mem[3][31:0] [15:8]
+    27/64: $0\mem[2][31:0] [15:8]
+    28/64: $0\mem[1][31:0] [15:8]
+    29/64: $0\mem[0][31:0] [15:8]
+    30/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_DATA[31:0]$73
+    31/64: $0\mem[1][31:0] [31:24]
+    32/64: $0\mem[3][31:0] [7:0]
+    33/64: $0\mem[2][31:0] [7:0]
+    34/64: $0\mem[1][31:0] [7:0]
+    35/64: $0\mem[0][31:0] [7:0]
+    36/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_DATA[31:0]$71
+    37/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_DATA[31:0]$69
+    38/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_ADDR[1:0]$68
+    39/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_DATA[31:0]$67
+    40/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_ADDR[1:0]$66
+    41/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_DATA[31:0]$65
+    42/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_ADDR[1:0]$64
+    43/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_DATA[31:0]$63
+    44/64: $2$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_ADDR[1:0]$62
+    45/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_DATA[31:0]$58
+    46/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_ADDR[1:0]$57
+    47/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_DATA[31:0]$56
+    48/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_ADDR[1:0]$55
+    49/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_DATA[31:0]$54
+    50/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_ADDR[1:0]$53
+    51/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_DATA[31:0]$52
+    52/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_ADDR[1:0]$51
+    53/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_DATA[31:0]$50
+    54/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_ADDR[1:0]$49
+    55/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_DATA[31:0]$48
+    56/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_ADDR[1:0]$47
+    57/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_DATA[31:0]$46
+    58/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_ADDR[1:0]$45
+    59/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_DATA[31:0]$44
+    60/64: $1$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_ADDR[1:0]$43
+    61/64: $0\mem[0][31:0] [31:24]
+    62/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_ADDR[1:0]$74
+    63/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_ADDR[1:0]$72
+    64/64: $3$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_ADDR[1:0]$70
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sram_formal_bmc.$mem2reg_rd$\mem$sram_formal_bmc.v:43$3_DATA' from process `\sram_formal_bmc.$proc$sram_formal_bmc.v:43$103'.
+No latch inferred for signal `\sram_formal_bmc.$mem2reg_rd$\mem$sram_formal_bmc.v:42$2_DATA' from process `\sram_formal_bmc.$proc$sram_formal_bmc.v:42$100'.
+No latch inferred for signal `\sram_formal_bmc.$mem2reg_rd$\mem$sram_formal_bmc.v:41$1_DATA' from process `\sram_formal_bmc.$proc$sram_formal_bmc.v:41$97'.
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sram_formal_bmc.\mem[0]' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$573' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.\mem[1]' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$578' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.\mem[2]' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$583' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.\mem[3]' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$588' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$593' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:50$4_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$598' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$603' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:51$5_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$608' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$613' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:52$6_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$618' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$623' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:53$7_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$628' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$633' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:56$8_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$638' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$643' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:57$9_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$648' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$653' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:58$10_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$658' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_ADDR' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$663' with positive edge clock and positive level reset.
+Creating register for signal `\sram_formal_bmc.$mem2reg_wr$\mem$sram_formal_bmc.v:59$11_DATA' using process `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+  created $adff cell `$procdff$668' with positive edge clock and positive level reset.
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\sram_formal_bmc.$proc$sram_formal_bmc.v:43$103'.
+Removing empty process `sram_formal_bmc.$proc$sram_formal_bmc.v:43$103'.
+Found and cleaned up 1 empty switch in `\sram_formal_bmc.$proc$sram_formal_bmc.v:42$100'.
+Removing empty process `sram_formal_bmc.$proc$sram_formal_bmc.v:42$100'.
+Found and cleaned up 1 empty switch in `\sram_formal_bmc.$proc$sram_formal_bmc.v:41$97'.
+Removing empty process `sram_formal_bmc.$proc$sram_formal_bmc.v:41$97'.
+Found and cleaned up 18 empty switches in `\sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+Removing empty process `sram_formal_bmc.$proc$sram_formal_bmc.v:45$25'.
+Cleaned up 21 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+<suppressed ~54 debug messages>
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_formal_bmc..
+Removed 85 unused cells and 317 unused wires.
+<suppressed ~86 debug messages>
+
+2.6. Executing CHECK pass (checking for obvious problems).
+Checking module sram_formal_bmc...
+Found and reported 0 problems.
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_formal_bmc'.
+Computing hashes of 166 cells of `\sram_formal_bmc'.
+Finding duplicate cells in `\sram_formal_bmc'.
+Computing hashes of 134 cells of `\sram_formal_bmc'.
+Finding duplicate cells in `\sram_formal_bmc'.
+<suppressed ~96 debug messages>
+Removed a total of 32 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_formal_bmc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~281 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_formal_bmc.
+Performed a total of 0 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_formal_bmc'.
+Computing hashes of 134 cells of `\sram_formal_bmc'.
+Finding duplicate cells in `\sram_formal_bmc'.
+Removed a total of 0 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_formal_bmc..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sram_formal_bmc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~281 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sram_formal_bmc.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_formal_bmc'.
+Computing hashes of 134 cells of `\sram_formal_bmc'.
+Finding duplicate cells in `\sram_formal_bmc'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_formal_bmc..
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+
+2.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell sram_formal_bmc.$procmux$119_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell sram_formal_bmc.$procmux$408_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell sram_formal_bmc.$procmux$418_CMP0 ($eq).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_formal_bmc..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sram_formal_bmc.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sram_formal_bmc'.
+Computing hashes of 134 cells of `\sram_formal_bmc'.
+Finding duplicate cells in `\sram_formal_bmc'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sram_formal_bmc..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== sram_formal_bmc ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      136 wires
+     1294 wire bits
+       26 public wires
+      407 public wire bits
+       14 ports
+      268 port bits
+      134 cells
+        4   $adff
+       10   $eq
+        9   $logic_and
+        8   $logic_not
+        1   $logic_or
+       99   $mux
+        3   $pmux
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module sram_formal_bmc...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `sram_formal_bmc'. Setting top module to sram_formal_bmc.
+
+3.1. Analyzing design hierarchy..
+Top module:  \sram_formal_bmc
+
+3.2. Analyzing design hierarchy..
+Top module:  \sram_formal_bmc
+Removed 0 unused modules.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: b66dbbcbb5, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 16.87 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 17% 5x opt_clean (0 sec), 16% 2x read_verilog (0 sec), ...

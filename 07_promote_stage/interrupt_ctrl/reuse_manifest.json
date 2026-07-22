@@ -1,0 +1,53 @@
+{
+  "module": "interrupt_ctrl",
+  "version": "1.0.0",
+  "provenance_type": "self",
+  "source_project": "PRJ-001",
+  "source_version": "v0",
+  "promotion_date": "2026-07-20T14:07:59Z",
+  "category": "system",
+  "research_path": "research/system/interrupt_ctrl/",
+  "type": "CREATE",
+  "license": "Apache-2.0",
+  "description": "13-source aggregator \u2192 1 CPU IRQ. Per-source enable/pending.",
+  "qualification": {
+    "lint": {
+      "status": "PASS",
+      "errors": 0,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/lint/interrupt_ctrl_verilator.log"
+    },
+    "synthesis": {
+      "status": "PASS",
+      "cell_count": 83,
+      "dff_count": 16,
+      "latch_count": 0,
+      "area_um2": 862.0768,
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log"
+    },
+    "formal": {
+      "status": "PASS",
+      "depth": 20,
+      "mode": "bmc",
+      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/formal/interrupt_ctrl/PASS"
+    },
+    "equivalence": {
+      "status": "PASS",
+      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/equiv_check/interrupt_ctrl_equiv.log"
+    },
+    "verification": {
+      "status": "PASS",
+      "tests_total": 15,
+      "tests_pass": 15,
+      "tests_fail": 0,
+      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml"
+    }
+  },
+  "promotion": {
+    "status": "PASS",
+    "reasons": []
+  },
+  "ports": [],
+  "dependencies": [],
+  "generated_by": "gen_reuse_manifest.py",
+  "generated_at": "2026-07-20T14:07:59Z"
+}

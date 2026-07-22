@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="460" timestamp="2026-07-20T13:12:41.732718">
+  <testcase name="test_pwm.test_pwm_prescale_read" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_timer_rw" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_reload_rw" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_ctrl_rw" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_outputs_off_by_default" classname="." time="0.000" />
+  <testcase name="test_pwm.test_wdt_apb_read" classname="." time="0.000" />
+  <testcase name="test_pwm.test_wdt_rst_n_default_high" classname="." time="0.000" />
+  <testcase name="test_pwm.test_irq_outputs_off_by_default" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_prescale_rw" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_reload_zero" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_ctrl_disable" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_timer_increment" classname="." time="0.000" />
+  <testcase name="test_pwm.test_wdt_write_read" classname="." time="0.000" />
+  <testcase name="test_pwm.test_wdt_multiple_regs" classname="." time="0.000" />
+  <testcase name="test_pwm.test_pwm_all_outputs" classname="." time="0.000" />
+</testsuite>

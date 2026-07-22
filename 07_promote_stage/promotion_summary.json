@@ -1,0 +1,30 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "version": "v0",
+  "total_modules": 12,
+  "modules_promoted": 5,
+  "modules_blocked": 0,
+  "modules_conditional": 1,
+  "modules_reuse": 6,
+  "promoted_modules": [
+    "apb_interconnect",
+    "pwm",
+    "interrupt_ctrl",
+    "wb_bridge",
+    "sys_ctrl"
+  ],
+  "blocked_modules": [],
+  "conditional_modules": [
+    "caravel_wrapper"
+  ],
+  "reuse_modules": [
+    "ibex_core",
+    "uart",
+    "spi_master",
+    "i2c_master",
+    "gpio",
+    "sram"
+  ],
+  "generated_by": "gen_reuse_manifest.py"
+}

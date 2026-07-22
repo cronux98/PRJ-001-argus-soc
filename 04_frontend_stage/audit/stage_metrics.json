@@ -1,0 +1,45 @@
+{
+  "stage": "04_frontend_stage",
+  "project": "PRJ-001",
+  "verdict": "FAIL",
+  "retry": 0,
+  "module_count": 12,
+  "checks_evaluated": 13,
+  "checks_passed": 2,
+  "checks_failed": 11,
+  "fix_count": 12,
+  "auditor": "claude-opus-4-8",
+  "date": "2026-07-20",
+  "evidence": {
+    "rtl_present": "12/12",
+    "lint_logs": "11/12",
+    "lint_fatal_error_modules": ["pwm", "i2c_master"],
+    "formal_results_xml": "0/12",
+    "equiv_logs": "0/12",
+    "synth_logs": "0/12",
+    "netlists": "10/12",
+    "netlists_missing": ["ibex_core", "spi_master"],
+    "provenance_banners": "0/11",
+    "verify_gate_present": false
+  },
+  "integrity_findings": [
+    {
+      "id": "INT-1",
+      "type": "SKILL_FIX",
+      "summary": "assert_clean uses grep -ci (BRE) not grep -Eci; pipe-alternation patterns like 'Error|ERROR' false-PASS",
+      "escalate_to": "Vera",
+      "cross_stage_impact": true
+    }
+  ],
+  "upstream_gate": {
+    "stage": "03_architecture_stage",
+    "audit_pass_present": true,
+    "verdict": "PASS"
+  },
+  "deliverables": {
+    "verdict_json": "audit/fix_instructions.json",
+    "validation_report": "00_validation_report/04_frontend_validation.md",
+    "postmortem": "11_postmortem_audit/04_frontend_postmortem.md",
+    "stage_metrics": "audit/stage_metrics.json"
+  }
+}

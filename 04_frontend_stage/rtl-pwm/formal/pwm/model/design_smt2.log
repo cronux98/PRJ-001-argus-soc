@@ -1,0 +1,237 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pwm_wrapper'. Setting top module to pwm_wrapper.
+
+2.1. Analyzing design hierarchy..
+Top module:  \pwm_wrapper
+Used module:     \EF_TMR32_APB
+Used module:         \ef_util_gating_cell
+Used module:         $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+Used module:             \ef_util_ped
+Used module:     \EF_WDT32_APB
+Used module:         \EF_WDT32
+
+2.2. Analyzing design hierarchy..
+Top module:  \pwm_wrapper
+Used module:     \EF_TMR32_APB
+Used module:         \ef_util_gating_cell
+Used module:         $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+Used module:             \ef_util_ped
+Used module:     \EF_WDT32_APB
+Used module:         \EF_WDT32
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      259 wires
+     1405 wire bits
+       63 public wires
+      333 public wire bits
+       25 ports
+      210 port bits
+      233 cells
+        1   $add
+       15   $and
+       12   $anyinit
+       12   $anyseq
+       52   $eq
+        1   $eqx
+       14   $ff
+        4   $logic_and
+       15   $logic_not
+       80   $mux
+        7   $not
+       14   $pmux
+        4   $sub
+        2   $xor
+        1 submodules
+        1   ef_util_ped
+
+=== EF_TMR32_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      178 wires
+     1943 wire bits
+       58 public wires
+      539 public wire bits
+       13 ports
+      106 port bits
+      141 cells
+       16   $and
+       14   $anyinit
+       15   $eq
+        1   $eqx
+       16   $ff
+        1   $logic_not
+       76   $mux
+        1   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+        1   ef_util_gating_cell
+
+=== EF_WDT32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+      297 wire bits
+        6 public wires
+       68 public wire bits
+        6 ports
+       68 port bits
+       14 cells
+        1   $and
+        1   $anyinit
+        1   $eqx
+        3   $ff
+        1   $logic_not
+        5   $mux
+        1   $not
+        1   $sub
+
+=== EF_WDT32_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       83 wires
+      641 wire bits
+       29 public wires
+      246 public wire bits
+       10 ports
+      103 port bits
+       64 cells
+        8   $and
+        6   $anyinit
+        7   $eq
+        1   $eqx
+        8   $ff
+        1   $logic_not
+       32   $mux
+        1   $not
+        2 submodules
+        1   EF_WDT32
+        1   ef_util_gating_cell
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+        9 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        7 cells
+        1   $and
+        1   $anyinit
+        1   $eqx
+        2   $ff
+        1   $mux
+        1   $not
+
+=== pwm_wrapper ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      207 wire bits
+       21 public wires
+      207 public wire bits
+       21 ports
+      207 port bits
+        2 submodules
+        1   EF_TMR32_APB
+        1   EF_WDT32_APB
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      459 pwm_wrapper
+      141 EF_TMR32_APB
+      233   $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+        7     ef_util_ped
+       64 EF_WDT32_APB
+       14   EF_WDT32
+
+        +----------Count including submodules.
+        | 
+      576 wires
+     4510 wire bits
+      189 public wires
+     1405 public wire bits
+       86 ports
+      705 port bits
+        - memories
+        - memory bits
+        - processes
+      459 cells
+        1   $add
+       41   $and
+       34   $anyinit
+       12   $anyseq
+       74   $eq
+        5   $eqx
+       43   $ff
+        4   $logic_and
+       18   $logic_not
+      194   $mux
+       11   $not
+       14   $pmux
+        1   $reduce_or
+        5   $sub
+        2   $xor
+        2 submodules
+        1   EF_TMR32_APB
+        1   EF_WDT32_APB
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module ef_util_ped.
+Creating SMT-LIBv2 representation of module ef_util_gating_cell.
+Creating SMT-LIBv2 representation of module EF_WDT32.
+Creating SMT-LIBv2 representation of module EF_WDT32_APB.
+Creating SMT-LIBv2 representation of module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Creating SMT-LIBv2 representation of module EF_TMR32_APB.
+Creating SMT-LIBv2 representation of module pwm_wrapper.
+
+End of script. Logfile hash: 688ecf03d4, time: 0.02s, user: 0.01s, system: 0.01s, MEM: 15.50 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 74% 2x write_smt2 (0 sec), 13% 2x read_rtlil (0 sec), ...

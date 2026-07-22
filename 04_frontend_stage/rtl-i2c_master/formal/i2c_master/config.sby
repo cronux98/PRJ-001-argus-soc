@@ -1,0 +1,27 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc z3
+
+[script]
+read_verilog -formal -sv EF_I2C_APB.v
+read_verilog -formal -sv i2c_master_wbs_16.v
+read_verilog -formal -sv i2c_master.v
+read_verilog -formal -sv i2c_init.v
+read_verilog -formal -sv axis_fifo.v
+read_verilog -formal -sv i2c_single_reg.v
+read_verilog -formal -sv i2c_master_axil.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_I2C_APB
+
+[files]
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v

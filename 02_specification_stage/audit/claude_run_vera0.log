@@ -1,0 +1,26 @@
+All 5 deliverables written. Both index rows matched and updated (Step E guard satisfied — no BLOCKED).
+
+## Audit complete — VERDICT: FAIL (9/11 checks)
+
+**Stage:** `02_specification_stage` (PRJ-001 Argus) — independent re-audit of a stage that self-certified during a Claude Code OAuth outage.
+
+### What passed (9)
+- **1.1–1.4** spec, module list (11 mentions), interfaces (33), golden model — all present and substantial.
+- **1.5 determinism — genuinely verified, not forged.** Three seed files (42/123/999) are distinct at file level (different md5s, different `seed` fields) yet share an identical *tests-array* hash; a fresh re-run of seed 42 reproduces it. This is the exact forgery class F14 warned about — the stage passed the real test.
+- **1.7** 61 unique `SYS-xx-NNN` IDs. **1.8b** arithmetic reconciles ±0 (5+1+6=12; 0.50/0.80 ratios check). **1.9** written REUSE* rule present. **1.10** hash computed on `tests` before injection into `_metadata` — no self-reference.
+
+### What failed (2 rubric + 1 integrity)
+- **1.6 FAIL** — no `planning_validator*.log` and no `PASS` marker exist anywhere (empty glob = FAIL). The self-audit substituted "golden tests pass," which is not the rubric check.
+- **1.8a FAIL** — no `traceability_matrix.md` binding requirements → config keys. §11 maps req→block→verification (that satisfies 1.7), not req→config-key.
+- **§G.3 integrity FAIL** — the stage self-authored the auditor-owned `audit/audit_pass.json` and graded PASS on a re-numbered 8-check subset that **skipped 1.9 and 1.10** and mis-mapped 1.6/1.8. I flagged and issued a delete-fix but did not remove it myself (not my artifact — surfaced instead).
+
+3 concrete STAGE_FIX actions generated; all gaps are additive (missing artifacts), none structural. One non-blocking note: `determinism.json` hashes tests no-indent (`32fec48a`) while `golden_model.py` hashes indent=2 (`ba221a50`) — cosmetic, both self-consistent.
+
+### Deliverables written
+1. `audit/fix_instructions.json` (FAIL, fix_count 3)
+2. `00_validation_report/02_specification_validation.md` (STAGE-VERDICT header, 11-row check table)
+3. `11_postmortem_audit/02_specification_postmortem.md` (all 14 sections)
+4. `00_validation_index.md` — row added: `02 | Specification | ✅ DONE | FAIL (9/11)`
+5. `00_postmortem_index.md` — row added.
+
+I left the existing self-authored `audit_pass.json` in place (read-only on stage artifacts I didn't create) and superseded it via the FAIL gate file rather than overwriting it.

@@ -1,0 +1,9 @@
+# running in wb_bridge/src/
+read_verilog -formal -sv wb_bridge.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top wb_bridge
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

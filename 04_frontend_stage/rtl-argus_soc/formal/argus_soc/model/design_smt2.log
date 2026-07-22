@@ -1,0 +1,1416 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `argus_soc'. Setting top module to argus_soc.
+
+2.1. Analyzing design hierarchy..
+Top module:  \argus_soc
+Used module:     \apb_interconnect
+Used module:     \EF_GPIO8_APB
+Used module:         \ef_util_gating_cell
+Used module:         \EF_GPIO8
+Used module:             \ef_util_ned
+Used module:             \ef_util_ped
+Used module:             \ef_util_sync
+Used module:     \EF_I2C_APB
+Used module:         $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16
+Used module:             $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo
+Used module:             $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo
+Used module:             \i2c_master
+Used module:     \ibex_core
+Used module:         \ibex_core_inner
+Used module:             \alu
+Used module:             \alu_ctrl
+Used module:             \branch_unit
+Used module:             \ctrl_unit
+Used module:             \ex_mem
+Used module:             \forwarding_unit
+Used module:             \hazard_unit
+Used module:             \id_ex
+Used module:             \if_id
+Used module:             \imm_gen
+Used module:             \mem_wb
+Used module:             \pc
+Used module:             \reg_file
+Used module:     \interrupt_ctrl
+Used module:     \pwm_wrapper
+Used module:         \EF_TMR32_APB
+Used module:             $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+Used module:         \EF_WDT32_APB
+Used module:             \EF_WDT32
+Used module:     \EF_SPI_APB
+Used module:         $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:             $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:             $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:                 $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:                 $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:     \sram
+Used module:     \sys_ctrl
+Used module:     \EF_UART_APB
+Used module:         $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART
+Used module:             \BAUDGEN
+Used module:             $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo
+Used module:             $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000
+Used module:                 \ef_util_ticker
+Used module:             $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX
+Used module:             $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX
+Used module:     \wb_bridge
+
+2.2. Analyzing design hierarchy..
+Top module:  \argus_soc
+Used module:     \apb_interconnect
+Used module:     \EF_GPIO8_APB
+Used module:         \ef_util_gating_cell
+Used module:         \EF_GPIO8
+Used module:             \ef_util_ned
+Used module:             \ef_util_ped
+Used module:             \ef_util_sync
+Used module:     \EF_I2C_APB
+Used module:         $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16
+Used module:             $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo
+Used module:             $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo
+Used module:             \i2c_master
+Used module:     \ibex_core
+Used module:         \ibex_core_inner
+Used module:             \alu
+Used module:             \alu_ctrl
+Used module:             \branch_unit
+Used module:             \ctrl_unit
+Used module:             \ex_mem
+Used module:             \forwarding_unit
+Used module:             \hazard_unit
+Used module:             \id_ex
+Used module:             \if_id
+Used module:             \imm_gen
+Used module:             \mem_wb
+Used module:             \pc
+Used module:             \reg_file
+Used module:     \interrupt_ctrl
+Used module:     \pwm_wrapper
+Used module:         \EF_TMR32_APB
+Used module:             $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+Used module:         \EF_WDT32_APB
+Used module:             \EF_WDT32
+Used module:     \EF_SPI_APB
+Used module:         $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:             $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:             $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:                 $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:                 $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:     \sram
+Used module:     \sys_ctrl
+Used module:     \EF_UART_APB
+Used module:         $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART
+Used module:             \BAUDGEN
+Used module:             $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo
+Used module:             $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000
+Used module:                 \ef_util_ticker
+Used module:             $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX
+Used module:             $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX
+Used module:     \wb_bridge
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      117 wires
+      490 wire bits
+       42 public wires
+      138 public wire bits
+       10 ports
+       29 port bits
+        1 memories
+      144 memory bits
+      104 cells
+        3   $add
+        1   $and
+       10   $anyinit
+       14   $anyseq
+        5   $eq
+        2   $eqx
+       10   $ff
+        1   $memrd_v2
+        1   $memwr_v2
+       49   $mux
+        2   $not
+        5   $pmux
+        1   $sub
+
+=== $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      106 wires
+      274 wire bits
+       22 public wires
+       61 public wire bits
+       15 ports
+       36 port bits
+       94 cells
+        2   $add
+        1   $and
+        8   $anyinit
+        1   $eq
+        1   $eqx
+       10   $ff
+        1   $ge
+       11   $logic_and
+        5   $logic_not
+        1   $logic_or
+       49   $mux
+        4   $not
+        2 submodules
+        1   $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+        1   $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+
+=== $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      524 wires
+     1386 wire bits
+      231 public wires
+      596 public wire bits
+       17 ports
+       65 port bits
+      497 cells
+        5   $and
+       15   $anyinit
+      149   $anyseq
+        3   $eq
+        1   $eqx
+       21   $ff
+        1   $logic_and
+        2   $logic_not
+      268   $mux
+        7   $not
+        7   $or
+       18   $pmux
+        4 submodules
+        1   $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo
+        2   $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo
+        1   i2c_master
+
+=== $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      117 wires
+      475 wire bits
+       42 public wires
+      132 public wire bits
+       10 ports
+       27 port bits
+        1 memories
+      128 memory bits
+      104 cells
+        3   $add
+        1   $and
+       10   $anyinit
+       14   $anyseq
+        5   $eq
+        2   $eqx
+       10   $ff
+        1   $memrd_v2
+        1   $memwr_v2
+       49   $mux
+        2   $not
+        5   $pmux
+        1   $sub
+
+=== $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      330 wires
+     1019 wire bits
+      124 public wires
+      339 public wire bits
+       14 ports
+       35 port bits
+      322 cells
+        3   $add
+        4   $and
+        7   $anyinit
+       97   $anyseq
+       13   $eq
+        1   $eqx
+        9   $ff
+        3   $logic_not
+      170   $mux
+        2   $ne
+        2   $not
+        6   $pmux
+        1   $reduce_xnor
+        1   $reduce_xor
+        1   $shr
+        2   $sub
+
+=== $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      231 wires
+      866 wire bits
+       86 public wires
+      298 public wire bits
+       10 ports
+       23 port bits
+      222 cells
+        2   $add
+        1   $and
+        5   $anyinit
+       65   $anyseq
+       11   $eq
+        1   $eqx
+        7   $ff
+        2   $logic_not
+      115   $mux
+        2   $not
+        7   $pmux
+        1   $reduce_xnor
+        1   $reduce_xor
+        1   $shl
+        1   $sub
+
+=== $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+      111 wire bits
+       41 public wires
+      109 public wire bits
+       30 ports
+       63 port bits
+        7 cells
+        2   $and
+        1   $gt
+        2   $logic_not
+        1   $lt
+        1   $not
+        4 submodules
+        1   $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+        2   $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        1   ef_util_ped
+
+=== $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       76 wires
+      265 wire bits
+       47 public wires
+      133 public wire bits
+       37 ports
+       98 port bits
+       36 cells
+        2   $add
+        4   $and
+        2   $anyinit
+        2   $eq
+        1   $eqx
+        4   $ff
+        1   $gt
+        1   $lt
+       15   $mux
+        3   $not
+        1   $or
+        7 submodules
+        2   $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo
+        1   $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX
+        1   $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX
+        1   $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000
+        1   BAUDGEN
+        1   ef_util_sync
+
+=== $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      257 wires
+     2048 wire bits
+       72 public wires
+      509 public wire bits
+       23 ports
+       73 port bits
+      230 cells
+        2   $add
+       23   $anyinit
+       14   $anyseq
+       32   $eq
+        1   $eqx
+       35   $ff
+        1   $logic_and
+        3   $logic_not
+        2   $logic_or
+      114   $mux
+        2   $not
+        1   $pmux
+
+=== $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      257 wires
+     1650 wire bits
+       72 public wires
+      414 public wire bits
+       23 ports
+       65 port bits
+      230 cells
+        2   $add
+       23   $anyinit
+       14   $anyseq
+       32   $eq
+        1   $eqx
+       35   $ff
+        1   $logic_and
+        3   $logic_not
+        2   $logic_or
+      114   $mux
+        2   $not
+        1   $pmux
+
+=== $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      361 wires
+     3925 wire bits
+      114 public wires
+     1593 public wire bits
+       25 ports
+      210 port bits
+      335 cells
+        1   $add
+       15   $and
+       12   $anyinit
+       63   $anyseq
+       52   $eq
+        1   $eqx
+       14   $ff
+        4   $logic_and
+       15   $logic_not
+      131   $mux
+        7   $not
+       14   $pmux
+        4   $sub
+        2   $xor
+        1 submodules
+        1   ef_util_ped
+
+=== $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+       66 wire bits
+        8 public wires
+       15 public wire bits
+        5 ports
+        5 port bits
+       19 cells
+        2   $anyinit
+        1   $eqx
+        4   $ff
+        9   $mux
+        1   $not
+        1   $reduce_and
+        1   $reduce_or
+        1 submodules
+        1   ef_util_ticker
+
+=== $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       73 wire bits
+        7 public wires
+       21 public wire bits
+        6 ports
+       13 port bits
+       11 cells
+        1   $anyinit
+        1   $eqx
+        3   $ff
+        5   $mux
+        1   $not
+
+=== $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+       61 wire bits
+        6 public wires
+       13 public wire bits
+        5 ports
+       12 port bits
+       15 cells
+        2   $anyinit
+        1   $eqx
+        4   $ff
+        7   $mux
+        1   $not
+
+=== BAUDGEN ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      201 wire bits
+        7 public wires
+       52 public wire bits
+        5 ports
+       20 port bits
+       14 cells
+        1   $add
+        1   $anyinit
+        1   $eq
+        1   $eqx
+        3   $ff
+        6   $mux
+        1   $not
+
+=== EF_GPIO8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+       90 wire bits
+       41 public wires
+       90 public wire bits
+       40 ports
+       82 port bits
+        8 cells
+        8   $not
+       24 submodules
+        8   ef_util_ned
+        8   ef_util_ped
+        8   ef_util_sync
+
+=== EF_GPIO8_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      183 wires
+     1308 wire bits
+       95 public wires
+      406 public wire bits
+       13 ports
+      127 port bits
+      131 cells
+        8   $and
+        7   $anyinit
+        7   $eq
+        1   $eqx
+        9   $ff
+        1   $logic_not
+       96   $mux
+        1   $not
+        1   $reduce_or
+        2 submodules
+        1   EF_GPIO8
+        1   ef_util_gating_cell
+
+=== EF_I2C_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       82 wires
+      411 wire bits
+       39 public wires
+      204 public wire bits
+       16 ports
+      109 port bits
+       57 cells
+        8   $and
+        5   $anyinit
+        5   $eq
+        1   $eqx
+        7   $ff
+       24   $mux
+        1   $ne
+        2   $not
+        3   $or
+        1   $reduce_or
+        2 submodules
+        1   $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16
+        1   ef_util_gating_cell
+
+=== EF_SPI_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      178 wires
+     1073 wire bits
+       68 public wires
+      281 public wire bits
+       14 ports
+      107 port bits
+      135 cells
+       16   $and
+       12   $anyinit
+       16   $eq
+        1   $eqx
+       14   $ff
+        1   $logic_not
+       72   $mux
+        2   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+        1   ef_util_gating_cell
+
+=== EF_TMR32_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      182 wires
+     2071 wire bits
+       59 public wires
+      571 public wire bits
+       13 ports
+      106 port bits
+      145 cells
+       16   $and
+       15   $anyinit
+       15   $eq
+        1   $eqx
+       17   $ff
+        1   $logic_not
+       78   $mux
+        1   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+        1   ef_util_gating_cell
+
+=== EF_UART_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      199 wires
+     1372 wire bits
+       79 public wires
+      360 public wire bits
+       12 ports
+      105 port bits
+      150 cells
+       17   $and
+       13   $anyinit
+       16   $eq
+        1   $eqx
+       15   $ff
+        1   $logic_not
+       84   $mux
+        2   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART
+        1   ef_util_gating_cell
+
+=== EF_WDT32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+      297 wire bits
+        6 public wires
+       68 public wire bits
+        6 ports
+       68 port bits
+       14 cells
+        1   $and
+        1   $anyinit
+        1   $eqx
+        3   $ff
+        1   $logic_not
+        5   $mux
+        1   $not
+        1   $sub
+
+=== EF_WDT32_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       87 wires
+      769 wire bits
+       30 public wires
+      278 public wire bits
+       10 ports
+      103 port bits
+       68 cells
+        8   $and
+        7   $anyinit
+        7   $eq
+        1   $eqx
+        9   $ff
+        1   $logic_not
+       34   $mux
+        1   $not
+        2 submodules
+        1   EF_WDT32
+        1   ef_util_gating_cell
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       29 wires
+      435 wire bits
+        5 public wires
+      101 public wire bits
+        5 ports
+      101 port bits
+       26 cells
+        1   $add
+        1   $and
+       11   $eq
+        2   $logic_not
+        2   $lt
+        2   $mux
+        1   $or
+        1   $pmux
+        1   $shl
+        1   $shr
+        1   $sshr
+        1   $sub
+        1   $xor
+
+=== alu_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+       72 wire bits
+        9 public wires
+       36 public wire bits
+        4 ports
+       16 port bits
+       24 cells
+        5   $anyseq
+       10   $eq
+        2   $logic_not
+        4   $mux
+        3   $pmux
+
+=== apb_interconnect ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      334 wires
+     4433 wire bits
+      139 public wires
+     2564 public wire bits
+       80 ports
+     1103 port bits
+      275 cells
+       20   $anyinit
+       45   $anyseq
+        8   $eq
+        1   $eqx
+       22   $ff
+       40   $logic_and
+        3   $logic_not
+        9   $logic_or
+      117   $mux
+        1   $not
+        9   $or
+
+=== argus_soc ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      138 wires
+     1531 wire bits
+      132 public wires
+     1494 public wire bits
+       22 ports
+      128 port bits
+       46 cells
+       28   $anyseq
+        3   $logic_and
+        2   $logic_not
+       12   $mux
+        1   $reduce_bool
+       11 submodules
+        1   EF_GPIO8_APB
+        1   EF_I2C_APB
+        1   EF_SPI_APB
+        1   EF_UART_APB
+        1   apb_interconnect
+        1   ibex_core
+        1   interrupt_ctrl
+        1   pwm_wrapper
+        1   sram
+        1   sys_ctrl
+        1   wb_bridge
+
+=== branch_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       20 wires
+       84 wire bits
+        6 public wires
+       70 public wire bits
+        5 ports
+       69 port bits
+       16 cells
+        1   $anyseq
+        6   $eq
+        2   $ge
+        1   $logic_not
+        2   $lt
+        2   $mux
+        1   $ne
+        1   $pmux
+
+=== ctrl_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       22 wires
+       32 wire bits
+       13 public wires
+       23 public wire bits
+       13 ports
+       23 port bits
+       20 cells
+        9   $eq
+        5   $mux
+        6   $pmux
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ned ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+        9 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        7 cells
+        1   $and
+        1   $anyinit
+        1   $eqx
+        2   $ff
+        1   $mux
+        1   $not
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+        9 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        7 cells
+        1   $and
+        1   $anyinit
+        1   $eqx
+        2   $ff
+        1   $mux
+        1   $not
+
+=== ef_util_sync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       11 wire bits
+        4 public wires
+        5 public wire bits
+        3 ports
+        3 port bits
+        5 cells
+        1   $anyinit
+        1   $eqx
+        2   $ff
+        1   $mux
+
+=== ef_util_ticker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+      113 wire bits
+        9 public wires
+       23 public wire bits
+        5 ports
+       12 port bits
+       21 cells
+        2   $anyinit
+        1   $eqx
+        4   $ff
+        2   $logic_not
+       10   $mux
+        1   $not
+        1   $sub
+
+=== ex_mem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       60 wires
+      474 wire bits
+       20 public wires
+      158 public wire bits
+       20 ports
+      158 port bits
+       49 cells
+        9   $anyinit
+        1   $eqx
+       11   $ff
+       27   $mux
+        1   $not
+
+=== forwarding_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       50 wire bits
+       10 public wires
+       30 public wire bits
+        8 ports
+       26 port bits
+       20 cells
+        2   $anyseq
+        4   $eq
+        6   $logic_and
+        6   $mux
+        2   $reduce_bool
+
+=== hazard_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       29 wire bits
+       12 public wires
+       24 public wire bits
+       10 ports
+       22 port bits
+        7 cells
+        2   $eq
+        2   $logic_and
+        1   $logic_or
+        1   $or
+        1   $reduce_bool
+
+=== i2c_master ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1329 wires
+     4547 wire bits
+      541 public wires
+     1887 public wire bits
+       30 ports
+       65 port bits
+     1298 cells
+       11   $and
+       26   $anyinit
+      451   $anyseq
+       26   $eq
+        1   $eqx
+       32   $ff
+        3   $gt
+        3   $logic_and
+        6   $logic_not
+        9   $logic_or
+      693   $mux
+        2   $ne
+        6   $not
+        1   $or
+       21   $pmux
+        1   $reduce_bool
+        2   $shiftx
+        3   $sub
+        1   $xor
+
+=== ibex_core ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      109 wires
+     1041 wire bits
+       42 public wires
+      478 public wire bits
+       19 ports
+      191 port bits
+       82 cells
+        7   $anyinit
+        7   $eq
+        1   $eqx
+        9   $ff
+       12   $logic_and
+        6   $logic_not
+        4   $logic_or
+       35   $mux
+        1   $not
+        1 submodules
+        1   ibex_core_inner
+
+=== ibex_core_inner ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      128 wires
+     1370 wire bits
+       97 public wires
+     1110 public wire bits
+       12 ports
+      172 port bits
+       46 cells
+        3   $add
+        5   $anyseq
+       10   $eq
+        3   $logic_and
+        3   $logic_not
+        4   $logic_or
+       11   $mux
+        1   $not
+        1   $or
+        5   $pmux
+       13 submodules
+        1   alu
+        1   alu_ctrl
+        1   branch_unit
+        1   ctrl_unit
+        1   ex_mem
+        1   forwarding_unit
+        1   hazard_unit
+        1   id_ex
+        1   if_id
+        1   imm_gen
+        1   mem_wb
+        1   pc
+        1   reg_file
+
+=== id_ex ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      147 wires
+     1169 wire bits
+       43 public wires
+      335 public wire bits
+       43 ports
+      335 port bits
+      124 cells
+       20   $anyinit
+        1   $eqx
+       22   $ff
+       80   $mux
+        1   $not
+
+=== if_id ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       32 wires
+      776 wire bits
+       10 public wires
+      196 public wire bits
+       10 ports
+      196 port bits
+       25 cells
+        3   $anyinit
+        1   $eqx
+        5   $ff
+       15   $mux
+        1   $not
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       72 wire bits
+        3 public wires
+       67 public wire bits
+        3 ports
+       67 port bits
+        6 cells
+        4   $eq
+        1   $logic_not
+        1   $pmux
+
+=== interrupt_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       34 wires
+      325 wire bits
+       17 public wires
+      156 public wire bits
+       11 ports
+       92 port bits
+       24 cells
+        1   $and
+        1   $anyinit
+        1   $anyseq
+        2   $eq
+        1   $eqx
+        3   $ff
+        3   $logic_and
+        2   $logic_not
+        7   $mux
+        1   $not
+        1   $pmux
+        1   $reduce_or
+
+=== mem_wb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       42 wires
+      444 wire bits
+       14 public wires
+      148 public wire bits
+       14 ports
+      148 port bits
+       34 cells
+        6   $anyinit
+        1   $eqx
+        8   $ff
+       18   $mux
+        1   $not
+
+=== pc ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+      231 wire bits
+        5 public wires
+       67 public wire bits
+        5 ports
+       67 port bits
+       10 cells
+        1   $anyinit
+        1   $eqx
+        3   $ff
+        4   $mux
+        1   $not
+
+=== pwm_wrapper ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      207 wire bits
+       21 public wires
+      207 public wire bits
+       21 ports
+      207 port bits
+        2 submodules
+        1   EF_TMR32_APB
+        1   EF_WDT32_APB
+
+=== reg_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      367 wires
+     8041 wire bits
+       52 public wires
+     1382 public wire bits
+        9 ports
+      114 port bits
+      358 cells
+       35   $anyinit
+        8   $anyseq
+       95   $eq
+        1   $eqx
+       37   $ff
+        3   $logic_and
+        3   $logic_not
+      172   $mux
+        1   $not
+        2   $pmux
+        1   $reduce_bool
+
+=== sram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      214 wires
+     4532 wire bits
+       89 public wires
+     1750 public wire bits
+       16 ports
+      267 port bits
+        1 memories
+    32768 memory bits
+      188 cells
+       28   $anyinit
+       42   $anyseq
+        2   $eqx
+       19   $ff
+        6   $logic_and
+        5   $logic_not
+        3   $logic_or
+        3   $memrd_v2
+        5   $memwr_v2
+       71   $mux
+        4   $nex
+
+=== sys_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      104 wires
+      436 wire bits
+       28 public wires
+      181 public wire bits
+       14 ports
+       95 port bits
+       91 cells
+        9   $anyinit
+        1   $anyseq
+        3   $eq
+        1   $eqx
+       11   $ff
+        9   $logic_and
+        7   $logic_not
+       47   $mux
+        1   $not
+        1   $pmux
+        1   $reduce_or
+
+=== wb_bridge ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       57 wires
+      414 wire bits
+       25 public wires
+      219 public wire bits
+       19 ports
+      208 port bits
+       42 cells
+        3   $anyinit
+        3   $anyseq
+        3   $eq
+        1   $eqx
+        5   $ff
+        5   $logic_and
+        2   $logic_not
+        1   $logic_or
+       16   $mux
+        1   $not
+        2   $pmux
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     6389 argus_soc
+      131 EF_GPIO8_APB
+        8   EF_GPIO8
+        7     ef_util_ned
+        7     ef_util_ped
+        5     ef_util_sync
+       57 EF_I2C_APB
+      497   $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16
+      230     $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo
+      230     $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo
+     1298     i2c_master
+      135 EF_SPI_APB
+        7   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+       94     $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+       11       $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+       15       $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+      104     $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        7     ef_util_ped
+      150 EF_UART_APB
+       36   $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART
+      104     $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo
+      322     $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX
+      222     $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX
+       19     $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000
+       21       ef_util_ticker
+       14     BAUDGEN
+        5     ef_util_sync
+      275 apb_interconnect
+       82 ibex_core
+       46   ibex_core_inner
+       26     alu
+       24     alu_ctrl
+       16     branch_unit
+       20     ctrl_unit
+       49     ex_mem
+       20     forwarding_unit
+        7     hazard_unit
+      124     id_ex
+       25     if_id
+        6     imm_gen
+       34     mem_wb
+       10     pc
+      358     reg_file
+       24 interrupt_ctrl
+      145   EF_TMR32_APB
+      335     $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000
+        7       ef_util_ped
+       68   EF_WDT32_APB
+       14     EF_WDT32
+      188 sram
+       91 sys_ctrl
+       42 wb_bridge
+
+        +----------Count including submodules.
+        | 
+     7522 wires
+    54059 wire bits
+     2968 public wires
+    20212 public wire bits
+      905 ports
+     5689 port bits
+        5 memories
+    33312 memory bits
+        - processes
+     6389 cells
+       33   $add
+      141   $and
+      421   $anyinit
+     1064   $anyseq
+      465   $eq
+       70   $eqx
+      543   $ff
+        3   $ge
+        5   $gt
+      114   $logic_and
+       91   $logic_not
+       38   $logic_or
+        6   $lt
+        7   $memrd_v2
+        9   $memwr_v2
+     3087   $mux
+        6   $ne
+        4   $nex
+       99   $not
+       24   $or
+      112   $pmux
+        1   $reduce_and
+        6   $reduce_bool
+        8   $reduce_or
+        2   $reduce_xnor
+        2   $reduce_xor
+        2   $shiftx
+        2   $shl
+        2   $shr
+        1   $sshr
+       17   $sub
+        4   $xor
+       11 submodules
+        1   EF_GPIO8_APB
+        1   EF_I2C_APB
+        1   EF_SPI_APB
+        1   EF_UART_APB
+        1   apb_interconnect
+        1   ibex_core
+        1   interrupt_ctrl
+        1   pwm_wrapper
+        1   sram
+        1   sys_ctrl
+        1   wb_bridge
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module wb_bridge.
+Creating SMT-LIBv2 representation of module sys_ctrl.
+Creating SMT-LIBv2 representation of module sram.
+Creating SMT-LIBv2 representation of module reg_file.
+Creating SMT-LIBv2 representation of module pc.
+Creating SMT-LIBv2 representation of module mem_wb.
+Creating SMT-LIBv2 representation of module interrupt_ctrl.
+Creating SMT-LIBv2 representation of module imm_gen.
+Creating SMT-LIBv2 representation of module if_id.
+Creating SMT-LIBv2 representation of module id_ex.
+Creating SMT-LIBv2 representation of module i2c_master.
+Creating SMT-LIBv2 representation of module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Creating SMT-LIBv2 representation of module hazard_unit.
+Creating SMT-LIBv2 representation of module forwarding_unit.
+Creating SMT-LIBv2 representation of module ex_mem.
+Creating SMT-LIBv2 representation of module ef_util_ticker.
+Creating SMT-LIBv2 representation of module ef_util_sync.
+Creating SMT-LIBv2 representation of module ef_util_ped.
+Creating SMT-LIBv2 representation of module ef_util_ned.
+Creating SMT-LIBv2 representation of module ef_util_gating_cell.
+Creating SMT-LIBv2 representation of module ctrl_unit.
+Creating SMT-LIBv2 representation of module branch_unit.
+Creating SMT-LIBv2 representation of module apb_interconnect.
+Creating SMT-LIBv2 representation of module alu_ctrl.
+Creating SMT-LIBv2 representation of module alu.
+Creating SMT-LIBv2 representation of module EF_WDT32.
+Creating SMT-LIBv2 representation of module BAUDGEN.
+Creating SMT-LIBv2 representation of module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Creating SMT-LIBv2 representation of module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Creating SMT-LIBv2 representation of module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Creating SMT-LIBv2 representation of module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Creating SMT-LIBv2 representation of module $paramod$0c8e12aec8bade0d4c7e5b2f6ebf181d63aab499\ef_util_fifo.
+Creating SMT-LIBv2 representation of module ibex_core_inner.
+Creating SMT-LIBv2 representation of module EF_WDT32_APB.
+Creating SMT-LIBv2 representation of module EF_GPIO8.
+Creating SMT-LIBv2 representation of module $paramod\ef_util_glitch_filter\N=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module $paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000.
+Creating SMT-LIBv2 representation of module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+Creating SMT-LIBv2 representation of module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Creating SMT-LIBv2 representation of module ibex_core.
+Creating SMT-LIBv2 representation of module EF_TMR32_APB.
+Creating SMT-LIBv2 representation of module EF_I2C_APB.
+Creating SMT-LIBv2 representation of module EF_GPIO8_APB.
+Creating SMT-LIBv2 representation of module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Creating SMT-LIBv2 representation of module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Creating SMT-LIBv2 representation of module pwm_wrapper.
+Creating SMT-LIBv2 representation of module EF_SPI_APB.
+Creating SMT-LIBv2 representation of module EF_UART_APB.
+Creating SMT-LIBv2 representation of module argus_soc.
+
+End of script. Logfile hash: d5a1a58b50, time: 0.18s, user: 0.18s, system: 0.01s, MEM: 25.16 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 77% 2x write_smt2 (0 sec), 11% 2x read_rtlil (0 sec), ...

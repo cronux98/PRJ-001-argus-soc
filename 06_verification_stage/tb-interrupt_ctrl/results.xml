@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="625" timestamp="2026-07-20T13:08:48.386341">
+  <testcase name="test_interrupt_ctrl.test_defaults" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_irq_en_rw" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_pending_logic" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_cpu_irq_assertion" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_cpu_irq_deassert" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_unmapped_read" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_irq_en_bits_upper" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_no_glitch_on_transition" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_individual_irq_bits" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_multiple_irqs_simultaneous" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_irq_en_clear" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_pending_without_enable" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_enable_update_latency" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_irq_en_partial" classname="." time="0.000" />
+  <testcase name="test_interrupt_ctrl.test_sequential_en_toggle" classname="." time="0.000" />
+</testsuite>

@@ -1,0 +1,156 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "version": "1.0.0",
+  "date": "2026-07-20",
+  "pdk": "sky130A",
+  "target_freq_mhz": 50,
+  "fallback_freq_mhz": 25,
+  "modules": [
+    {
+      "id": "M01",
+      "name": "ibex_core",
+      "type": "REUSE",
+      "source": "lowrisc-ibex",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 15,
+      "description": "RV32I RISC-V core, 2-stage maxperf config",
+      "config": {"RV32E": 0, "RV32M": 0, "RV32C": 0, "PMP": 0, "Debug": 0}
+    },
+    {
+      "id": "M02",
+      "name": "apb_interconnect",
+      "type": "CREATE",
+      "source": null,
+      "license": null,
+      "ip_tier": null,
+      "clock_domain": "clk_sys",
+      "area_kge": 3,
+      "description": "APB v2.0 address decoder, mux, routing. 10 slave ports.",
+      "slave_ports": 10
+    },
+    {
+      "id": "M03",
+      "name": "uart",
+      "type": "REUSE",
+      "source": "fossi-ef-uart",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 2,
+      "description": "Full-duplex UART, 8-byte TX/RX FIFO, 115200 bps"
+    },
+    {
+      "id": "M04",
+      "name": "spi_master",
+      "type": "REUSE",
+      "source": "fossi-ef-spi",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 2,
+      "description": "SPI Mode 0/3 master, 8-byte FIFO, up to 12.5 MHz SCLK"
+    },
+    {
+      "id": "M05",
+      "name": "i2c_master",
+      "type": "REUSE",
+      "source": "fossi-ef-i2c",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 2,
+      "description": "I2C 100/400 kHz master, 7-bit addr, multi-byte, repeated start"
+    },
+    {
+      "id": "M06",
+      "name": "gpio",
+      "type": "REUSE",
+      "source": "fossi-ef-gpio8",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 1,
+      "description": "8-pin GPIO, per-pin dir/IRQ/edge detect"
+    },
+    {
+      "id": "M07",
+      "name": "pwm",
+      "type": "REUSE_STAR",
+      "source": "fossi-ef-tmr32",
+      "license": "Apache-2.0",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 4,
+      "description": "2-ch PWM 10-bit + watchdog timer. Adapted from EF_TMR32.",
+      "reuse_star_justification": "PWM uses TMR32 compare-match outputs. WDT repurposes overflow interrupt. No source changes to TMR32 core — all adaptation in wrapper."
+    },
+    {
+      "id": "M08",
+      "name": "sram",
+      "type": "REUSE",
+      "source": "vlsida-openram",
+      "license": "BSD-3-Clause",
+      "ip_tier": "STRONG",
+      "clock_domain": "clk_sys",
+      "area_kge": 41,
+      "description": "4 KB OpenRAM SRAM macro + controller. Zero-wait-state at 50 MHz.",
+      "size_bytes": 4096
+    },
+    {
+      "id": "M09",
+      "name": "interrupt_ctrl",
+      "type": "CREATE",
+      "source": null,
+      "license": null,
+      "ip_tier": null,
+      "clock_domain": "clk_sys",
+      "area_kge": 1,
+      "description": "13-source aggregator → 1 CPU IRQ. Per-source enable/pending."
+    },
+    {
+      "id": "M10",
+      "name": "wb_bridge",
+      "type": "CREATE",
+      "source": null,
+      "license": null,
+      "ip_tier": null,
+      "clock_domain": "clk_wb / clk_sys",
+      "area_kge": 5,
+      "description": "APB↔Wishbone B4 pipelined bridge + async FIFOs for CDC"
+    },
+    {
+      "id": "M11",
+      "name": "caravel_wrapper",
+      "type": "CREATE",
+      "source": null,
+      "license": null,
+      "ip_tier": null,
+      "clock_domain": "clk_sys",
+      "area_kge": 5,
+      "description": "Top-level Caravel harness integration. Clock, reset, IO pad routing."
+    },
+    {
+      "id": "M12",
+      "name": "sys_ctrl",
+      "type": "CREATE",
+      "source": null,
+      "license": null,
+      "ip_tier": null,
+      "clock_domain": "clk_sys",
+      "area_kge": 2,
+      "description": "Chip ID, clock divider, reset cause, sleep/wake control."
+    }
+  ],
+  "summary": {
+    "total_modules": 12,
+    "reuse": 5,
+    "reuse_star": 1,
+    "create": 6,
+    "total_area_kge": 83,
+    "reuse_ratio_by_count": 0.5,
+    "reuse_ratio_by_area": 0.74
+  }
+}

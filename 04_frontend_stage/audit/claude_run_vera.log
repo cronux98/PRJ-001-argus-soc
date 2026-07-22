@@ -1,0 +1,25 @@
+Audit complete. **Verdict: FAIL** (2/13 checks passed).
+
+## Summary
+
+Stage 04 frontend for PRJ-001 Argus is a **scaffold-only delivery** — the RTL→Lint→Sim→Formal→Synth→Equiv pipeline halted after Lint.
+
+**Failures (11):**
+| Check | Finding |
+|-------|---------|
+| 3.2 | Lint log missing for `argus_soc` (11/12) |
+| **3.3** | Fatal `%Error` lint in **pwm** (`pwm_wrapper.v:76` PINNOTFOUND `WDT_RESET`) and **i2c_master** (`EF_I2C_APB.v:106` MODMISSING `i2c_master_wbs_16` — file exists but off the filelist) |
+| 3.4/3.5 | 0/12 formal results — `logs/formal/` empty everywhere |
+| 3.6/3.7 | 0/12 synth logs; netlists missing for `ibex_core` + `spi_master` (10/12) |
+| 3.8 | 0/12 equivalence runs — `logs/equiv_check/` empty |
+| 3.9/3.16 | No `verify_frontend_artifacts.sh` gate |
+| 3.14 | 0/11 logs carry `GENERATED-FROM:` banner |
+| 3.15 | formal/equiv/synth scaffolds empty for all 12 modules |
+
+**Passed:** 3.1 (RTL present 12/12), 3.17 (no minted verdict). Upstream gate §G.1 OK.
+
+**Critical integrity finding (INT-1 → SKILL_FIX, escalated to Vera):** the shared `assert_clean` uses `grep -ci` instead of `grep -Eci`, so the rubric pattern `Error|ERROR` is treated as a literal BRE and matches nothing — a **cross-stage false-PASS bug** that initially masked the two fatal lint errors. I caught it via a raw-count cross-check. It needs patching before any `A|B` clean-check verdict in this project can be trusted.
+
+**Also flagged:** i2c_master and pwm produced netlists *despite* failing lint — lint and synth ran on inconsistent filelists.
+
+All 5 required deliverables written (plus `stage_metrics.json` for §G.18); no `audit_pass.json` created; both indexes updated with stage-04 rows; both JSON files parse clean.

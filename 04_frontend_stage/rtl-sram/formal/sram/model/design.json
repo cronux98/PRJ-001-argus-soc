@@ -1,0 +1,1610 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "sram_formal_bmc",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$207",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.33-53.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$209",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.21-53.31|sram_formal_bmc.v:53.17-53.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$211",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$215",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.32-59.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$217",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.21-59.30|sram_formal_bmc.v:59.17-59.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$219",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$223",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.33-52.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$225",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.21-52.31|sram_formal_bmc.v:52.17-52.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$227",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$231",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.32-58.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$233",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.21-58.30|sram_formal_bmc.v:58.17-58.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$235",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$240",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.33-52.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$242",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.21-52.31|sram_formal_bmc.v:52.17-52.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$244",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$249",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.32-58.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$251",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.21-58.30|sram_formal_bmc.v:58.17-58.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$253",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$259",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.33-52.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$261",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.21-52.31|sram_formal_bmc.v:52.17-52.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$263",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$269",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.32-58.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$271",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.21-58.30|sram_formal_bmc.v:58.17-58.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$273",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$280",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.33-52.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$282",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:52.21-52.31|sram_formal_bmc.v:52.17-52.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$284",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$291",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.32-58.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$293",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:58.21-58.30|sram_formal_bmc.v:58.17-58.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$295",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$306",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.33-53.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$308",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.21-53.31|sram_formal_bmc.v:53.17-53.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$310",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$315",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.32-59.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$317",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.21-59.30|sram_formal_bmc.v:59.17-59.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$319",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$323",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.33-51.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$325",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.21-51.31|sram_formal_bmc.v:51.17-51.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$327",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$331",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$333",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.21-57.30|sram_formal_bmc.v:57.17-57.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$335",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$340",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.33-51.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$342",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.21-51.31|sram_formal_bmc.v:51.17-51.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$344",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$349",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$351",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.21-57.30|sram_formal_bmc.v:57.17-57.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$353",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$359",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.33-51.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$361",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.21-51.31|sram_formal_bmc.v:51.17-51.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$363",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$369",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$371",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.21-57.30|sram_formal_bmc.v:57.17-57.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$373",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$380",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.33-51.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$382",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.21-51.31|sram_formal_bmc.v:51.17-51.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$384",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$391",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$393",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.21-57.30|sram_formal_bmc.v:57.17-57.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$395",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$407",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.33-53.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$409",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.21-53.31|sram_formal_bmc.v:53.17-53.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$411",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$417",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.32-59.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$419",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.21-59.30|sram_formal_bmc.v:59.17-59.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$421",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$425",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$427",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.21-50.31|sram_formal_bmc.v:50.17-50.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$429",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$433",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.32-56.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$435",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.21-56.30|sram_formal_bmc.v:56.17-56.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$437",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$442",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$444",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.21-50.31|sram_formal_bmc.v:50.17-50.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$446",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$451",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.32-56.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$453",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.21-56.30|sram_formal_bmc.v:56.17-56.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$455",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$461",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$463",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.21-50.31|sram_formal_bmc.v:50.17-50.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$465",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$471",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.32-56.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$473",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.21-56.30|sram_formal_bmc.v:56.17-56.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$475",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$482",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$484",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.21-50.31|sram_formal_bmc.v:50.17-50.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$486",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$493",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.32-56.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$495",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.21-56.30|sram_formal_bmc.v:56.17-56.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$497",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$534",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.33-53.75"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$536",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.21-53.31|sram_formal_bmc.v:53.17-53.76"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$538",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:49.17-49.56|sram_formal_bmc.v:49.13-54.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$545",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.32-59.73"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$547",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.21-59.30|sram_formal_bmc.v:59.17-59.74"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$549",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:55.17-55.53|sram_formal_bmc.v:55.13-60.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$sram_formal_bmc.v:41$22",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:41.25-41.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$sram_formal_bmc.v:42$23",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:42.25-42.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$sram_formal_bmc.v:43$24",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:43.25-43.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$pmux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [128, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$106",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:43.38-43.41"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000100",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$111",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:42.38-42.41"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000100",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$116",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:41.38-41.41"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000100",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$573",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:45.5-62.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$578",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:45.5-62.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$583",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:45.5-62.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$588",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:45.5-62.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$sram_formal_bmc.v:39$19",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:39.27-39.51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:38$15",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:38.26-38.50"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:38$17",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:38.26-38.78"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:38$18",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:38.26-38.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:39$20",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:39.26-39.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:39$21",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:39.26-39.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:49$59",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:49.17-49.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:49$61",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:49.17-49.56"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:55$78",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:55.17-55.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$sram_formal_bmc.v:55$80",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:55.17-55.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$sram_formal_bmc.v:38$16",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:38.55-38.77"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$117_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:41.38-41.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$118_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:41.38-41.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$119_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:41.38-41.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$350_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$408_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:53.33-53.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$418_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:59.32-59.73"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$426_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$434_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:56.32-56.73"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$443_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:50.33-50.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [28, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$sram_formal_bmc.v:34$12",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:34.24-34.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000011100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$sram_formal_bmc.v:35$13",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:35.24-35.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000011100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$sram_formal_bmc.v:36$14",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:36.24-36.48"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000011100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$sram_formal_bmc.v:49$60",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:49.42-49.56"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$sram_formal_bmc.v:55$79",
+                  "attributes": {
+                    "src": "sram_formal_bmc.v:55.40-55.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$120_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:41.38-41.41"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$381_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:51.33-51.75"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$392_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "sram_formal_bmc.v:57.32-57.73"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "top": "00000000000000000000000000000001",
+            "src": "sram_formal_bmc.v:10.1-64.10"
+        }
+      }
+  ]
+}

@@ -1,0 +1,25 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc z3
+
+[script]
+read_verilog -formal -sv pwm_wrapper.v
+read_verilog -formal -sv EF_TMR32_APB.v
+read_verilog -formal -sv EF_TMR32.v
+read_verilog -formal -sv EF_WDT32_APB.v
+read_verilog -formal -sv EF_WDT32.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top pwm_wrapper -nordff
+clk2fflogic
+memory -nordff
+
+[files]
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v

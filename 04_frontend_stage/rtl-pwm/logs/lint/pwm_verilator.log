@@ -1,0 +1,161 @@
+%Warning-EOFNEWLINE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:393:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  393 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.049
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:47:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                       : ... Suggest add newline.
+   47 | endmodule
+      |          ^
+%Warning-DECLFILENAME: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:30:8: Filename 'ef_util_lib' does not match MODULE name: 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.049
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:64:23: Instance has missing pin: 'rst_n'
+   64 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.049
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:52:23: Instance has missing pin: 'rst_n'
+   52 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-MULTITOP: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:62:8: Multiple top level modules
+                                                                                                                  : ... Suggest see manual; fix the duplicates, or use --top-module to select top.
+                   ... For warning description see https://verilator.org/warn/MULTITOP?v=5.049
+                   ... Use "/* verilator lint_off MULTITOP */" and lint_on around source to disable this message.
+                                                                                                                  : ... Top module 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                                                                                                                  : ... Top module 'ef_util_ned'
+   62 | module ef_util_ned (
+      |        ^~~~~~~~~~~
+                                                                                                                  : ... Top module 'ef_util_glitch_filter'
+  115 | module ef_util_glitch_filter #(parameter N = 8, CLKDIV = 8'd1) (
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                                                                                                                  : ... Top module 'ef_util_fifo'
+  158 | module ef_util_fifo #(parameter DW=8, AW=4)(
+      |        ^~~~~~~~~~~~
+                                                                                                                  : ... Top module 'ef_util_clkmux_4x1'
+  327 | module ef_util_clkmux_4x1 (
+      |        ^~~~~~~~~~~~~~~~~~
+                                                                                                                  : ... Top module 'pwm_wrapper'
+   13 | module pwm_wrapper (
+      |        ^~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:132:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'control_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+  132 |    (PADDR[16-1:0] == control_REG_OFFSET) ? control_REG :
+      |                                          ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:133:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+  133 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:134:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+  134 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:135:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+  135 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:136:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+  136 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:153:19: Operator ASSIGNW expects 12 bits on the Assign RHS, but Assign RHS's VARREF 'PWM1CFG_REG' generates 16 bits.
+                                                                                                                            : ... note: In instance 'pwm_wrapper.u_tmr32'
+  153 |   assign pwm1_cfg = PWM1CFG_REG;
+      |                   ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.049
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:245:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  245 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:248:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 7 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  248 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:249:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  249 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:250:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWM0CFG_REG' generates 12 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  250 |    (PADDR[16-1:0] == PWM0CFG_REG_OFFSET) ? PWM0CFG_REG :
+      |                                          ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:251:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWM1CFG_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  251 |    (PADDR[16-1:0] == PWM1CFG_REG_OFFSET) ? PWM1CFG_REG :
+      |                                          ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:252:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWMDT_REG' generates 8 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  252 |    (PADDR[16-1:0] == PWMDT_REG_OFFSET) ? PWMDT_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:253:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWMFC_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  253 |    (PADDR[16-1:0] == PWMFC_REG_OFFSET) ? PWMFC_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:254:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  254 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:255:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  255 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:256:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  256 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:257:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+  257 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:59:10: Input port connection 'pwm_fault' expects 1 bits on the pin connection, but pin connection's CONST '2'h0' generates 2 bits.
+                                                                                                                          : ... note: In instance 'pwm_wrapper'
+   59 |         .pwm_fault (2'b00)
+      |          ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:33:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+   33 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:77:18: Signal is not used: 'apb_re'
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_tmr32'
+   77 |   wire           apb_re = ~PWRITE & apb_valid;
+      |                  ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:31:24: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+   31 |     input  wire [31:0] PADDR,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:65:17: Signal is not used: 'apb_re'
+                                                                                                                             : ... note: In instance 'pwm_wrapper.u_wdt32'
+   65 |   wire          apb_re = ~PWRITE & apb_valid;
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: Signal is not used: 'rst_n'
+                                                                                                                        : ... note: In instance 'pwm_wrapper.u_wdt32.clk_gate_cell'
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:373:21: Signal is not used: 'clk_en'
+                                                                                                                        : ... note: In instance 'pwm_wrapper.u_wdt32.clk_gate_cell'
+  373 |     input   wire    clk_en,
+      |                     ^~~~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:238:9: Case values incompletely covered (example pattern 0x0)
+  238 |         case({w_en,rd})
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.049
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.337 MB sources in 15 modules, into 0.181 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.039 s (elab=0.005, cvt=0.021, bld=0.000); cpu 0.039 s on 1 threads; allocated 22.871 MB

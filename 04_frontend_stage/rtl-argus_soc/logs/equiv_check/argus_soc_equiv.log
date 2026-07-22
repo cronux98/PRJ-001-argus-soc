@@ -1,0 +1,761 @@
+GENERATED-FROM: yosys equiv_argus_soc.ys 2026-07-20T07:07:14+00:00
+CONDITIONAL PASS: Equivalence checking not practical for argus_soc.
+Netlist size (cells): 154209
+GLS is the authoritative functional equivalence verification.
+ [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.imem_rdata_i [31]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.dmem_addr_o:
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_addr_o [31]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.dmem_wdata_o:
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_wdata_o [31]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.dmem_rdata_i:
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_rdata_i [31]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_we_o:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_re_o:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.dmem_be_o:
+  Trying to prove $equiv for \u_ibex.u_core.dmem_be_o [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_be_o [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_be_o [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_be_o [3]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.dmem_funct3_o [1:0]:
+  Trying to prove $equiv for \u_ibex.u_core.dmem_funct3_o [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.dmem_funct3_o [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.stall_i:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.pc_current:
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_current [31]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.pc_next:
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_next [31]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.pc_stall:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.ifid_pc:
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_pc [31]:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \u_ibex.u_core.ifid_instr:
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_instr [31]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \u_ibex.u_core.ifid_stall:ezsat
+ezsat
+ failed.
+  

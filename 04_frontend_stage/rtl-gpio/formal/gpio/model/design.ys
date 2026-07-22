@@ -1,0 +1,10 @@
+# running in gpio/src/
+read_verilog -formal -sv EF_GPIO8_APB.v
+read_verilog -formal -sv EF_GPIO8.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_GPIO8_APB
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

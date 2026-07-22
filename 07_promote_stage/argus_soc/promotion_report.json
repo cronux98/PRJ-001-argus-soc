@@ -1,0 +1,21 @@
+{
+  "module": "argus_soc",
+  "id": "M00",
+  "type": "CREATE",
+  "promotion_status": "PASS",
+  "cell_count": 154291,
+  "dff_count": 0,
+  "latch_count": 0,
+  "area_um2": 2091171.85,
+  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/logs/synth/argus_soc_synth.log",
+  "lint_errors": 0,
+  "formal_pass": true,
+  "formal_depth": 4,
+  "equiv_pass": true,
+  "verification_tests_pass": 40,
+  "verification_tests_total": 40,
+  "verification_tests_fail": 0,
+  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-argus_soc/results.xml",
+  "admission_reasons": [],
+  "has_frontend_artifacts": true
+}

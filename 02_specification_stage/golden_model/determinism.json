@@ -1,0 +1,25 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "identical": true,
+  "first_hash": "32fec48a9b6354c1d2015467d8a55005",
+  "n_runs": 3,
+  "runs": [
+    {
+      "seed": 42,
+      "file": "golden_out_seed42.json",
+      "tests_md5": "32fec48a9b6354c1d2015467d8a55005"
+    },
+    {
+      "seed": 123,
+      "file": "golden_out_seed123.json",
+      "tests_md5": "32fec48a9b6354c1d2015467d8a55005"
+    },
+    {
+      "seed": 999,
+      "file": "golden_out_seed999.json",
+      "tests_md5": "32fec48a9b6354c1d2015467d8a55005"
+    }
+  ],
+  "method": "MD5 of sorted tests JSON array (excluding _metadata)"
+}

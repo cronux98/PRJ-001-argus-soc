@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.sys_ctrl" tests="8" failures="0" errors="0" skipped="0" time="256" timestamp="2026-07-20T12:11:46.441846">
+  <testcase name="test_sys_ctrl.test_chip_id" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_clk_div_rw" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_reset_cause_default" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_sleep_ctrl_rw" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_read_unmapped" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_clk_gate_default" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_reset_cause_wdt" classname="sys_ctrl" time="0.000" />
+  <testcase name="test_sys_ctrl.test_sleep_entry" classname="sys_ctrl" time="0.000" />
+</testsuite>

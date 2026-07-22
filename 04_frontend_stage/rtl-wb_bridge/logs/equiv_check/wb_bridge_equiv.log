@@ -1,0 +1,2035 @@
+GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3) equiv_wb_bridge.ys 2026-07-20T06:55:32+00:00
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/equiv_check/equiv_wb_bridge.ys' --
+
+1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v' to AST representation.
+Generating RTLIL representation for module `\wb_bridge'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \wb_bridge
+
+3.2. Analyzing design hierarchy..
+Top module:  \wb_bridge
+Removing unused module `\ef_util_gating_cell'.
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removing unused module `\ef_util_ned'.
+Removing unused module `\ef_util_ped'.
+Removing unused module `\ef_util_sync'.
+Removed 9 unused modules.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7 in module wb_bridge.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6 in module wb_bridge.
+Removed 1 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3 in module wb_bridge.
+Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3 in module wb_bridge.
+Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:51$1 in module wb_bridge.
+Removed a total of 1 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 6 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+Found async reset \rst_ni in `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:51$1'.
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~5 debug messages>
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+     1/2: $0\wb_ack_o[0:0]
+     2/2: $0\wb_dat_o[31:0]
+Creating decoders for process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+     1/2: $1\apb_penable[0:0]
+     2/2: $1\apb_psel[0:0]
+Creating decoders for process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3'.
+     1/3: $3\next_state[1:0]
+     2/3: $2\next_state[1:0]
+     3/3: $1\next_state[1:0]
+Creating decoders for process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:51$1'.
+     1/1: $0\state[1:0]
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\wb_bridge.\apb_paddr' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+No latch inferred for signal `\wb_bridge.\apb_pwdata' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+No latch inferred for signal `\wb_bridge.\apb_pwrite' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+No latch inferred for signal `\wb_bridge.\apb_psel' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+No latch inferred for signal `\wb_bridge.\apb_penable' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+No latch inferred for signal `\wb_bridge.\next_state' from process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\wb_bridge.\wb_dat_o' using process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+  created $adff cell `$procdff$114' with positive edge clock and positive level reset.
+Creating register for signal `\wb_bridge.\wb_ack_o' using process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+  created $adff cell `$procdff$119' with positive edge clock and positive level reset.
+Creating register for signal `\wb_bridge.\state' using process `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:51$1'.
+  created $adff cell `$procdff$124' with positive edge clock and positive level reset.
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+Removing empty process `wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:103$7'.
+Found and cleaned up 1 empty switch in `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+Removing empty process `wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:81$6'.
+Found and cleaned up 3 empty switches in `\wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3'.
+Removing empty process `wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:59$3'.
+Removing empty process `wb_bridge.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:51$1'.
+Cleaned up 5 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+<suppressed ~8 debug messages>
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 37 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 26 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 25 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$95.
+    dead port 2/2 on $mux $procmux$103.
+Removed 2 multiplexer ports.
+<suppressed ~14 debug messages>
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+    New ctrl vector for $pmux cell $procmux$88: $auto$opt_reduce.cc:135:opt_pmux$126
+  Optimizing cells in module \wb_bridge.
+Performed a total of 1 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 24 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$124 ($adff) from module wb_bridge (D = $procmux$105_Y, Q = \state).
+Adding EN signal on $procdff$114 ($adff) from module wb_bridge (D = \apb_prdata, Q = \wb_dat_o).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+Removed 3 unused cells and 42 unused wires.
+<suppressed ~4 debug messages>
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+5.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~10 debug messages>
+
+5.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+5.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 24 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+5.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+5.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+5.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6. Executing ASYNC2SYNC pass.
+Replacing wb_bridge.$auto$ff.cc:337:slice$134 ($adffe): ARST=\rst_ni, D=\apb_prdata, Q=\wb_dat_o
+Replacing wb_bridge.$procdff$119 ($adff): ARST=\rst_ni, D=$0\wb_ack_o[0:0], Q=\wb_ack_o
+Replacing wb_bridge.$auto$ff.cc:337:slice$127 ($adffe): ARST=\rst_ni, D=\next_state, Q=\state
+
+7. Executing MEMORY pass.
+
+7.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+7.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+7.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+7.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+7.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+7.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 27 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 27 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$068ad458e7761d78e5eed8238508872e7b0aef95\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~125 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+<suppressed ~22 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 110 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 106 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 105 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 105 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+Removed 0 unused cells and 39 unused wires.
+<suppressed ~1 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 105 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing FLATTEN pass (flatten design).
+
+12. Executing OPT pass (performing simple optimizations).
+
+12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 105 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 105 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+12.9. Finished fast OPT passes. (There is nothing left to do.)
+
+13. Executing Liberty frontend: /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Ignoring cell sky130_fd_sc_hd__dlclkp_1 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hd__dlclkp_2 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hd__dlclkp_4 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hd__sdlclkp_1 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hd__sdlclkp_2 with missing function on output GCLK.
+Ignoring cell sky130_fd_sc_hd__sdlclkp_4 with missing function on output GCLK.
+Imported 422 cell types from liberty file.
+<suppressed ~12 debug messages>
+
+14. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/synth/wb_bridge_netlist.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/synth/wb_bridge_netlist.v' to AST representation.
+Generating RTLIL representation for module `\wb_bridge'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+16. Executing HIERARCHY pass (managing design hierarchy).
+
+16.1. Analyzing design hierarchy..
+Top module:  \wb_bridge
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:     \sky130_fd_sc_hd__o2bb2ai_1
+Used module:     \sky130_fd_sc_hd__mux2_1
+Used module:     \sky130_fd_sc_hd__o21bai_1
+Used module:     \sky130_fd_sc_hd__nand4b_1
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:     \sky130_fd_sc_hd__and3b_1
+Used module:     \sky130_fd_sc_hd__lpflow_isobufsrc_1
+
+16.2. Analyzing design hierarchy..
+Top module:  \wb_bridge
+Used module:     \sky130_fd_sc_hd__dfrtp_1
+Used module:     \sky130_fd_sc_hd__xor2_1
+Used module:     \sky130_fd_sc_hd__o2bb2ai_1
+Used module:     \sky130_fd_sc_hd__mux2_1
+Used module:     \sky130_fd_sc_hd__o21bai_1
+Used module:     \sky130_fd_sc_hd__nand4b_1
+Used module:     \sky130_fd_sc_hd__nand2_1
+Used module:     \sky130_fd_sc_hd__and3b_1
+Used module:     \sky130_fd_sc_hd__lpflow_isobufsrc_1
+Removing unused module `\ef_util_gating_cell'.
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removing unused module `\ef_util_ned'.
+Removing unused module `\ef_util_ped'.
+Removing unused module `\ef_util_sync'.
+Removing unused module `\sky130_fd_sc_hd__xor3_4'.
+Removing unused module `\sky130_fd_sc_hd__xor3_2'.
+Removing unused module `\sky130_fd_sc_hd__xor3_1'.
+Removing unused module `\sky130_fd_sc_hd__xor2_4'.
+Removing unused module `\sky130_fd_sc_hd__xor2_2'.
+Removing unused module `\sky130_fd_sc_hd__xnor3_4'.
+Removing unused module `\sky130_fd_sc_hd__xnor3_2'.
+Removing unused module `\sky130_fd_sc_hd__xnor3_1'.
+Removing unused module `\sky130_fd_sc_hd__xnor2_4'.
+Removing unused module `\sky130_fd_sc_hd__xnor2_2'.
+Removing unused module `\sky130_fd_sc_hd__xnor2_1'.
+Removing unused module `\sky130_fd_sc_hd__sedfxtp_4'.
+Removing unused module `\sky130_fd_sc_hd__sedfxtp_2'.
+Removing unused module `\sky130_fd_sc_hd__sedfxtp_1'.
+Removing unused module `\sky130_fd_sc_hd__sedfxbp_2'.
+Removing unused module `\sky130_fd_sc_hd__sedfxbp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfxtp_4'.
+Removing unused module `\sky130_fd_sc_hd__sdfxtp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfxtp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfxbp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfxbp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfstp_4'.
+Removing unused module `\sky130_fd_sc_hd__sdfstp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfstp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfsbp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfsbp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfrtp_4'.
+Removing unused module `\sky130_fd_sc_hd__sdfrtp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfrtp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfrtn_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfrbp_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfrbp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfbbp_1'.
+Removing unused module `\sky130_fd_sc_hd__sdfbbn_2'.
+Removing unused module `\sky130_fd_sc_hd__sdfbbn_1'.
+Removing unused module `\sky130_fd_sc_hd__probec_p_8'.
+Removing unused module `\sky130_fd_sc_hd__probe_p_8'.
+Removing unused module `\sky130_fd_sc_hd__or4bb_4'.
+Removing unused module `\sky130_fd_sc_hd__or4bb_2'.
+Removing unused module `\sky130_fd_sc_hd__or4bb_1'.
+Removing unused module `\sky130_fd_sc_hd__or4b_4'.
+Removing unused module `\sky130_fd_sc_hd__or4b_2'.
+Removing unused module `\sky130_fd_sc_hd__or4b_1'.
+Removing unused module `\sky130_fd_sc_hd__or4_4'.
+Removing unused module `\sky130_fd_sc_hd__or4_2'.
+Removing unused module `\sky130_fd_sc_hd__or4_1'.
+Removing unused module `\sky130_fd_sc_hd__or3b_4'.
+Removing unused module `\sky130_fd_sc_hd__or3b_2'.
+Removing unused module `\sky130_fd_sc_hd__or3b_1'.
+Removing unused module `\sky130_fd_sc_hd__or3_4'.
+Removing unused module `\sky130_fd_sc_hd__or3_2'.
+Removing unused module `\sky130_fd_sc_hd__or3_1'.
+Removing unused module `\sky130_fd_sc_hd__or2b_4'.
+Removing unused module `\sky130_fd_sc_hd__or2b_2'.
+Removing unused module `\sky130_fd_sc_hd__or2b_1'.
+Removing unused module `\sky130_fd_sc_hd__or2_4'.
+Removing unused module `\sky130_fd_sc_hd__or2_2'.
+Removing unused module `\sky130_fd_sc_hd__or2_1'.
+Removing unused module `\sky130_fd_sc_hd__or2_0'.
+Removing unused module `\sky130_fd_sc_hd__o41ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o41ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o41ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o41a_4'.
+Removing unused module `\sky130_fd_sc_hd__o41a_2'.
+Removing unused module `\sky130_fd_sc_hd__o41a_1'.
+Removing unused module `\sky130_fd_sc_hd__o32ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o32ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o32ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o32a_4'.
+Removing unused module `\sky130_fd_sc_hd__o32a_2'.
+Removing unused module `\sky130_fd_sc_hd__o32a_1'.
+Removing unused module `\sky130_fd_sc_hd__o31ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o31ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o31ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o31a_4'.
+Removing unused module `\sky130_fd_sc_hd__o31a_2'.
+Removing unused module `\sky130_fd_sc_hd__o31a_1'.
+Removing unused module `\sky130_fd_sc_hd__o311ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o311ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o311ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o311ai_0'.
+Removing unused module `\sky130_fd_sc_hd__o311a_4'.
+Removing unused module `\sky130_fd_sc_hd__o311a_2'.
+Removing unused module `\sky130_fd_sc_hd__o311a_1'.
+Removing unused module `\sky130_fd_sc_hd__o2bb2ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o2bb2ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o2bb2a_4'.
+Removing unused module `\sky130_fd_sc_hd__o2bb2a_2'.
+Removing unused module `\sky130_fd_sc_hd__o2bb2a_1'.
+Removing unused module `\sky130_fd_sc_hd__o22ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o22ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o22ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o22a_4'.
+Removing unused module `\sky130_fd_sc_hd__o22a_2'.
+Removing unused module `\sky130_fd_sc_hd__o22a_1'.
+Removing unused module `\sky130_fd_sc_hd__o221ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o221ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o221ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o221a_4'.
+Removing unused module `\sky130_fd_sc_hd__o221a_2'.
+Removing unused module `\sky130_fd_sc_hd__o221a_1'.
+Removing unused module `\sky130_fd_sc_hd__o21bai_4'.
+Removing unused module `\sky130_fd_sc_hd__o21bai_2'.
+Removing unused module `\sky130_fd_sc_hd__o21ba_4'.
+Removing unused module `\sky130_fd_sc_hd__o21ba_2'.
+Removing unused module `\sky130_fd_sc_hd__o21ba_1'.
+Removing unused module `\sky130_fd_sc_hd__o21ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o21ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o21ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o21ai_0'.
+Removing unused module `\sky130_fd_sc_hd__o21a_4'.
+Removing unused module `\sky130_fd_sc_hd__o21a_2'.
+Removing unused module `\sky130_fd_sc_hd__o21a_1'.
+Removing unused module `\sky130_fd_sc_hd__o211ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o211ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o211ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o211a_4'.
+Removing unused module `\sky130_fd_sc_hd__o211a_2'.
+Removing unused module `\sky130_fd_sc_hd__o211a_1'.
+Removing unused module `\sky130_fd_sc_hd__o2111ai_4'.
+Removing unused module `\sky130_fd_sc_hd__o2111ai_2'.
+Removing unused module `\sky130_fd_sc_hd__o2111ai_1'.
+Removing unused module `\sky130_fd_sc_hd__o2111a_4'.
+Removing unused module `\sky130_fd_sc_hd__o2111a_2'.
+Removing unused module `\sky130_fd_sc_hd__o2111a_1'.
+Removing unused module `\sky130_fd_sc_hd__nor4bb_4'.
+Removing unused module `\sky130_fd_sc_hd__nor4bb_2'.
+Removing unused module `\sky130_fd_sc_hd__nor4bb_1'.
+Removing unused module `\sky130_fd_sc_hd__nor4b_4'.
+Removing unused module `\sky130_fd_sc_hd__nor4b_2'.
+Removing unused module `\sky130_fd_sc_hd__nor4b_1'.
+Removing unused module `\sky130_fd_sc_hd__nor4_4'.
+Removing unused module `\sky130_fd_sc_hd__nor4_2'.
+Removing unused module `\sky130_fd_sc_hd__nor4_1'.
+Removing unused module `\sky130_fd_sc_hd__nor3b_4'.
+Removing unused module `\sky130_fd_sc_hd__nor3b_2'.
+Removing unused module `\sky130_fd_sc_hd__nor3b_1'.
+Removing unused module `\sky130_fd_sc_hd__nor3_4'.
+Removing unused module `\sky130_fd_sc_hd__nor3_2'.
+Removing unused module `\sky130_fd_sc_hd__nor3_1'.
+Removing unused module `\sky130_fd_sc_hd__nor2b_4'.
+Removing unused module `\sky130_fd_sc_hd__nor2b_2'.
+Removing unused module `\sky130_fd_sc_hd__nor2b_1'.
+Removing unused module `\sky130_fd_sc_hd__nor2_8'.
+Removing unused module `\sky130_fd_sc_hd__nor2_4'.
+Removing unused module `\sky130_fd_sc_hd__nor2_2'.
+Removing unused module `\sky130_fd_sc_hd__nor2_1'.
+Removing unused module `\sky130_fd_sc_hd__nand4bb_4'.
+Removing unused module `\sky130_fd_sc_hd__nand4bb_2'.
+Removing unused module `\sky130_fd_sc_hd__nand4bb_1'.
+Removing unused module `\sky130_fd_sc_hd__nand4b_4'.
+Removing unused module `\sky130_fd_sc_hd__nand4b_2'.
+Removing unused module `\sky130_fd_sc_hd__nand4_4'.
+Removing unused module `\sky130_fd_sc_hd__nand4_2'.
+Removing unused module `\sky130_fd_sc_hd__nand4_1'.
+Removing unused module `\sky130_fd_sc_hd__nand3b_4'.
+Removing unused module `\sky130_fd_sc_hd__nand3b_2'.
+Removing unused module `\sky130_fd_sc_hd__nand3b_1'.
+Removing unused module `\sky130_fd_sc_hd__nand3_4'.
+Removing unused module `\sky130_fd_sc_hd__nand3_2'.
+Removing unused module `\sky130_fd_sc_hd__nand3_1'.
+Removing unused module `\sky130_fd_sc_hd__nand2b_4'.
+Removing unused module `\sky130_fd_sc_hd__nand2b_2'.
+Removing unused module `\sky130_fd_sc_hd__nand2b_1'.
+Removing unused module `\sky130_fd_sc_hd__nand2_8'.
+Removing unused module `\sky130_fd_sc_hd__nand2_4'.
+Removing unused module `\sky130_fd_sc_hd__nand2_2'.
+Removing unused module `\sky130_fd_sc_hd__mux4_4'.
+Removing unused module `\sky130_fd_sc_hd__mux4_2'.
+Removing unused module `\sky130_fd_sc_hd__mux4_1'.
+Removing unused module `\sky130_fd_sc_hd__mux2i_4'.
+Removing unused module `\sky130_fd_sc_hd__mux2i_2'.
+Removing unused module `\sky130_fd_sc_hd__mux2i_1'.
+Removing unused module `\sky130_fd_sc_hd__mux2_8'.
+Removing unused module `\sky130_fd_sc_hd__mux2_4'.
+Removing unused module `\sky130_fd_sc_hd__mux2_2'.
+Removing unused module `\sky130_fd_sc_hd__maj3_4'.
+Removing unused module `\sky130_fd_sc_hd__maj3_2'.
+Removing unused module `\sky130_fd_sc_hd__maj3_1'.
+Removing unused module `\sky130_fd_sc_hd__macro_sparecell'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Removing unused module `\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Removing unused module `\sky130_fd_sc_hd__inv_8'.
+Removing unused module `\sky130_fd_sc_hd__inv_6'.
+Removing unused module `\sky130_fd_sc_hd__inv_4'.
+Removing unused module `\sky130_fd_sc_hd__inv_2'.
+Removing unused module `\sky130_fd_sc_hd__inv_16'.
+Removing unused module `\sky130_fd_sc_hd__inv_12'.
+Removing unused module `\sky130_fd_sc_hd__inv_1'.
+Removing unused module `\sky130_fd_sc_hd__ha_4'.
+Removing unused module `\sky130_fd_sc_hd__ha_2'.
+Removing unused module `\sky130_fd_sc_hd__ha_1'.
+Removing unused module `\sky130_fd_sc_hd__fahcon_1'.
+Removing unused module `\sky130_fd_sc_hd__fahcin_1'.
+Removing unused module `\sky130_fd_sc_hd__fah_1'.
+Removing unused module `\sky130_fd_sc_hd__fa_4'.
+Removing unused module `\sky130_fd_sc_hd__fa_2'.
+Removing unused module `\sky130_fd_sc_hd__fa_1'.
+Removing unused module `\sky130_fd_sc_hd__einvp_8'.
+Removing unused module `\sky130_fd_sc_hd__einvp_4'.
+Removing unused module `\sky130_fd_sc_hd__einvp_2'.
+Removing unused module `\sky130_fd_sc_hd__einvp_1'.
+Removing unused module `\sky130_fd_sc_hd__einvn_8'.
+Removing unused module `\sky130_fd_sc_hd__einvn_4'.
+Removing unused module `\sky130_fd_sc_hd__einvn_2'.
+Removing unused module `\sky130_fd_sc_hd__einvn_1'.
+Removing unused module `\sky130_fd_sc_hd__einvn_0'.
+Removing unused module `\sky130_fd_sc_hd__edfxtp_1'.
+Removing unused module `\sky130_fd_sc_hd__edfxbp_1'.
+Removing unused module `\sky130_fd_sc_hd__ebufn_8'.
+Removing unused module `\sky130_fd_sc_hd__ebufn_4'.
+Removing unused module `\sky130_fd_sc_hd__ebufn_2'.
+Removing unused module `\sky130_fd_sc_hd__ebufn_1'.
+Removing unused module `\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Removing unused module `\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Removing unused module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Removing unused module `\sky130_fd_sc_hd__dlygate4sd3_1'.
+Removing unused module `\sky130_fd_sc_hd__dlygate4sd2_1'.
+Removing unused module `\sky130_fd_sc_hd__dlygate4sd1_1'.
+Removing unused module `\sky130_fd_sc_hd__dlxtp_1'.
+Removing unused module `\sky130_fd_sc_hd__dlxtn_4'.
+Removing unused module `\sky130_fd_sc_hd__dlxtn_2'.
+Removing unused module `\sky130_fd_sc_hd__dlxtn_1'.
+Removing unused module `\sky130_fd_sc_hd__dlxbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dlxbn_2'.
+Removing unused module `\sky130_fd_sc_hd__dlxbn_1'.
+Removing unused module `\sky130_fd_sc_hd__dlrtp_4'.
+Removing unused module `\sky130_fd_sc_hd__dlrtp_2'.
+Removing unused module `\sky130_fd_sc_hd__dlrtp_1'.
+Removing unused module `\sky130_fd_sc_hd__dlrtn_4'.
+Removing unused module `\sky130_fd_sc_hd__dlrtn_2'.
+Removing unused module `\sky130_fd_sc_hd__dlrtn_1'.
+Removing unused module `\sky130_fd_sc_hd__dlrbp_2'.
+Removing unused module `\sky130_fd_sc_hd__dlrbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dlrbn_2'.
+Removing unused module `\sky130_fd_sc_hd__dlrbn_1'.
+Removing unused module `\sky130_fd_sc_hd__diode_2'.
+Removing unused module `\sky130_fd_sc_hd__dfxtp_4'.
+Removing unused module `\sky130_fd_sc_hd__dfxtp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfxtp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfxbp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfxbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfstp_4'.
+Removing unused module `\sky130_fd_sc_hd__dfstp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfstp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfsbp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfsbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfrtp_4'.
+Removing unused module `\sky130_fd_sc_hd__dfrtp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfrtn_1'.
+Removing unused module `\sky130_fd_sc_hd__dfrbp_2'.
+Removing unused module `\sky130_fd_sc_hd__dfrbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfbbp_1'.
+Removing unused module `\sky130_fd_sc_hd__dfbbn_2'.
+Removing unused module `\sky130_fd_sc_hd__dfbbn_1'.
+Removing unused module `\sky130_fd_sc_hd__decap_8'.
+Removing unused module `\sky130_fd_sc_hd__decap_6'.
+Removing unused module `\sky130_fd_sc_hd__decap_4'.
+Removing unused module `\sky130_fd_sc_hd__decap_3'.
+Removing unused module `\sky130_fd_sc_hd__decap_12'.
+Removing unused module `\sky130_fd_sc_hd__conb_1'.
+Removing unused module `\sky130_fd_sc_hd__clkinvlp_4'.
+Removing unused module `\sky130_fd_sc_hd__clkinvlp_2'.
+Removing unused module `\sky130_fd_sc_hd__clkinv_8'.
+Removing unused module `\sky130_fd_sc_hd__clkinv_4'.
+Removing unused module `\sky130_fd_sc_hd__clkinv_2'.
+Removing unused module `\sky130_fd_sc_hd__clkinv_16'.
+Removing unused module `\sky130_fd_sc_hd__clkinv_1'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Removing unused module `\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_8'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_4'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_2'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_16'.
+Removing unused module `\sky130_fd_sc_hd__clkbuf_1'.
+Removing unused module `\sky130_fd_sc_hd__bufinv_8'.
+Removing unused module `\sky130_fd_sc_hd__bufinv_16'.
+Removing unused module `\sky130_fd_sc_hd__bufbuf_8'.
+Removing unused module `\sky130_fd_sc_hd__bufbuf_16'.
+Removing unused module `\sky130_fd_sc_hd__buf_8'.
+Removing unused module `\sky130_fd_sc_hd__buf_6'.
+Removing unused module `\sky130_fd_sc_hd__buf_4'.
+Removing unused module `\sky130_fd_sc_hd__buf_2'.
+Removing unused module `\sky130_fd_sc_hd__buf_16'.
+Removing unused module `\sky130_fd_sc_hd__buf_12'.
+Removing unused module `\sky130_fd_sc_hd__buf_1'.
+Removing unused module `\sky130_fd_sc_hd__and4bb_4'.
+Removing unused module `\sky130_fd_sc_hd__and4bb_2'.
+Removing unused module `\sky130_fd_sc_hd__and4bb_1'.
+Removing unused module `\sky130_fd_sc_hd__and4b_4'.
+Removing unused module `\sky130_fd_sc_hd__and4b_2'.
+Removing unused module `\sky130_fd_sc_hd__and4b_1'.
+Removing unused module `\sky130_fd_sc_hd__and4_4'.
+Removing unused module `\sky130_fd_sc_hd__and4_2'.
+Removing unused module `\sky130_fd_sc_hd__and4_1'.
+Removing unused module `\sky130_fd_sc_hd__and3b_4'.
+Removing unused module `\sky130_fd_sc_hd__and3b_2'.
+Removing unused module `\sky130_fd_sc_hd__and3_4'.
+Removing unused module `\sky130_fd_sc_hd__and3_2'.
+Removing unused module `\sky130_fd_sc_hd__and3_1'.
+Removing unused module `\sky130_fd_sc_hd__and2b_4'.
+Removing unused module `\sky130_fd_sc_hd__and2b_2'.
+Removing unused module `\sky130_fd_sc_hd__and2b_1'.
+Removing unused module `\sky130_fd_sc_hd__and2_4'.
+Removing unused module `\sky130_fd_sc_hd__and2_2'.
+Removing unused module `\sky130_fd_sc_hd__and2_1'.
+Removing unused module `\sky130_fd_sc_hd__and2_0'.
+Removing unused module `\sky130_fd_sc_hd__a41oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a41oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a41oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a41o_4'.
+Removing unused module `\sky130_fd_sc_hd__a41o_2'.
+Removing unused module `\sky130_fd_sc_hd__a41o_1'.
+Removing unused module `\sky130_fd_sc_hd__a32oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a32oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a32oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a32o_4'.
+Removing unused module `\sky130_fd_sc_hd__a32o_2'.
+Removing unused module `\sky130_fd_sc_hd__a32o_1'.
+Removing unused module `\sky130_fd_sc_hd__a31oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a31oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a31oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a31o_4'.
+Removing unused module `\sky130_fd_sc_hd__a31o_2'.
+Removing unused module `\sky130_fd_sc_hd__a31o_1'.
+Removing unused module `\sky130_fd_sc_hd__a311oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a311oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a311oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a311o_4'.
+Removing unused module `\sky130_fd_sc_hd__a311o_2'.
+Removing unused module `\sky130_fd_sc_hd__a311o_1'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2o_4'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2o_2'.
+Removing unused module `\sky130_fd_sc_hd__a2bb2o_1'.
+Removing unused module `\sky130_fd_sc_hd__a22oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a22oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a22oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a22o_4'.
+Removing unused module `\sky130_fd_sc_hd__a22o_2'.
+Removing unused module `\sky130_fd_sc_hd__a22o_1'.
+Removing unused module `\sky130_fd_sc_hd__a222oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a221oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a221oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a221oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a221o_4'.
+Removing unused module `\sky130_fd_sc_hd__a221o_2'.
+Removing unused module `\sky130_fd_sc_hd__a221o_1'.
+Removing unused module `\sky130_fd_sc_hd__a21oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a21oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a21oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a21o_4'.
+Removing unused module `\sky130_fd_sc_hd__a21o_2'.
+Removing unused module `\sky130_fd_sc_hd__a21o_1'.
+Removing unused module `\sky130_fd_sc_hd__a21boi_4'.
+Removing unused module `\sky130_fd_sc_hd__a21boi_2'.
+Removing unused module `\sky130_fd_sc_hd__a21boi_1'.
+Removing unused module `\sky130_fd_sc_hd__a21boi_0'.
+Removing unused module `\sky130_fd_sc_hd__a21bo_4'.
+Removing unused module `\sky130_fd_sc_hd__a21bo_2'.
+Removing unused module `\sky130_fd_sc_hd__a21bo_1'.
+Removing unused module `\sky130_fd_sc_hd__a211oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a211oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a211oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a211o_4'.
+Removing unused module `\sky130_fd_sc_hd__a211o_2'.
+Removing unused module `\sky130_fd_sc_hd__a211o_1'.
+Removing unused module `\sky130_fd_sc_hd__a2111oi_4'.
+Removing unused module `\sky130_fd_sc_hd__a2111oi_2'.
+Removing unused module `\sky130_fd_sc_hd__a2111oi_1'.
+Removing unused module `\sky130_fd_sc_hd__a2111oi_0'.
+Removing unused module `\sky130_fd_sc_hd__a2111o_4'.
+Removing unused module `\sky130_fd_sc_hd__a2111o_2'.
+Removing unused module `\sky130_fd_sc_hd__a2111o_1'.
+Removed 422 unused modules.
+
+17. Executing PROC pass (convert processes to netlists).
+
+17.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+17.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+17.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+17.4. Executing PROC_INIT pass (extract init attributes).
+
+17.5. Executing PROC_ARST pass (detect async resets in processes).
+
+17.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+17.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+17.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+17.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+17.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+17.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+17.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+18. Executing OPT pass (performing simple optimizations).
+
+18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+18.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sky130_fd_sc_hd__and3b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o21bai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__mux2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o2bb2ai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand4b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+18.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sky130_fd_sc_hd__and3b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2_1.
+  Optimizing cells in module \wb_bridge.
+  Optimizing cells in module \sky130_fd_sc_hd__o21bai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__mux2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__o2bb2ai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand4b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__lpflow_isobufsrc_1.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp_1.
+Performed a total of 0 changes.
+
+18.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+18.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+18.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+Removed 2 unused cells and 11 unused wires.
+<suppressed ~12 debug messages>
+
+18.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+18.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+18.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sky130_fd_sc_hd__and3b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o21bai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__mux2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o2bb2ai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand4b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+18.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sky130_fd_sc_hd__and3b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2_1.
+  Optimizing cells in module \wb_bridge.
+  Optimizing cells in module \sky130_fd_sc_hd__o21bai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__mux2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__o2bb2ai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand4b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__lpflow_isobufsrc_1.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp_1.
+Performed a total of 0 changes.
+
+18.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 1 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+18.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+18.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+
+18.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+18.16. Finished fast OPT passes. (There is nothing left to do.)
+
+19. Executing ASYNC2SYNC pass.
+Replacing sky130_fd_sc_hd__dfrtp_1.$auto$liberty.cc:270:create_ff$1887 ($_DFF_PN0_): ARST=\RESET_B, D=\D, Q=\Q
+
+20. Executing MEMORY pass.
+
+20.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+20.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+20.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+20.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+20.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+20.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+
+20.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+20.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+20.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+
+20.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+20.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+21. Executing OPT pass (performing simple optimizations).
+
+21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+21.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sky130_fd_sc_hd__and3b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o21bai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__mux2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o2bb2ai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand4b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+21.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sky130_fd_sc_hd__and3b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2_1.
+  Optimizing cells in module \wb_bridge.
+  Optimizing cells in module \sky130_fd_sc_hd__o21bai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__mux2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__o2bb2ai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand4b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__lpflow_isobufsrc_1.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp_1.
+Performed a total of 0 changes.
+
+21.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+21.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+21.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+
+21.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+21.9. Finished fast OPT passes. (There is nothing left to do.)
+
+22. Executing TECHMAP pass (map to technology primitives).
+
+22.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+22.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+23. Executing OPT pass (performing simple optimizations).
+
+23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sky130_fd_sc_hd__and3b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__xor2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o21bai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__mux2_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__o2bb2ai_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__nand4b_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sky130_fd_sc_hd__dfrtp_1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sky130_fd_sc_hd__and3b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__xor2_1.
+  Optimizing cells in module \wb_bridge.
+  Optimizing cells in module \sky130_fd_sc_hd__o21bai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__mux2_1.
+  Optimizing cells in module \sky130_fd_sc_hd__o2bb2ai_1.
+  Optimizing cells in module \sky130_fd_sc_hd__nand4b_1.
+  Optimizing cells in module \sky130_fd_sc_hd__lpflow_isobufsrc_1.
+  Optimizing cells in module \sky130_fd_sc_hd__dfrtp_1.
+Performed a total of 0 changes.
+
+23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sky130_fd_sc_hd__and3b_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__and3b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__and3b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand2_1'.
+Computing hashes of 3 cells of `\sky130_fd_sc_hd__nand2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__xor2_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__xor2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__xor2_1'.
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 75 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Finding identical cells in module `\sky130_fd_sc_hd__o21bai_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__o21bai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o21bai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__mux2_1'.
+Computing hashes of 4 cells of `\sky130_fd_sc_hd__mux2_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__mux2_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Computing hashes of 5 cells of `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__o2bb2ai_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__nand4b_1'.
+Computing hashes of 6 cells of `\sky130_fd_sc_hd__nand4b_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__nand4b_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Finding identical cells in module `\sky130_fd_sc_hd__dfrtp_1'.
+Computing hashes of 2 cells of `\sky130_fd_sc_hd__dfrtp_1'.
+Finding duplicate cells in `\sky130_fd_sc_hd__dfrtp_1'.
+Removed a total of 0 cells.
+
+23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sky130_fd_sc_hd__and3b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__xor2_1..
+Finding unused cells or wires in module \wb_bridge..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o21bai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__mux2_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__o2bb2ai_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__nand4b_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__lpflow_isobufsrc_1..
+Finding unused cells or wires in module \sky130_fd_sc_hd__dfrtp_1..
+
+23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sky130_fd_sc_hd__and3b_1.
+Optimizing module sky130_fd_sc_hd__nand2_1.
+Optimizing module sky130_fd_sc_hd__xor2_1.
+Optimizing module wb_bridge.
+Optimizing module sky130_fd_sc_hd__o21bai_1.
+Optimizing module sky130_fd_sc_hd__mux2_1.
+Optimizing module sky130_fd_sc_hd__o2bb2ai_1.
+Optimizing module sky130_fd_sc_hd__nand4b_1.
+Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Optimizing module sky130_fd_sc_hd__dfrtp_1.
+
+23.9. Finished fast OPT passes. (There is nothing left to do.)
+
+24. Executing FLATTEN pass (flatten design).
+Deleting now unused module sky130_fd_sc_hd__and3b_1.
+Deleting now unused module sky130_fd_sc_hd__nand2_1.
+Deleting now unused module sky130_fd_sc_hd__xor2_1.
+Deleting now unused module sky130_fd_sc_hd__o21bai_1.
+Deleting now unused module sky130_fd_sc_hd__mux2_1.
+Deleting now unused module sky130_fd_sc_hd__o2bb2ai_1.
+Deleting now unused module sky130_fd_sc_hd__nand4b_1.
+Deleting now unused module sky130_fd_sc_hd__lpflow_isobufsrc_1.
+Deleting now unused module sky130_fd_sc_hd__dfrtp_1.
+<suppressed ~75 debug messages>
+
+25. Executing OPT pass (performing simple optimizations).
+
+25.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+25.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 306 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 267 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 264 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Computing hashes of 263 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+<suppressed ~129 debug messages>
+Removed a total of 43 cells.
+
+25.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+25.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+25.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 263 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+25.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+25.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+Removed 0 unused cells and 79 unused wires.
+<suppressed ~1 debug messages>
+
+25.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+25.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+25.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \wb_bridge..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+25.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \wb_bridge.
+Performed a total of 0 changes.
+
+25.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\wb_bridge'.
+Computing hashes of 263 cells of `\wb_bridge'.
+Finding duplicate cells in `\wb_bridge'.
+Removed a total of 0 cells.
+
+25.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+25.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \wb_bridge..
+
+25.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module wb_bridge.
+
+25.16. Finished fast OPT passes. (There is nothing left to do.)
+
+26. Executing EQUIV_MAKE pass (creating equiv checking module).
+Presumably equivalent wires: state_gold (\state_gold), state_gate ({ \_038_.C_gate \_076_.A_gate }) -> state
+Presumably equivalent wires: wb_in_window_gold (\wb_adr_i_gold [31]), wb_in_window_gate (\wb_adr_i_gate [31]) -> wb_in_window
+Presumably equivalent wires: apb_pslverr_gold (\apb_pslverr_gold), apb_pslverr_gate (\apb_pslverr_gate) -> apb_pslverr
+Presumably equivalent wires: apb_pready_gold (\apb_pready_gold), apb_pready_gate (\apb_pready_gate) -> apb_pready
+Presumably equivalent wires: apb_penable_gold (\apb_penable_gold), apb_penable_gate (\apb_penable_gate) -> apb_penable
+Presumably equivalent wires: apb_psel_gold (\apb_psel_gold), apb_psel_gate (\_110_.D_gate) -> apb_psel
+Presumably equivalent wires: apb_pwrite_gold (\wb_we_i_gold), apb_pwrite_gate (\wb_we_i_gate) -> apb_pwrite
+Presumably equivalent wires: apb_prdata_gold (\apb_prdata_gold), apb_prdata_gate (\apb_prdata_gate) -> apb_prdata
+Presumably equivalent wires: apb_pwdata_gold (\wb_dat_i_gold), apb_pwdata_gate (\wb_dat_i_gate) -> apb_pwdata
+Presumably equivalent wires: apb_paddr_gold ({ 1'0 \wb_adr_i_gold [30:0] }), apb_paddr_gate ({ 1'0 \wb_adr_i_gate [30:0] }) -> apb_paddr
+Presumably equivalent wires: wb_err_o_gold (\wb_err_o_gold), wb_err_o_gate (\_075_.Y_gate) -> wb_err_o
+Presumably equivalent wires: wb_ack_o_gold (\wb_ack_o_gold), wb_ack_o_gate (\_111_.Q_gate) -> wb_ack_o
+Presumably equivalent wires: wb_cyc_i_gold (\wb_cyc_i_gold), wb_cyc_i_gate (\wb_cyc_i_gate) -> wb_cyc_i
+Presumably equivalent wires: wb_stb_i_gold (\wb_stb_i_gold), wb_stb_i_gate (\wb_stb_i_gate) -> wb_stb_i
+Presumably equivalent wires: wb_we_i_gold (\wb_we_i_gold), wb_we_i_gate (\wb_we_i_gate) -> wb_we_i
+Presumably equivalent wires: wb_sel_i_gold (\wb_sel_i_gold), wb_sel_i_gate (\wb_sel_i_gate) -> wb_sel_i
+Presumably equivalent wires: wb_dat_o_gold (\wb_dat_o_gold), wb_dat_o_gate ({ \_074_.A0_gate \_042_.A0_gate \_043_.A0_gate \_044_.A0_gate \_045_.A0_gate \_046_.A0_gate \_047_.A0_gate \_048_.A0_gate \_049_.A0_gate \_050_.A0_gate \_051_.A0_gate \_052_.A0_gate \_053_.A0_gate \_054_.A0_gate \_055_.A0_gate \_056_.A0_gate \_057_.A0_gate \_058_.A0_gate \_059_.A0_gate \_060_.A0_gate \_061_.A0_gate \_062_.A0_gate \_063_.A0_gate \_064_.A0_gate \_065_.A0_gate \_066_.A0_gate \_067_.A0_gate \_068_.A0_gate \_069_.A0_gate \_070_.A0_gate \_071_.A0_gate \_072_.A0_gate }) -> wb_dat_o
+Presumably equivalent wires: wb_dat_i_gold (\wb_dat_i_gold), wb_dat_i_gate (\wb_dat_i_gate) -> wb_dat_i
+Presumably equivalent wires: wb_adr_i_gold (\wb_adr_i_gold), wb_adr_i_gate (\wb_adr_i_gate) -> wb_adr_i
+Presumably equivalent wires: rst_ni_gold (\rst_ni_gold), rst_ni_gate (\rst_ni_gate) -> rst_ni
+Presumably equivalent wires: clk_i_gold (\clk_i_gold), clk_i_gate (\clk_i_gate) -> clk_i
+Changing input B of cell $flatten\_076_.$auto$liberty.cc:125:parse_func_reduce$4788_gate ($_OR_): \apb_penable_gate -> \apb_penable
+Changing input A of cell $flatten\_074_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_074_.A0_gate -> \wb_dat_o [31]
+Changing input A of cell $flatten\_072_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_072_.A0_gate -> \wb_dat_o [0]
+Changing input A of cell $flatten\_071_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_071_.A0_gate -> \wb_dat_o [1]
+Changing input A of cell $flatten\_070_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_070_.A0_gate -> \wb_dat_o [2]
+Changing input A of cell $flatten\_069_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_069_.A0_gate -> \wb_dat_o [3]
+Changing input A of cell $flatten\_068_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_068_.A0_gate -> \wb_dat_o [4]
+Changing input A of cell $flatten\_067_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_067_.A0_gate -> \wb_dat_o [5]
+Changing input A of cell $flatten\_066_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_066_.A0_gate -> \wb_dat_o [6]
+Changing input A of cell $flatten\_065_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_065_.A0_gate -> \wb_dat_o [7]
+Changing input A of cell $flatten\_064_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_064_.A0_gate -> \wb_dat_o [8]
+Changing input A of cell $flatten\_063_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_063_.A0_gate -> \wb_dat_o [9]
+Changing input A of cell $flatten\_062_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_062_.A0_gate -> \wb_dat_o [10]
+Changing input A of cell $flatten\_061_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_061_.A0_gate -> \wb_dat_o [11]
+Changing input A of cell $flatten\_060_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_060_.A0_gate -> \wb_dat_o [12]
+Changing input A of cell $flatten\_059_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_059_.A0_gate -> \wb_dat_o [13]
+Changing input A of cell $flatten\_058_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_058_.A0_gate -> \wb_dat_o [14]
+Changing input A of cell $flatten\_057_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_057_.A0_gate -> \wb_dat_o [15]
+Changing input A of cell $flatten\_056_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_056_.A0_gate -> \wb_dat_o [16]
+Changing input A of cell $flatten\_055_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_055_.A0_gate -> \wb_dat_o [17]
+Changing input A of cell $flatten\_054_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_054_.A0_gate -> \wb_dat_o [18]
+Changing input A of cell $flatten\_053_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_053_.A0_gate -> \wb_dat_o [19]
+Changing input A of cell $flatten\_052_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_052_.A0_gate -> \wb_dat_o [20]
+Changing input A of cell $flatten\_051_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_051_.A0_gate -> \wb_dat_o [21]
+Changing input A of cell $flatten\_050_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_050_.A0_gate -> \wb_dat_o [22]
+Changing input A of cell $flatten\_049_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_049_.A0_gate -> \wb_dat_o [23]
+Changing input A of cell $flatten\_048_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_048_.A0_gate -> \wb_dat_o [24]
+Changing input A of cell $flatten\_047_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_047_.A0_gate -> \wb_dat_o [25]
+Changing input A of cell $flatten\_046_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_046_.A0_gate -> \wb_dat_o [26]
+Changing input A of cell $flatten\_045_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_045_.A0_gate -> \wb_dat_o [27]
+Changing input A of cell $flatten\_044_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_044_.A0_gate -> \wb_dat_o [28]
+Changing input A of cell $flatten\_043_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_043_.A0_gate -> \wb_dat_o [29]
+Changing input A of cell $flatten\_042_.$auto$liberty.cc:109:parse_func_reduce$2586_gate ($_AND_): \_042_.A0_gate -> \wb_dat_o [30]
+Changing input D of cell $flatten\_110_.$auto$liberty.cc:270:create_ff$1887_gate ($_SDFF_PN0_): \_110_.D_gate -> \apb_psel
+Changing input A of cell $auto$opt_expr.cc:607:replace_const_cells$390_gold ($_NOT_): \state_gold [0] -> \state [0]
+Changing input A of cell $auto$simplemap.cc:157:simplemap_reduce$342_gold ($_OR_): \state_gold [0] -> \state [0]
+Changing input B of cell $auto$simplemap.cc:198:logic_reduce$356_gold ($_OR_): \state_gold [1] -> \state [1]
+Changing input A of cell $auto$simplemap.cc:198:logic_reduce$356_gold ($_OR_): \state_gold [0] -> \state [0]
+Changing input B of cell $auto$simplemap.cc:157:simplemap_reduce$352_gold ($_OR_): \state_gold [1] -> \state [1]
+Changing input A of cell $auto$simplemap.cc:157:simplemap_reduce$302_gold ($_OR_): \apb_penable_gold -> \apb_penable
+Changing input A of cell $auto$opt_expr.cc:607:replace_const_cells$386_gold ($_NOT_): \state_gold [1] -> \state [1]
+Changing input B of cell $auto$simplemap.cc:157:simplemap_reduce$360_gold ($_OR_): \apb_penable_gold -> \apb_penable
+Changing input A of cell $auto$simplemap.cc:256:simplemap_logbin$304_gold ($_AND_): \apb_penable_gold -> \apb_penable
+Changing input B of cell $auto$simplemap.cc:106:simplemap_bitop$369_gold ($_AND_): \apb_penable_gold -> \apb_penable
+
+27. Executing EQUIV_SIMPLE pass.
+Found 104 unproven $equiv cells (10 groups) in equiv_wb_bridge:
+ Grouping SAT models for \wb_dat_o:
+  Trying to prove $equiv for \wb_dat_o [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [1]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [2]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [3]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [4]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [5]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [6]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [7]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [8]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [9]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [10]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [11]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [12]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [13]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [14]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [15]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [16]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [17]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [18]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [19]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [20]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [21]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [22]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [23]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [24]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [25]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [26]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [27]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [28]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [29]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [30]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_dat_o [31]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_ack_o:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_err_o:ezsat
+ezsat
+ failed.
+ Grouping SAT models for \apb_paddr:
+  Trying to prove $equiv for \apb_paddr [0]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [1]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [2]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [3]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [4]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [5]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [6]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [7]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [8]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [9]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [10]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [11]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [12]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [13]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [14]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [15]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [16]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [17]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [18]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [19]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [20]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [21]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [22]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [23]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [24]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [25]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [26]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [27]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [28]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [29]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [30]:ezsat
+ success!
+  Trying to prove $equiv for \apb_paddr [31]:ezsat
+ success!
+ Grouping SAT models for \apb_pwdata:
+  Trying to prove $equiv for \apb_pwdata [0]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [1]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [2]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [3]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [4]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [5]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [6]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [7]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [8]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [9]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [10]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [11]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [12]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [13]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [14]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [15]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [16]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [17]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [18]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [19]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [20]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [21]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [22]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [23]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [24]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [25]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [26]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [27]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [28]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [29]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [30]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwdata [31]:ezsat
+ success!
+  Trying to prove $equiv for \apb_pwrite:ezsat
+ success!
+  Trying to prove $equiv for \apb_psel:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \apb_penable:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \wb_in_window:ezsat
+ success!
+ Grouping SAT models for \state:
+  Trying to prove $equiv for \state [0]:ezsat
+ezsat
+ failed.
+  Trying to prove $equiv for \state [1]:ezsat
+ezsat
+ success!
+Proved 67 previously unproven $equiv cells.
+
+28. Executing EQUIV_INDUCT pass.
+Found 37 unproven $equiv cells in module equiv_wb_bridge:
+  Proving existence of base case for step 1. (4494 clauses over 1877 variables)
+  Proving induction step 1. (10413 clauses over 4205 variables)
+  Proof for induction step holds. Entire workset of 37 cells proven!
+No selected unproven $equiv cells found in gold_wb_bridge.
+No selected unproven $equiv cells found in gate_wb_bridge.
+Proved 37 previously unproven $equiv cells.
+
+29. Executing EQUIV_STATUS pass.
+Found 104 $equiv cells in equiv_wb_bridge:
+  Of those cells 104 are proven and 0 are unproven.
+  Equivalence successfully proven!
+No $equiv cells found in gold_wb_bridge.
+No $equiv cells found in gate_wb_bridge.
+
+End of script. Logfile hash: 80657b4437, time: 0.21s, user: 0.20s, system: 0.02s, MEM: 45.95 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 33% 2x read_liberty (0 sec), 24% 10x read_verilog (0 sec), ...
+EXIT:0

@@ -1,0 +1,21 @@
+{
+  "module": "pwm",
+  "id": "M07",
+  "type": "REUSE_STAR",
+  "promotion_status": "PASS",
+  "cell_count": 1922,
+  "dff_count": 69,
+  "latch_count": 0,
+  "area_um2": 1611.5456,
+  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/synth/pwm_synth.log",
+  "lint_errors": 0,
+  "formal_pass": true,
+  "formal_depth": 20,
+  "equiv_pass": true,
+  "verification_tests_pass": 15,
+  "verification_tests_total": 15,
+  "verification_tests_fail": 0,
+  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-pwm/results.xml",
+  "admission_reasons": [],
+  "has_frontend_artifacts": true
+}

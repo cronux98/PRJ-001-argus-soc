@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="452" timestamp="2026-07-20T13:08:52.893039">
+  <testcase name="test_uart.test_prescale_readback" classname="." time="0.000" />
+  <testcase name="test_uart.test_prescale_rw" classname="." time="0.000" />
+  <testcase name="test_uart.test_ctrl_enable" classname="." time="0.000" />
+  <testcase name="test_uart.test_status_after_reset" classname="." time="0.000" />
+  <testcase name="test_uart.test_fifo_flush" classname="." time="0.000" />
+  <testcase name="test_uart.test_interrupt_regs_rw" classname="." time="0.000" />
+  <testcase name="test_uart.test_tx_hold" classname="." time="0.000" />
+  <testcase name="test_uart.test_config_rw" classname="." time="0.000" />
+  <testcase name="test_uart.test_rx_fifo_level_default" classname="." time="0.000" />
+  <testcase name="test_uart.test_tx_fifo_level_default" classname="." time="0.000" />
+  <testcase name="test_uart.test_match_register_rw" classname="." time="0.000" />
+  <testcase name="test_uart.test_ctrl_multiple_bits" classname="." time="0.000" />
+  <testcase name="test_uart.test_prescale_max" classname="." time="0.000" />
+  <testcase name="test_uart.test_consecutive_reg_writes" classname="." time="0.000" />
+  <testcase name="test_uart.test_mis_ris_readable" classname="." time="0.000" />
+</testsuite>

@@ -1,0 +1,623 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: EF_GPIO8_APB.v
+Parsing formal SystemVerilog input from `EF_GPIO8_APB.v' to AST representation.
+Generating RTLIL representation for module `\EF_GPIO8_APB'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: EF_GPIO8.v
+Parsing formal SystemVerilog input from `EF_GPIO8.v' to AST representation.
+Generating RTLIL representation for module `\EF_GPIO8'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ef_util_lib.v
+Parsing formal SystemVerilog input from `ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \EF_GPIO8
+Used module:         \ef_util_sync
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \EF_GPIO8
+Used module:         \ef_util_sync
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:     \ef_util_gating_cell
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removed 5 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 33 switch rules as full_case in process $proc$EF_GPIO8_APB.v:173$58 in module EF_GPIO8_APB.
+Marked 2 switch rules as full_case in process $proc$EF_GPIO8_APB.v:134$54 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$EF_GPIO8_APB.v:131$50 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$EF_GPIO8_APB.v:122$45 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$EF_GPIO8_APB.v:117$41 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$EF_GPIO8_APB.v:111$37 in module EF_GPIO8_APB.
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 4 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:134$54'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:131$50'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:122$45'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:117$41'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:111$37'.
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~69 debug messages>
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ef_util_ned.$proc$ef_util_lib.v:68$131'.
+Creating decoders for process `\ef_util_ped.$proc$ef_util_lib.v:54$128'.
+Creating decoders for process `\ef_util_sync.$proc$ef_util_lib.v:38$127'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+     1/33: $0\RIS_REG[31:0] [31]
+     2/33: $0\RIS_REG[31:0] [30]
+     3/33: $0\RIS_REG[31:0] [29]
+     4/33: $0\RIS_REG[31:0] [28]
+     5/33: $0\RIS_REG[31:0] [27]
+     6/33: $0\RIS_REG[31:0] [26]
+     7/33: $0\RIS_REG[31:0] [25]
+     8/33: $0\RIS_REG[31:0] [24]
+     9/33: $0\RIS_REG[31:0] [23]
+    10/33: $0\RIS_REG[31:0] [22]
+    11/33: $0\RIS_REG[31:0] [21]
+    12/33: $0\RIS_REG[31:0] [20]
+    13/33: $0\RIS_REG[31:0] [19]
+    14/33: $0\RIS_REG[31:0] [18]
+    15/33: $0\RIS_REG[31:0] [17]
+    16/33: $0\RIS_REG[31:0] [16]
+    17/33: $0\RIS_REG[31:0] [15]
+    18/33: $0\RIS_REG[31:0] [14]
+    19/33: $0\RIS_REG[31:0] [13]
+    20/33: $0\RIS_REG[31:0] [12]
+    21/33: $0\RIS_REG[31:0] [11]
+    22/33: $0\RIS_REG[31:0] [10]
+    23/33: $0\RIS_REG[31:0] [9]
+    24/33: $0\RIS_REG[31:0] [8]
+    25/33: $0\RIS_REG[31:0] [7]
+    26/33: $0\RIS_REG[31:0] [6]
+    27/33: $0\RIS_REG[31:0] [5]
+    28/33: $0\RIS_REG[31:0] [4]
+    29/33: $0\RIS_REG[31:0] [3]
+    30/33: $0\RIS_REG[31:0] [2]
+    31/33: $0\RIS_REG[31:0] [1]
+    32/33: $0\RIS_REG[31:0] [0]
+    33/33: $1\_i_[31:0]
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:134$54'.
+     1/1: $0\IC_REG[31:0]
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:131$50'.
+     1/1: $0\IM_REG[31:0]
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:122$45'.
+     1/1: $0\GCLK_REG[0:0]
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:117$41'.
+     1/1: $0\DIR_REG[7:0]
+Creating decoders for process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:111$37'.
+     1/1: $0\DATAO_REG[7:0]
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ef_util_ned.\last_in' using process `\ef_util_ned.$proc$ef_util_lib.v:68$131'.
+  created $dff cell `$procdff$358' with positive edge clock.
+Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$ef_util_lib.v:54$128'.
+  created $dff cell `$procdff$359' with positive edge clock.
+Creating register for signal `\ef_util_sync.\sync' using process `\ef_util_sync.$proc$ef_util_lib.v:38$127'.
+  created $dff cell `$procdff$360' with positive edge clock.
+Creating register for signal `\EF_GPIO8_APB.\RIS_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+  created $adff cell `$procdff$365' with positive edge clock and positive level reset.
+Creating register for signal `\EF_GPIO8_APB.\_i_' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+  created $dff cell `$procdff$372' with positive edge clock.
+Creating register for signal `\EF_GPIO8_APB.\IC_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:134$54'.
+  created $adff cell `$procdff$377' with positive edge clock and positive level reset.
+Creating register for signal `\EF_GPIO8_APB.\IM_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:131$50'.
+  created $adff cell `$procdff$382' with positive edge clock and positive level reset.
+Creating register for signal `\EF_GPIO8_APB.\GCLK_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:122$45'.
+  created $adff cell `$procdff$387' with positive edge clock and positive level reset.
+Creating register for signal `\EF_GPIO8_APB.\DIR_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:117$41'.
+  created $adff cell `$procdff$392' with positive edge clock and positive level reset.
+Creating register for signal `\EF_GPIO8_APB.\DATAO_REG' using process `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:111$37'.
+  created $adff cell `$procdff$397' with positive edge clock and positive level reset.
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ef_util_ned.$proc$ef_util_lib.v:68$131'.
+Removing empty process `ef_util_ped.$proc$ef_util_lib.v:54$128'.
+Removing empty process `ef_util_sync.$proc$ef_util_lib.v:38$127'.
+Found and cleaned up 64 empty switches in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:173$58'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:134$54'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:134$54'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:131$50'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:131$50'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:122$45'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:122$45'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:117$41'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:117$41'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:111$37'.
+Removing empty process `EF_GPIO8_APB.$proc$EF_GPIO8_APB.v:111$37'.
+Cleaned up 69 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+<suppressed ~16 debug messages>
+Optimizing module EF_GPIO8_APB.
+<suppressed ~47 debug messages>
+
+4.3. Executing FUTURE pass.
+
+4.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+
+4.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Removed 17 unused cells and 195 unused wires.
+<suppressed ~27 debug messages>
+
+4.6. Executing CHECK pass (checking for obvious problems).
+Checking module ef_util_gating_cell...
+Checking module ef_util_ned...
+Checking module ef_util_ped...
+Checking module ef_util_sync...
+Checking module EF_GPIO8...
+Checking module EF_GPIO8_APB...
+Found and reported 0 problems.
+
+4.7. Executing OPT pass (performing simple optimizations).
+
+4.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+
+4.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 3 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 1 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 105 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Computing hashes of 101 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ef_util_gating_cell..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ned..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ped..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_sync..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_GPIO8..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_GPIO8_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~114 debug messages>
+
+4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ef_util_gating_cell.
+  Optimizing cells in module \ef_util_ned.
+  Optimizing cells in module \ef_util_ped.
+  Optimizing cells in module \ef_util_sync.
+  Optimizing cells in module \EF_GPIO8.
+  Optimizing cells in module \EF_GPIO8_APB.
+Performed a total of 0 changes.
+
+4.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 3 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 1 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 101 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Removed a total of 0 cells.
+
+4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+4.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+
+4.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ef_util_gating_cell..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ned..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_ped..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ef_util_sync..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_GPIO8..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \EF_GPIO8_APB..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~114 debug messages>
+
+4.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ef_util_gating_cell.
+  Optimizing cells in module \ef_util_ned.
+  Optimizing cells in module \ef_util_ped.
+  Optimizing cells in module \ef_util_sync.
+  Optimizing cells in module \EF_GPIO8.
+  Optimizing cells in module \EF_GPIO8_APB.
+Performed a total of 0 changes.
+
+4.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 3 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 1 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 101 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Removed a total of 0 cells.
+
+4.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+
+4.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+
+4.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 13 bits (of 16) from port B of cell EF_GPIO8_APB.$eq$EF_GPIO8_APB.v:353$94 ($eq).
+Removed top 12 bits (of 16) from port B of cell EF_GPIO8_APB.$eq$EF_GPIO8_APB.v:354$95 ($eq).
+
+4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+
+4.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.11. Executing OPT pass (performing simple optimizations).
+
+4.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ef_util_gating_cell.
+Optimizing module ef_util_ned.
+Optimizing module ef_util_ped.
+Optimizing module ef_util_sync.
+Optimizing module EF_GPIO8.
+Optimizing module EF_GPIO8_APB.
+
+4.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ef_util_gating_cell'.
+Computing hashes of 0 cells of `\ef_util_gating_cell'.
+Finding duplicate cells in `\ef_util_gating_cell'.
+Finding identical cells in module `\ef_util_ned'.
+Computing hashes of 3 cells of `\ef_util_ned'.
+Finding duplicate cells in `\ef_util_ned'.
+Finding identical cells in module `\ef_util_ped'.
+Computing hashes of 3 cells of `\ef_util_ped'.
+Finding duplicate cells in `\ef_util_ped'.
+Finding identical cells in module `\ef_util_sync'.
+Computing hashes of 1 cells of `\ef_util_sync'.
+Finding duplicate cells in `\ef_util_sync'.
+Finding identical cells in module `\EF_GPIO8'.
+Computing hashes of 32 cells of `\EF_GPIO8'.
+Finding duplicate cells in `\EF_GPIO8'.
+Finding identical cells in module `\EF_GPIO8_APB'.
+Computing hashes of 101 cells of `\EF_GPIO8_APB'.
+Finding duplicate cells in `\EF_GPIO8_APB'.
+Removed a total of 0 cells.
+
+4.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ef_util_gating_cell..
+Finding unused cells or wires in module \ef_util_ned..
+Finding unused cells or wires in module \ef_util_ped..
+Finding unused cells or wires in module \ef_util_sync..
+Finding unused cells or wires in module \EF_GPIO8..
+Finding unused cells or wires in module \EF_GPIO8_APB..
+
+4.11.4. Finished fast OPT passes.
+
+4.12. Executing SORT pass.
+
+4.13. Printing statistics.
+
+=== EF_GPIO8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+       90 wire bits
+       41 public wires
+       90 public wire bits
+       40 ports
+       82 port bits
+        8 cells
+        8   $not
+       24 submodules
+        8   ef_util_ned
+        8   ef_util_ped
+        8   ef_util_sync
+
+=== EF_GPIO8_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      151 wires
+      724 wire bits
+       94 public wires
+      374 public wire bits
+       13 ports
+      127 port bits
+       99 cells
+        6   $adff
+        8   $and
+        7   $eq
+        1   $logic_not
+       76   $mux
+        1   $reduce_or
+        2 submodules
+        1   EF_GPIO8
+        1   ef_util_gating_cell
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ned ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        3 cells
+        1   $and
+        1   $dff
+        1   $not
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        3 cells
+        1   $and
+        1   $dff
+        1   $not
+
+=== ef_util_sync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        5 wire bits
+        4 public wires
+        5 public wire bits
+        3 ports
+        3 port bits
+        1 cells
+        1   $dff
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      163 EF_GPIO8_APB
+        8 EF_GPIO8
+        3   ef_util_ned
+        3   ef_util_ped
+        1   ef_util_sync
+
+        +----------Count including submodules.
+        | 
+      308 wires
+      938 wire bits
+      235 public wires
+      572 public wire bits
+      129 ports
+      285 port bits
+        - memories
+        - memory bits
+        - processes
+      163 cells
+        6   $adff
+       24   $and
+       24   $dff
+        7   $eq
+        1   $logic_not
+       76   $mux
+       24   $not
+        1   $reduce_or
+        2 submodules
+        1   EF_GPIO8
+        1   ef_util_gating_cell
+
+4.14. Executing CHECK pass (checking for obvious problems).
+Checking module EF_GPIO8...
+Checking module EF_GPIO8_APB...
+Checking module ef_util_gating_cell...
+Checking module ef_util_ned...
+Checking module ef_util_ped...
+Checking module ef_util_sync...
+Found and reported 0 problems.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `EF_GPIO8_APB'. Setting top module to EF_GPIO8_APB.
+
+5.1. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \ef_util_gating_cell
+Used module:     \EF_GPIO8
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:         \ef_util_sync
+
+5.2. Analyzing design hierarchy..
+Top module:  \EF_GPIO8_APB
+Used module:     \ef_util_gating_cell
+Used module:     \EF_GPIO8
+Used module:         \ef_util_ned
+Used module:         \ef_util_ped
+Used module:         \ef_util_sync
+Removed 0 unused modules.
+
+6. Executing jny backend.
+
+7. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 5ea14fd396, time: 0.05s, user: 0.05s, system: 0.00s, MEM: 14.71 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 50% 6x read_verilog (0 sec), 13% 5x opt_clean (0 sec), ...

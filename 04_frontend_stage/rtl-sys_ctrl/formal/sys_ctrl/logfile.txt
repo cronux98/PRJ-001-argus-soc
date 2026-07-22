@@ -1,0 +1,60 @@
+SBY  6:48:09 [sys_ctrl] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/formal/sys_ctrl'.
+SBY  6:48:09 [sys_ctrl] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/formal/sys_ctrl/src/sys_ctrl.v'.
+SBY  6:48:09 [sys_ctrl] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/formal/sys_ctrl/src/ef_util_lib.v'.
+SBY  6:48:09 [sys_ctrl] engine_0: smtbmc z3
+SBY  6:48:09 [sys_ctrl] base: starting process "cd sys_ctrl/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  6:48:09 [sys_ctrl] base: finished (returncode=0)
+SBY  6:48:09 [sys_ctrl] prep: starting process "cd sys_ctrl/model; yosys -ql design_prep.log design_prep.ys"
+SBY  6:48:09 [sys_ctrl] prep: finished (returncode=0)
+SBY  6:48:09 [sys_ctrl] smt2: starting process "cd sys_ctrl/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  6:48:09 [sys_ctrl] smt2: finished (returncode=0)
+SBY  6:48:09 [sys_ctrl] engine_0: starting process "cd sys_ctrl; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Solver: z3
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY  6:48:09 [sys_ctrl] engine_0: ##   0:00:00  Status: passed
+SBY  6:48:09 [sys_ctrl] engine_0: finished (returncode=0)
+SBY  6:48:09 [sys_ctrl] engine_0: Status returned by engine: pass
+SBY  6:48:09 [sys_ctrl] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  6:48:09 [sys_ctrl] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  6:48:09 [sys_ctrl] summary: engine_0 (smtbmc z3) returned pass
+SBY  6:48:09 [sys_ctrl] summary: engine_0 did not produce any traces
+SBY  6:48:09 [sys_ctrl] DONE (PASS, rc=0)

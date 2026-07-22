@@ -1,0 +1,76 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-gpio/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+%Warning-EOFNEWLINE: common/ef_util_lib.v:393:10: Missing newline at end of file (POSIX 3.206).
+                                                : ... Suggest add newline.
+  393 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.049
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-DECLFILENAME: common/ef_util_lib.v:30:8: Filename 'ef_util_lib' does not match MODULE name: 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.049
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-MULTITOP: common/ef_util_lib.v:158:8: Multiple top level modules
+                                             : ... Suggest see manual; fix the duplicates, or use --top-module to select top.
+                   ... For warning description see https://verilator.org/warn/MULTITOP?v=5.049
+                   ... Use "/* verilator lint_off MULTITOP */" and lint_on around source to disable this message.
+                                             : ... Top module 'ef_util_glitch_filter'
+  115 | module ef_util_glitch_filter #(parameter N = 8, CLKDIV = 8'd1) (
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                                             : ... Top module 'ef_util_fifo'
+  158 | module ef_util_fifo #(parameter DW=8, AW=4)(
+      |        ^~~~~~~~~~~~
+                                             : ... Top module 'ef_util_clkmux_4x1'
+  327 | module ef_util_clkmux_4x1 (
+      |        ^~~~~~~~~~~~~~~~~~
+                                             : ... Top module 'EF_GPIO8_APB'
+   25 | module EF_GPIO8_APB (
+      |        ^~~~~~~~~~~~
+%Warning-WIDTHEXPAND: rtl-gpio/rtl/EF_GPIO8_APB.v:352:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DATAI_WIRE' generates 8 bits.
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+  352 |    (PADDR[16-1:0] == DATAI_REG_OFFSET) ? DATAI_WIRE :
+      |                                        ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl-gpio/rtl/EF_GPIO8_APB.v:353:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DATAO_REG' generates 8 bits.
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+  353 |    (PADDR[16-1:0] == DATAO_REG_OFFSET) ? DATAO_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: rtl-gpio/rtl/EF_GPIO8_APB.v:354:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DIR_REG' generates 8 bits.
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+  354 |    (PADDR[16-1:0] == DIR_REG_OFFSET) ? DIR_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-gpio/rtl/EF_GPIO8_APB.v:358:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+  358 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-UNUSEDSIGNAL: rtl-gpio/rtl/EF_GPIO8_APB.v:31:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+   31 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-gpio/rtl/EF_GPIO8_APB.v:67:16: Signal is not used: 'apb_re'
+                                                        : ... note: In instance 'EF_GPIO8_APB'
+   67 |   wire         apb_re = ~PWRITE & apb_valid;
+      |                ^~~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:372:21: Signal is not used: 'rst_n'
+                                                  : ... note: In instance 'EF_GPIO8_APB.clk_gate_cell'
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:373:21: Signal is not used: 'clk_en'
+                                                  : ... note: In instance 'EF_GPIO8_APB.clk_gate_cell'
+  373 |     input   wire    clk_en,
+      |                     ^~~~~~
+%Warning-UNUSEDSIGNAL: rtl-gpio/rtl/EF_GPIO8.v:22:25: Signal is not used: 'rst_n'
+                                                    : ... note: In instance 'EF_GPIO8_APB.instance_to_wrap'
+   22 |     input  wire         rst_n,
+      |                         ^~~~~
+%Warning-CASEINCOMPLETE: common/ef_util_lib.v:238:9: Case values incompletely covered (example pattern 0x0)
+  238 |         case({w_en,rd})
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.049
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.108 MB sources in 12 modules, into 0.096 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.031 s (elab=0.004, cvt=0.018, bld=0.000); cpu 0.031 s on 1 threads; allocated 22.539 MB

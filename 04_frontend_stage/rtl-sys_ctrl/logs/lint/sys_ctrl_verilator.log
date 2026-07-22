@@ -1,0 +1,28 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-sys_ctrl/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+%Warning-WIDTHEXPAND: rtl-sys_ctrl/rtl/sys_ctrl.v:112:31: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's REPLICATE generates 12 bits.
+                                                        : ... note: In instance 'sys_ctrl'
+  112 |                 8'h0C: prdata = {wake_source, 4'b0000, sleep_ctrl[3:0]};
+      |                               ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-sys_ctrl/rtl/sys_ctrl.v:17:24: Bits of signal are not used: 'pwdata'[31:8]
+                                                        : ... note: In instance 'sys_ctrl'
+   17 |     input  wire [31:0] pwdata,
+      |                        ^~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-sys_ctrl/rtl/sys_ctrl.v:42:16: Bits of signal are not used: 'sleep_ctrl'[7:4]
+                                                        : ... note: In instance 'sys_ctrl'
+   42 |     reg [ 7:0] sleep_ctrl;
+      |                ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-sys_ctrl/rtl/sys_ctrl.v:55:16: Signal is not used: 'ext_was_low'
+                                                        : ... note: In instance 'sys_ctrl'
+   55 |     reg        ext_was_low, wdt_was_low;
+      |                ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-sys_ctrl/rtl/sys_ctrl.v:55:29: Signal is not used: 'wdt_was_low'
+                                                        : ... note: In instance 'sys_ctrl'
+   55 |     reg        ext_was_low, wdt_was_low;
+      |                             ^~~~~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.035 MB sources in 2 modules, into 0.023 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.008 s (elab=0.001, cvt=0.003, bld=0.000); cpu 0.008 s on 1 threads; allocated 20.711 MB

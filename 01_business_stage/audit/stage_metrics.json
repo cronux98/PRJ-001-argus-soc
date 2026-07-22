@@ -1,0 +1,27 @@
+{
+  "stage": "01_business_stage",
+  "project": "PRJ-001",
+  "version": "v0",
+  "retry": 0,
+  "verdict": "PASS",
+  "checks_total": 8,
+  "checks_passed": 8,
+  "checks_failed": 0,
+  "fix_count": 0,
+  "model": "claude-opus-4-8",
+  "auditor": "Claude Code Opus 4.8",
+  "date": "2026-07-20",
+  "artifacts_audited": [
+    "market_validation.md",
+    "competitive_analysis.md",
+    "market_requirements.md",
+    "domain_report.md",
+    "baseline_metrics.json"
+  ],
+  "deliverables": {
+    "verdict_json": "audit/audit_pass.json",
+    "validation_report": "00_validation_report/01_business_validation.md",
+    "postmortem": "11_postmortem_audit/01_business_postmortem.md",
+    "stage_metrics": "audit/stage_metrics.json"
+  }
+}

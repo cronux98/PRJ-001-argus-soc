@@ -1,0 +1,63 @@
+GENERATED-FROM: sby SBY v0.64-2-gf57802a uart.sby depth=20 2026-07-20T06:47:52+00:00
+SBY  6:47:52 [uart] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart'.
+SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART_APB.v'.
+SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART.v'.
+SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/ef_util_lib.v'.
+SBY  6:47:52 [uart] engine_0: smtbmc z3
+SBY  6:47:52 [uart] base: starting process "cd uart/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  6:47:53 [uart] base: finished (returncode=0)
+SBY  6:47:53 [uart] prep: starting process "cd uart/model; yosys -ql design_prep.log design_prep.ys"
+SBY  6:47:53 [uart] prep: finished (returncode=0)
+SBY  6:47:53 [uart] smt2: starting process "cd uart/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  6:47:53 [uart] smt2: finished (returncode=0)
+SBY  6:47:53 [uart] engine_0: starting process "cd uart; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Solver: z3
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assertions in step 11..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assumptions in step 12..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assertions in step 12..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assumptions in step 13..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assertions in step 13..
+SBY  6:47:55 [uart] engine_0: ##   0:00:02  Checking assumptions in step 14..
+SBY  6:47:56 [uart] engine_0: ##   0:00:03  Checking assertions in step 14..
+SBY  6:47:56 [uart] engine_0: ##   0:00:03  Checking assumptions in step 15..
+SBY  6:47:56 [uart] engine_0: ##   0:00:03  Checking assertions in step 15..
+SBY  6:47:56 [uart] engine_0: ##   0:00:03  Checking assumptions in step 16..
+SBY  6:47:58 [uart] engine_0: ##   0:00:05  Checking assertions in step 16..
+SBY  6:47:58 [uart] engine_0: ##   0:00:05  Checking assumptions in step 17..
+SBY  6:47:58 [uart] engine_0: ##   0:00:05  Checking assertions in step 17..
+SBY  6:47:58 [uart] engine_0: ##   0:00:05  Checking assumptions in step 18..
+SBY  6:47:59 [uart] engine_0: ##   0:00:05  Checking assertions in step 18..
+SBY  6:47:59 [uart] engine_0: ##   0:00:05  Checking assumptions in step 19..
+SBY  6:47:59 [uart] engine_0: ##   0:00:06  Checking assertions in step 19..
+SBY  6:47:59 [uart] engine_0: ##   0:00:06  Status: passed
+SBY  6:47:59 [uart] engine_0: finished (returncode=0)
+SBY  6:47:59 [uart] engine_0: Status returned by engine: pass
+SBY  6:47:59 [uart] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:06 (6)
+SBY  6:47:59 [uart] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:06 (6)
+SBY  6:47:59 [uart] summary: engine_0 (smtbmc z3) returned pass
+SBY  6:47:59 [uart] summary: engine_0 did not produce any traces
+SBY  6:47:59 [uart] DONE (PASS, rc=0)
+EXIT:0

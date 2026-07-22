@@ -1,0 +1,74 @@
+{
+  "project": "PRJ-001",
+  "domain": "environmental-sensor-hub",
+  "comparables_count": 5,
+  "ppa_baselines": {
+    "frequency_mhz": {
+      "conservative": 25,
+      "ambitious": 100,
+      "comparable_scaled": 50,
+      "source": "OpenTitan EarlGrey: 100 MHz achieved on sky130A with Ibex (same core, same process). NEORV32: 50 MHz on FPGA, ~100-200 MHz on 130nm ASIC estimated. Target 50 MHz is midpoint between conservative (25 MHz: low-effort, basically guaranteed) and ambitious (100 MHz: OpenTitan parity, requires careful STA)."
+    },
+    "power_active_mw": {
+      "conservative": 10,
+      "ambitious": 3,
+      "comparable_scaled": 5,
+      "source": "TI MSP430FR2355: 2.9 mW active @ 24 MHz, 130nm FRAM. STM32L011D4: 0.28 mW @ 32 MHz, 110nm ULP. Silabs EFM8BB10: 3.75 mW @ 25 MHz, 180nm scaled to sky130A ~2.6 mW. Ibex at 50 MHz sky130A estimated 2-5 mW (core only), full SoC 5-10 mW. Conservative 10 mW assumes no clock gating; ambitious 3 mW assumes aggressive clock gating + low-Vt cells."
+    },
+    "sleep_power_uw": {
+      "conservative": 50,
+      "ambitious": 5,
+      "comparable_scaled": 10,
+      "source": "TI MSP430FR2355: 0.5 µA standby with RAM retention at 3V = ~1.5 µW. STM32L011D4: 0.5 µA stop mode = ~0.9 µW at 1.8V. Sky130A SRAM retention at 50 MHz domain typically 5-50 µW range. Conservative 50 µW assumes entire SoC clock-gated but not power-gated; ambitious 5 µW assumes power gating with state retention."
+    },
+    "area_mm2": {
+      "conservative": 2.0,
+      "ambitious": 0.5,
+      "comparable_scaled": 1.0,
+      "source": "OpenTitan EarlGrey: ~1.0 mm² core area on sky130A (Ibex + 128KB SRAM + 20+ peripherals). Our design: Ibex (~25 kGE) + 2-4KB OpenRAM SRAM (~30-60 kGE) + 6 peripherals (~8 kGE) + APB bus + Caravel wrapper (~8 kGE) = ~70-100 kGE total. At sky130A std cell density ~3.5 µm²/GE with 60% utilization, physical area ≈ 0.4-0.6 mm² (ambitious) to 1.5-2.0 mm² (conservative, includes padding and test structures). Caravel user area is 2,800×1,760µm = 4.93 mm² — all targets fit comfortably."
+    },
+    "ip_reuse_ratio": {
+      "conservative": 0.60,
+      "ambitious": 0.85,
+      "comparable_scaled": 0.80,
+      "source": "OpenTitan: ~90% REUSE (all comportable IP). IP-INDEX: fossi-ef-uart, fossi-ef-spi, fossi-ef-i2c, fossi-ef-gpio8, fossi-ef-tmr32, lowrisc-ibex, vlsida-openram — all STRONG tier, Apache-2.0 or BSD-3-Clause. 6/6 core peripherals available as STRONG REUSE IP. Caravel wrapper + APB bridge are CREATE. Expected REUSE ratio: 80-85%."
+    }
+  },
+  "feature_baseline": {
+    "must_have": [
+      "RV32I processor core (Ibex)",
+      "UART interface (TX/RX, 115200 bps)",
+      "SPI master interface (mode 0/3, up to 12.5 MHz)",
+      "I2C master interface (100/400 kHz)",
+      "GPIO (8-12 pins, per-pin direction/IRQ)",
+      "PWM output (2 channels, 8-10 bit resolution)",
+      "2-4 KB SRAM (OpenRAM)",
+      "APB internal bus",
+      "Caravel Wishbone bridge and harness integration"
+    ],
+    "differentiators": [
+      "Fully open-source (Apache-2.0 / BSD-3-Clause) — no proprietary IP",
+      "STRONG-tier REUSE for all core peripherals (EF_ IP family + Ibex + OpenRAM)",
+      "Silicon-validated on Caravel MPW shuttle (sky130A)",
+      "Audited integration with formal verification per module",
+      "Reference design for open-source environmental sensing",
+      "Publish sleep/active power measurements on sky130A — no prior open-source data"
+    ],
+    "exclusions": [
+      "Analog front-end (ADC, op-amps, comparators) — digital-only SoC",
+      "Wireless (BLE, Zigbee, LoRa) — external module expected",
+      "Hardware crypto (AES, SHA, TRNG) — out of scope for sensor hub",
+      "Floating-point unit — RV32I only, no F extension",
+      "Cache — direct SRAM access, no cache hierarchy",
+      "Boot ROM — firmware loaded via Caravel management SoC or external SPI flash"
+    ]
+  },
+  "caravel_area_budget_mm2": {
+    "total_available": 4.928,
+    "allocated_ambitious": 1.0,
+    "allocated_conservative": 2.0,
+    "utilization_percent_ambitious": 20.3,
+    "utilization_percent_conservative": 40.6,
+    "note": "Caravel user area = 2,800 × 1,760 µm. Conservative allocation uses <41% of available area — ample room for routing, test structures, and future expansion."
+  }
+}

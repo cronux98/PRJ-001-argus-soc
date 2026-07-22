@@ -1,0 +1,127 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "total_tests": 19,
+  "passed": 19,
+  "failed": 0,
+  "pass_rate": "19/19",
+  "verdict": "PASS",
+  "golden_seed": 42,
+  "golden_pass_rate": "19/19",
+  "comparisons": [
+    {
+      "test": "CHIP_ID",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SRAM_RW",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "UART_TX",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "UART_RX",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "UART_LOOPBACK",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SPI_TRANSFER",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SPI_MODE_SWITCH",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "I2C_WRITE",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "I2C_NACK",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "GPIO_DIR",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "GPIO_EDGE_IRQ",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "PWM_DUTY",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "PWM_WDT",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "IRQ_CTRL",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "APB_ERROR",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SRAM_WORD",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SRAM_STATS",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "WISHBONE_BRIDGE",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    },
+    {
+      "test": "SLEEP_WAKE",
+      "result": "IDENTICAL",
+      "arch_status": "PASS",
+      "golden_status": "PASS"
+    }
+  ]
+}

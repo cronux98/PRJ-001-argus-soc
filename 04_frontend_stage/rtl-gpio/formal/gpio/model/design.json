@@ -1,0 +1,2072 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "EF_GPIO8",
+        "cell_sorts": [
+          {
+            "type": "ef_util_ped",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "ped_0",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:93.17-93.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:94.17-94.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:95.17-95.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:96.17-96.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_4",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:97.17-97.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_5",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:98.17-98.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_6",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:99.17-99.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ped_7",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:100.17-100.69"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "ef_util_ned",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "ned_0",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:102.17-102.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:103.17-103.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:104.17-104.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:105.17-105.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_4",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:106.17-106.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_5",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:107.17-107.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_6",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:108.17-108.69"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ned_7",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8.v:109.17-109.69"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "ef_util_sync",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "out",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "synchronizer[0]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[1]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[2]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[3]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[4]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[5]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[6]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "synchronizer[7]",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:69.18-69.77"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$EF_GPIO8.v:84$119",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:84.23-84.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:85$120",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:85.23-85.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:86$121",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:86.23-86.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:87$122",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:87.23-87.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:88$123",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:88.23-88.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:89$124",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:89.23-89.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:90$125",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:90.23-90.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8.v:91$126",
+                  "attributes": {
+                    "src": "EF_GPIO8.v:91.23-91.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "src": "EF_GPIO8.v:20.1-113.10"
+        }
+      },
+      {
+        "name": "EF_GPIO8_APB",
+        "cell_sorts": [
+          {
+            "type": "$reduce_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$reduce_or$EF_GPIO8_APB.v:306$92",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:306.16-306.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "EF_GPIO8",
+            "ports": [
+                {
+                  "name": "bus_in",
+                  "direction": "",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "bus_oe",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "bus_out",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "io_in",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "io_oe",
+                  "direction": "",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "io_out",
+                  "direction": "",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "pin0_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin0_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin0_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin0_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin1_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin1_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin1_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin1_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin2_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin2_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin2_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin2_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin3_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin3_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin3_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin3_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin4_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin4_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin4_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin4_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin5_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin5_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin5_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin5_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin6_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin6_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin6_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin6_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin7_hi",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin7_lo",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin7_ne",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "pin7_pe",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "instance_to_wrap",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:308.12-349.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$187",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:302.18-302.38|EF_GPIO8_APB.v:302.14-302.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$190",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:301.13-301.24|EF_GPIO8_APB.v:301.9-302.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$192",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:298.18-298.38|EF_GPIO8_APB.v:298.14-298.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$195",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:297.13-297.24|EF_GPIO8_APB.v:297.9-298.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$197",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:294.18-294.38|EF_GPIO8_APB.v:294.14-294.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$200",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:293.13-293.24|EF_GPIO8_APB.v:293.9-294.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$202",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:290.18-290.38|EF_GPIO8_APB.v:290.14-290.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$205",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:289.13-289.24|EF_GPIO8_APB.v:289.9-290.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$207",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:286.18-286.38|EF_GPIO8_APB.v:286.14-286.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$210",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:285.13-285.24|EF_GPIO8_APB.v:285.9-286.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$212",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:282.18-282.38|EF_GPIO8_APB.v:282.14-282.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$215",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:281.13-281.24|EF_GPIO8_APB.v:281.9-282.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$217",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:278.18-278.38|EF_GPIO8_APB.v:278.14-278.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$220",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:277.13-277.24|EF_GPIO8_APB.v:277.9-278.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$222",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:274.18-274.38|EF_GPIO8_APB.v:274.14-274.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$225",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:273.13-273.24|EF_GPIO8_APB.v:273.9-274.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$227",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:270.18-270.38|EF_GPIO8_APB.v:270.14-270.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$230",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:269.13-269.24|EF_GPIO8_APB.v:269.9-270.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$232",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:266.18-266.38|EF_GPIO8_APB.v:266.14-266.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$235",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:265.13-265.24|EF_GPIO8_APB.v:265.9-266.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$237",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:262.18-262.38|EF_GPIO8_APB.v:262.14-262.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$240",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:261.13-261.24|EF_GPIO8_APB.v:261.9-262.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$242",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:258.18-258.38|EF_GPIO8_APB.v:258.14-258.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$245",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:257.13-257.24|EF_GPIO8_APB.v:257.9-258.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$247",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:254.18-254.38|EF_GPIO8_APB.v:254.14-254.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$250",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:253.13-253.24|EF_GPIO8_APB.v:253.9-254.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$252",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:250.18-250.38|EF_GPIO8_APB.v:250.14-250.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$255",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:249.13-249.24|EF_GPIO8_APB.v:249.9-250.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$257",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:246.18-246.38|EF_GPIO8_APB.v:246.14-246.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$260",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:245.13-245.24|EF_GPIO8_APB.v:245.9-246.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$262",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:242.18-242.38|EF_GPIO8_APB.v:242.14-242.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$265",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:241.13-241.24|EF_GPIO8_APB.v:241.9-242.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$267",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:238.18-238.38|EF_GPIO8_APB.v:238.14-238.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$270",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:237.13-237.24|EF_GPIO8_APB.v:237.9-238.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$272",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:234.18-234.38|EF_GPIO8_APB.v:234.14-234.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$275",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:233.13-233.24|EF_GPIO8_APB.v:233.9-234.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$277",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:230.18-230.38|EF_GPIO8_APB.v:230.14-230.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$280",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:229.13-229.24|EF_GPIO8_APB.v:229.9-230.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$282",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:226.18-226.38|EF_GPIO8_APB.v:226.14-226.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$285",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:225.13-225.24|EF_GPIO8_APB.v:225.9-226.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$287",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:222.18-222.38|EF_GPIO8_APB.v:222.14-222.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$290",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:221.13-221.24|EF_GPIO8_APB.v:221.9-222.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$292",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:218.18-218.38|EF_GPIO8_APB.v:218.14-218.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$295",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:217.13-217.24|EF_GPIO8_APB.v:217.9-218.61"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$297",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:214.18-214.37|EF_GPIO8_APB.v:214.14-214.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$300",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:213.13-213.24|EF_GPIO8_APB.v:213.9-214.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$302",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:210.18-210.37|EF_GPIO8_APB.v:210.14-210.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$305",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:209.13-209.24|EF_GPIO8_APB.v:209.9-210.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$307",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:206.18-206.37|EF_GPIO8_APB.v:206.14-206.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$310",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:205.13-205.24|EF_GPIO8_APB.v:205.9-206.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$312",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:202.18-202.37|EF_GPIO8_APB.v:202.14-202.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$315",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:201.13-201.24|EF_GPIO8_APB.v:201.9-202.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$317",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:198.18-198.37|EF_GPIO8_APB.v:198.14-198.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$320",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:197.13-197.24|EF_GPIO8_APB.v:197.9-198.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$322",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:194.18-194.37|EF_GPIO8_APB.v:194.14-194.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$325",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:193.13-193.24|EF_GPIO8_APB.v:193.9-194.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$327",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:190.18-190.37|EF_GPIO8_APB.v:190.14-190.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$330",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:189.13-189.24|EF_GPIO8_APB.v:189.9-190.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$332",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:186.18-186.37|EF_GPIO8_APB.v:186.14-186.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$335",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:185.13-185.24|EF_GPIO8_APB.v:185.9-186.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$337",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:182.18-182.37|EF_GPIO8_APB.v:182.14-182.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$340",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:181.13-181.24|EF_GPIO8_APB.v:181.9-182.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$342",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:178.18-178.37|EF_GPIO8_APB.v:178.14-178.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$345",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:177.13-177.24|EF_GPIO8_APB.v:177.9-178.60"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$348",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:136.14-136.55|EF_GPIO8_APB.v:136.10-137.26"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$350",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:133.14-133.55|EF_GPIO8_APB.v:133.10-133.82"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$352",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:124.14-124.57|EF_GPIO8_APB.v:124.10-124.85"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$354",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:119.14-119.56|EF_GPIO8_APB.v:119.10-119.83"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$356",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:113.14-113.58|EF_GPIO8_APB.v:113.10-113.87"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:352$110",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:352.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:353$108",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:353.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:354$106",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:354.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:355$104",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:355.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:356$103",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:356.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:357$102",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:357.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$EF_GPIO8_APB.v:358$101",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:358.4-359.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:352$93",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:352.5-352.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "ef_util_gating_cell",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "clk_en",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "clk_o",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "clk_gate_cell",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "EF_GPIO8_APB.v:54.23-60.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:136$56",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:136.24-136.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:353$94",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:353.5-353.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:354$95",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:354.5-354.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:355$96",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:355.5-355.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:356$97",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:356.5-356.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:357$98",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:357.5-357.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$EF_GPIO8_APB.v:358$99",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:358.5-358.37"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000010000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$365",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:173.3-304.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$377",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:134.3-137.26"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$382",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:131.3-133.82"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$387",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:122.3-124.85"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$392",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:117.3-119.83"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$397",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:111.3-113.87"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$EF_GPIO8_APB.v:113$40",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:113.14-113.58"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:119$44",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:119.14-119.56"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:124$48",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:124.14-124.57"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:130$49",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:130.27-130.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:133$53",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:133.14-133.55"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:136$57",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:136.14-136.55"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:65$33",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:65.28-65.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$EF_GPIO8_APB.v:66$34",
+                  "attributes": {
+                    "src": "EF_GPIO8_APB.v:66.25-66.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "top": "00000000000000000000000000000001",
+            "src": "EF_GPIO8_APB.v:25.1-363.10"
+        }
+      },
+      {
+        "name": "ef_util_gating_cell",
+        "cell_sorts": [
+
+        ],
+        "attributes": {
+            "src": "ef_util_lib.v:366.1-393.10"
+        }
+      },
+      {
+        "name": "ef_util_ned",
+        "cell_sorts": [
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$358",
+                  "attributes": {
+                    "src": "ef_util_lib.v:68.5-69.23"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$not$ef_util_lib.v:70$132",
+                  "attributes": {
+                    "src": "ef_util_lib.v:70.18-70.21"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$ef_util_lib.v:70$133",
+                  "attributes": {
+                    "src": "ef_util_lib.v:70.18-70.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "src": "ef_util_lib.v:62.1-71.10"
+        }
+      },
+      {
+        "name": "ef_util_ped",
+        "cell_sorts": [
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$359",
+                  "attributes": {
+                    "src": "ef_util_lib.v:54.5-55.16"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$not$ef_util_lib.v:56$129",
+                  "attributes": {
+                    "src": "ef_util_lib.v:56.23-56.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$ef_util_lib.v:56$130",
+                  "attributes": {
+                    "src": "ef_util_lib.v:56.18-56.31"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "src": "ef_util_lib.v:48.1-57.10"
+        }
+      },
+      {
+        "name": "ef_util_sync",
+        "cell_sorts": [
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$360",
+                  "attributes": {
+                    "src": "ef_util_lib.v:38.5-39.44"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "src": "ef_util_lib.v:30.1-43.10"
+        }
+      }
+  ]
+}

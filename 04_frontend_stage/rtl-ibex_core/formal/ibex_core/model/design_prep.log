@@ -1,0 +1,282 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module alu.
+Found 0 SCCs in module alu_ctrl.
+Found 0 SCCs in module branch_unit.
+Found 0 SCCs in module ctrl_unit.
+Found 0 SCCs in module ex_mem.
+Found 0 SCCs in module forwarding_unit.
+Found 0 SCCs in module hazard_unit.
+Found 0 SCCs in module ibex_core.
+Found 0 SCCs in module ibex_core_inner.
+Found 0 SCCs in module id_ex.
+Found 0 SCCs in module if_id.
+Found 0 SCCs in module imm_gen.
+Found 0 SCCs in module mem_wb.
+Found 0 SCCs in module pc.
+Found 0 SCCs in module reg_file.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing ex_mem.$procdff$1584 ($adff): ARST=\rst_ni, D=\ex_alu_result_i, Q=\mem_alu_result_o
+Replacing ex_mem.$procdff$1589 ($adff): ARST=\rst_ni, D=\ex_rs2_data_i, Q=\mem_rs2_data_o
+Replacing ex_mem.$procdff$1594 ($adff): ARST=\rst_ni, D=\ex_rd_addr_i, Q=\mem_rd_addr_o
+Replacing ex_mem.$procdff$1599 ($adff): ARST=\rst_ni, D=\ex_funct3_i, Q=\mem_funct3_o
+Replacing ex_mem.$procdff$1604 ($adff): ARST=\rst_ni, D=\ex_mem_read_i, Q=\mem_mem_read_o
+Replacing ex_mem.$procdff$1609 ($adff): ARST=\rst_ni, D=\ex_mem_write_i, Q=\mem_mem_write_o
+Replacing ex_mem.$procdff$1614 ($adff): ARST=\rst_ni, D=\ex_reg_write_i, Q=\mem_reg_write_o
+Replacing ex_mem.$procdff$1619 ($adff): ARST=\rst_ni, D=\ex_mem_to_reg_i, Q=\mem_mem_to_reg_o
+Replacing ex_mem.$procdff$1624 ($adff): ARST=\rst_ni, D=\ex_result_src_i, Q=\mem_result_src_o
+Replacing ibex_core.$procdff$1629 ($adff): ARST=\rst_ni, D=$0\mie_meie[0:0], Q=\mie_meie
+Replacing ibex_core.$procdff$1634 ($adff): ARST=\rst_ni, D=$0\mstatus_mie[0:0], Q=\mstatus_mie
+Replacing ibex_core.$procdff$1639 ($adff): ARST=\rst_ni, D=$0\in_wfi[0:0], Q=\in_wfi
+Replacing ibex_core.$procdff$1659 ($adff): ARST=\rst_ni, D=$0\taking_trap[0:0], Q=\taking_trap
+Replacing id_ex.$procdff$1484 ($adff): ARST=\rst_ni, D=$0\ex_pc_o[31:0], Q=\ex_pc_o
+Replacing id_ex.$procdff$1489 ($adff): ARST=\rst_ni, D=$0\ex_rs1_data_o[31:0], Q=\ex_rs1_data_o
+Replacing id_ex.$procdff$1494 ($adff): ARST=\rst_ni, D=$0\ex_rs2_data_o[31:0], Q=\ex_rs2_data_o
+Replacing id_ex.$procdff$1499 ($adff): ARST=\rst_ni, D=$0\ex_imm_o[31:0], Q=\ex_imm_o
+Replacing id_ex.$procdff$1504 ($adff): ARST=\rst_ni, D=$0\ex_rs1_addr_o[4:0], Q=\ex_rs1_addr_o
+Replacing id_ex.$procdff$1509 ($adff): ARST=\rst_ni, D=$0\ex_rs2_addr_o[4:0], Q=\ex_rs2_addr_o
+Replacing id_ex.$procdff$1514 ($adff): ARST=\rst_ni, D=$0\ex_rd_addr_o[4:0], Q=\ex_rd_addr_o
+Replacing id_ex.$procdff$1519 ($adff): ARST=\rst_ni, D=$0\ex_funct3_o[2:0], Q=\ex_funct3_o
+Replacing id_ex.$procdff$1524 ($adff): ARST=\rst_ni, D=$0\ex_funct7_o[6:0], Q=\ex_funct7_o
+Replacing id_ex.$procdff$1529 ($adff): ARST=\rst_ni, D=$0\ex_alu_op_o[1:0], Q=\ex_alu_op_o
+Replacing id_ex.$procdff$1534 ($adff): ARST=\rst_ni, D=$0\ex_alu_src_o[0:0], Q=\ex_alu_src_o
+Replacing id_ex.$procdff$1539 ($adff): ARST=\rst_ni, D=$0\ex_mem_read_o[0:0], Q=\ex_mem_read_o
+Replacing id_ex.$procdff$1544 ($adff): ARST=\rst_ni, D=$0\ex_mem_write_o[0:0], Q=\ex_mem_write_o
+Replacing id_ex.$procdff$1549 ($adff): ARST=\rst_ni, D=$0\ex_branch_o[0:0], Q=\ex_branch_o
+Replacing id_ex.$procdff$1554 ($adff): ARST=\rst_ni, D=$0\ex_reg_write_o[0:0], Q=\ex_reg_write_o
+Replacing id_ex.$procdff$1559 ($adff): ARST=\rst_ni, D=$0\ex_mem_to_reg_o[0:0], Q=\ex_mem_to_reg_o
+Replacing id_ex.$procdff$1564 ($adff): ARST=\rst_ni, D=$0\ex_jump_o[0:0], Q=\ex_jump_o
+Replacing id_ex.$procdff$1569 ($adff): ARST=\rst_ni, D=$0\ex_result_src_o[1:0], Q=\ex_result_src_o
+Replacing id_ex.$procdff$1574 ($adff): ARST=\rst_ni, D=$0\ex_is_lui_o[0:0], Q=\ex_is_lui_o
+Replacing id_ex.$procdff$1579 ($adff): ARST=\rst_ni, D=$0\ex_is_auipc_o[0:0], Q=\ex_is_auipc_o
+Replacing if_id.$procdff$1469 ($adff): ARST=\rst_ni, D=$0\id_pc_o[31:0], Q=\id_pc_o
+Replacing if_id.$procdff$1474 ($adff): ARST=\rst_ni, D=$0\id_pc_plus4_o[31:0], Q=\id_pc_plus4_o
+Replacing if_id.$procdff$1479 ($adff): ARST=\rst_ni, D=$0\id_instr_o[31:0], Q=\id_instr_o
+Replacing mem_wb.$procdff$1439 ($adff): ARST=\rst_ni, D=\mem_alu_result_i, Q=\wb_alu_result_o
+Replacing mem_wb.$procdff$1444 ($adff): ARST=\rst_ni, D=\mem_mem_data_i, Q=\wb_mem_data_o
+Replacing mem_wb.$procdff$1449 ($adff): ARST=\rst_ni, D=\mem_rd_addr_i, Q=\wb_rd_addr_o
+Replacing mem_wb.$procdff$1454 ($adff): ARST=\rst_ni, D=\mem_reg_write_i, Q=\wb_reg_write_o
+Replacing mem_wb.$procdff$1459 ($adff): ARST=\rst_ni, D=\mem_mem_to_reg_i, Q=\wb_mem_to_reg_o
+Replacing mem_wb.$procdff$1464 ($adff): ARST=\rst_ni, D=\mem_result_src_i, Q=\wb_result_src_o
+Replacing pc.$procdff$1434 ($adff): ARST=\rst_ni, D=$0\pc_o[31:0], Q=\pc_o
+Replacing reg_file.$procdff$1269 ($adff): ARST=\rst_ni, D=$0\regs[1][31:0], Q=\regs[1]
+Replacing reg_file.$procdff$1274 ($adff): ARST=\rst_ni, D=$0\regs[2][31:0], Q=\regs[2]
+Replacing reg_file.$procdff$1279 ($adff): ARST=\rst_ni, D=$0\regs[3][31:0], Q=\regs[3]
+Replacing reg_file.$procdff$1284 ($adff): ARST=\rst_ni, D=$0\regs[4][31:0], Q=\regs[4]
+Replacing reg_file.$procdff$1289 ($adff): ARST=\rst_ni, D=$0\regs[5][31:0], Q=\regs[5]
+Replacing reg_file.$procdff$1294 ($adff): ARST=\rst_ni, D=$0\regs[6][31:0], Q=\regs[6]
+Replacing reg_file.$procdff$1299 ($adff): ARST=\rst_ni, D=$0\regs[7][31:0], Q=\regs[7]
+Replacing reg_file.$procdff$1304 ($adff): ARST=\rst_ni, D=$0\regs[8][31:0], Q=\regs[8]
+Replacing reg_file.$procdff$1309 ($adff): ARST=\rst_ni, D=$0\regs[9][31:0], Q=\regs[9]
+Replacing reg_file.$procdff$1314 ($adff): ARST=\rst_ni, D=$0\regs[10][31:0], Q=\regs[10]
+Replacing reg_file.$procdff$1319 ($adff): ARST=\rst_ni, D=$0\regs[11][31:0], Q=\regs[11]
+Replacing reg_file.$procdff$1324 ($adff): ARST=\rst_ni, D=$0\regs[12][31:0], Q=\regs[12]
+Replacing reg_file.$procdff$1329 ($adff): ARST=\rst_ni, D=$0\regs[13][31:0], Q=\regs[13]
+Replacing reg_file.$procdff$1334 ($adff): ARST=\rst_ni, D=$0\regs[14][31:0], Q=\regs[14]
+Replacing reg_file.$procdff$1339 ($adff): ARST=\rst_ni, D=$0\regs[15][31:0], Q=\regs[15]
+Replacing reg_file.$procdff$1344 ($adff): ARST=\rst_ni, D=$0\regs[16][31:0], Q=\regs[16]
+Replacing reg_file.$procdff$1349 ($adff): ARST=\rst_ni, D=$0\regs[17][31:0], Q=\regs[17]
+Replacing reg_file.$procdff$1354 ($adff): ARST=\rst_ni, D=$0\regs[18][31:0], Q=\regs[18]
+Replacing reg_file.$procdff$1359 ($adff): ARST=\rst_ni, D=$0\regs[19][31:0], Q=\regs[19]
+Replacing reg_file.$procdff$1364 ($adff): ARST=\rst_ni, D=$0\regs[20][31:0], Q=\regs[20]
+Replacing reg_file.$procdff$1369 ($adff): ARST=\rst_ni, D=$0\regs[21][31:0], Q=\regs[21]
+Replacing reg_file.$procdff$1374 ($adff): ARST=\rst_ni, D=$0\regs[22][31:0], Q=\regs[22]
+Replacing reg_file.$procdff$1379 ($adff): ARST=\rst_ni, D=$0\regs[23][31:0], Q=\regs[23]
+Replacing reg_file.$procdff$1384 ($adff): ARST=\rst_ni, D=$0\regs[24][31:0], Q=\regs[24]
+Replacing reg_file.$procdff$1389 ($adff): ARST=\rst_ni, D=$0\regs[25][31:0], Q=\regs[25]
+Replacing reg_file.$procdff$1394 ($adff): ARST=\rst_ni, D=$0\regs[26][31:0], Q=\regs[26]
+Replacing reg_file.$procdff$1399 ($adff): ARST=\rst_ni, D=$0\regs[27][31:0], Q=\regs[27]
+Replacing reg_file.$procdff$1404 ($adff): ARST=\rst_ni, D=$0\regs[28][31:0], Q=\regs[28]
+Replacing reg_file.$procdff$1409 ($adff): ARST=\rst_ni, D=$0\regs[29][31:0], Q=\regs[29]
+Replacing reg_file.$procdff$1414 ($adff): ARST=\rst_ni, D=$0\regs[30][31:0], Q=\regs[30]
+Replacing reg_file.$procdff$1419 ($adff): ARST=\rst_ni, D=$0\regs[31][31:0], Q=\regs[31]
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \reg_file..
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \reg_file..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~16 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module alu...
+Checking module alu_ctrl...
+Checking module branch_unit...
+Checking module ctrl_unit...
+Checking module ex_mem...
+Checking module forwarding_unit...
+Checking module hazard_unit...
+Checking module ibex_core...
+Checking module ibex_core_inner...
+Checking module id_ex...
+Checking module if_id...
+Checking module imm_gen...
+Checking module mem_wb...
+Checking module pc...
+Checking module reg_file...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alu.
+Optimizing module alu_ctrl.
+Optimizing module branch_unit.
+Optimizing module ctrl_unit.
+Optimizing module ex_mem.
+Optimizing module forwarding_unit.
+Optimizing module hazard_unit.
+Optimizing module ibex_core.
+Optimizing module ibex_core_inner.
+Optimizing module id_ex.
+Optimizing module if_id.
+Optimizing module imm_gen.
+Optimizing module mem_wb.
+Optimizing module pc.
+Optimizing module reg_file.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alu'.
+Computing hashes of 27 cells of `\alu'.
+Finding duplicate cells in `\alu'.
+Finding identical cells in module `\alu_ctrl'.
+Computing hashes of 19 cells of `\alu_ctrl'.
+Finding duplicate cells in `\alu_ctrl'.
+Finding identical cells in module `\branch_unit'.
+Computing hashes of 14 cells of `\branch_unit'.
+Finding duplicate cells in `\branch_unit'.
+Finding identical cells in module `\ctrl_unit'.
+Computing hashes of 24 cells of `\ctrl_unit'.
+Finding duplicate cells in `\ctrl_unit'.
+Finding identical cells in module `\ex_mem'.
+Computing hashes of 27 cells of `\ex_mem'.
+Finding duplicate cells in `\ex_mem'.
+Finding identical cells in module `\forwarding_unit'.
+Computing hashes of 16 cells of `\forwarding_unit'.
+Finding duplicate cells in `\forwarding_unit'.
+Finding identical cells in module `\hazard_unit'.
+Computing hashes of 7 cells of `\hazard_unit'.
+Finding duplicate cells in `\hazard_unit'.
+Finding identical cells in module `\ibex_core'.
+Computing hashes of 51 cells of `\ibex_core'.
+Finding duplicate cells in `\ibex_core'.
+Finding identical cells in module `\ibex_core_inner'.
+Computing hashes of 53 cells of `\ibex_core_inner'.
+Finding duplicate cells in `\ibex_core_inner'.
+Finding identical cells in module `\id_ex'.
+Computing hashes of 80 cells of `\id_ex'.
+Finding duplicate cells in `\id_ex'.
+Finding identical cells in module `\if_id'.
+Computing hashes of 15 cells of `\if_id'.
+Finding duplicate cells in `\if_id'.
+Finding identical cells in module `\imm_gen'.
+Computing hashes of 6 cells of `\imm_gen'.
+Finding duplicate cells in `\imm_gen'.
+Finding identical cells in module `\mem_wb'.
+Computing hashes of 18 cells of `\mem_wb'.
+Finding duplicate cells in `\mem_wb'.
+Finding identical cells in module `\pc'.
+Computing hashes of 4 cells of `\pc'.
+Finding duplicate cells in `\pc'.
+Finding identical cells in module `\reg_file'.
+Computing hashes of 264 cells of `\reg_file'.
+Finding duplicate cells in `\reg_file'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \reg_file..
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_ctrl..
+Finding unused cells or wires in module \branch_unit..
+Finding unused cells or wires in module \ctrl_unit..
+Finding unused cells or wires in module \ex_mem..
+Finding unused cells or wires in module \forwarding_unit..
+Finding unused cells or wires in module \hazard_unit..
+Finding unused cells or wires in module \ibex_core..
+Finding unused cells or wires in module \ibex_core_inner..
+Finding unused cells or wires in module \id_ex..
+Finding unused cells or wires in module \if_id..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \mem_wb..
+Finding unused cells or wires in module \pc..
+Finding unused cells or wires in module \reg_file..
+Removed 0 unused cells and 81 unused wires.
+<suppressed ~9 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 303190ff02, time: 0.10s, user: 0.11s, system: 0.00s, MEM: 19.96 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 34% 4x opt_clean (0 sec), 18% 1x check (0 sec), ...

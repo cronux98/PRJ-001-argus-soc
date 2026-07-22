@@ -1,0 +1,39 @@
+# Gold: RTL + common lib
+design -push
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+hierarchy -check -top ibex_core
+proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
+design -save gold
+design -pop
+
+# Gate: Netlist only (common lib already loaded)
+design -push
+read_liberty -ignore_miss_func /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/synth/ibex_core_netlist.v
+hierarchy -check -top ibex_core
+proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
+design -save gate
+design -pop
+
+# Equivalence check
+design -copy-from gate -as gate_ibex_core ibex_core
+design -copy-from gold -as gold_ibex_core ibex_core
+equiv_make -inames gold_ibex_core gate_ibex_core equiv_ibex_core
+equiv_simple
+equiv_induct
+equiv_status

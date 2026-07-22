@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="40" failures="0" errors="0" skipped="0" time="1434" timestamp="2026-07-20T13:12:45.459504">
+  <testcase name="test_argus_soc.test_chip_id" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_sram_wb_access" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_uart_register_access" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_gpio_access" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_access" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_uart_tx" classname="." time="0.210" />
+  <testcase name="test_argus_soc.test_pwm_outputs" classname="." time="0.010" />
+  <testcase name="test_argus_soc.test_multiple_sram_locations" classname="." time="0.070" />
+  <testcase name="test_argus_soc.test_interrupt_controller_access" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_signals_stable" classname="." time="0.010" />
+  <testcase name="test_argus_soc.test_i2c_io_present" classname="." time="0.010" />
+  <testcase name="test_argus_soc.test_gpio_io_driven" classname="." time="0.040" />
+  <testcase name="test_argus_soc.test_sram_boundary" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_sram_write_read_sequence" classname="." time="0.170" />
+  <testcase name="test_argus_soc.test_uart_pr_write_read" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_uart_cfg_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_prescale_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_cfg_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_ctrl_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_gpio_datao_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_gpio_dir_toggle" classname="." time="0.040" />
+  <testcase name="test_argus_soc.test_interrupt_en_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_interrupt_pending_read" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_pwm_timer_read" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_pwm_reload_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_wdt_access" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_all_peripherals_readable" classname="." time="0.100" />
+  <testcase name="test_argus_soc.test_wb_stress" classname="." time="0.430" />
+  <testcase name="test_argus_soc.test_sys_ctrl_clk_div" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_sys_ctrl_sleep_ctrl" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_sram_cross_boundary" classname="." time="0.130" />
+  <testcase name="test_argus_soc.test_gpio_interrupt_regs" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_uart_interrupt_regs" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_spi_interrupt_regs" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_i2c_prescale_read" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_i2c_status_read" classname="." time="0.020" />
+  <testcase name="test_argus_soc.test_multiple_sram_access_patterns" classname="." time="0.090" />
+  <testcase name="test_argus_soc.test_pwm_prescale_rw" classname="." time="0.030" />
+  <testcase name="test_argus_soc.test_uart_tx_hold_check" classname="." time="0.120" />
+  <testcase name="test_argus_soc.test_final_integration" classname="." time="0.090" />
+</testsuite>

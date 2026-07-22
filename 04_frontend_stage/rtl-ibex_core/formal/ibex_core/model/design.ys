@@ -1,0 +1,23 @@
+# running in ibex_core/src/
+read_verilog -formal -sv ibex_core.v
+read_verilog -formal -sv ibex_core_inner.v
+read_verilog -formal -sv alu.v
+read_verilog -formal -sv alu_ctrl.v
+read_verilog -formal -sv branch_unit.v
+read_verilog -formal -sv ctrl_unit.v
+read_verilog -formal -sv ex_mem.v
+read_verilog -formal -sv forwarding_unit.v
+read_verilog -formal -sv hazard_unit.v
+read_verilog -formal -sv id_ex.v
+read_verilog -formal -sv if_id.v
+read_verilog -formal -sv imm_gen.v
+read_verilog -formal -sv mem_wb.v
+read_verilog -formal -sv pc.v
+read_verilog -formal -sv reg_file.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top ibex_core
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

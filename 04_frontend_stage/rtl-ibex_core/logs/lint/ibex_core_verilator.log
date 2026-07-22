@@ -1,0 +1,52 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-ibex_core/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:33:24: Signal is not used: 'irq_software_i'
+                                                          : ... note: In instance 'ibex_core'
+   33 |     input  wire        irq_software_i,
+      |                        ^~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:34:24: Signal is not used: 'irq_timer_i'
+                                                          : ... note: In instance 'ibex_core'
+   34 |     input  wire        irq_timer_i,
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:36:24: Signal is not used: 'irq_fast_i'
+                                                          : ... note: In instance 'ibex_core'
+   36 |     input  wire [14:0] irq_fast_i,
+      |                        ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:39:24: Signal is not used: 'debug_req_i'
+                                                          : ... note: In instance 'ibex_core'
+   39 |     input  wire        debug_req_i,
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:50:16: Signal is not used: 'mepc'
+                                                          : ... note: In instance 'ibex_core'
+   50 |     reg [31:0] mepc;            
+      |                ^~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:51:16: Signal is not used: 'mtvec'
+                                                          : ... note: In instance 'ibex_core'
+   51 |     reg [31:0] mtvec;           
+      |                ^~~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:52:16: Signal is not used: 'mcause'
+                                                          : ... note: In instance 'ibex_core'
+   52 |     reg [31:0] mcause;          
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: rtl-ibex_core/rtl/ibex_core.v:58:16: Parameter is not used: 'CSR_MEPC'
+                                                         : ... note: In instance 'ibex_core'
+   58 |     localparam CSR_MEPC     = 12'h341;
+      |                ^~~~~~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.049
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: rtl-ibex_core/rtl/ibex_core.v:59:16: Parameter is not used: 'CSR_MCAUSE'
+                                                         : ... note: In instance 'ibex_core'
+   59 |     localparam CSR_MCAUSE   = 12'h342;
+      |                ^~~~~~~~~~
+%Warning-UNUSEDPARAM: rtl-ibex_core/rtl/ibex_core.v:60:16: Parameter is not used: 'CSR_MIP'
+                                                         : ... note: In instance 'ibex_core'
+   60 |     localparam CSR_MIP      = 12'h344;
+      |                ^~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-ibex_core/rtl/ibex_core.v:77:17: Signal is not used: 'dmem_funct3_inner'
+                                                          : ... note: In instance 'ibex_core'
+   77 |     wire [ 2:0] dmem_funct3_inner;
+      |                 ^~~~~~~~~~~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.657 MB sources in 16 modules, into 0.124 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.033 s (elab=0.004, cvt=0.017, bld=0.000); cpu 0.033 s on 1 threads; allocated 22.664 MB

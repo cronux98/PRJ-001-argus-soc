@@ -1,0 +1,80 @@
+{
+  "verdict": "PASS",
+  "stage": "02_specification_stage",
+  "project": "PRJ-001",
+  "retry": 1,
+  "auditor": "Claude Code Opus 4.8 (independent audit)",
+  "checks_total": 11,
+  "checks_passed": 11,
+  "checks": [
+    {
+      "check": "1.1 system specification exists",
+      "result": "PASS",
+      "evidence": "system_spec.md present, 43,009 bytes, 12 sections (SRS with FR/PR/IR/AR/CR, memory map, clock/reset, budgets, traceability). Unchanged since retry 0."
+    },
+    {
+      "check": "1.2 module list defined (>=3 module/block/component)",
+      "result": "PASS",
+      "evidence": "grep -ci 'module|block|component' system_spec.md = 11 (>=3); module_list.md enumerates M01-M12. Unchanged since retry 0."
+    },
+    {
+      "check": "1.3 interface definitions (>=3 interface/bus/protocol/signal)",
+      "result": "PASS",
+      "evidence": "grep -ci 'interface|bus|protocol|signal' system_spec.md = 33 (>=3); SS5 has SYS-IR-001..010. Unchanged since retry 0."
+    },
+    {
+      "check": "1.4 golden model exists",
+      "result": "PASS",
+      "evidence": "golden_model/golden_model.py (40,891 bytes, 9 component models, 17 test functions/19 assertions) + golden_model/ dir. Unchanged since retry 0."
+    },
+    {
+      "check": "1.5 golden model produces deterministic output",
+      "result": "PASS",
+      "evidence": "golden_model/determinism.json: identical=true, n_runs=3, distinct seeds (42/123/999) each with distinct --out file, all resolving to tests_md5=32fec48a9b6354c1d2015467d8a55005. run_determinism.sh confirmed to invoke golden_model.py N=3 with distinct --seed/--out per run (script lines 17-22); output file mtimes are distinct and sequential (02:33:37.4677, .5476, .6276), consistent with genuine sequential subprocess execution rather than copied artifacts. Re-verified in this retry via 'jq .identical' equivalent (python3 json load): True."
+    },
+    {
+      "check": "1.6 planning validator PASS",
+      "result": "PASS",
+      "evidence": "planning_validator.log exists (2,655 bytes) and ends with 'RESULT: PASS'. PASS marker file present at <dir>/PASS. Log documents 5 sub-checks all PASS: (a) 61 SYS-xx-NNN ID uniqueness/referential integrity, (b) memory-map non-overlap across 10 regions, (c) 12/12 module cross-reference M01-M12, (d) module_list.md summary arithmetic (5+1+6=12, ratio 0.500), (e) traceability config-key coverage 61/61 requirements bound. Was FAIL at retry 0 (empty glob, no artifact existed) -- now fixed."
+    },
+    {
+      "check": "1.7 requirements traceable (unique IDs referenced in spec)",
+      "result": "PASS",
+      "evidence": "61 unique SYS-(FR|PR|IR|AR|CR)-NNN IDs; SS11 traceability matrix references every ID with block + verification method + priority. Unchanged since retry 0."
+    },
+    {
+      "check": "1.8a requirement-to-config-key binding exists (traceability_matrix.md)",
+      "result": "PASS",
+      "evidence": "traceability_matrix.md exists (12,435 bytes). grep -c 'SYS-' = 97 occurrences. Contains three sections: 'Config Key Inventory' (29 keys), 'Requirement -> Config Key Bindings' (forward map, all 61 requirements across SYS-FR/PR/IR/AR/CR), and 'Config Key -> Requirement Reverse Trace' (29/29 keys traced back). Integrity Checks table at file end self-verifies: 29/29 config keys bound, 37/37 tunable MUST reqs bound, 61/61 requirements appear, 0 orphan config keys. One documented exception (SYSCTRL.RESET_CAUSE, explicitly labeled 'architectural -- no direct SYS-xx'), disclosed not hidden, consistent with the 1.9 REUSE* precedent for documented exceptions. Was FAIL at retry 0 (file did not exist) -- now fixed."
+    },
+    {
+      "check": "1.8b summary arithmetic reconciles with its own rows (module counts, reuse ratio)",
+      "result": "PASS",
+      "evidence": "module_list.md: Total=12, REUSE=5, REUSE*=1, CREATE=6 -> 5+1+6=12 (exact). Reuse ratio 0.50 by count = (5+1)/12 = 0.500 (exact). Unchanged since retry 0."
+    },
+    {
+      "check": "1.9 REUSE/CREATE classification has a written rule for REUSE-with-extension modules",
+      "result": "PASS",
+      "evidence": "module_list.md defines a distinct REUSE* category and states the rule for extension (M07 pwm, fossi-ef-tmr32 adapted, wrapper-only). SYS-CR-003 codifies it. Unchanged since retry 0."
+    },
+    {
+      "check": "1.10 self-referential hashing excludes the hash field from the hashed content",
+      "result": "PASS",
+      "evidence": "golden_model.py lines 1062-1063: tests_json hashed BEFORE injection into output['_metadata']['tests_md5']; hash covers only 'tests' array, excludes '_metadata'. Unchanged since retry 0."
+    },
+    {
+      "check": "G.3 reserved-filename integrity (auditor-owned gate)",
+      "result": "PASS",
+      "evidence": "test ! -f audit/audit_pass.json returned true prior to this write -- the self-authored audit_pass.json flagged at retry 0 was removed per the STAGE_FIX action (rm audit/audit_pass.json) and not replaced by the stage agent. This file is now being written exclusively by the independent auditor, satisfying G.3."
+    }
+  ],
+  "findings": [
+    "All 3 previously-failed items (1.6, 1.8a, G.3) are independently verified fixed with genuine tool-produced evidence, not superficial keyword matches.",
+    "1.6: planning_validator.log documents 5 substantive sub-checks (ID uniqueness, memory-map overlap, module cross-reference, arithmetic reconciliation, config-key coverage) all PASS, ending RESULT: PASS.",
+    "1.8a: traceability_matrix.md provides a complete bidirectional requirement<->config-key binding (61 requirements, 29 config keys) with a self-verifying Integrity Checks table; the one undocumented-requirement config key (SYSCTRL.RESET_CAUSE) is explicitly disclosed as architectural rather than silently omitted.",
+    "G.3: the reserved-filename violation was resolved by deletion, not by the stage agent re-writing a new audit_pass.json -- integrity restored.",
+    "Spot-check of golden_model/determinism.json confirms identical=true still holds across the 3 distinct-seed runs verified independently at retry 0; no regression."
+  ],
+  "summary": "11 of 11 mandatory Stage 1 checks PASS on re-audit (retry 1). All 3 previously-failed items (1.6 planning validator, 1.8a config-key traceability, G.3 reserved-filename integrity) verified fixed with genuine evidence. No fixes needed.",
+  "fix_count": 0
+}

@@ -1,0 +1,268 @@
+{
+  "_metadata": {
+    "isa": "RV32I",
+    "model_version": "1.0.0",
+    "pdk": "sky130A",
+    "sys_clk_hz": 50000000,
+    "tests_md5": "ba221a5040ab29f0e8ebfe4c892781cc",
+    "timestamp": "2026-07-20T00:00:00Z"
+  },
+  "codename": "Argus",
+  "project": "PRJ-001",
+  "seed": 42,
+  "summary": {
+    "failed": 0,
+    "pass_rate": "19/19",
+    "passed": 19,
+    "total_tests": 19
+  },
+  "tests": [
+    {
+      "details": {
+        "expected": "0x41524755",
+        "read": "0x41524755"
+      },
+      "status": "PASS",
+      "test": "CHIP_ID",
+      "test_id": 1
+    },
+    {
+      "details": {
+        "patterns": 5,
+        "results": [
+          {
+            "addr": "0x00000000",
+            "ok": true,
+            "read": "0xDEADBEEF",
+            "write": "0xDEADBEEF"
+          },
+          {
+            "addr": "0x00000004",
+            "ok": true,
+            "read": "0xCAFEBABE",
+            "write": "0xCAFEBABE"
+          },
+          {
+            "addr": "0x00000008",
+            "ok": true,
+            "read": "0x00000000",
+            "write": "0x00000000"
+          },
+          {
+            "addr": "0x0000000C",
+            "ok": true,
+            "read": "0xFFFFFFFF",
+            "write": "0xFFFFFFFF"
+          },
+          {
+            "addr": "0x00000010",
+            "ok": true,
+            "read": "0xA5A5A5A5",
+            "write": "0xA5A5A5A5"
+          }
+        ]
+      },
+      "status": "PASS",
+      "test": "SRAM_RW",
+      "test_id": 2
+    },
+    {
+      "details": {
+        "expected": [
+          "0x48",
+          "0x65",
+          "0x6C",
+          "0x6C",
+          "0x6F"
+        ],
+        "sent": [
+          "0x48",
+          "0x65",
+          "0x6C",
+          "0x6C",
+          "0x6F"
+        ]
+      },
+      "status": "PASS",
+      "test": "UART_TX",
+      "test_id": 3
+    },
+    {
+      "details": {
+        "expected": [
+          "0x57",
+          "0x6F",
+          "0x72",
+          "0x6C",
+          "0x64"
+        ],
+        "received": [
+          "0x57",
+          "0x6F",
+          "0x72",
+          "0x6C",
+          "0x64"
+        ]
+      },
+      "status": "PASS",
+      "test": "UART_RX",
+      "test_id": 4
+    },
+    {
+      "details": {
+        "bytes": 256,
+        "match": true
+      },
+      "status": "PASS",
+      "test": "UART_LOOPBACK",
+      "test_id": 5
+    },
+    {
+      "details": {
+        "expected_rx": [
+          "0x5A",
+          "0xA5",
+          "0x00",
+          "0xFF"
+        ],
+        "rx": [
+          "0x5A",
+          "0xA5",
+          "0x00",
+          "0xFF"
+        ],
+        "transfers": 4,
+        "tx": [
+          "0xA5",
+          "0x5A",
+          "0xFF",
+          "0x00"
+        ]
+      },
+      "status": "PASS",
+      "test": "SPI_TRANSFER",
+      "test_id": 6
+    },
+    {
+      "details": {
+        "mode0_rx": "0xBD",
+        "mode3_rx": "0xBD"
+      },
+      "status": "PASS",
+      "test": "SPI_MODE_SWITCH",
+      "test_id": 7
+    },
+    {
+      "details": {
+        "addr": "0x48",
+        "data": "0x55",
+        "status": "0x10",
+        "transactions": 1
+      },
+      "status": "PASS",
+      "test": "I2C_WRITE",
+      "test_id": 8
+    },
+    {
+      "details": {
+        "addr": "0x7F",
+        "nack": true,
+        "status": "0x04"
+      },
+      "status": "PASS",
+      "test": "I2C_NACK",
+      "test_id": 9
+    },
+    {
+      "details": {
+        "data_in": "0x50",
+        "data_out": "0xA5",
+        "dir": "0x0F"
+      },
+      "status": "PASS",
+      "test": "GPIO_DIR",
+      "test_id": 10
+    },
+    {
+      "details": {
+        "irq_status": "0x01"
+      },
+      "status": "PASS",
+      "test": "GPIO_EDGE_IRQ",
+      "test_id": 11
+    },
+    {
+      "details": {
+        "ch0_duty_pct": "50.0",
+        "ch1_duty_pct": "25.0",
+        "period": 2000
+      },
+      "status": "PASS",
+      "test": "PWM_DUTY",
+      "test_id": 12
+    },
+    {
+      "details": {
+        "timeout_1100": true,
+        "timeout_500": false,
+        "wdt_counter": 0
+      },
+      "status": "PASS",
+      "test": "PWM_WDT",
+      "test_id": 13
+    },
+    {
+      "details": {
+        "cpu_irq": 1,
+        "pending": "0x0001"
+      },
+      "status": "PASS",
+      "test": "IRQ_CTRL",
+      "test_id": 14
+    },
+    {
+      "details": {
+        "read_value": "0x00000000",
+        "unmapped_addr": "0x00020000"
+      },
+      "status": "PASS",
+      "test": "APB_ERROR",
+      "test_id": 15
+    },
+    {
+      "details": {
+        "addr": "0x00000100",
+        "word": "0x12345678"
+      },
+      "status": "PASS",
+      "test": "SRAM_WORD",
+      "test_id": 16
+    },
+    {
+      "details": {
+        "reads": 6,
+        "writes": 6
+      },
+      "status": "PASS",
+      "test": "SRAM_STATS",
+      "test_id": 17
+    },
+    {
+      "details": {
+        "transactions": 4
+      },
+      "status": "PASS",
+      "test": "WISHBONE_BRIDGE",
+      "test_id": 18
+    },
+    {
+      "details": {
+        "sleep_entered": true,
+        "wake_source": 1
+      },
+      "status": "PASS",
+      "test": "SLEEP_WAKE",
+      "test_id": 19
+    }
+  ]
+}

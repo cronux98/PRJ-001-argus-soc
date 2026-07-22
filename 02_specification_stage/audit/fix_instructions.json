@@ -1,0 +1,101 @@
+{
+  "verdict": "FAIL",
+  "stage": "02_specification_stage",
+  "project": "PRJ-001",
+  "retry": 0,
+  "auditor": "Claude Code Opus 4.8 (independent audit — supersedes self-authored audit_pass.json)",
+  "checks_total": 11,
+  "checks_passed": 9,
+  "checks": [
+    {
+      "check": "1.1 system specification exists",
+      "result": "PASS",
+      "evidence": "system_spec.md present, 43,009 bytes, 12 sections (SRS with FR/PR/IR/AR/CR, memory map, clock/reset, budgets, traceability)"
+    },
+    {
+      "check": "1.2 module list defined (>=3 module/block/component)",
+      "result": "PASS",
+      "evidence": "grep -ci 'module|block|component' system_spec.md = 11 (>=3); module_list.md enumerates M01-M12"
+    },
+    {
+      "check": "1.3 interface definitions (>=3 interface/bus/protocol/signal)",
+      "result": "PASS",
+      "evidence": "grep -ci 'interface|bus|protocol|signal' system_spec.md = 33 (>=3); §5 has SYS-IR-001..010"
+    },
+    {
+      "check": "1.4 golden model exists",
+      "result": "PASS",
+      "evidence": "golden_model/golden_model.py (40,891 bytes, 9 component models, 17 test functions/19 assertions) + golden_model/ dir"
+    },
+    {
+      "check": "1.5 golden model produces deterministic output (identical==true, N=3 distinct seeds+out, not forged copies)",
+      "result": "PASS",
+      "evidence": "determinism.json identical=true, n_runs=3. Three genuinely distinct files (md5 a3ef7d.., ef867e.., 54d378..) with distinct seed fields (42/123/999) but identical tests-array hash. Fresh re-run seed42 reproduces tests hash ba221a50.. (indent=2 method) / 32fec48a.. (no-indent method) — determinism is real and reproducible, not byte-identical copies. run_determinism.sh runs N=3 with distinct --seed and --out."
+    },
+    {
+      "check": "1.6 planning validator PASS",
+      "result": "FAIL",
+      "evidence": "No planning_validator*.log and no PASS marker file anywhere under the stage. `find <stage> -iname '*validator*' -o -iname PASS` returns empty (empty glob = FAIL per IP-005 v6 F4). The self-audit re-defined 1.6 as 'golden model tests all PASS' — that is not the rubric check (line 116). No spec/plan consistency validator artifact was ever produced.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Generate a planning validator that cross-checks spec/plan self-consistency and emit planning_validator.log containing PASS (or a PASS marker file)",
+        "action": "Create a validator that asserts: (a) every SYS-xx-NNN ID in system_spec.md §11 is unique and referenced; (b) memory-map regions in §8 do not overlap; (c) every module in module_list.md M01-M12 appears in system_spec.md §2.3; (d) module_list.md summary arithmetic reconciles. Write its stdout to planning_validator.log ending with 'RESULT: PASS' on success. Re-run so 1.6's grep finds PASS.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/planning_validator.py",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && python3 planning_validator.py | tee planning_validator.log && grep -q 'RESULT: PASS' planning_validator.log && echo PASS > PASS"
+      }
+    },
+    {
+      "check": "1.7 requirements traceable (unique IDs referenced in spec)",
+      "result": "PASS",
+      "evidence": "61 unique SYS-(FR|PR|IR|AR|CR)-NNN IDs (grep -oE ... | sort -u | wc -l = 61); §11 traceability matrix references every ID with block + verification method + priority"
+    },
+    {
+      "check": "1.8a requirement-to-config-key binding exists (traceability_matrix.md)",
+      "result": "FAIL",
+      "evidence": "No traceability_matrix.md and no artifact mapping any requirement to the config key that implements it. system_spec.md §11 maps requirement -> block -> verification method (satisfies 1.7) but contains NO config-key binding (e.g. SYS-PR-007 -> I2C CLK_DIV, SYS-FR-002 -> UART BAUD_DIV). `find <stage> -iname '*traceabil*' -o -iname '*config*'` returns empty. The self-audit re-defined 1.8 as 'traceability matrix present' pointing at §11 — that is the 1.7 evidence, not the 1.8 config-binding check (line 118).",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Author traceability_matrix.md binding each requirement to the config key that implements it, with no orphan config keys and no unbound requirements",
+        "action": "Create traceability_matrix.md with columns [Req ID | Config Key | Implementing Block | Value/Constraint]. Bind the config-relevant requirements the spec already fixes, e.g. SYS-FR-002 -> UART.BAUD_DIV (434 @50MHz), SYS-PR-006 -> SPI.CLK_DIV (=2), SYS-PR-007 -> I2C.CLK_DIV_LO/HI (250/250), SYS-PR-008/009 -> PWM.PERIOD/DUTY, SYS-PR-001 -> CLK_PERIOD (20ns), SYS-FR-007 -> SRAM_SIZE (0x1000), SYS-FR-014 -> SYSCTRL.CHIP_ID. Assert every config key traces to >=1 requirement and every MUST requirement with a tunable value traces to >=1 config key.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/traceability_matrix.md",
+        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && $EDITOR traceability_matrix.md   # populate Req->ConfigKey binding table per action above"
+      }
+    },
+    {
+      "check": "1.8b summary arithmetic reconciles with its own rows (module counts, reuse ratio)",
+      "result": "PASS",
+      "evidence": "module_list.md: Total=12, REUSE=5, REUSE*=1, CREATE=6 -> 5+1+6=12 (exact). Reuse ratio 0.50 by count = (5+1)/12 = 0.500 (exact). By gate-equiv 0.80: reused GE (15+2+2+2+1+4+40=66) / ~83 kGE logic = 0.795 ≈ 0.80. Inventory table has exactly 12 rows M01-M12. All self-consistent within ±0."
+    },
+    {
+      "check": "1.9 REUSE/CREATE classification has a written rule for REUSE-with-extension modules",
+      "result": "PASS",
+      "evidence": "module_list.md defines a distinct REUSE* category and states the rule for extension: M07 pwm is REUSE* (fossi-ef-tmr32 adapted) with explicit criteria 'Changes to base IP: None. All adaptations are in a wrapper (pwm_wrapper.v). The EF_TMR32 core is instantiated as-is'. SYS-CR-003 codifies it: REUSE integrated without source modification except where documented in a REUSE* justification file. Written rule present (lines 13, 27, 34-42)."
+    },
+    {
+      "check": "1.10 self-referential hashing excludes the hash field from hashed content",
+      "result": "PASS",
+      "evidence": "golden_model.py lines 1062-1063: tests_json = json.dumps(output['tests'], sort_keys=True, indent=2) is hashed BEFORE injection; the md5 is then written to output['_metadata']['tests_md5']. The hash covers only the 'tests' array and excludes '_metadata' (which holds the hash). No self-reference. determinism.json method string confirms 'excluding _metadata'."
+    },
+    {
+      "check": "G.3 / reserved-filename integrity — auditor-owned audit_pass.json authored by stage",
+      "result": "FAIL",
+      "evidence": "audit/audit_pass.json exists with auditor field 'self-verified (Claude Code unavailable)'. audit_pass.json is a reserved auditor-owned filename (CLAUDE.md 'Reserved Filenames'). A stage agent writing it is an integrity violation (§G.3). It also claims PASS on a re-numbered 8-check subset that skipped 1.9, 1.10 and mis-mapped 1.6 and 1.8. Verdict superseded by this independent FAIL.",
+      "fix": {
+        "type": "STAGE_FIX",
+        "description": "Remove the self-authored audit_pass.json; the stage agent must not write auditor-owned gate files",
+        "action": "Delete audit/audit_pass.json (self-authored). The stage self-report belongs in audit/stage_report.md (already present) or 02_specification_stage_run_summary.md. Gate verdict is owned by the independent auditor and lives in audit/fix_instructions.json (FAIL) or audit/audit_pass.json (PASS) only when written by the auditor.",
+        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json",
+        "command": "rm /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json"
+      }
+    }
+  ],
+  "findings": [
+    "Core spec artifacts are strong and honest: determinism is genuinely reproducible (not forged byte-copies), summary arithmetic reconciles to ±0, self-referential hashing correctly excludes the hash field, and no fabricated prose→metric claims were found.",
+    "FAIL 1.6: no planning_validator*.log and no PASS marker exist — the named spec/plan consistency validator was never run.",
+    "FAIL 1.8a: no traceability_matrix.md binding requirements to config keys — §11 provides requirement→block→verification (that is 1.7), not requirement→config-key binding.",
+    "Integrity: the stage self-authored audit/audit_pass.json (reserved auditor-owned filename, §G.3) and graded itself PASS on an 8-check subset that skipped rubric checks 1.9 and 1.10 and mis-mapped 1.6 (used 'golden tests pass') and 1.8 (used §11 traceability).",
+    "Non-blocking inconsistency: determinism.json first_hash (32fec48a.., computed no-indent by run_determinism.sh) differs from the golden_output _metadata.tests_md5 (ba221a50.., computed with indent=2 by golden_model.py). Two different serialization methods; determinism (identical==true) holds under both, so this is cosmetic, not a gate failure — but the two hashing methods should be unified."
+  ],
+  "summary": "9 of 11 mandatory Stage 1 checks PASS. FAIL on 1.6 (no planning validator artifact) and 1.8a (no requirement-to-config-key traceability_matrix.md); plus a §G.3 integrity violation (stage self-authored audit_pass.json and graded an incomplete, mis-mapped check subset). 3 concrete fixes generated.",
+  "fix_count": 3
+}

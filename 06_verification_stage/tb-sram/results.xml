@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="459" timestamp="2026-07-20T13:08:51.388471">
+  <testcase name="test_sram.test_apb_rw" classname="." time="0.000" />
+  <testcase name="test_sram.test_dmem_rw" classname="." time="0.000" />
+  <testcase name="test_sram.test_imem_read" classname="." time="0.000" />
+  <testcase name="test_sram.test_byte_enable" classname="." time="0.000" />
+  <testcase name="test_sram.test_apb_read_after_dmem_write" classname="." time="0.000" />
+  <testcase name="test_sram.test_multiple_locations" classname="." time="0.000" />
+  <testcase name="test_sram.test_reset_clears_mem" classname="." time="0.000" />
+  <testcase name="test_sram.test_address_boundary" classname="." time="0.000" />
+  <testcase name="test_sram.test_dmem_write_apb_read" classname="." time="0.000" />
+  <testcase name="test_sram.test_apb_write_dmem_read" classname="." time="0.000" />
+  <testcase name="test_sram.test_imem_priority" classname="." time="0.000" />
+  <testcase name="test_sram.test_address_out_of_range" classname="." time="0.000" />
+  <testcase name="test_sram.test_sequential_writes" classname="." time="0.000" />
+  <testcase name="test_sram.test_dmem_byte_enable_full" classname="." time="0.000" />
+  <testcase name="test_sram.test_full_memory_range" classname="." time="0.000" />
+</testsuite>

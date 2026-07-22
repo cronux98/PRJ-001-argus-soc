@@ -1,0 +1,22 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-sram/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+%Warning-UNUSEDSIGNAL: rtl-sram/rtl/sram.v:15:24: Signal is not used: 'rst_ni'
+                                                : ... note: In instance 'sram'
+   15 |     input  wire        rst_ni,
+      |                        ^~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-sram/rtl/sram.v:18:24: Bits of signal are not used: 'imem_addr'[1:0]
+                                                : ... note: In instance 'sram'
+   18 |     input  wire [31:0] imem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-sram/rtl/sram.v:22:24: Bits of signal are not used: 'dmem_addr'[1:0]
+                                                : ... note: In instance 'sram'
+   22 |     input  wire [31:0] dmem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-sram/rtl/sram.v:29:24: Bits of signal are not used: 'apb_paddr'[1:0]
+                                                : ... note: In instance 'sram'
+   29 |     input  wire [31:0] apb_paddr,
+      |                        ^~~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.034 MB sources in 2 modules, into 0.020 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.007 s (elab=0.001, cvt=0.003, bld=0.000); cpu 0.007 s on 1 threads; allocated 20.672 MB

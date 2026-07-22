@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.." tests="15" failures="0" errors="0" skipped="0" time="536" timestamp="2026-07-20T13:08:49.891852">
+  <testcase name="test_spi_master.test_status_idle" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_cfg_rw" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_ctrl_enable" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_prescale_rw" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_csb_high_when_disabled" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_interrupt_regs" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_tx_with_cs_high" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_sclk_stable_when_disabled" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_cfg_clock_phase" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_ctrl_disable" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_prescale_max_value" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_rx_fifo_default" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_tx_fifo_default" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_mosi_default_low" classname="." time="0.000" />
+  <testcase name="test_spi_master.test_interrupt_clear" classname="." time="0.000" />
+</testsuite>

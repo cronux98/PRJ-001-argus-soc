@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-07-20T09:58:22" hostname="smdtest02" package="argus_soc" id="0" name="default" tests="0" errors="0" failures="0" time="12" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<system-out>SBY  9:58:10 [argus_soc] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/apb_interconnect.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/argus_soc.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_GPIO8.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_GPIO8_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_I2C_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/axis_fifo.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/i2c_init.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/i2c_master.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/i2c_master_axil.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/i2c_master_wbs_16.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/i2c_single_reg.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/alu.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/alu_ctrl.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/branch_unit.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/ctrl_unit.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/ex_mem.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/forwarding_unit.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/hazard_unit.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/ibex_core.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/ibex_core_inner.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/id_ex.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/if_id.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/imm_gen.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/mem_wb.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/pc.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/reg_file.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/rtl/interrupt_ctrl.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/interrupt_ctrl.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_TMR32.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_TMR32_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_WDT32.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_WDT32_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/pwm_wrapper.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_SPI.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_SPI_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/spi_master.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/sram.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/sys_ctrl.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_UART.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/EF_UART_APB.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/wb_bridge.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/ef_util_lib.v'.
+SBY  9:58:10 [argus_soc] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc_asserts.sv' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/formal/argus_soc/src/argus_soc_asserts.sv'.
+SBY  9:58:10 [argus_soc] engine_0: smtbmc z3
+SBY  9:58:10 [argus_soc] base: starting process &quot;cd argus_soc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:58:10 [argus_soc] base: argus_soc.v:200: Warning: Yosys has only limited support for tri-state logic at the moment.
+SBY  9:58:10 [argus_soc] base: Warning: Replacing memory \m_axis_pipe_reg with list of registers. See axis_fifo.v:258
+SBY  9:58:10 [argus_soc] base: Warning: Replacing memory \mem with list of registers. See axis_fifo.v:218
+SBY  9:58:11 [argus_soc] base: Warning: Replacing memory \regs with list of registers. See reg_file.v:30
+SBY  9:58:12 [argus_soc] base: finished (returncode=0)
+SBY  9:58:12 [argus_soc] prep: starting process &quot;cd argus_soc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_pready is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [31] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [30] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [29] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [28] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [27] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [26] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [25] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [24] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [23] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [22] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [21] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [20] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [19] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [18] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [17] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [16] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [15] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [14] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [13] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [12] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [11] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [10] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [9] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [8] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [7] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [6] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [5] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [4] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [3] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [2] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [1] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: Warning: Wire argus_soc.\wb_apb_prdata [0] is used but has no driver.
+SBY  9:58:12 [argus_soc] prep: finished (returncode=0)
+SBY  9:58:12 [argus_soc] smt2: starting process &quot;cd argus_soc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:58:13 [argus_soc] smt2: finished (returncode=0)
+SBY  9:58:13 [argus_soc] engine_0.basecase: starting process &quot;cd argus_soc; yosys-smtbmc -s z3 --presat --noprogress -t 4  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  9:58:13 [argus_soc] engine_0.induction: starting process &quot;cd argus_soc; yosys-smtbmc -s z3 --presat -i --noprogress -t 4  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY  9:58:13 [argus_soc] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY  9:58:13 [argus_soc] engine_0.induction: ##   0:00:00  Solver: z3
+SBY  9:58:13 [argus_soc] engine_0.induction: ##   0:00:00  Trying induction in step 4..
+SBY  9:58:13 [argus_soc] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY  9:58:13 [argus_soc] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY  9:58:13 [argus_soc] engine_0.induction: ##   0:00:00  Status: passed
+SBY  9:58:13 [argus_soc] engine_0.induction: finished (returncode=0)
+SBY  9:58:13 [argus_soc] engine_0.induction: Status returned by engine for induction: pass
+SBY  9:58:13 [argus_soc] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY  9:58:13 [argus_soc] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY  9:58:16 [argus_soc] engine_0.basecase: ##   0:00:03  Checking assertions in step 1..
+SBY  9:58:16 [argus_soc] engine_0.basecase: ##   0:00:03  Checking assumptions in step 2..
+SBY  9:58:20 [argus_soc] engine_0.basecase: ##   0:00:07  Checking assertions in step 2..
+SBY  9:58:20 [argus_soc] engine_0.basecase: ##   0:00:07  Checking assumptions in step 3..
+SBY  9:58:22 [argus_soc] engine_0.basecase: ##   0:00:08  Checking assertions in step 3..
+SBY  9:58:22 [argus_soc] engine_0.basecase: ##   0:00:09  Status: passed
+SBY  9:58:22 [argus_soc] engine_0.basecase: finished (returncode=0)
+SBY  9:58:22 [argus_soc] engine_0.basecase: Status returned by engine for basecase: pass
+SBY  9:58:22 [argus_soc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:11 (11)
+SBY  9:58:22 [argus_soc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:12 (12)
+SBY  9:58:22 [argus_soc] summary: engine_0 (smtbmc z3) returned pass for basecase
+SBY  9:58:22 [argus_soc] summary: engine_0 (smtbmc z3) returned pass for induction
+SBY  9:58:22 [argus_soc] summary: engine_0 did not produce any traces
+SBY  9:58:22 [argus_soc] summary: successful proof by k-induction.
+SBY  9:58:22 [argus_soc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+{
+  "module": "sys_ctrl",
+  "id": "M12",
+  "type": "CREATE",
+  "promotion_status": "PASS",
+  "cell_count": 88,
+  "dff_count": 18,
+  "latch_count": 0,
+  "area_um2": 942.1536,
+  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/synth/sys_ctrl_synth.log",
+  "lint_errors": 0,
+  "formal_pass": true,
+  "formal_depth": 20,
+  "equiv_pass": true,
+  "verification_tests_pass": 8,
+  "verification_tests_total": 8,
+  "verification_tests_fail": 0,
+  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sys_ctrl/results.xml",
+  "admission_reasons": [],
+  "has_frontend_artifacts": true
+}

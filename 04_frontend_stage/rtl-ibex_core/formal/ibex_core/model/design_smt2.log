@@ -1,0 +1,426 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `ibex_core'. Setting top module to ibex_core.
+
+2.1. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \branch_unit
+Used module:         \ctrl_unit
+Used module:         \ex_mem
+Used module:         \forwarding_unit
+Used module:         \hazard_unit
+Used module:         \id_ex
+Used module:         \if_id
+Used module:         \imm_gen
+Used module:         \mem_wb
+Used module:         \pc
+Used module:         \reg_file
+
+2.2. Analyzing design hierarchy..
+Top module:  \ibex_core
+Used module:     \ibex_core_inner
+Used module:         \alu
+Used module:         \alu_ctrl
+Used module:         \branch_unit
+Used module:         \ctrl_unit
+Used module:         \ex_mem
+Used module:         \forwarding_unit
+Used module:         \hazard_unit
+Used module:         \id_ex
+Used module:         \if_id
+Used module:         \imm_gen
+Used module:         \mem_wb
+Used module:         \pc
+Used module:         \reg_file
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       30 wires
+      436 wire bits
+        5 public wires
+      101 public wire bits
+        5 ports
+      101 port bits
+       27 cells
+        1   $add
+        1   $and
+       11   $eq
+        2   $logic_not
+        2   $lt
+        2   $mux
+        1   $or
+        1   $pmux
+        1   $reduce_or
+        1   $shl
+        1   $shr
+        1   $sshr
+        1   $sub
+        1   $xor
+
+=== alu_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       22 wires
+       52 wire bits
+        7 public wires
+       28 public wire bits
+        4 ports
+       16 port bits
+       19 cells
+        3   $anyseq
+       10   $eq
+        2   $logic_not
+        1   $mux
+        3   $pmux
+
+=== branch_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       82 wire bits
+        5 public wires
+       69 public wire bits
+        5 ports
+       69 port bits
+       14 cells
+        6   $eq
+        2   $ge
+        1   $logic_not
+        2   $lt
+        1   $mux
+        1   $ne
+        1   $pmux
+
+=== ctrl_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       36 wire bits
+       13 public wires
+       23 public wire bits
+       13 ports
+       23 port bits
+       24 cells
+        9   $eq
+        8   $mux
+        3   $pmux
+        4   $reduce_or
+
+=== ex_mem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       39 wires
+      315 wire bits
+       29 public wires
+      236 public wire bits
+       20 ports
+      158 port bits
+       29 cells
+        9   $anyinit
+        1   $assume
+       18   $mux
+        1   $not
+
+=== forwarding_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       22 wires
+       40 wire bits
+        8 public wires
+       26 public wire bits
+        8 ports
+       26 port bits
+       16 cells
+        4   $eq
+        6   $logic_and
+        4   $mux
+        2   $reduce_bool
+
+=== hazard_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       29 wire bits
+       12 public wires
+       24 public wire bits
+       10 ports
+       22 port bits
+        7 cells
+        2   $eq
+        2   $logic_and
+        1   $logic_or
+        1   $or
+        1   $reduce_bool
+
+=== ibex_core ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       78 wires
+      421 wire bits
+       43 public wires
+      386 public wire bits
+       19 ports
+      191 port bits
+       52 cells
+        4   $anyinit
+        1   $assume
+        6   $eq
+       12   $logic_and
+        6   $logic_not
+        4   $logic_or
+       18   $mux
+        1   $not
+        1 submodules
+        1   ibex_core_inner
+
+=== ibex_core_inner ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      123 wires
+     1291 wire bits
+       94 public wires
+     1070 public wire bits
+       12 ports
+      172 port bits
+       42 cells
+        3   $add
+        2   $anyseq
+        1   $assume
+       10   $eq
+        3   $logic_and
+        3   $logic_not
+        4   $logic_or
+        8   $mux
+        2   $not
+        1   $or
+        5   $pmux
+       13 submodules
+        1   alu
+        1   alu_ctrl
+        1   branch_unit
+        1   ctrl_unit
+        1   ex_mem
+        1   forwarding_unit
+        1   hazard_unit
+        1   id_ex
+        1   if_id
+        1   imm_gen
+        1   mem_wb
+        1   pc
+        1   reg_file
+
+=== id_ex ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      104 wires
+      834 wire bits
+       63 public wires
+      501 public wire bits
+       43 ports
+      335 port bits
+       82 cells
+       20   $anyinit
+        1   $assume
+       60   $mux
+        1   $not
+
+=== if_id ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       23 wires
+      581 wire bits
+       13 public wires
+      292 public wire bits
+       10 ports
+      196 port bits
+       17 cells
+        3   $anyinit
+        1   $assume
+       12   $mux
+        1   $not
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       72 wire bits
+        3 public wires
+       67 public wire bits
+        3 ports
+       67 port bits
+        6 cells
+        4   $eq
+        1   $logic_not
+        1   $pmux
+
+=== mem_wb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+      295 wire bits
+       20 public wires
+      221 public wire bits
+       14 ports
+      148 port bits
+       20 cells
+        6   $anyinit
+        1   $assume
+       12   $mux
+        1   $not
+
+=== pc ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+      164 wire bits
+        6 public wires
+       99 public wire bits
+        5 ports
+       67 port bits
+        6 cells
+        1   $anyinit
+        1   $assume
+        3   $mux
+        1   $not
+
+=== reg_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      272 wires
+     5368 wire bits
+       73 public wires
+     2162 public wire bits
+        9 ports
+      114 port bits
+      266 cells
+       31   $anyinit
+        2   $anyseq
+        1   $assume
+       95   $eq
+        3   $logic_and
+        2   $logic_not
+      128   $mux
+        1   $not
+        2   $pmux
+        1   $reduce_bool
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      627 ibex_core
+       42 ibex_core_inner
+       27   alu
+       19   alu_ctrl
+       14   branch_unit
+       24   ctrl_unit
+       29   ex_mem
+       16   forwarding_unit
+        7   hazard_unit
+       82   id_ex
+       17   if_id
+        6   imm_gen
+       20   mem_wb
+        6   pc
+      266   reg_file
+
+        +----------Count including submodules.
+        | 
+      818 wires
+    10016 wire bits
+      394 public wires
+     5305 public wire bits
+      180 ports
+     1705 port bits
+        - memories
+        - memory bits
+        - processes
+      627 cells
+        4   $add
+        1   $and
+       74   $anyinit
+        7   $anyseq
+        8   $assume
+      157   $eq
+        2   $ge
+       26   $logic_and
+       17   $logic_not
+        9   $logic_or
+        4   $lt
+      275   $mux
+        1   $ne
+        9   $not
+        3   $or
+       16   $pmux
+        4   $reduce_bool
+        5   $reduce_or
+        1   $shl
+        1   $shr
+        1   $sshr
+        1   $sub
+        1   $xor
+        1 submodules
+        1   ibex_core_inner
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module reg_file.
+Creating SMT-LIBv2 representation of module hazard_unit.
+Creating SMT-LIBv2 representation of module pc.
+Creating SMT-LIBv2 representation of module mem_wb.
+Creating SMT-LIBv2 representation of module imm_gen.
+Creating SMT-LIBv2 representation of module if_id.
+Creating SMT-LIBv2 representation of module id_ex.
+Creating SMT-LIBv2 representation of module forwarding_unit.
+Creating SMT-LIBv2 representation of module ex_mem.
+Creating SMT-LIBv2 representation of module ctrl_unit.
+Creating SMT-LIBv2 representation of module branch_unit.
+Creating SMT-LIBv2 representation of module alu_ctrl.
+Creating SMT-LIBv2 representation of module alu.
+Creating SMT-LIBv2 representation of module ibex_core_inner.
+Creating SMT-LIBv2 representation of module ibex_core.
+
+End of script. Logfile hash: 34d9ded951, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 16.01 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 82% 2x write_smt2 (0 sec), 10% 2x read_rtlil (0 sec), ...

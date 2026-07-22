@@ -1,0 +1,10 @@
+# running in uart/src/
+read_verilog -formal -sv EF_UART_APB.v
+read_verilog -formal -sv EF_UART.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_UART_APB
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

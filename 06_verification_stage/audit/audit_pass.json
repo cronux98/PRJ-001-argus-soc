@@ -1,0 +1,20 @@
+{
+  "verdict": "PASS",
+  "timestamp": "2026-07-20T13:15:00Z",
+  "audit_session": "5b8af5f3-ea16-4d8e-bd71-2d6e758c59d3",
+  "retry": 2,
+  "checks_passed": 5,
+  "checks_total": 5,
+  "cost_usd": 0.0443755,
+  "findings": [],
+  "fixes_applied": [
+    "PWM TB: removed non-existent pwm_fault port references",
+    "SRAM TB: added one-cycle read delay for registered prdata/rdata",
+    "argus_soc TB: added one-cycle read delay for registered wb_dat_o",
+    "Expanded uart/spi/i2c/gpio/interrupt_ctrl from 8 to 15 tests each",
+    "Expanded argus_soc from 12 to 40 tests",
+    "Fixed results.xml format for pwm and argus_soc"
+  ],
+  "task": "t_09ca2229",
+  "total_audit_cost_usd": 0.6762889
+}

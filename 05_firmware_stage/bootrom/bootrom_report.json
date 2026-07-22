@@ -1,0 +1,25 @@
+{
+  "generated": "2026-07-20T11:12:53Z",
+  "source": "memory_map.json",
+  "bootrom": {
+    "binary": "bootrom/bootrom.bin",
+    "hex": "bootrom/bootrom.hex",
+    "size_bytes": 2466,
+    "budget_bytes": 4096,
+    "utilization_pct": 60.2,
+    "verdict": "PASS"
+  },
+  "toolchain": {
+    "compiler": "riscv32-unknown-elf-gcc (g2d47645cd) 14.2.1 20241024",
+    "path": "/opt/OpenROAD/riscv/gcc14-no-zcmp/bin/riscv32-unknown-elf-gcc",
+    "march": "rv32i_zicsr",
+    "mabi": "ilp32",
+    "cflags": "-Os -ffreestanding -nostdlib -nostartfiles -fno-common -fno-builtin -fdata-sections -ffunction-sections"
+  },
+  "sections": {
+    "text": 2466,
+    "data": 0,
+    "bss": 0,
+    "total": 2466
+  }
+}

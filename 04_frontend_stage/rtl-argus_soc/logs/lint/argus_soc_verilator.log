@@ -1,0 +1,1569 @@
+%Warning-EOFNEWLINE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:393:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  393 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.049
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:47:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                       : ... Suggest add newline.
+   47 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:248:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                 : ... Suggest add newline.
+  248 | endmodule
+      |          ^
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:54:23: Instance has missing pin: 'rst_n'
+   54 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.049
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:68:23: Instance has missing pin: 'rst_n'
+   68 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:387:5: Instance has missing pin: 'status_overflow'
+  387 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:387:5: Instance has missing pin: 'status_bad_frame'
+  387 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:387:5: Instance has missing pin: 'status_good_frame'
+  387 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:387:5: Instance has missing pin: 'status_full'
+  387 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:387:5: Instance has missing pin: 'status_empty'
+  387 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:431:5: Instance has missing pin: 'status_overflow'
+  431 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:431:5: Instance has missing pin: 'status_bad_frame'
+  431 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:431:5: Instance has missing pin: 'status_good_frame'
+  431 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:431:5: Instance has missing pin: 'status_full'
+  431 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:431:5: Instance has missing pin: 'status_empty'
+  431 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:471:5: Instance has missing pin: 'status_overflow'
+  471 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:471:5: Instance has missing pin: 'status_bad_frame'
+  471 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:471:5: Instance has missing pin: 'status_good_frame'
+  471 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:471:5: Instance has missing pin: 'status_full'
+  471 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:471:5: Instance has missing pin: 'status_empty'
+  471 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:354:5: Instance has missing pin: 'status_overflow'
+  354 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:354:5: Instance has missing pin: 'status_bad_frame'
+  354 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:354:5: Instance has missing pin: 'status_good_frame'
+  354 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:354:5: Instance has missing pin: 'status_full'
+  354 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:354:5: Instance has missing pin: 'status_empty'
+  354 |     cmd_fifo_inst (
+      |     ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:398:5: Instance has missing pin: 'status_overflow'
+  398 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:398:5: Instance has missing pin: 'status_bad_frame'
+  398 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:398:5: Instance has missing pin: 'status_good_frame'
+  398 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:398:5: Instance has missing pin: 'status_full'
+  398 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:398:5: Instance has missing pin: 'status_empty'
+  398 |     write_fifo_inst (
+      |     ^~~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:438:5: Instance has missing pin: 'status_overflow'
+  438 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:108:35: ... Location of port declaration
+  108 |     output wire                   status_overflow,
+      |                                   ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:438:5: Instance has missing pin: 'status_bad_frame'
+  438 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:109:35: ... Location of port declaration
+  109 |     output wire                   status_bad_frame,
+      |                                   ^~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:438:5: Instance has missing pin: 'status_good_frame'
+  438 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:110:35: ... Location of port declaration
+  110 |     output wire                   status_good_frame,
+      |                                   ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:438:5: Instance has missing pin: 'status_full'
+  438 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:111:35: ... Location of port declaration
+  111 |     output wire                   status_full,
+      |                                   ^~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:438:5: Instance has missing pin: 'status_empty'
+  438 |     read_fifo_inst (
+      |     ^~~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:112:35: ... Location of port declaration
+  112 |     output wire                   status_empty
+      |                                   ^~~~~~~~~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:64:23: Instance has missing pin: 'rst_n'
+   64 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:52:23: Instance has missing pin: 'rst_n'
+   52 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:67:23: Instance has missing pin: 'rst_n'
+   67 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v:131:7: Instance has missing pin: 'csb'
+  131 |     ) spi_master (
+      |       ^~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:70:15: ... Location of port declaration
+   70 |    output reg csb,
+      |               ^~~
+%Warning-PINMISSING: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:67:23: Instance has missing pin: 'rst_n'
+   67 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-MULTITOP: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:12:8: Multiple top level modules
+                                                                                                                           : ... Suggest see manual; fix the duplicates, or use --top-module to select top.
+                   ... For warning description see https://verilator.org/warn/MULTITOP?v=5.049
+                   ... Use "/* verilator lint_off MULTITOP */" and lint_on around source to disable this message.
+                                                                                                                           : ... Top module 'ef_util_clkmux_4x1'
+  327 | module ef_util_clkmux_4x1 (
+      |        ^~~~~~~~~~~~~~~~~~
+                                                                                                                           : ... Top module 'argus_soc'
+   12 | module argus_soc (
+      |        ^~~~~~~~~
+                                                                                                                           : ... Top module 'i2c_init'
+   32 | module i2c_init (
+      |        ^~~~~~~~
+                                                                                                                           : ... Top module 'i2c_master_axil'
+   32 | module i2c_master_axil #
+      |        ^~~~~~~~~~~~~~~
+                                                                                                                           : ... Top module 'i2c_single_reg'
+   34 | module i2c_single_reg #(
+      |        ^~~~~~~~~~~~~~
+                                                                                                                           : ... Top module 'sram_formal_bmc'
+   10 | module sram_formal_bmc (
+      |        ^~~~~~~~~~~~~~~
+                                                                                                                           : ... Top module 'sram_formal'
+    9 | module sram_formal (
+      |        ^~~~~~~~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:376:15: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  376 | if (CMD_FIFO) begin
+      |               ^~~~~
+                     ... For warning description see https://verilator.org/warn/GENUNNAMED?v=5.049
+                     ... Use "/* verilator lint_off GENUNNAMED */" and lint_on around source to disable this message.
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:409:10: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  409 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:420:17: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  420 | if (WRITE_FIFO) begin
+      |                 ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:453:10: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  453 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:460:16: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  460 | if (READ_FIFO) begin
+      |                ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:493:10: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                                                      : ... Suggest assign a label with 'begin : gen_<label_name>'
+  493 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:343:15: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  343 | if (CMD_FIFO) begin
+      |               ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:376:10: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  376 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:387:17: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  387 | if (WRITE_FIFO) begin
+      |                 ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:420:10: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  420 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:427:16: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  427 | if (READ_FIFO) begin
+      |                ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:460:10: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                                                        : ... Suggest assign a label with 'begin : gen_<label_name>'
+  460 | end else begin
+      |          ^~~~~
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:182:63: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                                                : ... Suggest assign a label with 'begin : gen_<label_name>'
+  182 |     if (KEEP_ENABLE) assign s_axis[KEEP_OFFSET +: KEEP_WIDTH] = s_axis_tkeep;
+      |                                                               ^
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:183:63: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                                                : ... Suggest assign a label with 'begin : gen_<label_name>'
+  183 |     if (LAST_ENABLE) assign s_axis[LAST_OFFSET]               = s_axis_tlast;
+      |                                                               ^
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:184:63: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                                                : ... Suggest assign a label with 'begin : gen_<label_name>'
+  184 |     if (ID_ENABLE)   assign s_axis[ID_OFFSET   +: ID_WIDTH]   = s_axis_tid;
+      |                                                               ^
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:185:63: Unnamed generate block 'genblk4' (IEEE 1800-2023 27.6)
+                                                                                                                                : ... Suggest assign a label with 'begin : gen_<label_name>'
+  185 |     if (DEST_ENABLE) assign s_axis[DEST_OFFSET +: DEST_WIDTH] = s_axis_tdest;
+      |                                                               ^
+%Warning-GENUNNAMED: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:186:63: Unnamed generate block 'genblk5' (IEEE 1800-2023 27.6)
+                                                                                                                                : ... Suggest assign a label with 'begin : gen_<label_name>'
+  186 |     if (USER_ENABLE) assign s_axis[USER_OFFSET +: USER_WIDTH] = s_axis_tuser;
+      |                                                               ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:186:5: Operator VAR 'STATE_IDLE' expects 5 bits on the Initial value, but Initial value's CONST '4'h0' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  186 |     STATE_IDLE = 4'd0,
+      |     ^~~~~~~~~~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:187:5: Operator VAR 'STATE_ACTIVE_WRITE' expects 5 bits on the Initial value, but Initial value's CONST '4'h1' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  187 |     STATE_ACTIVE_WRITE = 4'd1,
+      |     ^~~~~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:188:5: Operator VAR 'STATE_ACTIVE_READ' expects 5 bits on the Initial value, but Initial value's CONST '4'h2' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  188 |     STATE_ACTIVE_READ = 4'd2,
+      |     ^~~~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:189:5: Operator VAR 'STATE_START_WAIT' expects 5 bits on the Initial value, but Initial value's CONST '4'h3' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  189 |     STATE_START_WAIT = 4'd3,
+      |     ^~~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:190:5: Operator VAR 'STATE_START' expects 5 bits on the Initial value, but Initial value's CONST '4'h4' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  190 |     STATE_START = 4'd4,
+      |     ^~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:191:5: Operator VAR 'STATE_ADDRESS_1' expects 5 bits on the Initial value, but Initial value's CONST '4'h5' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  191 |     STATE_ADDRESS_1 = 4'd5,
+      |     ^~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:192:5: Operator VAR 'STATE_ADDRESS_2' expects 5 bits on the Initial value, but Initial value's CONST '4'h6' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  192 |     STATE_ADDRESS_2 = 4'd6,
+      |     ^~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:193:5: Operator VAR 'STATE_WRITE_1' expects 5 bits on the Initial value, but Initial value's CONST '4'h7' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  193 |     STATE_WRITE_1 = 4'd7,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:194:5: Operator VAR 'STATE_WRITE_2' expects 5 bits on the Initial value, but Initial value's CONST '4'h8' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  194 |     STATE_WRITE_2 = 4'd8,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:195:5: Operator VAR 'STATE_WRITE_3' expects 5 bits on the Initial value, but Initial value's CONST '4'h9' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  195 |     STATE_WRITE_3 = 4'd9,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:196:5: Operator VAR 'STATE_READ' expects 5 bits on the Initial value, but Initial value's CONST '4'ha' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  196 |     STATE_READ = 4'd10,
+      |     ^~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:197:5: Operator VAR 'STATE_STOP' expects 5 bits on the Initial value, but Initial value's CONST '4'hb' generates 4 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.i2c_master_inst'
+  197 |     STATE_STOP = 4'd11;
+      |     ^~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:170:5: Operator VAR 'STATE_IDLE' expects 4 bits on the Initial value, but Initial value's CONST '3'h0' generates 3 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  170 |     STATE_IDLE = 3'd0,
+      |     ^~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:171:5: Operator VAR 'STATE_RUN' expects 4 bits on the Initial value, but Initial value's CONST '3'h1' generates 3 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  171 |     STATE_RUN = 3'd1,
+      |     ^~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:172:5: Operator VAR 'STATE_TABLE_1' expects 4 bits on the Initial value, but Initial value's CONST '3'h2' generates 3 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  172 |     STATE_TABLE_1 = 3'd2,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:173:5: Operator VAR 'STATE_TABLE_2' expects 4 bits on the Initial value, but Initial value's CONST '3'h3' generates 3 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  173 |     STATE_TABLE_2 = 3'd3,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:174:5: Operator VAR 'STATE_TABLE_3' expects 4 bits on the Initial value, but Initial value's CONST '3'h4' generates 3 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  174 |     STATE_TABLE_3 = 3'd4;
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:61:5: Operator VAR 'STATE_IDLE' expects 5 bits on the Initial value, but Initial value's CONST '4'h0' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   61 |     STATE_IDLE = 4'd0,
+      |     ^~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:62:5: Operator VAR 'STATE_ADDRESS' expects 5 bits on the Initial value, but Initial value's CONST '4'h1' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   62 |     STATE_ADDRESS = 4'd1,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:63:5: Operator VAR 'STATE_ACK' expects 5 bits on the Initial value, but Initial value's CONST '4'h2' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   63 |     STATE_ACK = 4'd2,
+      |     ^~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:64:5: Operator VAR 'STATE_WRITE_1' expects 5 bits on the Initial value, but Initial value's CONST '4'h3' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   64 |     STATE_WRITE_1 = 4'd3,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:65:5: Operator VAR 'STATE_WRITE_2' expects 5 bits on the Initial value, but Initial value's CONST '4'h4' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   65 |     STATE_WRITE_2 = 4'd4,
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:66:5: Operator VAR 'STATE_READ_1' expects 5 bits on the Initial value, but Initial value's CONST '4'h5' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   66 |     STATE_READ_1 = 4'd5,
+      |     ^~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:67:5: Operator VAR 'STATE_READ_2' expects 5 bits on the Initial value, but Initial value's CONST '4'h6' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   67 |     STATE_READ_2 = 4'd6,
+      |     ^~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:68:5: Operator VAR 'STATE_READ_3' expects 5 bits on the Initial value, but Initial value's CONST '4'h7' generates 4 bits.
+                                                                                                                                    : ... note: In instance 'i2c_single_reg'
+   68 |     STATE_READ_3 = 4'd7;
+      |     ^~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163:52: Operator ASSIGN expects 2 bits on the Assign RHS, but Assign RHS's CONST '1'h0' generates 1 bits.
+                                                                                                                                 : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  163 | reg [PIPELINE_OUTPUT-1:0] m_axis_tvalid_pipe_reg = 1'b0;
+      |                                                    ^~~~
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:194:71: Selection index out of range: 16:9 outside 8:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  194 | assign m_axis_tid   = ID_ENABLE   ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][ID_OFFSET   +: ID_WIDTH]   : {ID_WIDTH{1'b0}};
+      |                                                                       ^
+                   ... For warning description see https://verilator.org/warn/SELRANGE?v=5.049
+                   ... Use "/* verilator lint_off SELRANGE */" and lint_on around source to disable this message.
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:195:71: Selection index out of range: 16:9 outside 8:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  195 | assign m_axis_tdest = DEST_ENABLE ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][DEST_OFFSET +: DEST_WIDTH] : {DEST_WIDTH{1'b0}};
+      |                                                                       ^
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:196:71: Selection index out of range: 9:9 outside 8:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  196 | assign m_axis_tuser = USER_ENABLE ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][USER_OFFSET +: USER_WIDTH] : {USER_WIDTH{1'b0}};
+      |                                                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258:32: Operator ASSIGNDLY expects 9 bits on the Assign RHS, but Assign RHS's REPLICATE generates 8 bits.
+                                                                                                                                 : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  258 |             m_axis_pipe_reg[j] <= {DATA_WIDTH{1'b0}};
+      |                                ^~
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:266:31: Logical operator LOGOR expects 1 bit on the RHS, but RHS's SHIFTR generates 2 bits.
+                                                                                                                                : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  266 |             if (m_axis_tready || ((~m_axis_tvalid_pipe_reg) >> j)) begin
+      |                               ^~
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.049
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:274:27: Logical operator LOGOR expects 1 bit on the RHS, but RHS's NOT generates 2 bits.
+                                                                                                                                : ... note: In instance 'i2c_master_axil.genblk3.read_fifo_inst'
+  274 |         if (m_axis_tready || ~m_axis_tvalid_pipe_reg) begin
+      |                           ^~
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:192:71: Selection index out of range: 12:12 outside 11:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk1.cmd_fifo_inst'
+  192 | assign m_axis_tkeep = KEEP_ENABLE ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][KEEP_OFFSET +: KEEP_WIDTH] : {KEEP_WIDTH{1'b1}};
+      |                                                                       ^
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:194:71: Selection index out of range: 19:12 outside 11:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk1.cmd_fifo_inst'
+  194 | assign m_axis_tid   = ID_ENABLE   ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][ID_OFFSET   +: ID_WIDTH]   : {ID_WIDTH{1'b0}};
+      |                                                                       ^
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:195:71: Selection index out of range: 19:12 outside 11:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk1.cmd_fifo_inst'
+  195 | assign m_axis_tdest = DEST_ENABLE ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][DEST_OFFSET +: DEST_WIDTH] : {DEST_WIDTH{1'b0}};
+      |                                                                       ^
+%Warning-SELRANGE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:196:71: Selection index out of range: 12:12 outside 11:0
+                                                                                                                              : ... note: In instance 'i2c_master_axil.genblk1.cmd_fifo_inst'
+  196 | assign m_axis_tuser = USER_ENABLE ? m_axis_pipe_reg[PIPELINE_OUTPUT-1][USER_OFFSET +: USER_WIDTH] : {USER_WIDTH{1'b0}};
+      |                                                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:511:31: Operator ASSIGN expects 8 bits on the Assign RHS, but Assign RHS's CONST '1'h0' generates 1 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  511 |                     data_next = 1'b0;
+      |                               ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:619:20: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's CONST '1'h0' generates 1 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  619 |         delay_next = 1'b0;
+      |                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:641:32: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  641 |                     delay_next = prescale;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:651:32: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  651 |                     delay_next = prescale;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:655:32: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  655 |                     delay_next = prescale;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:659:32: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  659 |                     delay_next = prescale;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:663:32: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  663 |                     delay_next = prescale;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:679:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  679 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:691:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  691 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:703:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  703 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:737:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  737 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:758:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  758 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:769:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  769 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:780:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  780 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:801:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  801 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:812:28: Operator ASSIGN expects 17 bits on the Assign RHS, but Assign RHS's VARREF 'prescale' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  812 |                 delay_next = prescale;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:840:19: Operator ASSIGNDLY expects 17 bits on the Assign RHS, but Assign RHS's CONST '16'h0' generates 16 bits.
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  840 |         delay_reg <= 16'd0;
+      |                   ^~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:470:20: Operator ASSIGN expects 16 bits on the Assign RHS, but Assign RHS's CONST '8'h0' generates 8 bits.
+                                                                                                                                         : ... note: In instance 'argus_soc.u_i2c.master_inst'
+  470 |     wbs_dat_o_next = 8'd0;
+      |                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:132:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'control_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+  132 |    (PADDR[16-1:0] == control_REG_OFFSET) ? control_REG :
+      |                                          ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:133:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+  133 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:134:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+  134 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:135:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+  135 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:136:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+  136 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:153:19: Operator ASSIGNW expects 12 bits on the Assign RHS, but Assign RHS's VARREF 'PWM1CFG_REG' generates 16 bits.
+                                                                                                                            : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  153 |   assign pwm1_cfg = PWM1CFG_REG;
+      |                   ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:245:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  245 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:248:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 7 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  248 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:249:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  249 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:250:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWM0CFG_REG' generates 12 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  250 |    (PADDR[16-1:0] == PWM0CFG_REG_OFFSET) ? PWM0CFG_REG :
+      |                                          ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:251:42: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWM1CFG_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  251 |    (PADDR[16-1:0] == PWM1CFG_REG_OFFSET) ? PWM1CFG_REG :
+      |                                          ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:252:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWMDT_REG' generates 8 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  252 |    (PADDR[16-1:0] == PWMDT_REG_OFFSET) ? PWMDT_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:253:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PWMFC_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  253 |    (PADDR[16-1:0] == PWMFC_REG_OFFSET) ? PWMFC_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:254:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  254 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:255:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  255 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:256:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 3 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  256 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:257:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+  257 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:309:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RXDATA_WIRE' generates 9 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  309 |    (PADDR[16-1:0] == RXDATA_REG_OFFSET) ? RXDATA_WIRE :
+      |                                         ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:310:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 16 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  310 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:311:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 5 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  311 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:312:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 14 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  312 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:313:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MATCH_REG' generates 9 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  313 |    (PADDR[16-1:0] == MATCH_REG_OFFSET) ? MATCH_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:314:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  314 |    (PADDR[16-1:0] == RX_FIFO_LEVEL_REG_OFFSET) ? RX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:315:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  315 |    (PADDR[16-1:0] == RX_FIFO_THRESHOLD_REG_OFFSET) ? RX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:316:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_FLUSH_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  316 |    (PADDR[16-1:0] == RX_FIFO_FLUSH_REG_OFFSET) ? RX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:317:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  317 |    (PADDR[16-1:0] == TX_FIFO_LEVEL_REG_OFFSET) ? TX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:318:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  318 |    (PADDR[16-1:0] == TX_FIFO_THRESHOLD_REG_OFFSET) ? TX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:319:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_FLUSH_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  319 |    (PADDR[16-1:0] == TX_FIFO_FLUSH_REG_OFFSET) ? TX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:320:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 10 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  320 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:321:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 10 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  321 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:322:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 10 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  322 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:323:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+  323 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:330:16: Operator ASSIGNW expects 9 bits on the Assign RHS, but Assign RHS's VARREF 'PWDATA' generates 32 bits.
+                                                                                                                            : ... note: In instance 'argus_soc.u_uart'
+  330 |   assign wdata = PWDATA;
+      |                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:271:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RXDATA_WIRE' generates 8 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  271 |    (PADDR[16-1:0] == RXDATA_REG_OFFSET) ? RXDATA_WIRE :
+      |                                         ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:272:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 2 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  272 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:273:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 3 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  273 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:274:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 8 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  274 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:275:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'STATUS_WIRE' generates 8 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  275 |    (PADDR[16-1:0] == STATUS_REG_OFFSET) ? STATUS_WIRE :
+      |                                         ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:276:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  276 |    (PADDR[16-1:0] == RX_FIFO_LEVEL_REG_OFFSET) ? RX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:277:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  277 |    (PADDR[16-1:0] == RX_FIFO_THRESHOLD_REG_OFFSET) ? RX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:278:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_FLUSH_REG' generates 1 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  278 |    (PADDR[16-1:0] == RX_FIFO_FLUSH_REG_OFFSET) ? RX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:279:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  279 |    (PADDR[16-1:0] == TX_FIFO_LEVEL_REG_OFFSET) ? TX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:280:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  280 |    (PADDR[16-1:0] == TX_FIFO_THRESHOLD_REG_OFFSET) ? TX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:281:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_FLUSH_REG' generates 1 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  281 |    (PADDR[16-1:0] == TX_FIFO_FLUSH_REG_OFFSET) ? TX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:282:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 6 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  282 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:283:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 6 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  283 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:284:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 6 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  284 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:285:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+  285 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:292:16: Operator ASSIGNW expects 8 bits on the Assign RHS, but Assign RHS's VARREF 'PWDATA' generates 32 bits.
+                                                                                                                                 : ... note: In instance 'argus_soc.u_spi'
+  292 |   assign datai = PWDATA;
+      |                ^
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:59:10: Input port connection 'pwm_fault' expects 1 bits on the pin connection, but pin connection's CONST '2'h0' generates 2 bits.
+                                                                                                                          : ... note: In instance 'argus_soc.u_pwm'
+   59 |         .pwm_fault (2'b00)
+      |          ^~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:103:53: Operator COND expects 32 bits on the Conditional True, but Conditional True's REPLICATE generates 24 bits.
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c'
+  103 |                     (PADDR[15:0] == GCLK_REG_ADDR)  ? {23'b0, GCLK_REG}   :
+      |                                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:352:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DATAI_WIRE' generates 8 bits.
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+  352 |    (PADDR[16-1:0] == DATAI_REG_OFFSET) ? DATAI_WIRE :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:353:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DATAO_REG' generates 8 bits.
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+  353 |    (PADDR[16-1:0] == DATAO_REG_OFFSET) ? DATAO_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:354:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'DIR_REG' generates 8 bits.
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+  354 |    (PADDR[16-1:0] == DIR_REG_OFFSET) ? DIR_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:358:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+  358 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:255:53: Operator OR expects 4 bits on the RHS, but RHS's VARREF 'scl_i' generates 1 bits.
+                                                                                                                                      : ... note: In instance 'i2c_single_reg'
+  255 |         scl_i_filter_reg <= (scl_i_filter_reg << 1) | scl_i;
+      |                                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:256:53: Operator OR expects 4 bits on the RHS, but RHS's VARREF 'sda_i' generates 1 bits.
+                                                                                                                                      : ... note: In instance 'i2c_single_reg'
+  256 |         sda_i_filter_reg <= (sda_i_filter_reg << 1) | sda_i;
+      |                                                     ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:647:35: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'prescale_reg' generates 16 bits.
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+  647 |                 s_axil_rdata_next = prescale_reg;
+      |                                   ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:176:23: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  176 | reg [4:0] state_reg = STATE_IDLE, state_next;
+      |                       ^~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:218:16: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  218 |     state_next = STATE_IDLE;
+      |                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:253:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  253 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:255:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  255 |                     state_next = STATE_IDLE;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:271:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  271 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:279:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  279 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:286:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  286 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:296:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  296 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:301:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  301 |                     state_next = STATE_TABLE_1;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:309:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  309 |                     state_next = STATE_IDLE;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:313:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  313 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:322:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_2' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  322 |                     state_next = STATE_TABLE_2;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:327:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  327 |                     state_next = STATE_TABLE_1;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:331:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  331 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:339:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  339 |                     state_next = STATE_IDLE;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:343:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  343 |                     state_next = STATE_TABLE_1;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:354:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  354 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:359:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  359 |                     state_next = STATE_TABLE_1;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:363:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  363 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:371:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  371 |                     state_next = STATE_IDLE;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:375:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_2' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  375 |                     state_next = STATE_TABLE_2;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:391:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  391 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:399:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  399 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:407:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  407 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:417:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  417 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:422:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  422 |                     state_next = STATE_TABLE_1;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:426:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_2' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  426 |                     state_next = STATE_TABLE_2;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:430:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  430 |                     state_next = STATE_RUN;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:438:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  438 |                     state_next = STATE_IDLE;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:442:32: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  442 |                     state_next = STATE_TABLE_3;
+      |                                ^
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Operator CASE expects 5 bits on the Case Item, but Case Item's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Operator CASE expects 5 bits on the Case Item, but Case Item's VARREF 'STATE_RUN' generates 4 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Operator CASE expects 5 bits on the Case Item, but Case Item's VARREF 'STATE_TABLE_1' generates 4 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Operator CASE expects 5 bits on the Case Item, but Case Item's VARREF 'STATE_TABLE_2' generates 4 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Operator CASE expects 5 bits on the Case Item, but Case Item's VARREF 'STATE_TABLE_3' generates 4 bits.
+                                                                                                                               : ... note: In instance 'i2c_init'
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:451:19: Operator ASSIGNDLY expects 5 bits on the Assign RHS, but Assign RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  451 |         state_reg <= STATE_IDLE;
+      |                   ^~
+%Warning-WIDTHEXPAND: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:487:32: Operator NEQ expects 5 bits on the RHS, but RHS's VARREF 'STATE_IDLE' generates 4 bits.
+                                                                                                                                : ... note: In instance 'i2c_init'
+  487 |         busy_reg <= (state_reg != STATE_IDLE);
+      |                                ^~
+%Warning-WIDTHTRUNC: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:216:30: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's VARREF 'gpio_oe' generates 8 bits.
+                                                                                                                               : ... note: In instance 'argus_soc'
+  216 |     assign gpio_io = gpio_oe ? gpio_out : 8'bz;
+      |                              ^
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:124:27: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  124 |             bit_count_reg = 4'd7;
+      |                           ^
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.049
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:210:48: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  210 |                         {sda_o_reg, shift_reg} = {shift_reg, sda_i_reg};
+      |                                                ^
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:213:43: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  213 |                             bit_count_reg = bit_count_reg-1;
+      |                                           ^
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:214:39: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  214 |                             state_reg = STATE_READ_1;
+      |                                       ^
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:216:39: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  216 |                             state_reg = STATE_READ_2;
+      |                                       ^
+%Warning-BLKSEQ: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:219:35: Blocking assignment '=' in sequential logic process
+                                                                                                                                 : ... note: In instance 'i2c_single_reg'
+                                                                                                                                 : ... Suggest using delayed assignment '<='
+  219 |                         state_reg = STATE_READ_1;
+      |                                   ^
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:51:17: Signal is not used: 'instr_req'
+                                                                                                                                : ... note: In instance 'argus_soc'
+   51 |     wire        instr_req, instr_rvalid, data_rvalid;
+      |                 ^~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:55:46: Signal is not driven: 'wb_apb_prdata'
+                                                                                                                            : ... note: In instance 'argus_soc'
+   55 |     wire [31:0] wb_apb_paddr, wb_apb_pwdata, wb_apb_prdata;
+      |                                              ^~~~~~~~~~~~~
+                   ... For warning description see https://verilator.org/warn/UNDRIVEN?v=5.049
+                   ... Use "/* verilator lint_off UNDRIVEN */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:56:61: Signal is not driven: 'wb_apb_pready'
+                                                                                                                            : ... note: In instance 'argus_soc'
+   56 |     wire        wb_apb_pwrite, wb_apb_psel, wb_apb_penable, wb_apb_pready;
+      |                                                             ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:77:26: Signal is not used: 'wdt_rst_n_ignored'
+                                                                                                                                : ... note: In instance 'argus_soc'
+   77 |     wire        cpu_irq, wdt_rst_n_ignored;
+      |                          ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-argus_soc/rtl/argus_soc.v:78:17: Signal is not used: 'clk_gate_en'
+                                                                                                                                : ... note: In instance 'argus_soc'
+   78 |     wire [11:0] clk_gate_en;
+      |                 ^~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:176:23: Procedural assignment to declaration with initial value: 'state_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  176 | reg [4:0] state_reg = STATE_IDLE, state_next;
+      |                       ^~~~~~~~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:451:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  451 |         state_reg <= STATE_IDLE;
+      |         ^~~~~~~~~
+                      ... For warning description see https://verilator.org/warn/PROCASSINIT?v=5.049
+                      ... Use "/* verilator lint_off PROCASSINIT */" and lint_on around source to disable this message.
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:180:27: Procedural assignment to declaration with initial value: 'init_data_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  180 | reg [8:0] init_data_reg = 9'd0;
+      |                           ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:452:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  452 |         init_data_reg <= 9'd0;
+      |         ^~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:182:31: Procedural assignment to declaration with initial value: 'address_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  182 | reg [AW-1:0] address_reg = {AW{1'b0}}, address_next;
+      |                               ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:453:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  453 |         address_reg <= {AW{1'b0}};
+      |         ^~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:183:35: Procedural assignment to declaration with initial value: 'address_ptr_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  183 | reg [AW-1:0] address_ptr_reg = {AW{1'b0}}, address_ptr_next;
+      |                                   ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:454:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  454 |         address_ptr_reg <= {AW{1'b0}};
+      |         ^~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:184:32: Procedural assignment to declaration with initial value: 'data_ptr_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  184 | reg [AW-1:0] data_ptr_reg = {AW{1'b0}}, data_ptr_next;
+      |                                ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:455:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  455 |         data_ptr_reg <= {AW{1'b0}};
+      |         ^~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:186:29: Procedural assignment to declaration with initial value: 'cur_address_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  186 | reg [6:0] cur_address_reg = 7'd0, cur_address_next;
+      |                             ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:456:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  456 |         cur_address_reg <= 7'd0;
+      |         ^~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:188:32: Procedural assignment to declaration with initial value: 'delay_counter_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  188 | reg [31:0] delay_counter_reg = 32'd0, delay_counter_next;
+      |                                ^~~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:457:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  457 |         delay_counter_reg <= 32'd0;
+      |         ^~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:197:30: Procedural assignment to declaration with initial value: 'm_axis_data_tvalid_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  197 | reg m_axis_data_tvalid_reg = 1'b0, m_axis_data_tvalid_next;
+      |                              ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:459:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  459 |         m_axis_data_tvalid_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:199:22: Procedural assignment to declaration with initial value: 'start_flag_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  199 | reg start_flag_reg = 1'b0, start_flag_next;
+      |                      ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:460:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  460 |         start_flag_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:201:16: Procedural assignment to declaration with initial value: 'busy_reg'
+                                                                                                                                : ... note: In instance 'i2c_init'
+                                                                                                                                : ... Location of variable initialization
+  201 | reg busy_reg = 1'b0;
+      |                ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:461:9: ... Location of variable process write
+                                                                                                                               : ... Perhaps should initialize instead using a reset in this process
+  461 |         busy_reg <= 1'b0;
+      |         ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:50:24: Bits of signal are not used: 's_axil_awaddr'[1:0]
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   50 |     input  wire [3:0]  s_axil_awaddr,
+      |                        ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:51:24: Signal is not used: 's_axil_awprot'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   51 |     input  wire [2:0]  s_axil_awprot,
+      |                        ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:54:24: Bits of signal are not used: 's_axil_wdata'[31:16]
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   54 |     input  wire [31:0] s_axil_wdata,
+      |                        ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:55:24: Bits of signal are not used: 's_axil_wstrb'[3:2]
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   55 |     input  wire [3:0]  s_axil_wstrb,
+      |                        ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:61:24: Bits of signal are not used: 's_axil_araddr'[1:0]
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   61 |     input  wire [3:0]  s_axil_araddr,
+      |                        ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:62:24: Signal is not used: 's_axil_arprot'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+   62 |     input  wire [2:0]  s_axil_arprot,
+      |                        ^~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:298:26: Procedural assignment to declaration with initial value: 's_axil_awready_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  298 | reg s_axil_awready_reg = 1'b0, s_axil_awready_next;
+      |                          ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:657:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  657 |         s_axil_awready_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:299:25: Procedural assignment to declaration with initial value: 's_axil_wready_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  299 | reg s_axil_wready_reg = 1'b0, s_axil_wready_next;
+      |                         ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:658:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  658 |         s_axil_wready_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:300:25: Procedural assignment to declaration with initial value: 's_axil_bvalid_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  300 | reg s_axil_bvalid_reg = 1'b0, s_axil_bvalid_next;
+      |                         ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:659:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  659 |         s_axil_bvalid_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:301:26: Procedural assignment to declaration with initial value: 's_axil_arready_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  301 | reg s_axil_arready_reg = 1'b0, s_axil_arready_next;
+      |                          ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:660:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  660 |         s_axil_arready_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:303:25: Procedural assignment to declaration with initial value: 's_axil_rvalid_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  303 | reg s_axil_rvalid_reg = 1'b0, s_axil_rvalid_next;
+      |                         ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:661:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  661 |         s_axil_rvalid_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:311:21: Procedural assignment to declaration with initial value: 'cmd_valid_reg'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+                                                                                                                                       : ... Location of variable initialization
+  311 | reg cmd_valid_reg = 1'b0, cmd_valid_next;
+      |                     ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:662:9: ... Location of variable process write
+                                                                                                                                      : ... Perhaps should initialize instead using a reset in this process
+  662 |         cmd_valid_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:351:6: Signal is not driven, nor used: 'data_in_valid'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+  351 | wire data_in_valid;
+      |      ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:352:6: Signal is not driven, nor used: 'data_in_last'
+                                                                                                                                       : ... note: In instance 'i2c_master_axil'
+  352 | wire data_in_last;
+      |      ^~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:70:23: Procedural assignment to declaration with initial value: 'state_reg'
+                                                                                                                                     : ... note: In instance 'i2c_single_reg'
+                                                                                                                                     : ... Location of variable initialization
+   70 | reg [4:0] state_reg = STATE_IDLE;
+      |                       ^~~~~~~~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:107:9: ... Location of variable process write
+                                                                                                                                     : ... Perhaps should initialize instead using a reset in this process
+  107 |         state_reg <= STATE_IDLE;
+      |         ^~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:85:17: Procedural assignment to declaration with initial value: 'sda_o_reg'
+                                                                                                                                     : ... note: In instance 'i2c_single_reg'
+                                                                                                                                     : ... Location of variable initialization
+   85 | reg sda_o_reg = 1'b1;
+      |                 ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:108:9: ... Location of variable process write
+                                                                                                                                     : ... Perhaps should initialize instead using a reset in this process
+  108 |         sda_o_reg <= 1'b1;
+      |         ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal_bmc.v:13:24: Bits of signal are not used: 'imem_addr'[1:0]
+                                                                                                                                 : ... note: In instance 'sram_formal_bmc'
+   13 |     input  wire [31:0] imem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal_bmc.v:15:24: Bits of signal are not used: 'dmem_addr'[1:0]
+                                                                                                                                 : ... note: In instance 'sram_formal_bmc'
+   15 |     input  wire [31:0] dmem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal_bmc.v:20:24: Bits of signal are not used: 'apb_paddr'[1:0]
+                                                                                                                                 : ... note: In instance 'sram_formal_bmc'
+   20 |     input  wire [31:0] apb_paddr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal.v:12:24: Bits of signal are not used: 'imem_addr'[1:0]
+                                                                                                                             : ... note: In instance 'sram_formal'
+   12 |     input  wire [31:0] imem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal.v:14:24: Bits of signal are not used: 'dmem_addr'[1:0]
+                                                                                                                             : ... note: In instance 'sram_formal'
+   14 |     input  wire [31:0] dmem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram_formal.v:19:24: Bits of signal are not used: 'apb_paddr'[1:0]
+                                                                                                                             : ... note: In instance 'sram_formal'
+   19 |     input  wire [31:0] apb_paddr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:31:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+   31 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:67:16: Signal is not used: 'apb_re'
+                                                                                                                              : ... note: In instance 'argus_soc.u_gpio'
+   67 |   wire         apb_re = ~PWRITE & apb_valid;
+      |                ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:39:23: Bits of signal are not used: 'PWDATA'[31:16]
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c'
+   39 |     input wire [31:0] PWDATA,
+      |                       ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:40:23: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c'
+   40 |     input wire [31:0] PADDR,
+      |                       ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:76:15: Signal is not used: 'rst_n'
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c'
+   76 |   wire        rst_n = PRESETn;
+      |               ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:90:15: Bits of signal are not used: 'flags'[7:4,2:0]
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c'
+   90 |   wire [15:0] flags;
+      |               ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:33:24: Signal is not used: 'irq_software_i'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   33 |     input  wire        irq_software_i,
+      |                        ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:34:24: Signal is not used: 'irq_timer_i'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   34 |     input  wire        irq_timer_i,
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:36:24: Signal is not used: 'irq_fast_i'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   36 |     input  wire [14:0] irq_fast_i,
+      |                        ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:39:24: Signal is not used: 'debug_req_i'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   39 |     input  wire        debug_req_i,
+      |                        ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:50:16: Signal is not used: 'mepc'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   50 |     reg [31:0] mepc;            
+      |                ^~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:51:16: Signal is not used: 'mtvec'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   51 |     reg [31:0] mtvec;           
+      |                ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:52:16: Signal is not used: 'mcause'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   52 |     reg [31:0] mcause;          
+      |                ^~~~~~
+%Warning-UNUSEDPARAM: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:58:16: Parameter is not used: 'CSR_MEPC'
+                                                                                                                               : ... note: In instance 'argus_soc.u_ibex'
+   58 |     localparam CSR_MEPC     = 12'h341;
+      |                ^~~~~~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.049
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:59:16: Parameter is not used: 'CSR_MCAUSE'
+                                                                                                                               : ... note: In instance 'argus_soc.u_ibex'
+   59 |     localparam CSR_MCAUSE   = 12'h342;
+      |                ^~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:60:16: Parameter is not used: 'CSR_MIP'
+                                                                                                                               : ... note: In instance 'argus_soc.u_ibex'
+   60 |     localparam CSR_MIP      = 12'h344;
+      |                ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:77:17: Signal is not used: 'dmem_funct3_inner'
+                                                                                                                                : ... note: In instance 'argus_soc.u_ibex'
+   77 |     wire [ 2:0] dmem_funct3_inner;
+      |                 ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/rtl/interrupt_ctrl.v:20:24: Bits of signal are not used: 'pwdata'[31:16]
+                                                                                                                                          : ... note: In instance 'argus_soc.u_intc'
+   20 |     input  wire [31:0] pwdata,
+      |                        ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:33:25: Bits of signal are not used: 'PWDATA'[31:8]
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+   33 |     input  wire [ 31:0] PWDATA,
+      |                         ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:34:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                                  : ... note: In instance 'argus_soc.u_spi'
+   34 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:15:24: Signal is not used: 'rst_ni'
+                                                                                                                      : ... note: In instance 'argus_soc.u_sram'
+   15 |     input  wire        rst_ni,
+      |                        ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:18:24: Bits of signal are not used: 'imem_addr'[1:0]
+                                                                                                                      : ... note: In instance 'argus_soc.u_sram'
+   18 |     input  wire [31:0] imem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:22:24: Bits of signal are not used: 'dmem_addr'[1:0]
+                                                                                                                      : ... note: In instance 'argus_soc.u_sram'
+   22 |     input  wire [31:0] dmem_addr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:29:24: Bits of signal are not used: 'apb_paddr'[1:0]
+                                                                                                                      : ... note: In instance 'argus_soc.u_sram'
+   29 |     input  wire [31:0] apb_paddr,
+      |                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:17:24: Bits of signal are not used: 'pwdata'[31:8]
+                                                                                                                              : ... note: In instance 'argus_soc.u_sysctrl'
+   17 |     input  wire [31:0] pwdata,
+      |                        ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:42:16: Bits of signal are not used: 'sleep_ctrl'[7:4]
+                                                                                                                              : ... note: In instance 'argus_soc.u_sysctrl'
+   42 |     reg [ 7:0] sleep_ctrl;
+      |                ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:55:16: Signal is not used: 'ext_was_low'
+                                                                                                                              : ... note: In instance 'argus_soc.u_sysctrl'
+   55 |     reg        ext_was_low, wdt_was_low;
+      |                ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v:55:29: Signal is not used: 'wdt_was_low'
+                                                                                                                              : ... note: In instance 'argus_soc.u_sysctrl'
+   55 |     reg        ext_was_low, wdt_was_low;
+      |                             ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:35:25: Bits of signal are not used: 'PWDATA'[31:16]
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+   35 |     input  wire [ 31:0] PWDATA,
+      |                         ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:36:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                             : ... note: In instance 'argus_soc.u_uart'
+   36 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:103:18: Signal is not used: 'tx_full'
+                                                                                                                              : ... note: In instance 'argus_soc.u_uart'
+  103 |   wire [  1-1:0] tx_full;
+      |                  ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:106:18: Signal is not used: 'rx_empty'
+                                                                                                                              : ... note: In instance 'argus_soc.u_uart'
+  106 |   wire [  1-1:0] rx_empty;
+      |                  ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v:22:24: Signal is not used: 'wb_sel_i'
+                                                                                                                                : ... note: In instance 'argus_soc.u_wb_bridge'
+   22 |     input  wire [ 3:0] wb_sel_i,
+      |                        ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v:22:25: Signal is not used: 'rst_n'
+                                                                                                                          : ... note: In instance 'argus_soc.u_gpio.instance_to_wrap'
+   22 |     input  wire         rst_n,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:33:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+   33 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:77:18: Signal is not used: 'apb_re'
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_tmr32'
+   77 |   wire           apb_re = ~PWRITE & apb_valid;
+      |                  ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:31:24: Bits of signal are not used: 'PADDR'[31:16]
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+   31 |     input  wire [31:0] PADDR,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:65:17: Signal is not used: 'apb_re'
+                                                                                                                             : ... note: In instance 'argus_soc.u_pwm.u_wdt32'
+   65 |   wire          apb_re = ~PWRITE & apb_valid;
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:271:6: Signal is not driven, nor used: 'data_in_valid'
+                                                                                                                                         : ... note: In instance 'argus_soc.u_i2c.master_inst'
+  271 | wire data_in_valid;
+      |      ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:274:6: Signal is not driven, nor used: 'data_in_last'
+                                                                                                                                         : ... note: In instance 'argus_soc.u_i2c.master_inst'
+  274 | wire data_in_last;
+      |      ^~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320:29: Procedural assignment to declaration with initial value: 'cmd_fifo_overflow_reg'
+                                                                                                                                         : ... note: In instance 'argus_soc.u_i2c.master_inst'
+                                                                                                                                         : ... Location of variable initialization
+  320 | reg cmd_fifo_overflow_reg = 1'b0, cmd_fifo_overflow_next;
+      |                             ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:632:9: ... Location of variable process write
+                                                                                                                                        : ... Perhaps should initialize instead using a reset in this process
+  632 |         cmd_fifo_overflow_reg <= 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321:31: Procedural assignment to declaration with initial value: 'write_fifo_overflow_reg'
+                                                                                                                                         : ... note: In instance 'argus_soc.u_i2c.master_inst'
+                                                                                                                                         : ... Location of variable initialization
+  321 | reg write_fifo_overflow_reg = 1'b0, write_fifo_overflow_next;
+      |                               ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:633:9: ... Location of variable process write
+                                                                                                                                        : ... Perhaps should initialize instead using a reset in this process
+  633 |         write_fifo_overflow_reg <= 0;
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:372:21: Signal is not used: 'rst_n'
+                                                                                                                        : ... note: In instance 'argus_soc.u_pwm.u_wdt32.clk_gate_cell'
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:373:21: Signal is not used: 'clk_en'
+                                                                                                                        : ... note: In instance 'argus_soc.u_pwm.u_wdt32.clk_gate_cell'
+  373 |     input   wire    clk_en,
+      |                     ^~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199:23: Procedural assignment to declaration with initial value: 'state_reg'
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+                                                                                                                                  : ... Location of variable initialization
+  199 | reg [4:0] state_reg = STATE_IDLE, state_next;
+      |                       ^~~~~~~~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:831:9: ... Location of variable process write
+                                                                                                                                 : ... Perhaps should initialize instead using a reset in this process
+  831 |         state_reg <= STATE_IDLE;
+      |         ^~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219:27: Procedural assignment to declaration with initial value: 'phy_state_reg'
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+                                                                                                                                  : ... Location of variable initialization
+  219 | reg [4:0] phy_state_reg = STATE_IDLE, phy_state_next;
+      |                           ^~~~~~~~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:832:9: ... Location of variable process write
+                                                                                                                                 : ... Perhaps should initialize instead using a reset in this process
+  832 |         phy_state_reg <= PHY_STATE_IDLE;
+      |         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:285:6: Signal is not used: 'scl_posedge'
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  285 | wire scl_posedge = scl_i_reg & ~last_scl_i_reg;
+      |      ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:286:6: Signal is not used: 'scl_negedge'
+                                                                                                                                  : ... note: In instance 'i2c_master_axil.i2c_master_inst'
+  286 | wire scl_negedge = ~scl_i_reg & last_scl_i_reg;
+      |      ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:97:9: Signal is not used: 'start'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_spi.instance_to_wrap.spi_master'
+   97 |    wire start = shift_count == 0;
+      |         ^~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:85:35: Signal is not used: 's_axis_tkeep'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+   85 |     input  wire [KEEP_WIDTH-1:0]  s_axis_tkeep,
+      |                                   ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:89:35: Signal is not used: 's_axis_tid'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+   89 |     input  wire [ID_WIDTH-1:0]    s_axis_tid,
+      |                                   ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:90:35: Signal is not used: 's_axis_tdest'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+   90 |     input  wire [DEST_WIDTH-1:0]  s_axis_tdest,
+      |                                   ^~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152:46: Procedural assignment to declaration with initial value: 'wr_ptr_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  152 | reg [ADDR_WIDTH:0] wr_ptr_reg = {ADDR_WIDTH+1{1'b0}};
+      |                                              ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:207:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  207 |         wr_ptr_reg <= {ADDR_WIDTH+1{1'b0}};
+      |         ^~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153:50: Procedural assignment to declaration with initial value: 'wr_ptr_cur_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  153 | reg [ADDR_WIDTH:0] wr_ptr_cur_reg = {ADDR_WIDTH+1{1'b0}};
+      |                                                  ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:208:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  208 |         wr_ptr_cur_reg <= {ADDR_WIDTH+1{1'b0}};
+      |         ^~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154:46: Procedural assignment to declaration with initial value: 'rd_ptr_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  154 | reg [ADDR_WIDTH:0] rd_ptr_reg = {ADDR_WIDTH+1{1'b0}};
+      |                                              ^
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:255:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  255 |         rd_ptr_reg <= {ADDR_WIDTH+1{1'b0}};
+      |         ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:157:17: Signal is not driven, nor used: 'mem_read_data_reg'
+                                                                                                                                  : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+  157 | reg [WIDTH-1:0] mem_read_data_reg;
+      |                 ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158:5: Signal is not used: 'mem_read_data_valid_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+  158 | reg mem_read_data_valid_reg = 1'b0;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163:52: Procedural assignment to declaration with initial value: 'm_axis_tvalid_pipe_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  163 | reg [PIPELINE_OUTPUT-1:0] m_axis_tvalid_pipe_reg = 1'b0;
+      |                                                    ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:256:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  256 |         m_axis_tvalid_pipe_reg <= {PIPELINE_OUTPUT{1'b0}};
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173:22: Procedural assignment to declaration with initial value: 'drop_frame_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  173 | reg drop_frame_reg = 1'b0;
+      |                      ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:209:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  209 |         drop_frame_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174:20: Procedural assignment to declaration with initial value: 'overflow_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  174 | reg overflow_reg = 1'b0;
+      |                    ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:210:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  210 |         overflow_reg <= 1'b0;
+      |         ^~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175:21: Procedural assignment to declaration with initial value: 'bad_frame_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  175 | reg bad_frame_reg = 1'b0;
+      |                     ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:211:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  211 |         bad_frame_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~
+%Warning-PROCASSINIT: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176:22: Procedural assignment to declaration with initial value: 'good_frame_reg'
+                                                                                                                                 : ... note: In instance 'argus_soc.u_i2c.master_inst.genblk1.cmd_fifo_inst'
+                                                                                                                                 : ... Location of variable initialization
+  176 | reg good_frame_reg = 1'b0;
+      |                      ^~~~
+                      /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:212:9: ... Location of variable process write
+                                                                                                                                : ... Perhaps should initialize instead using a reset in this process
+  212 |         good_frame_reg <= 1'b0;
+      |         ^~~~~~~~~~~~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:238:9: Case values incompletely covered (example pattern 0x0)
+  238 |         case({w_en,rd})
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.049
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:532:17: Case values incompletely covered (example pattern 0x0)
+  532 |                 case (parity_type)
+      |                 ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:490:9: Case values incompletely covered (example pattern 0x6)
+  490 |         case(current_state)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:358:25: Case values incompletely covered (example pattern 0x0)
+  358 |                         case (parity_type)
+      |                         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:321:9: Case values incompletely covered (example pattern 0x6)
+  321 |         case(current_state)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:498:13: Case values incompletely covered (example pattern 0x1)
+  498 |             case (wbs_adr_i)
+      |             ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:561:13: Case values incompletely covered (example pattern 0x1)
+  561 |             case (wbs_adr_i)
+      |             ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:329:9: Case values incompletely covered (example pattern 0xc)
+  329 |         case (state_reg)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:634:9: Case values incompletely covered (example pattern 0x10)
+  634 |         case (phy_state_reg)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v:247:9: Case values incompletely covered (example pattern 0x5)
+  247 |         case (state_reg)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:537:9: Case values incompletely covered (example pattern 0x1)
+  537 |         case ({s_axil_awaddr[3:2], 2'b00})
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v:605:9: Case values incompletely covered (example pattern 0x1)
+  605 |         case ({s_axil_araddr[3:2], 2'b00})
+      |         ^~~~
+%Warning-CASEINCOMPLETE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v:131:13: Case values incompletely covered (example pattern 0x8)
+  131 |             case (state_reg)
+      |             ^~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 12.421 MB sources in 57 modules, into 1.519 MB in 4 C++ files needing 0.000 MB
+- Verilator: Walltime 0.352 s (elab=0.043, cvt=0.225, bld=0.000); cpu 0.352 s on 1 threads; allocated 41.578 MB

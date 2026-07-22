@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="intctrl_driver" tests="1" failures="0" errors="0" skipped="0" time="0.0" timestamp="2026-07-20T11:12:53Z">
+  <testcase classname="fw.drivers.intctrl" name="compile_test" time="0.0">
+    <system-out>Compiled successfully with riscv32-unknown-elf-gcc 14.2.1, -march=rv32i_zicsr -mabi=ilp32 -Os. RTL cosim BLOCKED: no SoC top-level RTL available at this stage.</system-out>
+  </testcase>
+</testsuite>

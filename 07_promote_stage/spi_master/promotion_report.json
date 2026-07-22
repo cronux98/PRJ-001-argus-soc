@@ -1,0 +1,21 @@
+{
+  "module": "spi_master",
+  "id": "M04",
+  "type": "REUSE",
+  "promotion_status": "PASS",
+  "cell_count": 417,
+  "dff_count": 109,
+  "latch_count": 0,
+  "area_um2": 315.3024,
+  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/logs/synth/spi_master_synth.log",
+  "lint_errors": 0,
+  "formal_pass": true,
+  "formal_depth": 20,
+  "equiv_pass": true,
+  "verification_tests_pass": 15,
+  "verification_tests_total": 15,
+  "verification_tests_fail": 0,
+  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-spi_master/results.xml",
+  "admission_reasons": [],
+  "has_frontend_artifacts": true
+}

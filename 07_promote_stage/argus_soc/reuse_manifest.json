@@ -1,0 +1,47 @@
+{
+  "module": "argus_soc",
+  "version": "1.0.0",
+  "provenance_type": "self",
+  "source_project": "PRJ-001",
+  "source_version": "v0",
+  "promotion_date": "2026-07-20T14:10:00Z",
+  "category": "soc",
+  "research_path": "research/soc/argus_soc/",
+  "type": "CREATE",
+  "license": "Apache-2.0",
+  "description": "Argus Ibex RV32I Environmental Sensor-Hub SoC \u2014 12 modules, APB bus fabric, 50 MHz",
+  "qualification": {
+    "lint": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "synthesis": {
+      "status": "PASS",
+      "cell_count": 154291,
+      "dff_count": 0,
+      "latch_count": 0,
+      "area_um2": 2091171.85
+    },
+    "formal": {
+      "status": "PASS",
+      "depth": 4,
+      "mode": "prove",
+      "note": "k-induction proof for top-level SoC interconnect safety. Leaf modules carry BMC depth 20. Vera waiver accepted."
+    },
+    "equivalence": {
+      "status": "PASS"
+    },
+    "verification": {
+      "status": "PASS",
+      "tests_total": 40,
+      "tests_pass": 40,
+      "tests_fail": 0
+    }
+  },
+  "promotion": {
+    "status": "PASS",
+    "reasons": []
+  },
+  "generated_by": "gen_reuse_manifest.py",
+  "generated_at": "2026-07-20T14:10:00Z"
+}

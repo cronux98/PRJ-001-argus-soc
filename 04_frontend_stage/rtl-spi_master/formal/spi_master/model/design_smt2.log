@@ -1,0 +1,258 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `EF_SPI_APB'. Setting top module to EF_SPI_APB.
+
+2.1. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     \ef_util_gating_cell
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         \ef_util_ped
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+
+2.2. Analyzing design hierarchy..
+Top module:  \EF_SPI_APB
+Used module:     \ef_util_gating_cell
+Used module:     $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+Used module:         \ef_util_ped
+Used module:         $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+Used module:         $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+Used module:             $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:             $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      172 wire bits
+       30 public wires
+       80 public wire bits
+       15 ports
+       36 port bits
+       74 cells
+        2   $add
+        1   $and
+        8   $anyinit
+        1   $assume
+        1   $eq
+        1   $ge
+       11   $logic_and
+        5   $logic_not
+        1   $logic_or
+       39   $mux
+        4   $not
+        2 submodules
+        1   $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+        1   $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+
+=== $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       62 wires
+      203 wire bits
+       30 public wires
+       90 public wire bits
+       10 ports
+       27 port bits
+       54 cells
+        3   $add
+        1   $and
+        5   $anyinit
+        2   $anyseq
+        1   $assume
+        5   $eq
+        1   $mem_v2
+       28   $mux
+        2   $not
+        5   $pmux
+        1   $sub
+
+=== $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+      111 wire bits
+       41 public wires
+      109 public wire bits
+       30 ports
+       63 port bits
+        7 cells
+        2   $and
+        1   $gt
+        2   $logic_not
+        1   $lt
+        1   $not
+        4 submodules
+        1   $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+        2   $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        1   ef_util_ped
+
+=== $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       54 wire bits
+        8 public wires
+       29 public wire bits
+        6 ports
+       13 port bits
+        7 cells
+        1   $anyinit
+        1   $assume
+        4   $mux
+        1   $not
+
+=== $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       40 wire bits
+        8 public wires
+       22 public wire bits
+        5 ports
+       12 port bits
+        9 cells
+        2   $anyinit
+        1   $assume
+        5   $mux
+        1   $not
+
+=== EF_SPI_APB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      149 wires
+      858 wire bits
+       78 public wires
+      291 public wire bits
+       14 ports
+      107 port bits
+      107 cells
+       16   $and
+       11   $anyinit
+        1   $assume
+       16   $eq
+        1   $logic_not
+       59   $mux
+        2   $not
+        1   $reduce_or
+        2 submodules
+        1   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+        1   ef_util_gating_cell
+
+=== ef_util_gating_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+
+=== ef_util_ped ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        4 public wires
+        4 public wire bits
+        3 ports
+        3 port bits
+        5 cells
+        1   $and
+        1   $anyinit
+        1   $assume
+        2   $not
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      317 EF_SPI_APB
+        7 $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+       74   $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master
+        7     $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000
+        9     $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000
+       54   $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo
+        5   ef_util_ped
+
+        +----------Count including submodules.
+        | 
+      434 wires
+     1651 wire bits
+      233 public wires
+      719 public wire bits
+       97 ports
+      292 port bits
+        - memories
+        - memory bits
+        - processes
+      317 cells
+        8   $add
+       22   $and
+       33   $anyinit
+        4   $anyseq
+        7   $assume
+       27   $eq
+        1   $ge
+        1   $gt
+       11   $logic_and
+        8   $logic_not
+        1   $logic_or
+        1   $lt
+        2   $mem_v2
+      163   $mux
+       15   $not
+       10   $pmux
+        1   $reduce_or
+        2   $sub
+        2 submodules
+        1   $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI
+        1   ef_util_gating_cell
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module ef_util_ped.
+Creating SMT-LIBv2 representation of module ef_util_gating_cell.
+Creating SMT-LIBv2 representation of module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Creating SMT-LIBv2 representation of module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Creating SMT-LIBv2 representation of module $paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI.
+Creating SMT-LIBv2 representation of module EF_SPI_APB.
+
+End of script. Logfile hash: 743c5776f7, time: 0.01s, user: 0.00s, system: 0.01s, MEM: 15.32 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 65% 2x write_smt2 (0 sec), 16% 2x read_rtlil (0 sec), ...

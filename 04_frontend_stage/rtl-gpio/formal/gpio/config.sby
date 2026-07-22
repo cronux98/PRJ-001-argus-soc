@@ -1,0 +1,17 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc z3
+
+[script]
+read_verilog -formal -sv EF_GPIO8_APB.v
+read_verilog -formal -sv EF_GPIO8.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_GPIO8_APB
+
+[files]
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v
+/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.ibex_core" tests="8" failures="0" errors="0" skipped="0" time="269" timestamp="2026-07-20T12:19:18.990584">
+  <testcase name="test_ibex_core.test_reset_vector" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_lui_execution" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_addi_execution" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_store_load" classname="ibex_core" time="0.010" />
+  <testcase name="test_ibex_core.test_instr_fetch_response" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_sleep_output" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_interrupt_input" classname="ibex_core" time="0.000" />
+  <testcase name="test_ibex_core.test_jal_execution" classname="ibex_core" time="0.000" />
+</testsuite>

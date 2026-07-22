@@ -1,0 +1,11 @@
+# running in spi_master/src/
+read_verilog -formal -sv EF_SPI_APB.v
+read_verilog -formal -sv spi_master.v
+read_verilog -formal -sv EF_SPI.v
+read_verilog -formal -sv ef_util_lib.v
+prep -top EF_SPI_APB
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

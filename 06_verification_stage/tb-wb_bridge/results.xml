@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="cocotb.wb_bridge" tests="8" failures="0" errors="0" skipped="0" time="290" timestamp="2026-07-20T12:13:49.145774">
+  <testcase name="test_wb_bridge.test_wb_write_apb_forward" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_wb_read_forward" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_out_of_window_rejected" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_wb_ack_handshake" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_wb_byte_select" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_address_translation" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_wb_err_default" classname="wb_bridge" time="0.000" />
+  <testcase name="test_wb_bridge.test_idle_state" classname="wb_bridge" time="0.000" />
+</testsuite>

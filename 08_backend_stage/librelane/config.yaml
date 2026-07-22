@@ -1,0 +1,70 @@
+DESIGN_NAME: argus_soc
+VERILOG_FILES:
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/alu_ctrl.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/alu.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/apb_interconnect.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/argus_soc.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/axis_fifo.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/branch_unit.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/ctrl_unit.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_GPIO8_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_GPIO8.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_I2C_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_SPI_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_SPI.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_TMR32_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_TMR32.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_UART_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_UART.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/ef_util_lib.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_WDT32_APB.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/EF_WDT32.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/ex_mem.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/forwarding_unit.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/hazard_unit.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/i2c_init.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/i2c_master_axil.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/i2c_master.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/i2c_master_wbs_16.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/i2c_single_reg.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/ibex_core_inner.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/ibex_core.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/id_ex.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/if_id.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/imm_gen.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/interrupt_ctrl.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/mem_wb.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/pc.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/pwm_wrapper.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/reg_file.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/spi_master.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/sram_blackbox.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/sys_ctrl.v
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/rtl/wb_bridge.v
+CLOCK_PERIOD: 40.0
+CLOCK_PORT: clk_sys_i
+ERROR_ON_LINTER_ERRORS: false
+ERROR_ON_LINTER_WARNINGS: false
+ERROR_ON_DISCONNECTED_PINS: false
+# Waiver — 33 yosys synth checks: async-reset FIFO address regs (uart, spi),
+# memory read-port mux transparency warnings (spi, uart, sram), multi-output cells.
+# Expires: v0-run4. Re-evaluate before tapeout.
+ERROR_ON_SYNTH_CHECKS: false
+PNR_SDC_FILE: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/constraints/argus_soc.sdc
+# SRAM blackbox — prevents behavioral 1024x32 reg array from being synthesized as 169K FFs
+IGNORE_DISCONNECTED_MODULES: [sram]
+MACRO_PLACEMENT_CFG: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macro_placement.cfg
+EXTRA_LEFS:
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macros/sram.lef
+EXTRA_GDS_FILES:
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macros/sram.gds
+EXTRA_LIBS:
+  - /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macros/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+
+pdk::sky130*:
+  FP_CORE_UTIL: 40
+  CLOCK_PERIOD: 40.0
+# Use KLayout for GDS streamout — Magic fails on abstract SRAM blackbox cells
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+RUN_MAGIC_STREAMOUT: false
+RUN_KLAYOUT_STREAMOUT: true

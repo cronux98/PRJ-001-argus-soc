@@ -1,0 +1,150 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-spi_master/rtl/*.v common/ef_util_lib.v 2026-07-20T07:06:34+00:00
+%Warning-EOFNEWLINE: common/ef_util_lib.v:393:10: Missing newline at end of file (POSIX 3.206).
+                                                : ... Suggest add newline.
+  393 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.049
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: rtl-spi_master/rtl/spi_master.v:248:10: Missing newline at end of file (POSIX 3.206).
+                                                           : ... Suggest add newline.
+  248 | endmodule
+      |          ^
+%Warning-DECLFILENAME: common/ef_util_lib.v:30:8: Filename 'ef_util_lib' does not match MODULE name: 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.049
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-DECLFILENAME: rtl-spi_master/rtl/spi_master.v:189:8: Filename 'spi_master' does not match MODULE name: 'sri'
+  189 | module sri
+      |        ^~~
+%Warning-PINMISSING: rtl-spi_master/rtl/EF_SPI.v:131:7: Instance has missing pin: 'csb'
+  131 |     ) spi_master (
+      |       ^~~~~~~~~~
+                     rtl-spi_master/rtl/spi_master.v:70:15: ... Location of port declaration
+   70 |    output reg csb,
+      |               ^~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.049
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: rtl-spi_master/rtl/EF_SPI_APB.v:67:23: Instance has missing pin: 'rst_n'
+   67 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-MULTITOP: common/ef_util_lib.v:62:8: Multiple top level modules
+                                            : ... Suggest see manual; fix the duplicates, or use --top-module to select top.
+                   ... For warning description see https://verilator.org/warn/MULTITOP?v=5.049
+                   ... Use "/* verilator lint_off MULTITOP */" and lint_on around source to disable this message.
+                                            : ... Top module 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                                            : ... Top module 'ef_util_ned'
+   62 | module ef_util_ned (
+      |        ^~~~~~~~~~~
+                                            : ... Top module 'ef_util_glitch_filter'
+  115 | module ef_util_glitch_filter #(parameter N = 8, CLKDIV = 8'd1) (
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                                            : ... Top module 'ef_util_clkmux_4x1'
+  327 | module ef_util_clkmux_4x1 (
+      |        ^~~~~~~~~~~~~~~~~~
+                                            : ... Top module 'EF_SPI_APB'
+   25 | module EF_SPI_APB #(
+      |        ^~~~~~~~~~
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:271:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RXDATA_WIRE' generates 8 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  271 |    (PADDR[16-1:0] == RXDATA_REG_OFFSET) ? RXDATA_WIRE :
+      |                                         ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:272:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 2 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  272 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:273:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 3 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  273 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:274:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 8 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  274 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:275:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'STATUS_WIRE' generates 8 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  275 |    (PADDR[16-1:0] == STATUS_REG_OFFSET) ? STATUS_WIRE :
+      |                                         ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:276:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  276 |    (PADDR[16-1:0] == RX_FIFO_LEVEL_REG_OFFSET) ? RX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:277:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  277 |    (PADDR[16-1:0] == RX_FIFO_THRESHOLD_REG_OFFSET) ? RX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:278:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_FLUSH_REG' generates 1 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  278 |    (PADDR[16-1:0] == RX_FIFO_FLUSH_REG_OFFSET) ? RX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:279:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  279 |    (PADDR[16-1:0] == TX_FIFO_LEVEL_REG_OFFSET) ? TX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:280:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  280 |    (PADDR[16-1:0] == TX_FIFO_THRESHOLD_REG_OFFSET) ? TX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:281:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_FLUSH_REG' generates 1 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  281 |    (PADDR[16-1:0] == TX_FIFO_FLUSH_REG_OFFSET) ? TX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:282:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 6 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  282 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:283:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 6 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  283 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:284:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 6 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  284 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-spi_master/rtl/EF_SPI_APB.v:285:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                            : ... note: In instance 'EF_SPI_APB'
+  285 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: rtl-spi_master/rtl/EF_SPI_APB.v:292:16: Operator ASSIGNW expects 8 bits on the Assign RHS, but Assign RHS's VARREF 'PWDATA' generates 32 bits.
+                                                           : ... note: In instance 'EF_SPI_APB'
+  292 |   assign datai = PWDATA;
+      |                ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.049
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-spi_master/rtl/EF_SPI_APB.v:33:25: Bits of signal are not used: 'PWDATA'[31:8]
+                                                            : ... note: In instance 'EF_SPI_APB'
+   33 |     input  wire [ 31:0] PWDATA,
+      |                         ^~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-spi_master/rtl/EF_SPI_APB.v:34:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                            : ... note: In instance 'EF_SPI_APB'
+   34 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:372:21: Signal is not used: 'rst_n'
+                                                  : ... note: In instance 'EF_SPI_APB.clk_gate_cell'
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:373:21: Signal is not used: 'clk_en'
+                                                  : ... note: In instance 'EF_SPI_APB.clk_gate_cell'
+  373 |     input   wire    clk_en,
+      |                     ^~~~~~
+%Warning-UNUSEDSIGNAL: rtl-spi_master/rtl/spi_master.v:97:9: Signal is not used: 'start'
+                                                           : ... note: In instance 'EF_SPI_APB.instance_to_wrap.spi_master'
+   97 |    wire start = shift_count == 0;
+      |         ^~~~~
+%Warning-CASEINCOMPLETE: common/ef_util_lib.v:238:9: Case values incompletely covered (example pattern 0x0)
+  238 |         case({w_en,rd})
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.049
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.149 MB sources in 15 modules, into 0.125 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.032 s (elab=0.005, cvt=0.017, bld=0.000); cpu 0.032 s on 1 threads; allocated 22.305 MB

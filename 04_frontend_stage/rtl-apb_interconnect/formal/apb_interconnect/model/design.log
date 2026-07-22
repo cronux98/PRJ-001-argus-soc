@@ -1,0 +1,362 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: apb_interconnect.v
+Parsing formal SystemVerilog input from `apb_interconnect.v' to AST representation.
+Generating RTLIL representation for module `\apb_interconnect'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ef_util_lib.v
+Parsing formal SystemVerilog input from `ef_util_lib.v' to AST representation.
+Generating RTLIL representation for module `\ef_util_sync'.
+Generating RTLIL representation for module `\ef_util_ped'.
+Generating RTLIL representation for module `\ef_util_ned'.
+Generating RTLIL representation for module `\ef_util_ticker'.
+Generating RTLIL representation for module `\ef_util_glitch_filter'.
+Generating RTLIL representation for module `\ef_util_fifo'.
+Generating RTLIL representation for module `\ef_util_clkmux_2x1'.
+Generating RTLIL representation for module `\ef_util_clkmux_4x1'.
+Generating RTLIL representation for module `\ef_util_gating_cell'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \apb_interconnect
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \apb_interconnect
+Removing unused module `\ef_util_gating_cell'.
+Removing unused module `\ef_util_clkmux_4x1'.
+Removing unused module `\ef_util_clkmux_2x1'.
+Removing unused module `\ef_util_fifo'.
+Removing unused module `\ef_util_glitch_filter'.
+Removing unused module `\ef_util_ticker'.
+Removing unused module `\ef_util_ned'.
+Removing unused module `\ef_util_ped'.
+Removing unused module `\ef_util_sync'.
+Removed 9 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 10 switch rules as full_case in process $proc$apb_interconnect.v:205$50 in module apb_interconnect.
+Marked 1 switch rules as full_case in process $proc$apb_interconnect.v:171$28 in module apb_interconnect.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 20 redundant assignments.
+Promoted 1 assignment to connection.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\apb_interconnect.$proc$apb_interconnect.v:205$50'.
+     1/10: $10\master_prdata[31:0]
+     2/10: $9\master_prdata[31:0]
+     3/10: $8\master_prdata[31:0]
+     4/10: $7\master_prdata[31:0]
+     5/10: $6\master_prdata[31:0]
+     6/10: $5\master_prdata[31:0]
+     7/10: $4\master_prdata[31:0]
+     8/10: $3\master_prdata[31:0]
+     9/10: $2\master_prdata[31:0]
+    10/10: $1\master_prdata[31:0]
+Creating decoders for process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+     1/20: $0\s9_penable[0:0]
+     2/20: $0\s8_penable[0:0]
+     3/20: $0\s7_penable[0:0]
+     4/20: $0\s6_penable[0:0]
+     5/20: $0\s5_penable[0:0]
+     6/20: $0\s4_penable[0:0]
+     7/20: $0\s3_penable[0:0]
+     8/20: $0\s2_penable[0:0]
+     9/20: $0\s1_penable[0:0]
+    10/20: $0\s0_penable[0:0]
+    11/20: $0\s9_psel[0:0]
+    12/20: $0\s8_psel[0:0]
+    13/20: $0\s7_psel[0:0]
+    14/20: $0\s6_psel[0:0]
+    15/20: $0\s5_psel[0:0]
+    16/20: $0\s4_psel[0:0]
+    17/20: $0\s3_psel[0:0]
+    18/20: $0\s2_psel[0:0]
+    19/20: $0\s1_psel[0:0]
+    20/20: $0\s0_psel[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\apb_interconnect.\master_prdata' from process `\apb_interconnect.$proc$apb_interconnect.v:205$50'.
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\apb_interconnect.\s0_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$304' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s0_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$309' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s1_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$314' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s1_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$319' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s2_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$324' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s2_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$329' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s3_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$334' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s3_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$339' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s4_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$344' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s4_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$349' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s5_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$354' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s5_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$359' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s6_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$364' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s6_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$369' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s7_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$374' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s7_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$379' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s8_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$384' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s8_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$389' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s9_psel' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$394' with positive edge clock and positive level reset.
+Creating register for signal `\apb_interconnect.\s9_penable' using process `\apb_interconnect.$proc$apb_interconnect.v:171$28'.
+  created $adff cell `$procdff$399' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 10 empty switches in `\apb_interconnect.$proc$apb_interconnect.v:205$50'.
+Removing empty process `apb_interconnect.$proc$apb_interconnect.v:205$50'.
+Removing empty process `apb_interconnect.$proc$apb_interconnect.v:171$28'.
+Cleaned up 10 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+<suppressed ~42 debug messages>
+
+3.3. Executing FUTURE pass.
+
+3.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+3.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+Removed 21 unused cells and 142 unused wires.
+<suppressed ~22 debug messages>
+
+3.6. Executing CHECK pass (checking for obvious problems).
+Checking module apb_interconnect...
+Found and reported 0 problems.
+
+3.7. Executing OPT pass (performing simple optimizations).
+
+3.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+3.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 146 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Removed a total of 0 cells.
+
+3.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \apb_interconnect..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$295.
+    dead port 1/2 on $mux $procmux$289.
+    dead port 1/2 on $mux $procmux$286.
+    dead port 1/2 on $mux $procmux$280.
+    dead port 1/2 on $mux $procmux$277.
+    dead port 1/2 on $mux $procmux$274.
+    dead port 1/2 on $mux $procmux$268.
+    dead port 1/2 on $mux $procmux$265.
+    dead port 1/2 on $mux $procmux$262.
+    dead port 1/2 on $mux $procmux$259.
+    dead port 1/2 on $mux $procmux$253.
+    dead port 1/2 on $mux $procmux$250.
+    dead port 1/2 on $mux $procmux$247.
+    dead port 1/2 on $mux $procmux$244.
+    dead port 1/2 on $mux $procmux$241.
+    dead port 1/2 on $mux $procmux$235.
+    dead port 1/2 on $mux $procmux$232.
+    dead port 1/2 on $mux $procmux$229.
+    dead port 1/2 on $mux $procmux$226.
+    dead port 1/2 on $mux $procmux$223.
+    dead port 1/2 on $mux $procmux$220.
+    dead port 1/2 on $mux $procmux$214.
+    dead port 1/2 on $mux $procmux$211.
+    dead port 1/2 on $mux $procmux$208.
+    dead port 1/2 on $mux $procmux$205.
+    dead port 1/2 on $mux $procmux$202.
+    dead port 1/2 on $mux $procmux$199.
+    dead port 1/2 on $mux $procmux$196.
+    dead port 1/2 on $mux $procmux$190.
+    dead port 1/2 on $mux $procmux$187.
+    dead port 1/2 on $mux $procmux$184.
+    dead port 1/2 on $mux $procmux$181.
+    dead port 1/2 on $mux $procmux$178.
+    dead port 1/2 on $mux $procmux$175.
+    dead port 1/2 on $mux $procmux$172.
+    dead port 1/2 on $mux $procmux$169.
+    dead port 1/2 on $mux $procmux$163.
+    dead port 1/2 on $mux $procmux$160.
+    dead port 1/2 on $mux $procmux$157.
+    dead port 1/2 on $mux $procmux$154.
+    dead port 1/2 on $mux $procmux$151.
+    dead port 1/2 on $mux $procmux$148.
+    dead port 1/2 on $mux $procmux$145.
+    dead port 1/2 on $mux $procmux$142.
+    dead port 1/2 on $mux $procmux$139.
+Removed 45 multiplexer ports.
+<suppressed ~59 debug messages>
+
+3.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \apb_interconnect.
+Performed a total of 0 changes.
+
+3.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 101 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Removed a total of 0 cells.
+
+3.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+Removed 0 unused cells and 45 unused wires.
+<suppressed ~1 debug messages>
+
+3.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+3.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \apb_interconnect..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+3.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \apb_interconnect.
+Performed a total of 0 changes.
+
+3.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 101 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Removed a total of 0 cells.
+
+3.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+
+3.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+3.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 15 bits (of 16) from port B of cell apb_interconnect.$eq$apb_interconnect.v:152$2 ($eq).
+Removed top 7 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:158$5 ($eq).
+Removed top 6 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:159$7 ($eq).
+Removed top 6 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:160$9 ($eq).
+Removed top 5 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:161$11 ($eq).
+Removed top 5 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:162$13 ($eq).
+Removed top 5 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:163$15 ($eq).
+Removed top 5 bits (of 8) from port B of cell apb_interconnect.$eq$apb_interconnect.v:164$17 ($eq).
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+
+3.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module apb_interconnect.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\apb_interconnect'.
+Computing hashes of 101 cells of `\apb_interconnect'.
+Finding duplicate cells in `\apb_interconnect'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \apb_interconnect..
+
+3.11.4. Finished fast OPT passes.
+
+3.12. Executing SORT pass.
+
+3.13. Printing statistics.
+
+=== apb_interconnect ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      160 wires
+     1469 wire bits
+       94 public wires
+     1124 public wire bits
+       80 ports
+     1103 port bits
+      101 cells
+       20   $adff
+        8   $eq
+       40   $logic_and
+        3   $logic_not
+        9   $logic_or
+       12   $mux
+        9   $or
+
+3.14. Executing CHECK pass (checking for obvious problems).
+Checking module apb_interconnect...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `apb_interconnect'. Setting top module to apb_interconnect.
+
+4.1. Analyzing design hierarchy..
+Top module:  \apb_interconnect
+
+4.2. Analyzing design hierarchy..
+Top module:  \apb_interconnect
+Removed 0 unused modules.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 45a0fc5ec0, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 17.55 MB peak
+Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
+Time spent: 28% 4x read_verilog (0 sec), 18% 5x opt_clean (0 sec), ...

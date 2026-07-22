@@ -1,0 +1,88 @@
+# ASIC Project .gitignore — Vera (git-auditor v2)
+# Applies to: PRJ-001, PRJ-002, PRJ-003, and future PRJ-XXX
+
+# ============================================
+# Simulation Artifacts (NEVER commit)
+# ============================================
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+sim_build/
+__pycache__/
+*.pyc
+*.vvp
+*.gch
+
+# ============================================
+# Firmware Build Artifacts
+# ============================================
+*.elf
+*.bin
+*.hex
+*.o
+*.map
+
+# ============================================
+# Synthesis Intermediate Files
+# ============================================
+*.spef
+*.sdf
+
+# ============================================
+# LibreLane Intermediate Build Artifacts
+# Exclude everything except final/ deliverables
+# ============================================
+**/librelane/runs/*/
+!**/librelane/runs/*/final/
+!**/librelane/runs/*/final/**
+
+# ============================================
+# Large Binary Artifacts (keep ONLY final GDS + LEF)
+# ============================================
+*.odb
+*.spice
+*.ext
+*.pnl.v
+*.nl.v
+*.vh
+*.json_h
+*.sdc
+*.klayout.gds
+*.mag
+*.magic.gds
+
+# ============================================
+# EDA Tool Scratch / Temporary
+# ============================================
+*.jou
+*.log.tmp
+*.tmp
+*.backup
+*.orig
+*~
+
+# ============================================
+# Caravel mpw_precheck (external tool — has own .git)
+# ============================================
+09_caravel_stage/mpw_precheck/
+
+# ============================================
+# OS / Editor Files
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+.vscode/
+.idea/
+*.bak
+
+# ============================================
+# Python Virtual Environments
+# ============================================
+venv/
+.venv/
+env/
+09_caravel_stage/caravel_user_project/

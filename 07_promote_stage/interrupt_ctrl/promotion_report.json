@@ -1,0 +1,21 @@
+{
+  "module": "interrupt_ctrl",
+  "id": "M09",
+  "type": "CREATE",
+  "promotion_status": "PASS",
+  "cell_count": 83,
+  "dff_count": 16,
+  "latch_count": 0,
+  "area_um2": 862.0768,
+  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log",
+  "lint_errors": 0,
+  "formal_pass": true,
+  "formal_depth": 20,
+  "equiv_pass": true,
+  "verification_tests_pass": 15,
+  "verification_tests_total": 15,
+  "verification_tests_fail": 0,
+  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml",
+  "admission_reasons": [],
+  "has_frontend_artifacts": true
+}

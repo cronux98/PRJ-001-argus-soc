@@ -1,0 +1,8 @@
+{
+  "project": "PRJ-001",
+  "codename": "Argus",
+  "version": "1.0.0",
+  "date": "2026-07-20",
+  "blocks": [],
+  "note": "No analog blocks in PRJ-001 Argus (digital-only sensor-hub SoC). Analog front-end (ADC, op-amp) explicitly out of scope per system_spec.md §1.2 (WONT-001). External sensors connect via digital I2C/SPI interfaces."
+}

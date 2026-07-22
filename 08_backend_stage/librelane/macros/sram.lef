@@ -1,0 +1,244 @@
+VERSION 5.8 ;
+NAMESCASESENSITIVE ON ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO sram
+  CLASS BLOCK ;
+  FOREIGN sram ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 683.100 BY 416.160 ;
+  SYMMETRY X Y R90 ;
+
+  PIN clk_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 10.000 0.500 10.500 ;
+    END
+  END clk_i
+
+  PIN rst_ni
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 20.000 0.500 20.500 ;
+    END
+  END rst_ni
+
+  PIN imem_addr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 30.000 0.500 30.500 ;
+    END
+  END imem_addr[0]
+
+  PIN imem_addr[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 40.000 0.500 40.500 ;
+    END
+  END imem_addr[31]
+
+  PIN imem_rdata[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 10.000 683.100 10.500 ;
+    END
+  END imem_rdata[0]
+
+  PIN imem_rdata[31]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 20.000 683.100 20.500 ;
+    END
+  END imem_rdata[31]
+
+  PIN dmem_addr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 30.000 683.100 30.500 ;
+    END
+  END dmem_addr[0]
+
+  PIN dmem_addr[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 40.000 683.100 40.500 ;
+    END
+  END dmem_addr[31]
+
+  PIN dmem_wdata[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 50.000 683.100 50.500 ;
+    END
+  END dmem_wdata[0]
+
+  PIN dmem_wdata[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 60.000 683.100 60.500 ;
+    END
+  END dmem_wdata[31]
+
+  PIN dmem_rdata[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 70.000 683.100 70.500 ;
+    END
+  END dmem_rdata[0]
+
+  PIN dmem_rdata[31]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 80.000 683.100 80.500 ;
+    END
+  END dmem_rdata[31]
+
+  PIN dmem_we
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 50.000 0.500 50.500 ;
+    END
+  END dmem_we
+
+  PIN dmem_be[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 60.000 0.500 60.500 ;
+    END
+  END dmem_be[0]
+
+  PIN dmem_be[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 70.000 0.500 70.500 ;
+    END
+  END dmem_be[3]
+
+  PIN apb_paddr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 80.000 0.500 80.500 ;
+    END
+  END apb_paddr[0]
+
+  PIN apb_paddr[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 90.000 0.500 90.500 ;
+    END
+  END apb_paddr[31]
+
+  PIN apb_pwdata[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 100.000 0.500 100.500 ;
+    END
+  END apb_pwdata[0]
+
+  PIN apb_pwdata[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 110.000 0.500 110.500 ;
+    END
+  END apb_pwdata[31]
+
+  PIN apb_prdata[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 90.000 683.100 90.500 ;
+    END
+  END apb_prdata[0]
+
+  PIN apb_prdata[31]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 100.000 683.100 100.500 ;
+    END
+  END apb_prdata[31]
+
+  PIN apb_pwrite
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 110.000 683.100 110.500 ;
+    END
+  END apb_pwrite
+
+  PIN apb_psel
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 120.000 683.100 120.500 ;
+    END
+  END apb_psel
+
+  PIN apb_penable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 130.000 683.100 130.500 ;
+    END
+  END apb_penable
+
+  PIN apb_pready
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 682.600 140.000 683.100 140.500 ;
+    END
+  END apb_pready
+
+  OBS
+    LAYER met1 ;
+      RECT 0.000 0.000 683.100 416.160 ;
+  END
+END sram
+
+END LIBRARY

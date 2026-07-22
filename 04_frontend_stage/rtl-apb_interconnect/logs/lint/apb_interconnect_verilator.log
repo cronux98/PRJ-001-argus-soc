@@ -1,0 +1,4 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-apb_interconnect/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.040 MB sources in 2 modules, into 0.032 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.011 s (elab=0.001, cvt=0.006, bld=0.000); cpu 0.011 s on 1 threads; allocated 21.031 MB

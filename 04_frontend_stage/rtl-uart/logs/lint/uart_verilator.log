@@ -1,0 +1,153 @@
+GENERATED-FROM: verilator $(verilator --version) --lint-only -Wall rtl-uart/rtl/*.v common/ef_util_lib.v 2026-07-20T06:45:41
+%Warning-EOFNEWLINE: common/ef_util_lib.v:393:10: Missing newline at end of file (POSIX 3.206).
+                                                : ... Suggest add newline.
+  393 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.049
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-DECLFILENAME: common/ef_util_lib.v:30:8: Filename 'ef_util_lib' does not match MODULE name: 'ef_util_sync'
+   30 | module ef_util_sync #(parameter NUM_STAGES = 2) (
+      |        ^~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/DECLFILENAME?v=5.049
+                       ... Use "/* verilator lint_off DECLFILENAME */" and lint_on around source to disable this message.
+%Warning-DECLFILENAME: rtl-uart/rtl/EF_UART.v:218:8: Filename 'EF_UART' does not match MODULE name: 'BAUDGEN'
+  218 | module BAUDGEN
+      |        ^~~~~~~
+%Warning-PINMISSING: rtl-uart/rtl/EF_UART_APB.v:67:23: Instance has missing pin: 'rst_n'
+   67 |   ef_util_gating_cell clk_gate_cell (
+      |                       ^~~~~~~~~~~~~
+                     common/ef_util_lib.v:372:21: ... Location of port declaration
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.049
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-MULTITOP: common/ef_util_lib.v:62:8: Multiple top level modules
+                                            : ... Suggest see manual; fix the duplicates, or use --top-module to select top.
+                   ... For warning description see https://verilator.org/warn/MULTITOP?v=5.049
+                   ... Use "/* verilator lint_off MULTITOP */" and lint_on around source to disable this message.
+                                            : ... Top module 'ef_util_ped'
+   48 | module ef_util_ped (
+      |        ^~~~~~~~~~~
+                                            : ... Top module 'ef_util_ned'
+   62 | module ef_util_ned (
+      |        ^~~~~~~~~~~
+                                            : ... Top module 'ef_util_clkmux_4x1'
+  327 | module ef_util_clkmux_4x1 (
+      |        ^~~~~~~~~~~~~~~~~~
+                                            : ... Top module 'EF_UART_APB'
+   25 | module EF_UART_APB #(
+      |        ^~~~~~~~~~~
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:309:41: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RXDATA_WIRE' generates 9 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  309 |    (PADDR[16-1:0] == RXDATA_REG_OFFSET) ? RXDATA_WIRE :
+      |                                         ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.049
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:310:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'PR_REG' generates 16 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  310 |    (PADDR[16-1:0] == PR_REG_OFFSET) ? PR_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:311:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CTRL_REG' generates 5 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  311 |    (PADDR[16-1:0] == CTRL_REG_OFFSET) ? CTRL_REG :
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:312:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'CFG_REG' generates 14 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  312 |    (PADDR[16-1:0] == CFG_REG_OFFSET) ? CFG_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:313:40: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MATCH_REG' generates 9 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  313 |    (PADDR[16-1:0] == MATCH_REG_OFFSET) ? MATCH_REG :
+      |                                        ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:314:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  314 |    (PADDR[16-1:0] == RX_FIFO_LEVEL_REG_OFFSET) ? RX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:315:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  315 |    (PADDR[16-1:0] == RX_FIFO_THRESHOLD_REG_OFFSET) ? RX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:316:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RX_FIFO_FLUSH_REG' generates 1 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  316 |    (PADDR[16-1:0] == RX_FIFO_FLUSH_REG_OFFSET) ? RX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:317:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_LEVEL_WIRE' generates 4 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  317 |    (PADDR[16-1:0] == TX_FIFO_LEVEL_REG_OFFSET) ? TX_FIFO_LEVEL_WIRE :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:318:52: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_THRESHOLD_REG' generates 4 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  318 |    (PADDR[16-1:0] == TX_FIFO_THRESHOLD_REG_OFFSET) ? TX_FIFO_THRESHOLD_REG :
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:319:48: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'TX_FIFO_FLUSH_REG' generates 1 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  319 |    (PADDR[16-1:0] == TX_FIFO_FLUSH_REG_OFFSET) ? TX_FIFO_FLUSH_REG :
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:320:37: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'IM_REG' generates 10 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  320 |    (PADDR[16-1:0] == IM_REG_OFFSET) ? IM_REG :
+      |                                     ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:321:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'MIS_REG' generates 10 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  321 |    (PADDR[16-1:0] == MIS_REG_OFFSET) ? MIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:322:38: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'RIS_REG' generates 10 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  322 |    (PADDR[16-1:0] == RIS_REG_OFFSET) ? RIS_REG :
+      |                                      ^
+%Warning-WIDTHEXPAND: rtl-uart/rtl/EF_UART_APB.v:323:39: Operator COND expects 32 bits on the Conditional True, but Conditional True's VARREF 'GCLK_REG' generates 1 bits.
+                                                       : ... note: In instance 'EF_UART_APB'
+  323 |    (PADDR[16-1:0] == GCLK_REG_OFFSET) ? GCLK_REG :
+      |                                       ^
+%Warning-WIDTHTRUNC: rtl-uart/rtl/EF_UART_APB.v:330:16: Operator ASSIGNW expects 9 bits on the Assign RHS, but Assign RHS's VARREF 'PWDATA' generates 32 bits.
+                                                      : ... note: In instance 'EF_UART_APB'
+  330 |   assign wdata = PWDATA;
+      |                ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.049
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-uart/rtl/EF_UART_APB.v:35:25: Bits of signal are not used: 'PWDATA'[31:16]
+                                                       : ... note: In instance 'EF_UART_APB'
+   35 |     input  wire [ 31:0] PWDATA,
+      |                         ^~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.049
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl-uart/rtl/EF_UART_APB.v:36:25: Bits of signal are not used: 'PADDR'[31:16]
+                                                       : ... note: In instance 'EF_UART_APB'
+   36 |     input  wire [ 31:0] PADDR,
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: rtl-uart/rtl/EF_UART_APB.v:103:18: Signal is not used: 'tx_full'
+                                                        : ... note: In instance 'EF_UART_APB'
+  103 |   wire [  1-1:0] tx_full;
+      |                  ^~~~~~~
+%Warning-UNUSEDSIGNAL: rtl-uart/rtl/EF_UART_APB.v:106:18: Signal is not used: 'rx_empty'
+                                                        : ... note: In instance 'EF_UART_APB'
+  106 |   wire [  1-1:0] rx_empty;
+      |                  ^~~~~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:372:21: Signal is not used: 'rst_n'
+                                                  : ... note: In instance 'EF_UART_APB.clk_gate_cell'
+  372 |     input   wire    rst_n,
+      |                     ^~~~~
+%Warning-UNUSEDSIGNAL: common/ef_util_lib.v:373:21: Signal is not used: 'clk_en'
+                                                  : ... note: In instance 'EF_UART_APB.clk_gate_cell'
+  373 |     input   wire    clk_en,
+      |                     ^~~~~~
+%Warning-CASEINCOMPLETE: common/ef_util_lib.v:238:9: Case values incompletely covered (example pattern 0x0)
+  238 |         case({w_en,rd})
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.049
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+%Warning-CASEINCOMPLETE: rtl-uart/rtl/EF_UART.v:532:17: Case values incompletely covered (example pattern 0x0)
+  532 |                 case (parity_type)
+      |                 ^~~~
+%Warning-CASEINCOMPLETE: rtl-uart/rtl/EF_UART.v:490:9: Case values incompletely covered (example pattern 0x6)
+  490 |         case(current_state)
+      |         ^~~~
+%Warning-CASEINCOMPLETE: rtl-uart/rtl/EF_UART.v:358:25: Case values incompletely covered (example pattern 0x0)
+  358 |                         case (parity_type)
+      |                         ^~~~
+%Warning-CASEINCOMPLETE: rtl-uart/rtl/EF_UART.v:321:9: Case values incompletely covered (example pattern 0x6)
+  321 |         case(current_state)
+      |         ^~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.049 devel rev v5.048-4-ge4803f29b (mod)
+- Verilator: Built from 0.137 MB sources in 15 modules, into 0.173 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.044 s (elab=0.008, cvt=0.023, bld=0.000); cpu 0.044 s on 1 threads; allocated 22.992 MB
