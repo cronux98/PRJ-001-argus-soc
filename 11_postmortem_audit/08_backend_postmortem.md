@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/08_backend_stage
 **Verdict:** CONDITIONAL PASS (v0-run9) — 7 P&R iterations. Setup +4.264 ns, hold +0.107 ns.
 
 ## What Went Well

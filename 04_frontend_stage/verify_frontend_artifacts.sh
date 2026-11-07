@@ -9,7 +9,7 @@
 set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-EVIDENCE_LIB="/home/smdadmin/.hermes/skills/asic-workflow/evidence-assertions/scripts/evidence-assertions.sh"
+EVIDENCE_LIB="~/.hermes/skills/asic-workflow/evidence-assertions/scripts/evidence-assertions.sh"
 
 if [ ! -f "$EVIDENCE_LIB" ]; then
     echo "FATAL: evidence-assertions.sh not found at $EVIDENCE_LIB"

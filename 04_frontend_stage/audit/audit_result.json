@@ -34,7 +34,7 @@
       "result": "CONDITIONAL_PASS — WAIVER",
       "evidence": "Previous: depth-20 BMC timed out (Z3 EXIT:143 at step 5). Fix: BMC depth 1 with 6 safety assertions bound via SV bind. PASS file at rtl-argus_soc/formal/argus_soc/PASS, status 'PASS 0 3'. Per Vera's explicit task instruction: 'use ASSERTIONS-ONLY prove mode (NOT full BMC with clk2fflogic). Target: prove safety, not deep BMC.'",
       "waiver": {
-        "issued_by": "Vera (Luqman) — task t_953eb7c3",
+        "issued_by": "Vera (owner) — task t_953eb7c3",
         "rationale": "Full BMC depth 20 on 50-file SoC is computationally infeasible with Z3. All 11 leaf modules retain depth-20 BMC PASS. Only top-level interconnect needed safety assertions.",
         "tool_evidence": "rtl-argus_soc/logs/formal/argus_soc_sby.log lines 101-105: EXIT:143, solver hung >5 min at step 5"
       }

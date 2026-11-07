@@ -7,82 +7,82 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/synth/synth_ibex_core.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/synth/synth_ibex_core.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v' to AST representation.
 Generating RTLIL representation for module `\ibex_core'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v' to AST representation.
 Generating RTLIL representation for module `\ibex_core_inner'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v' to AST representation.
+3. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v' to AST representation.
 Generating RTLIL representation for module `\alu'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v' to AST representation.
+4. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v' to AST representation.
 Generating RTLIL representation for module `\alu_ctrl'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v' to AST representation.
+5. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v' to AST representation.
 Generating RTLIL representation for module `\branch_unit'.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v' to AST representation.
+6. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v' to AST representation.
 Generating RTLIL representation for module `\ctrl_unit'.
 Successfully finished Verilog frontend.
 
-7. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v' to AST representation.
+7. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v' to AST representation.
 Generating RTLIL representation for module `\ex_mem'.
 Successfully finished Verilog frontend.
 
-8. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v' to AST representation.
+8. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v' to AST representation.
 Generating RTLIL representation for module `\forwarding_unit'.
 Successfully finished Verilog frontend.
 
-9. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v' to AST representation.
+9. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/hazard_unit.v' to AST representation.
 Generating RTLIL representation for module `\hazard_unit'.
 Successfully finished Verilog frontend.
 
-10. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v' to AST representation.
+10. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v' to AST representation.
 Generating RTLIL representation for module `\id_ex'.
 Successfully finished Verilog frontend.
 
-11. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v' to AST representation.
+11. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v' to AST representation.
 Generating RTLIL representation for module `\if_id'.
 Successfully finished Verilog frontend.
 
-12. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v' to AST representation.
+12. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v' to AST representation.
 Generating RTLIL representation for module `\imm_gen'.
 Successfully finished Verilog frontend.
 
-13. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v' to AST representation.
+13. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v' to AST representation.
 Generating RTLIL representation for module `\mem_wb'.
 Successfully finished Verilog frontend.
 
-14. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v' to AST representation.
+14. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v' to AST representation.
 Generating RTLIL representation for module `\pc'.
 Successfully finished Verilog frontend.
 
-15. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v' to AST representation.
+15. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v' to AST representation.
 Generating RTLIL representation for module `\reg_file'.
-Warning: Replacing memory \regs with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:30
+Warning: Replacing memory \regs with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:30
 Successfully finished Verilog frontend.
 
 16. Executing HIERARCHY pass (managing design hierarchy).
@@ -128,31 +128,31 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 17.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Removed 1 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147 in module reg_file.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147 in module reg_file.
-Removed 1 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144 in module reg_file.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144 in module reg_file.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134 in module reg_file.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117 in module pc.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115 in module mem_wb.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114 in module imm_gen.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111 in module if_id.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109 in module id_ex.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93 in module forwarding_unit.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84 in module forwarding_unit.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82 in module ex_mem.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81 in module ctrl_unit.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74 in module branch_unit.
-Removed 3 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70 in module alu_ctrl.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70 in module alu_ctrl.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56 in module alu.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54 in module ibex_core_inner.
-Removed 2 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53 in module ibex_core_inner.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53 in module ibex_core_inner.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42 in module ibex_core_inner.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41 in module ibex_core_inner.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33 in module ibex_core_inner.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17 in module ibex_core.
+Removed 1 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147 in module reg_file.
+Removed 1 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144 in module reg_file.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134 in module reg_file.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117 in module pc.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115 in module mem_wb.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114 in module imm_gen.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111 in module if_id.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109 in module id_ex.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93 in module forwarding_unit.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84 in module forwarding_unit.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82 in module ex_mem.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81 in module ctrl_unit.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74 in module branch_unit.
+Removed 3 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70 in module alu_ctrl.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70 in module alu_ctrl.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56 in module alu.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54 in module ibex_core_inner.
+Removed 2 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53 in module ibex_core_inner.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41 in module ibex_core_inner.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33 in module ibex_core_inner.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17 in module ibex_core.
 Removed a total of 7 dead cases.
 
 17.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -162,28 +162,28 @@ Promoted 28 assignments to connections.
 17.4. Executing PROC_INIT pass (extract init attributes).
 
 17.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst_ni in `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
-Found async reset \rst_ni in `\pc.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
-Found async reset \rst_ni in `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
-Found async reset \rst_ni in `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
-Found async reset \rst_ni in `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
-Found async reset \rst_ni in `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
-Found async reset \rst_ni in `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Found async reset \rst_ni in `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Found async reset \rst_ni in `\pc.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
+Found async reset \rst_ni in `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Found async reset \rst_ni in `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Found async reset \rst_ni in `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Found async reset \rst_ni in `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Found async reset \rst_ni in `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
 
 17.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~34 debug messages>
 
 17.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
-     1/1: $1$mem2reg_rd$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$122_DATA[31:0]$149
-Creating decoders for process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
-     1/1: $1$mem2reg_rd$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$121_DATA[31:0]$146
-Creating decoders for process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
-     1/37: $2$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR[4:0]$142
-     2/37: $2$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA[31:0]$143
-     3/37: $1$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA[31:0]$139
-     4/37: $1$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR[4:0]$138
+Creating decoders for process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
+     1/1: $1$mem2reg_rd$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$122_DATA[31:0]$149
+Creating decoders for process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
+     1/1: $1$mem2reg_rd$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$121_DATA[31:0]$146
+Creating decoders for process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+     1/37: $2$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR[4:0]$142
+     2/37: $2$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA[31:0]$143
+     3/37: $1$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA[31:0]$139
+     4/37: $1$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR[4:0]$138
      5/37: $1\i[31:0]
      6/37: $0\regs[31][31:0]
      7/37: $0\regs[30][31:0]
@@ -217,22 +217,22 @@ Creating decoders for process `\reg_file.$proc$/home/smdadmin/hermes_workspace/p
     35/37: $0\regs[2][31:0]
     36/37: $0\regs[1][31:0]
     37/37: $0\regs[0][31:0]
-Creating decoders for process `\pc.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
+Creating decoders for process `\pc.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
      1/1: $0\pc_o[31:0]
-Creating decoders for process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating decoders for process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
      1/6: $0\wb_result_src_o[1:0]
      2/6: $0\wb_mem_to_reg_o[0:0]
      3/6: $0\wb_reg_write_o[0:0]
      4/6: $0\wb_rd_addr_o[4:0]
      5/6: $0\wb_mem_data_o[31:0]
      6/6: $0\wb_alu_result_o[31:0]
-Creating decoders for process `\imm_gen.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
+Creating decoders for process `\imm_gen.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
      1/1: $1\imm_o[31:0]
-Creating decoders for process `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Creating decoders for process `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
      1/3: $0\id_instr_o[31:0]
      2/3: $0\id_pc_plus4_o[31:0]
      3/3: $0\id_pc_o[31:0]
-Creating decoders for process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating decoders for process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
      1/20: $0\ex_is_auipc_o[0:0]
      2/20: $0\ex_is_lui_o[0:0]
      3/20: $0\ex_result_src_o[1:0]
@@ -253,13 +253,13 @@ Creating decoders for process `\id_ex.$proc$/home/smdadmin/hermes_workspace/proj
     18/20: $0\ex_rs2_data_o[31:0]
     19/20: $0\ex_rs1_data_o[31:0]
     20/20: $0\ex_pc_o[31:0]
-Creating decoders for process `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
+Creating decoders for process `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
      1/2: $2\forward_b_o[1:0]
      2/2: $1\forward_b_o[1:0]
-Creating decoders for process `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
+Creating decoders for process `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
      1/2: $2\forward_a_o[1:0]
      2/2: $1\forward_a_o[1:0]
-Creating decoders for process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating decoders for process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
      1/9: $0\mem_result_src_o[1:0]
      2/9: $0\mem_mem_to_reg_o[0:0]
      3/9: $0\mem_reg_write_o[0:0]
@@ -269,7 +269,7 @@ Creating decoders for process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/pro
      7/9: $0\mem_rd_addr_o[4:0]
      8/9: $0\mem_rs2_data_o[31:0]
      9/9: $0\mem_alu_result_o[31:0]
-Creating decoders for process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+Creating decoders for process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
      1/12: $1\reg_write_o[0:0]
      2/12: $1\alu_op_o[1:0]
      3/12: $1\is_auipc_o[0:0]
@@ -282,29 +282,29 @@ Creating decoders for process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/
     10/12: $1\mem_write_o[0:0]
     11/12: $1\mem_read_o[0:0]
     12/12: $1\alu_src_o[0:0]
-Creating decoders for process `\branch_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
+Creating decoders for process `\branch_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
      1/2: $2\branch_taken_o[0:0]
      2/2: $1\branch_taken_o[0:0]
-Creating decoders for process `\alu_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
+Creating decoders for process `\alu_ctrl.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
      1/3: $3\alu_operation_o[3:0]
      2/3: $2\alu_operation_o[3:0]
      3/3: $1\alu_operation_o[3:0]
-Creating decoders for process `\alu.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
+Creating decoders for process `\alu.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
      1/1: $1\result_o[31:0]
-Creating decoders for process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
+Creating decoders for process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
      1/1: $1\wb_data[31:0]
-Creating decoders for process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
+Creating decoders for process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
      1/3: $3\be_gen[3:0]
      2/3: $2\be_gen[3:0]
      3/3: $1\be_gen[3:0]
-Creating decoders for process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
+Creating decoders for process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
      1/1: $1\fwd_mux_b[31:0]
-Creating decoders for process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
+Creating decoders for process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
      1/1: $1\fwd_mux_a[31:0]
-Creating decoders for process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
+Creating decoders for process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
      1/2: $2\pc_next_r[31:0]
      2/2: $1\pc_next_r[31:0]
-Creating decoders for process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating decoders for process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
      1/7: $0\taking_trap[0:0]
      2/7: $0\mcause[31:0]
      3/7: $0\mtvec[31:0]
@@ -314,239 +314,239 @@ Creating decoders for process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/
      7/7: $0\mie_meie[0:0]
 
 17.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$122_DATA' from process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
-No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$121_DATA' from process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
-No latch inferred for signal `\imm_gen.\imm_o' from process `\imm_gen.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
-No latch inferred for signal `\forwarding_unit.\forward_b_o' from process `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
-No latch inferred for signal `\forwarding_unit.\forward_a_o' from process `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
-No latch inferred for signal `\ctrl_unit.\alu_op_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\alu_src_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\mem_read_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\mem_write_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\branch_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\reg_write_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\mem_to_reg_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\jump_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\result_src_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\imm_src_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\is_lui_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\ctrl_unit.\is_auipc_o' from process `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-No latch inferred for signal `\branch_unit.\branch_taken_o' from process `\branch_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
-No latch inferred for signal `\alu_ctrl.\alu_operation_o' from process `\alu_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
-No latch inferred for signal `\alu.\result_o' from process `\alu.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
-No latch inferred for signal `\ibex_core_inner.\wb_data' from process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
-No latch inferred for signal `\ibex_core_inner.\be_gen' from process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
-No latch inferred for signal `\ibex_core_inner.\fwd_mux_b' from process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
-No latch inferred for signal `\ibex_core_inner.\fwd_mux_a' from process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
-No latch inferred for signal `\ibex_core_inner.\pc_next_r' from process `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
+No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$122_DATA' from process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
+No latch inferred for signal `\reg_file.$mem2reg_rd$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$121_DATA' from process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
+No latch inferred for signal `\imm_gen.\imm_o' from process `\imm_gen.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
+No latch inferred for signal `\forwarding_unit.\forward_b_o' from process `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
+No latch inferred for signal `\forwarding_unit.\forward_a_o' from process `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
+No latch inferred for signal `\ctrl_unit.\alu_op_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\alu_src_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_read_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_write_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\branch_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\reg_write_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\mem_to_reg_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\jump_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\result_src_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\imm_src_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\is_lui_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\ctrl_unit.\is_auipc_o' from process `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+No latch inferred for signal `\branch_unit.\branch_taken_o' from process `\branch_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
+No latch inferred for signal `\alu_ctrl.\alu_operation_o' from process `\alu_ctrl.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
+No latch inferred for signal `\alu.\result_o' from process `\alu.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
+No latch inferred for signal `\ibex_core_inner.\wb_data' from process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
+No latch inferred for signal `\ibex_core_inner.\be_gen' from process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
+No latch inferred for signal `\ibex_core_inner.\fwd_mux_b' from process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
+No latch inferred for signal `\ibex_core_inner.\fwd_mux_a' from process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
+No latch inferred for signal `\ibex_core_inner.\pc_next_r' from process `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
 
 17.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\reg_file.\i' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\i' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1197' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[0]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[0]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $dff cell `$procdff$1204' with positive edge clock.
-Creating register for signal `\reg_file.\regs[1]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[1]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1209' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[2]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[2]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1214' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[3]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[3]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1219' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[4]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[4]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1224' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[5]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[5]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1229' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[6]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[6]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1234' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[7]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[7]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1239' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[8]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[8]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1244' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[9]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[9]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1249' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[10]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[10]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1254' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[11]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[11]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1259' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[12]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[12]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1264' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[13]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[13]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1269' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[14]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[14]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1274' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[15]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[15]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1279' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[16]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[16]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1284' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[17]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[17]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1289' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[18]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[18]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1294' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[19]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[19]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1299' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[20]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[20]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1304' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[21]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[21]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1309' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[22]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[22]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1314' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[23]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[23]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1319' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[24]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[24]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1324' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[25]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[25]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1329' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[26]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[26]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1334' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[27]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[27]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1339' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[28]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[28]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1344' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[29]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[29]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1349' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[30]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[30]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1354' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.\regs[31]' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.\regs[31]' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1359' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_ADDR' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1364' with positive edge clock and positive level reset.
-Creating register for signal `\reg_file.$mem2reg_wr$\regs$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA' using process `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Creating register for signal `\reg_file.$mem2reg_wr$\regs$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:33$123_DATA' using process `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
   created $adff cell `$procdff$1369' with positive edge clock and positive level reset.
-Creating register for signal `\pc.\pc_o' using process `\pc.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
+Creating register for signal `\pc.\pc_o' using process `\pc.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
   created $adff cell `$procdff$1374' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_alu_result_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_alu_result_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1379' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_mem_data_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_mem_data_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1384' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_rd_addr_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_rd_addr_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1389' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_reg_write_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_reg_write_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1394' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_mem_to_reg_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_mem_to_reg_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1399' with positive edge clock and positive level reset.
-Creating register for signal `\mem_wb.\wb_result_src_o' using process `\mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Creating register for signal `\mem_wb.\wb_result_src_o' using process `\mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
   created $adff cell `$procdff$1404' with positive edge clock and positive level reset.
-Creating register for signal `\if_id.\id_pc_o' using process `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Creating register for signal `\if_id.\id_pc_o' using process `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
   created $adff cell `$procdff$1409' with positive edge clock and positive level reset.
-Creating register for signal `\if_id.\id_pc_plus4_o' using process `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Creating register for signal `\if_id.\id_pc_plus4_o' using process `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
   created $adff cell `$procdff$1414' with positive edge clock and positive level reset.
-Creating register for signal `\if_id.\id_instr_o' using process `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Creating register for signal `\if_id.\id_instr_o' using process `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
   created $adff cell `$procdff$1419' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_pc_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_pc_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1424' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_rs1_data_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_rs1_data_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1429' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_rs2_data_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_rs2_data_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1434' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_imm_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_imm_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1439' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_rs1_addr_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_rs1_addr_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1444' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_rs2_addr_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_rs2_addr_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1449' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_rd_addr_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_rd_addr_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1454' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_funct3_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_funct3_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1459' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_funct7_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_funct7_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1464' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_alu_op_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_alu_op_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1469' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_alu_src_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_alu_src_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1474' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_mem_read_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_mem_read_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1479' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_mem_write_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_mem_write_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1484' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_branch_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_branch_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1489' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_reg_write_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_reg_write_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1494' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_mem_to_reg_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_mem_to_reg_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1499' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_jump_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_jump_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1504' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_result_src_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_result_src_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1509' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_is_lui_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_is_lui_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1514' with positive edge clock and positive level reset.
-Creating register for signal `\id_ex.\ex_is_auipc_o' using process `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Creating register for signal `\id_ex.\ex_is_auipc_o' using process `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
   created $adff cell `$procdff$1519' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_alu_result_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_alu_result_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1524' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_rs2_data_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_rs2_data_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1529' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_rd_addr_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_rd_addr_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1534' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_funct3_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_funct3_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1539' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_mem_read_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_mem_read_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1544' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_mem_write_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_mem_write_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1549' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_reg_write_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_reg_write_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1554' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_mem_to_reg_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_mem_to_reg_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1559' with positive edge clock and positive level reset.
-Creating register for signal `\ex_mem.\mem_result_src_o' using process `\ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Creating register for signal `\ex_mem.\mem_result_src_o' using process `\ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
   created $adff cell `$procdff$1564' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\mie_meie' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\mie_meie' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1569' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\mstatus_mie' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\mstatus_mie' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1574' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\in_wfi' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\in_wfi' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1579' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\mepc' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\mepc' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1584' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\mtvec' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\mtvec' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1589' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\mcause' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\mcause' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1594' with positive edge clock and positive level reset.
-Creating register for signal `\ibex_core.\taking_trap' using process `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Creating register for signal `\ibex_core.\taking_trap' using process `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
   created $adff cell `$procdff$1599' with positive edge clock and positive level reset.
 
 17.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 17.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
-Removing empty process `reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
-Found and cleaned up 1 empty switch in `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
-Removing empty process `reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
-Found and cleaned up 2 empty switches in `\reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
-Removing empty process `reg_file.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
-Found and cleaned up 1 empty switch in `\pc.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
-Removing empty process `pc.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
-Removing empty process `mem_wb.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
-Found and cleaned up 1 empty switch in `\imm_gen.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
-Removing empty process `imm_gen.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
-Found and cleaned up 2 empty switches in `\if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
-Removing empty process `if_id.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
-Found and cleaned up 1 empty switch in `\id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
-Removing empty process `id_ex.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
-Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
-Removing empty process `forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
-Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
-Removing empty process `forwarding_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
-Removing empty process `ex_mem.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
-Found and cleaned up 1 empty switch in `\ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-Removing empty process `ctrl_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
-Found and cleaned up 2 empty switches in `\branch_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
-Removing empty process `branch_unit.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
-Found and cleaned up 3 empty switches in `\alu_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
-Removing empty process `alu_ctrl.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
-Found and cleaned up 1 empty switch in `\alu.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
-Removing empty process `alu.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
-Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
-Removing empty process `ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
-Found and cleaned up 3 empty switches in `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
-Removing empty process `ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
-Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
-Removing empty process `ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
-Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
-Removing empty process `ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
-Found and cleaned up 2 empty switches in `\ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
-Removing empty process `ibex_core_inner.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
-Found and cleaned up 6 empty switches in `\ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
-Removing empty process `ibex_core.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Found and cleaned up 1 empty switch in `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
+Removing empty process `reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:24$147'.
+Found and cleaned up 1 empty switch in `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
+Removing empty process `reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:20$144'.
+Found and cleaned up 2 empty switches in `\reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Removing empty process `reg_file.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/reg_file.v:27$134'.
+Found and cleaned up 1 empty switch in `\pc.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
+Removing empty process `pc.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/pc.v:12$117'.
+Removing empty process `mem_wb.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/mem_wb.v:21$115'.
+Found and cleaned up 1 empty switch in `\imm_gen.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
+Removing empty process `imm_gen.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/imm_gen.v:17$114'.
+Found and cleaned up 2 empty switches in `\if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Removing empty process `if_id.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/if_id.v:17$111'.
+Found and cleaned up 1 empty switch in `\id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Removing empty process `id_ex.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/id_ex.v:50$109'.
+Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
+Removing empty process `forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:26$93'.
+Found and cleaned up 2 empty switches in `\forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
+Removing empty process `forwarding_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/forwarding_unit.v:15$84'.
+Removing empty process `ex_mem.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ex_mem.v:27$82'.
+Found and cleaned up 1 empty switch in `\ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+Removing empty process `ctrl_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ctrl_unit.v:30$81'.
+Found and cleaned up 2 empty switches in `\branch_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
+Removing empty process `branch_unit.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/branch_unit.v:12$74'.
+Found and cleaned up 3 empty switches in `\alu_ctrl.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
+Removing empty process `alu_ctrl.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu_ctrl.v:12$70'.
+Found and cleaned up 1 empty switch in `\alu.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
+Removing empty process `alu.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/alu.v:27$56'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
+Removing empty process `ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:386$54'.
+Found and cleaned up 3 empty switches in `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
+Removing empty process `ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:345$53'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
+Removing empty process `ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:276$42'.
+Found and cleaned up 1 empty switch in `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
+Removing empty process `ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:267$41'.
+Found and cleaned up 2 empty switches in `\ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
+Removing empty process `ibex_core_inner.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core_inner.v:125$33'.
+Found and cleaned up 6 empty switches in `\ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
+Removing empty process `ibex_core.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/rtl/ibex_core.v:118$17'.
 Cleaned up 34 empty switches.
 
 17.12. Executing OPT_EXPR pass (perform const folding).
@@ -1908,8 +1908,8 @@ Optimizing module ibex_core.
 
 23. Executing TECHMAP pass (map to technology primitives).
 
-23.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+23.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.

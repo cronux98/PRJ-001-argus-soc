@@ -22,7 +22,7 @@ LDFLAGS := -march=$(MARCH) -mabi=$(MABI) -nostdlib -nostartfiles \
            -Wl,--gc-sections
 
 # ── Project structure ──
-PROJ_ROOT := /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/05_firmware_stage
+PROJ_ROOT := ~/hermes_workspace/projects/PRJ-001/v0/05_firmware_stage
 INCLUDES  := -I$(PROJ_ROOT)/bsp/include \
              -I$(PROJ_ROOT)/fw/drivers/uart \
              -I$(PROJ_ROOT)/fw/drivers/spi \

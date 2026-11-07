@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/03_architecture_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/03_architecture_stage
 **Verdict:** PASS (8/8) — audit retry 0, cost $0.28
 
 ## What Went Well

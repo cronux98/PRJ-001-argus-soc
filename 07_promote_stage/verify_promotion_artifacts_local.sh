@@ -104,7 +104,7 @@ done <<< "$REPORTS"
 
 echo ""
 echo "--- Hierarchical cell count sanity ---"
-VERIFY_DIR="/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage"
+VERIFY_DIR="~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage"
 
 # argus_soc is the top SoC - it's verified at tb-argus_soc/
 # Check if argus_soc synthesis exists. The argus_soc report is in 06_verification_stage area,

@@ -5,13 +5,13 @@
   "promotion_date": "2026-07-20T14:07:59Z",
   "upstream_audits": {
     "frontend": {
-      "path": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/audit/audit_pass.json",
+      "path": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/audit/audit_pass.json",
       "verdict": "PASS",
       "checks": 10,
       "retry": 1
     },
     "verification": {
-      "path": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/audit/audit_pass.json",
+      "path": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/audit/audit_pass.json",
       "verdict": "PASS",
       "checks_passed": 5,
       "checks_total": 5
@@ -58,7 +58,7 @@
       "synthesis_dffs": 36,
       "synthesis_latches": 0,
       "synthesis_area_um2": 46704.7936,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/logs/synth/ibex_core_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-ibex_core/logs/synth/ibex_core_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -66,7 +66,7 @@
       "verification_tests_pass": 8,
       "verification_tests_total": 8,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-ibex_core/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-ibex_core/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -83,7 +83,7 @@
       "synthesis_dffs": 20,
       "synthesis_latches": 0,
       "synthesis_area_um2": 3459.568,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/synth/apb_interconnect_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/synth/apb_interconnect_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -91,7 +91,7 @@
       "verification_tests_pass": 8,
       "verification_tests_total": 8,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-apb_interconnect/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-apb_interconnect/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -108,7 +108,7 @@
       "synthesis_dffs": 68,
       "synthesis_latches": 0,
       "synthesis_area_um2": 1306.2528,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/synth/uart_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/logs/synth/uart_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -116,7 +116,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-uart/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-uart/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -133,7 +133,7 @@
       "synthesis_dffs": 109,
       "synthesis_latches": 0,
       "synthesis_area_um2": 315.3024,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/logs/synth/spi_master_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/logs/synth/spi_master_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -141,7 +141,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-spi_master/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-spi_master/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -158,7 +158,7 @@
       "synthesis_dffs": 56,
       "synthesis_latches": 0,
       "synthesis_area_um2": 2616.2592,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/logs/synth/i2c_master_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/logs/synth/i2c_master_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -166,7 +166,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-i2c_master/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-i2c_master/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -183,7 +183,7 @@
       "synthesis_dffs": 0,
       "synthesis_latches": 0,
       "synthesis_area_um2": null,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/logs/synth/gpio_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/logs/synth/gpio_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -191,7 +191,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-gpio/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-gpio/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -208,7 +208,7 @@
       "synthesis_dffs": 69,
       "synthesis_latches": 0,
       "synthesis_area_um2": 1611.5456,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/synth/pwm_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/logs/synth/pwm_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -216,7 +216,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-pwm/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-pwm/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -233,7 +233,7 @@
       "synthesis_dffs": 0,
       "synthesis_latches": 0,
       "synthesis_area_um2": 1916837.148799,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/logs/synth/sram_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/logs/synth/sram_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -241,7 +241,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sram/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sram/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -258,7 +258,7 @@
       "synthesis_dffs": 16,
       "synthesis_latches": 0,
       "synthesis_area_um2": 862.0768,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -266,7 +266,7 @@
       "verification_tests_pass": 15,
       "verification_tests_total": 15,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -283,7 +283,7 @@
       "synthesis_dffs": 35,
       "synthesis_latches": 0,
       "synthesis_area_um2": 1297.4944,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/synth/wb_bridge_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/synth/wb_bridge_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -291,7 +291,7 @@
       "verification_tests_pass": 8,
       "verification_tests_total": 8,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-wb_bridge/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-wb_bridge/results.xml",
       "has_frontend_artifacts": true
     },
     {
@@ -337,7 +337,7 @@
       "synthesis_dffs": 18,
       "synthesis_latches": 0,
       "synthesis_area_um2": 942.1536,
-      "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/synth/sys_ctrl_synth.log",
+      "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/logs/synth/sys_ctrl_synth.log",
       "formal_pass": true,
       "formal_depth": 20,
       "formal_mode": "bmc",
@@ -345,7 +345,7 @@
       "verification_tests_pass": 8,
       "verification_tests_total": 8,
       "verification_tests_fail": 0,
-      "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sys_ctrl/results.xml",
+      "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-sys_ctrl/results.xml",
       "has_frontend_artifacts": true
     }
   ],

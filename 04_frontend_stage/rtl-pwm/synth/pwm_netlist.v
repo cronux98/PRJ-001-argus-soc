@@ -2,89 +2,89 @@
 
 (* dynports =  1  *)
 (* hdlname = "EF_TMR32" *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:22.1-284.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:22.1-284.10" *)
 module \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (clk, rst_n, tmr_en, tmr_start, pwm0_en, pwm1_en, tmr_reload, cmpx, cmpy, prescaler, tmr_cfg, pwm0_cfg, pwm1_cfg, pwm0_inv, pwm1_inv, pwm_dt, pwm_fault_clr, pwm_dt_en, tmr, matchx_flag, matchy_flag
 , timeout_flag, pwm_fault, pwm0, pwm1);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:27.29-27.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:27.29-27.32" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:28.29-28.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:28.29-28.34" *)
   input rst_n;
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:30.29-30.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:30.29-30.35" *)
   input tmr_en;
   wire tmr_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:31.29-31.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:31.29-31.38" *)
   input tmr_start;
   wire tmr_start;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:32.29-32.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:32.29-32.36" *)
   input pwm0_en;
   wire pwm0_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:33.29-33.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:33.29-33.36" *)
   input pwm1_en;
   wire pwm1_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:34.29-34.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:34.29-34.39" *)
   input [31:0] tmr_reload;
   wire [31:0] tmr_reload;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:35.29-35.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:35.29-35.33" *)
   input [31:0] cmpx;
   wire [31:0] cmpx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:36.29-36.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:36.29-36.33" *)
   input [31:0] cmpy;
   wire [31:0] cmpy;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:37.29-37.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:37.29-37.38" *)
   input [15:0] prescaler;
   wire [15:0] prescaler;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:38.29-38.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:38.29-38.36" *)
   input [2:0] tmr_cfg;
   wire [2:0] tmr_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:39.29-39.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:39.29-39.37" *)
   input [11:0] pwm0_cfg;
   wire [11:0] pwm0_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:40.29-40.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:40.29-40.37" *)
   input [11:0] pwm1_cfg;
   wire [11:0] pwm1_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:41.29-41.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:41.29-41.37" *)
   input pwm0_inv;
   wire pwm0_inv;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:42.29-42.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:42.29-42.37" *)
   input pwm1_inv;
   wire pwm1_inv;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:43.29-43.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:43.29-43.35" *)
   input [7:0] pwm_dt;
   wire [7:0] pwm_dt;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:44.29-44.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:44.29-44.42" *)
   input [15:0] pwm_fault_clr;
   wire [15:0] pwm_fault_clr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:45.29-45.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:45.29-45.38" *)
   input pwm_dt_en;
   wire pwm_dt_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:47.29-47.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:47.29-47.32" *)
   output [31:0] tmr;
   wire [31:0] tmr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:48.29-48.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:48.29-48.40" *)
   output matchx_flag;
   wire matchx_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:49.29-49.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:49.29-49.40" *)
   output matchy_flag;
   wire matchy_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:50.29-50.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:50.29-50.41" *)
   output timeout_flag;
   wire timeout_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:52.29-52.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:52.29-52.38" *)
   input pwm_fault;
   wire pwm_fault;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:53.29-53.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:53.29-53.33" *)
   output pwm0;
   wire pwm0;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:54.29-54.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:54.29-54.33" *)
   output pwm1;
   wire pwm1;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   wire [15:0] _0000_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249.5-252.71" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249.5-252.71" *)
   wire _0001_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254.5-257.73" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254.5-257.73" *)
   wire _0002_;
   wire _0003_;
   wire _0004_;
@@ -873,113 +873,113 @@ module \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (clk, rst_n, 
   wire _0787_;
   wire _0788_;
   wire _0789_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:231.15-231.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:231.15-231.23" *)
   wire [7:0] dly_cntr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:260.9-260.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:260.9-260.22" *)
   wire fault_clr_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:68.21-68.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:68.21-68.30" *)
   wire fault_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:61.21-61.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:61.21-61.27" *)
   wire [15:0] pr_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:230.9-230.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:230.9-230.21" *)
   wire pwm0_delayed;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:183.13-183.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:183.13-183.21" *)
   wire pwm0_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:248.9-248.18" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:248.9-248.18" *)
   wire pwm0_w_dt;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:184.13-184.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:184.13-184.21" *)
   wire pwm1_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:248.20-248.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:248.20-248.29" *)
   wire pwm1_w_dt;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.sig ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
-  wire [1:0] \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.action ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.37-174.43" *)
+  wire [1:0] \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.action ;
   (* nosync = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
-  wire \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.sig ;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:63.21-63.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:174.51-174.54" *)
+  wire \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.sig ;
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:63.21-63.28" *)
   wire tmr_clr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:86.17-86.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:86.17-86.24" *)
   wire tmr_dir;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:65.21-65.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:65.21-65.33" *)
   wire tmr_en_pulse;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:91.17-91.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:91.17-91.28" *)
   wire tmr_eq_cmpx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:92.17-92.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:92.17-92.28" *)
   wire tmr_eq_cmpy;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:57.21-57.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:57.21-57.29" *)
   wire [1:0] tmr_mode;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:58.21-58.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:58.21-58.33" *)
   wire tmr_periodic;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:60.21-60.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:60.21-60.28" *)
   wire [31:0] tmr_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:66.21-66.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:66.21-66.28" *)
   wire tmr_run;
   sky130_fd_sc_hd__nand2b_1 _0790_ (
     .A_N(pr_reg[10]),
@@ -5695,455 +5695,455 @@ module \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (clk, rst_n, 
     .C(_0180_),
     .Y(_0181_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241.5-246.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:241.5-246.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1600_ (
     .CLK(clk),
     .D(_0041_),
     .Q(pwm0_delayed),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268.5-274.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:268.5-274.28" *)
   sky130_fd_sc_hd__dfrtp_1 _1601_ (
     .CLK(clk),
     .D(_0042_),
     .Q(fault_reg),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261.5-267.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:261.5-267.32" *)
   sky130_fd_sc_hd__dfrtp_1 _1602_ (
     .CLK(clk),
     .D(_0043_),
     .Q(fault_clr_reg),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219.5-226.43" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:219.5-226.43" *)
   sky130_fd_sc_hd__dfrtp_1 _1603_ (
     .CLK(clk),
     .D(_0044_),
     .Q(pwm1_reg),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94.5-103.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:94.5-103.30" *)
   sky130_fd_sc_hd__dfrtp_1 _1604_ (
     .CLK(clk),
     .D(_0045_),
     .Q(tmr_run),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1605_ (
     .CLK(clk),
     .D(_0040_),
     .Q(dly_cntr[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1606_ (
     .CLK(clk),
     .D(_0039_),
     .Q(dly_cntr[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1607_ (
     .CLK(clk),
     .D(_0038_),
     .Q(dly_cntr[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1608_ (
     .CLK(clk),
     .D(_0037_),
     .Q(dly_cntr[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1609_ (
     .CLK(clk),
     .D(_0036_),
     .Q(dly_cntr[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1610_ (
     .CLK(clk),
     .D(_0035_),
     .Q(dly_cntr[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1611_ (
     .CLK(clk),
     .D(_0034_),
     .Q(dly_cntr[6]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:232.5-239.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1612_ (
     .CLK(clk),
     .D(_0046_),
     .Q(dly_cntr[7]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151.5-171.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:151.5-171.33" *)
   sky130_fd_sc_hd__dfstp_2 _1613_ (
     .CLK(clk),
     .D(_0047_),
     .Q(tmr_dir),
     .SET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1614_ (
     .CLK(clk),
     .D(_0033_),
     .Q(tmr_reg[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1615_ (
     .CLK(clk),
     .D(_0032_),
     .Q(tmr_reg[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1616_ (
     .CLK(clk),
     .D(_0031_),
     .Q(tmr_reg[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1617_ (
     .CLK(clk),
     .D(_0030_),
     .Q(tmr_reg[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1618_ (
     .CLK(clk),
     .D(_0029_),
     .Q(tmr_reg[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1619_ (
     .CLK(clk),
     .D(_0028_),
     .Q(tmr_reg[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1620_ (
     .CLK(clk),
     .D(_0027_),
     .Q(tmr_reg[6]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1621_ (
     .CLK(clk),
     .D(_0026_),
     .Q(tmr_reg[7]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1622_ (
     .CLK(clk),
     .D(_0025_),
     .Q(tmr_reg[8]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1623_ (
     .CLK(clk),
     .D(_0024_),
     .Q(tmr_reg[9]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1624_ (
     .CLK(clk),
     .D(_0023_),
     .Q(tmr_reg[10]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1625_ (
     .CLK(clk),
     .D(_0022_),
     .Q(tmr_reg[11]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1626_ (
     .CLK(clk),
     .D(_0021_),
     .Q(tmr_reg[12]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1627_ (
     .CLK(clk),
     .D(_0020_),
     .Q(tmr_reg[13]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1628_ (
     .CLK(clk),
     .D(_0019_),
     .Q(tmr_reg[14]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1629_ (
     .CLK(clk),
     .D(_0018_),
     .Q(tmr_reg[15]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1630_ (
     .CLK(clk),
     .D(_0017_),
     .Q(tmr_reg[16]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1631_ (
     .CLK(clk),
     .D(_0016_),
     .Q(tmr_reg[17]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1632_ (
     .CLK(clk),
     .D(_0015_),
     .Q(tmr_reg[18]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1633_ (
     .CLK(clk),
     .D(_0014_),
     .Q(tmr_reg[19]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1634_ (
     .CLK(clk),
     .D(_0013_),
     .Q(tmr_reg[20]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1635_ (
     .CLK(clk),
     .D(_0012_),
     .Q(tmr_reg[21]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1636_ (
     .CLK(clk),
     .D(_0011_),
     .Q(tmr_reg[22]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1637_ (
     .CLK(clk),
     .D(_0010_),
     .Q(tmr_reg[23]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1638_ (
     .CLK(clk),
     .D(_0009_),
     .Q(tmr_reg[24]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1639_ (
     .CLK(clk),
     .D(_0008_),
     .Q(tmr_reg[25]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1640_ (
     .CLK(clk),
     .D(_0007_),
     .Q(tmr_reg[26]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1641_ (
     .CLK(clk),
     .D(_0006_),
     .Q(tmr_reg[27]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1642_ (
     .CLK(clk),
     .D(_0005_),
     .Q(tmr_reg[28]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1643_ (
     .CLK(clk),
     .D(_0004_),
     .Q(tmr_reg[29]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1644_ (
     .CLK(clk),
     .D(_0003_),
     .Q(tmr_reg[30]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:137.5-148.42" *)
   sky130_fd_sc_hd__dfrtp_1 _1645_ (
     .CLK(clk),
     .D(_0048_),
     .Q(tmr_reg[31]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210.5-217.43" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:210.5-217.43" *)
   sky130_fd_sc_hd__dfrtp_1 _1646_ (
     .CLK(clk),
     .D(_0049_),
     .Q(pwm0_reg),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254.5-257.73" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:254.5-257.73" *)
   sky130_fd_sc_hd__dfrtp_1 _1647_ (
     .CLK(clk),
     .D(_0002_),
     .Q(pwm1_w_dt),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249.5-252.71" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:249.5-252.71" *)
   sky130_fd_sc_hd__dfrtp_1 _1648_ (
     .CLK(clk),
     .D(_0001_),
     .Q(pwm0_w_dt),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfstp_2 _1649_ (
     .CLK(clk),
     .D(_0000_[0]),
     .Q(pr_reg[0]),
     .SET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1650_ (
     .CLK(clk),
     .D(_0000_[1]),
     .Q(pr_reg[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1651_ (
     .CLK(clk),
     .D(_0000_[2]),
     .Q(pr_reg[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1652_ (
     .CLK(clk),
     .D(_0000_[3]),
     .Q(pr_reg[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1653_ (
     .CLK(clk),
     .D(_0000_[4]),
     .Q(pr_reg[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1654_ (
     .CLK(clk),
     .D(_0000_[5]),
     .Q(pr_reg[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1655_ (
     .CLK(clk),
     .D(_0000_[6]),
     .Q(pr_reg[6]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1656_ (
     .CLK(clk),
     .D(_0000_[7]),
     .Q(pr_reg[7]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1657_ (
     .CLK(clk),
     .D(_0000_[8]),
     .Q(pr_reg[8]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1658_ (
     .CLK(clk),
     .D(_0000_[9]),
     .Q(pr_reg[9]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1659_ (
     .CLK(clk),
     .D(_0000_[10]),
     .Q(pr_reg[10]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1660_ (
     .CLK(clk),
     .D(_0000_[11]),
     .Q(pr_reg[11]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1661_ (
     .CLK(clk),
     .D(_0000_[12]),
     .Q(pr_reg[12]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1662_ (
     .CLK(clk),
     .D(_0000_[13]),
     .Q(pr_reg[13]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1663_ (
     .CLK(clk),
     .D(_0000_[14]),
     .Q(pr_reg[14]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:77.5-84.34" *)
   sky130_fd_sc_hd__dfrtp_1 _1664_ (
     .CLK(clk),
     .D(_0000_[15]),
@@ -6151,36 +6151,36 @@ module \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (clk, rst_n, 
     .RESET_B(rst_n)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:70.17-74.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:70.17-74.6" *)
   ef_util_ped TMREN_PE (
     .clk(clk),
     .in(tmr_en),
     .out(tmr_clr)
   );
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.action  = 2'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.sig  = 1'hx;
-  assign \pwm_action$func$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:205$376.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:204$375.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:203$374.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:202$373.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:201$372.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:200$371.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:193$370.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:192$369.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:191$368.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:190$367.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:189$366.action  = 2'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.sig  = 1'hx;
+  assign \pwm_action$func$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32.v:188$365.action  = 2'hx;
   assign tmr_eq_cmpy = matchy_flag;
   assign tmr_eq_cmpx = matchx_flag;
   assign tmr_en_pulse = tmr_clr;
@@ -6190,48 +6190,48 @@ module \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000 (clk, rst_n, 
 endmodule
 
 (* dynports =  1  *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:25.1-262.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:25.1-262.10" *)
 module EF_TMR32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, PRDATA, IRQ, pwm0, pwm1, pwm_fault);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:29.25-29.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:29.25-29.29" *)
   input PCLK;
   wire PCLK;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:30.25-30.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:30.25-30.32" *)
   input PRESETn;
   wire PRESETn;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:31.25-31.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:31.25-31.31" *)
   input PWRITE;
   wire PWRITE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:32.25-32.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:32.25-32.31" *)
   input [31:0] PWDATA;
   wire [31:0] PWDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:33.25-33.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:33.25-33.30" *)
   input [31:0] PADDR;
   wire [31:0] PADDR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:34.25-34.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:34.25-34.32" *)
   input PENABLE;
   wire PENABLE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:35.25-35.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:35.25-35.29" *)
   input PSEL;
   wire PSEL;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:36.25-36.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:36.25-36.31" *)
   output PREADY;
   wire PREADY;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:37.25-37.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:37.25-37.31" *)
   output [31:0] PRDATA;
   wire [31:0] PRDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:38.25-38.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:38.25-38.28" *)
   output IRQ;
   wire IRQ;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:39.25-39.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:39.25-39.29" *)
   output [0:0] pwm0;
   wire [0:0] pwm0;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:40.25-40.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:40.25-40.29" *)
   output [0:0] pwm1;
   wire [0:0] pwm1;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:41.25-41.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:41.25-41.34" *)
   input [0:0] pwm_fault;
   wire [0:0] pwm_fault;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
   wire [2:0] _0000_;
   wire _0001_;
   wire _0002_;
@@ -6725,90 +6725,90 @@ module EF_TMR32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
   wire _0490_;
   wire _0491_;
   wire _0492_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:140.13-140.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:140.13-140.20" *)
   wire [2:0] CFG_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:116.14-116.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:116.14-116.22" *)
   wire [31:0] CMPX_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:122.14-122.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:122.14-122.22" *)
   wire [31:0] CMPY_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:128.13-128.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:128.13-128.21" *)
   wire [6:0] CTRL_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:60.13-60.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:60.13-60.21" *)
   wire [0:0] GCLK_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:176.16-176.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:176.16-176.22" *)
   wire [2:0] IC_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:175.16-175.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:175.16-175.22" *)
   wire [2:0] IM_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:189.14-189.16" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:189.14-189.16" *)
   wire [0:0] MX;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:190.14-190.16" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:190.14-190.16" *)
   wire [0:0] MY;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:110.17-110.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:110.17-110.23" *)
   wire [15:0] PR_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:146.14-146.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:146.14-146.25" *)
   wire [11:0] PWM0CFG_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:152.14-152.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:152.14-152.25" *)
   wire [15:0] PWM1CFG_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:158.13-158.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:158.13-158.22" *)
   wire [7:0] PWMDT_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:164.14-164.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:164.14-164.23" *)
   wire [15:0] PWMFC_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:104.14-104.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:104.14-104.24" *)
   wire [31:0] RELOAD_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:177.16-177.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:177.16-177.23" *)
   wire [2:0] RIS_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:101.18-101.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:101.18-101.26" *)
   wire [31:0] TMR_WIRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:188.14-188.16" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:188.14-188.16" *)
   wire [0:0] TO;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:72.18-72.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:72.18-72.21" *)
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:61.8-61.13" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:61.8-61.13" *)
   wire clk_g;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:63.8-63.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:63.8-63.20" *)
   wire clk_gated_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:84.18-84.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:84.18-84.22" *)
   wire [31:0] cmpx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:85.18-85.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:85.18-85.22" *)
   wire [31:0] cmpy;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:96.18-96.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:96.18-96.29" *)
   wire [0:0] matchx_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:97.18-97.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:97.18-97.29" *)
   wire [0:0] matchy_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:86.18-86.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:86.18-86.27" *)
   wire [15:0] prescaler;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:88.18-88.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:88.18-88.26" *)
   wire [11:0] pwm0_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:81.18-81.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:81.18-81.25" *)
   wire [0:0] pwm0_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:90.18-90.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:90.18-90.26" *)
   wire [0:0] pwm0_inv;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:89.18-89.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:89.18-89.26" *)
   wire [11:0] pwm1_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:82.18-82.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:82.18-82.25" *)
   wire [0:0] pwm1_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:91.18-91.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:91.18-91.26" *)
   wire [0:0] pwm1_inv;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:92.18-92.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:92.18-92.24" *)
   wire [7:0] pwm_dt;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:94.18-94.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:94.18-94.27" *)
   wire [0:0] pwm_dt_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:93.18-93.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:93.18-93.31" *)
   wire [15:0] pwm_fault_clr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:73.18-73.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:73.18-73.23" *)
   wire rst_n;
   (* keep = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:98.28-98.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:98.28-98.40" *)
   wire [0:0] timeout_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:95.18-95.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:95.18-95.21" *)
   wire [31:0] tmr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:87.18-87.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:87.18-87.25" *)
   wire [2:0] tmr_cfg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:79.18-79.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:79.18-79.24" *)
   wire [0:0] tmr_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:83.18-83.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:83.18-83.28" *)
   wire [31:0] tmr_reload;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:80.18-80.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:80.18-80.27" *)
   wire [0:0] tmr_start;
   sky130_fd_sc_hd__clkinv_1 _0493_ (
     .A(CFG_REG[0]),
@@ -9968,1288 +9968,1288 @@ module EF_TMR32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
     .B(_0194_),
     .Y(_0181_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171.3-173.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:171.3-173.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1021_ (
     .CLK(PCLK),
     .D(_0167_),
     .Q(GCLK_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1022_ (
     .CLK(PCLK),
     .D(_0166_),
     .Q(PR_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1023_ (
     .CLK(PCLK),
     .D(_0165_),
     .Q(PR_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1024_ (
     .CLK(PCLK),
     .D(_0164_),
     .Q(PR_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1025_ (
     .CLK(PCLK),
     .D(_0163_),
     .Q(PR_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1026_ (
     .CLK(PCLK),
     .D(_0162_),
     .Q(PR_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1027_ (
     .CLK(PCLK),
     .D(_0161_),
     .Q(PR_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1028_ (
     .CLK(PCLK),
     .D(_0160_),
     .Q(PR_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1029_ (
     .CLK(PCLK),
     .D(_0159_),
     .Q(PR_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1030_ (
     .CLK(PCLK),
     .D(_0158_),
     .Q(PR_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1031_ (
     .CLK(PCLK),
     .D(_0157_),
     .Q(PR_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1032_ (
     .CLK(PCLK),
     .D(_0156_),
     .Q(PR_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1033_ (
     .CLK(PCLK),
     .D(_0155_),
     .Q(PR_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1034_ (
     .CLK(PCLK),
     .D(_0154_),
     .Q(PR_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1035_ (
     .CLK(PCLK),
     .D(_0153_),
     .Q(PR_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1036_ (
     .CLK(PCLK),
     .D(_0152_),
     .Q(PR_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:112.3-114.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1037_ (
     .CLK(PCLK),
     .D(_0168_),
     .Q(PR_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1038_ (
     .CLK(PCLK),
     .D(_0151_),
     .Q(CFG_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1039_ (
     .CLK(PCLK),
     .D(_0150_),
     .Q(CFG_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:142.3-144.83" *)
   sky130_fd_sc_hd__dfrtp_1 _1040_ (
     .CLK(PCLK),
     .D(_0169_),
     .Q(CFG_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1041_ (
     .CLK(PCLK),
     .D(_0149_),
     .Q(CMPX_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1042_ (
     .CLK(PCLK),
     .D(_0148_),
     .Q(CMPX_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1043_ (
     .CLK(PCLK),
     .D(_0147_),
     .Q(CMPX_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1044_ (
     .CLK(PCLK),
     .D(_0146_),
     .Q(CMPX_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1045_ (
     .CLK(PCLK),
     .D(_0145_),
     .Q(CMPX_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1046_ (
     .CLK(PCLK),
     .D(_0144_),
     .Q(CMPX_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1047_ (
     .CLK(PCLK),
     .D(_0143_),
     .Q(CMPX_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1048_ (
     .CLK(PCLK),
     .D(_0142_),
     .Q(CMPX_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1049_ (
     .CLK(PCLK),
     .D(_0141_),
     .Q(CMPX_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1050_ (
     .CLK(PCLK),
     .D(_0140_),
     .Q(CMPX_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1051_ (
     .CLK(PCLK),
     .D(_0139_),
     .Q(CMPX_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1052_ (
     .CLK(PCLK),
     .D(_0138_),
     .Q(CMPX_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1053_ (
     .CLK(PCLK),
     .D(_0137_),
     .Q(CMPX_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1054_ (
     .CLK(PCLK),
     .D(_0136_),
     .Q(CMPX_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1055_ (
     .CLK(PCLK),
     .D(_0135_),
     .Q(CMPX_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1056_ (
     .CLK(PCLK),
     .D(_0134_),
     .Q(CMPX_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1057_ (
     .CLK(PCLK),
     .D(_0133_),
     .Q(CMPX_REG[16]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1058_ (
     .CLK(PCLK),
     .D(_0132_),
     .Q(CMPX_REG[17]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1059_ (
     .CLK(PCLK),
     .D(_0131_),
     .Q(CMPX_REG[18]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1060_ (
     .CLK(PCLK),
     .D(_0130_),
     .Q(CMPX_REG[19]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1061_ (
     .CLK(PCLK),
     .D(_0129_),
     .Q(CMPX_REG[20]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1062_ (
     .CLK(PCLK),
     .D(_0128_),
     .Q(CMPX_REG[21]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1063_ (
     .CLK(PCLK),
     .D(_0127_),
     .Q(CMPX_REG[22]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1064_ (
     .CLK(PCLK),
     .D(_0126_),
     .Q(CMPX_REG[23]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1065_ (
     .CLK(PCLK),
     .D(_0125_),
     .Q(CMPX_REG[24]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1066_ (
     .CLK(PCLK),
     .D(_0124_),
     .Q(CMPX_REG[25]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1067_ (
     .CLK(PCLK),
     .D(_0123_),
     .Q(CMPX_REG[26]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1068_ (
     .CLK(PCLK),
     .D(_0122_),
     .Q(CMPX_REG[27]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1069_ (
     .CLK(PCLK),
     .D(_0121_),
     .Q(CMPX_REG[28]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1070_ (
     .CLK(PCLK),
     .D(_0120_),
     .Q(CMPX_REG[29]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1071_ (
     .CLK(PCLK),
     .D(_0119_),
     .Q(CMPX_REG[30]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:118.3-120.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1072_ (
     .CLK(PCLK),
     .D(_0170_),
     .Q(CMPX_REG[31]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
   sky130_fd_sc_hd__dfrtp_1 _1073_ (
     .CLK(PCLK),
     .D(_0118_),
     .Q(IM_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
   sky130_fd_sc_hd__dfrtp_1 _1074_ (
     .CLK(PCLK),
     .D(_0117_),
     .Q(IM_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:180.3-182.81" *)
   sky130_fd_sc_hd__dfrtp_1 _1075_ (
     .CLK(PCLK),
     .D(_0171_),
     .Q(IM_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1076_ (
     .CLK(PCLK),
     .D(_0116_),
     .Q(PWMDT_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1077_ (
     .CLK(PCLK),
     .D(_0115_),
     .Q(PWMDT_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1078_ (
     .CLK(PCLK),
     .D(_0114_),
     .Q(PWMDT_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1079_ (
     .CLK(PCLK),
     .D(_0113_),
     .Q(PWMDT_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1080_ (
     .CLK(PCLK),
     .D(_0112_),
     .Q(PWMDT_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1081_ (
     .CLK(PCLK),
     .D(_0111_),
     .Q(PWMDT_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1082_ (
     .CLK(PCLK),
     .D(_0110_),
     .Q(PWMDT_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:160.3-162.87" *)
   sky130_fd_sc_hd__dfrtp_1 _1083_ (
     .CLK(PCLK),
     .D(_0172_),
     .Q(PWMDT_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1084_ (
     .CLK(PCLK),
     .D(_0109_),
     .Q(CTRL_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1085_ (
     .CLK(PCLK),
     .D(_0108_),
     .Q(CTRL_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1086_ (
     .CLK(PCLK),
     .D(_0107_),
     .Q(CTRL_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1087_ (
     .CLK(PCLK),
     .D(_0106_),
     .Q(CTRL_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1088_ (
     .CLK(PCLK),
     .D(_0105_),
     .Q(CTRL_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1089_ (
     .CLK(PCLK),
     .D(_0104_),
     .Q(CTRL_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:136.3-138.85" *)
   sky130_fd_sc_hd__dfrtp_1 _1090_ (
     .CLK(PCLK),
     .D(_0173_),
     .Q(CTRL_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1091_ (
     .CLK(PCLK),
     .D(_0103_),
     .Q(PWM1CFG_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1092_ (
     .CLK(PCLK),
     .D(_0102_),
     .Q(PWM1CFG_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1093_ (
     .CLK(PCLK),
     .D(_0101_),
     .Q(PWM1CFG_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1094_ (
     .CLK(PCLK),
     .D(_0100_),
     .Q(PWM1CFG_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1095_ (
     .CLK(PCLK),
     .D(_0099_),
     .Q(PWM1CFG_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1096_ (
     .CLK(PCLK),
     .D(_0098_),
     .Q(PWM1CFG_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1097_ (
     .CLK(PCLK),
     .D(_0097_),
     .Q(PWM1CFG_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1098_ (
     .CLK(PCLK),
     .D(_0096_),
     .Q(PWM1CFG_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1099_ (
     .CLK(PCLK),
     .D(_0095_),
     .Q(PWM1CFG_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1100_ (
     .CLK(PCLK),
     .D(_0094_),
     .Q(PWM1CFG_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1101_ (
     .CLK(PCLK),
     .D(_0093_),
     .Q(PWM1CFG_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1102_ (
     .CLK(PCLK),
     .D(_0092_),
     .Q(PWM1CFG_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1103_ (
     .CLK(PCLK),
     .D(_0091_),
     .Q(PWM1CFG_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1104_ (
     .CLK(PCLK),
     .D(_0090_),
     .Q(PWM1CFG_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1105_ (
     .CLK(PCLK),
     .D(_0089_),
     .Q(PWM1CFG_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:154.3-156.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1106_ (
     .CLK(PCLK),
     .D(_0174_),
     .Q(PWM1CFG_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1107_ (
     .CLK(PCLK),
     .D(_0088_),
     .Q(RELOAD_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1108_ (
     .CLK(PCLK),
     .D(_0087_),
     .Q(RELOAD_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1109_ (
     .CLK(PCLK),
     .D(_0086_),
     .Q(RELOAD_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1110_ (
     .CLK(PCLK),
     .D(_0085_),
     .Q(RELOAD_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1111_ (
     .CLK(PCLK),
     .D(_0084_),
     .Q(RELOAD_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1112_ (
     .CLK(PCLK),
     .D(_0083_),
     .Q(RELOAD_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1113_ (
     .CLK(PCLK),
     .D(_0082_),
     .Q(RELOAD_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1114_ (
     .CLK(PCLK),
     .D(_0081_),
     .Q(RELOAD_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1115_ (
     .CLK(PCLK),
     .D(_0080_),
     .Q(RELOAD_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1116_ (
     .CLK(PCLK),
     .D(_0079_),
     .Q(RELOAD_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1117_ (
     .CLK(PCLK),
     .D(_0078_),
     .Q(RELOAD_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1118_ (
     .CLK(PCLK),
     .D(_0077_),
     .Q(RELOAD_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1119_ (
     .CLK(PCLK),
     .D(_0076_),
     .Q(RELOAD_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1120_ (
     .CLK(PCLK),
     .D(_0075_),
     .Q(RELOAD_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1121_ (
     .CLK(PCLK),
     .D(_0074_),
     .Q(RELOAD_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1122_ (
     .CLK(PCLK),
     .D(_0073_),
     .Q(RELOAD_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1123_ (
     .CLK(PCLK),
     .D(_0072_),
     .Q(RELOAD_REG[16]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1124_ (
     .CLK(PCLK),
     .D(_0071_),
     .Q(RELOAD_REG[17]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1125_ (
     .CLK(PCLK),
     .D(_0070_),
     .Q(RELOAD_REG[18]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1126_ (
     .CLK(PCLK),
     .D(_0069_),
     .Q(RELOAD_REG[19]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1127_ (
     .CLK(PCLK),
     .D(_0068_),
     .Q(RELOAD_REG[20]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1128_ (
     .CLK(PCLK),
     .D(_0067_),
     .Q(RELOAD_REG[21]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1129_ (
     .CLK(PCLK),
     .D(_0066_),
     .Q(RELOAD_REG[22]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1130_ (
     .CLK(PCLK),
     .D(_0065_),
     .Q(RELOAD_REG[23]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1131_ (
     .CLK(PCLK),
     .D(_0064_),
     .Q(RELOAD_REG[24]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1132_ (
     .CLK(PCLK),
     .D(_0063_),
     .Q(RELOAD_REG[25]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1133_ (
     .CLK(PCLK),
     .D(_0062_),
     .Q(RELOAD_REG[26]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1134_ (
     .CLK(PCLK),
     .D(_0061_),
     .Q(RELOAD_REG[27]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1135_ (
     .CLK(PCLK),
     .D(_0060_),
     .Q(RELOAD_REG[28]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1136_ (
     .CLK(PCLK),
     .D(_0059_),
     .Q(RELOAD_REG[29]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1137_ (
     .CLK(PCLK),
     .D(_0058_),
     .Q(RELOAD_REG[30]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:106.3-108.90" *)
   sky130_fd_sc_hd__dfrtp_1 _1138_ (
     .CLK(PCLK),
     .D(_0175_),
     .Q(RELOAD_REG[31]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1139_ (
     .CLK(PCLK),
     .D(_0057_),
     .Q(PWMFC_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1140_ (
     .CLK(PCLK),
     .D(_0056_),
     .Q(PWMFC_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1141_ (
     .CLK(PCLK),
     .D(_0055_),
     .Q(PWMFC_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1142_ (
     .CLK(PCLK),
     .D(_0054_),
     .Q(PWMFC_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1143_ (
     .CLK(PCLK),
     .D(_0053_),
     .Q(PWMFC_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1144_ (
     .CLK(PCLK),
     .D(_0052_),
     .Q(PWMFC_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1145_ (
     .CLK(PCLK),
     .D(_0051_),
     .Q(PWMFC_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1146_ (
     .CLK(PCLK),
     .D(_0050_),
     .Q(PWMFC_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1147_ (
     .CLK(PCLK),
     .D(_0049_),
     .Q(PWMFC_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1148_ (
     .CLK(PCLK),
     .D(_0048_),
     .Q(PWMFC_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1149_ (
     .CLK(PCLK),
     .D(_0047_),
     .Q(PWMFC_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1150_ (
     .CLK(PCLK),
     .D(_0046_),
     .Q(PWMFC_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1151_ (
     .CLK(PCLK),
     .D(_0045_),
     .Q(PWMFC_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1152_ (
     .CLK(PCLK),
     .D(_0044_),
     .Q(PWMFC_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1153_ (
     .CLK(PCLK),
     .D(_0043_),
     .Q(PWMFC_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:166.3-168.88" *)
   sky130_fd_sc_hd__dfrtp_1 _1154_ (
     .CLK(PCLK),
     .D(_0176_),
     .Q(PWMFC_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _1155_ (
     .CLK(PCLK),
     .D(_0177_),
     .Q(RIS_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _1156_ (
     .CLK(PCLK),
     .D(_0181_),
     .Q(RIS_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:193.3-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _1157_ (
     .CLK(PCLK),
     .D(_0180_),
     .Q(RIS_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1158_ (
     .CLK(PCLK),
     .D(_0042_),
     .Q(CMPY_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1159_ (
     .CLK(PCLK),
     .D(_0041_),
     .Q(CMPY_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1160_ (
     .CLK(PCLK),
     .D(_0040_),
     .Q(CMPY_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1161_ (
     .CLK(PCLK),
     .D(_0039_),
     .Q(CMPY_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1162_ (
     .CLK(PCLK),
     .D(_0038_),
     .Q(CMPY_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1163_ (
     .CLK(PCLK),
     .D(_0037_),
     .Q(CMPY_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1164_ (
     .CLK(PCLK),
     .D(_0036_),
     .Q(CMPY_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1165_ (
     .CLK(PCLK),
     .D(_0035_),
     .Q(CMPY_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1166_ (
     .CLK(PCLK),
     .D(_0034_),
     .Q(CMPY_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1167_ (
     .CLK(PCLK),
     .D(_0033_),
     .Q(CMPY_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1168_ (
     .CLK(PCLK),
     .D(_0032_),
     .Q(CMPY_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1169_ (
     .CLK(PCLK),
     .D(_0031_),
     .Q(CMPY_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1170_ (
     .CLK(PCLK),
     .D(_0030_),
     .Q(CMPY_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1171_ (
     .CLK(PCLK),
     .D(_0029_),
     .Q(CMPY_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1172_ (
     .CLK(PCLK),
     .D(_0028_),
     .Q(CMPY_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1173_ (
     .CLK(PCLK),
     .D(_0027_),
     .Q(CMPY_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1174_ (
     .CLK(PCLK),
     .D(_0026_),
     .Q(CMPY_REG[16]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1175_ (
     .CLK(PCLK),
     .D(_0025_),
     .Q(CMPY_REG[17]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1176_ (
     .CLK(PCLK),
     .D(_0024_),
     .Q(CMPY_REG[18]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1177_ (
     .CLK(PCLK),
     .D(_0023_),
     .Q(CMPY_REG[19]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1178_ (
     .CLK(PCLK),
     .D(_0022_),
     .Q(CMPY_REG[20]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1179_ (
     .CLK(PCLK),
     .D(_0021_),
     .Q(CMPY_REG[21]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1180_ (
     .CLK(PCLK),
     .D(_0020_),
     .Q(CMPY_REG[22]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1181_ (
     .CLK(PCLK),
     .D(_0019_),
     .Q(CMPY_REG[23]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1182_ (
     .CLK(PCLK),
     .D(_0018_),
     .Q(CMPY_REG[24]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1183_ (
     .CLK(PCLK),
     .D(_0017_),
     .Q(CMPY_REG[25]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1184_ (
     .CLK(PCLK),
     .D(_0016_),
     .Q(CMPY_REG[26]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1185_ (
     .CLK(PCLK),
     .D(_0015_),
     .Q(CMPY_REG[27]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1186_ (
     .CLK(PCLK),
     .D(_0014_),
     .Q(CMPY_REG[28]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1187_ (
     .CLK(PCLK),
     .D(_0013_),
     .Q(CMPY_REG[29]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1188_ (
     .CLK(PCLK),
     .D(_0012_),
     .Q(CMPY_REG[30]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:124.3-126.86" *)
   sky130_fd_sc_hd__dfrtp_1 _1189_ (
     .CLK(PCLK),
     .D(_0178_),
     .Q(CMPY_REG[31]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1190_ (
     .CLK(PCLK),
     .D(_0011_),
     .Q(PWM0CFG_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1191_ (
     .CLK(PCLK),
     .D(_0010_),
     .Q(PWM0CFG_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1192_ (
     .CLK(PCLK),
     .D(_0009_),
     .Q(PWM0CFG_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1193_ (
     .CLK(PCLK),
     .D(_0008_),
     .Q(PWM0CFG_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1194_ (
     .CLK(PCLK),
     .D(_0007_),
     .Q(PWM0CFG_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1195_ (
     .CLK(PCLK),
     .D(_0006_),
     .Q(PWM0CFG_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1196_ (
     .CLK(PCLK),
     .D(_0005_),
     .Q(PWM0CFG_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1197_ (
     .CLK(PCLK),
     .D(_0004_),
     .Q(PWM0CFG_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1198_ (
     .CLK(PCLK),
     .D(_0003_),
     .Q(PWM0CFG_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1199_ (
     .CLK(PCLK),
     .D(_0002_),
     .Q(PWM0CFG_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1200_ (
     .CLK(PCLK),
     .D(_0001_),
     .Q(PWM0CFG_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:148.3-150.92" *)
   sky130_fd_sc_hd__dfrtp_1 _1201_ (
     .CLK(PCLK),
     .D(_0179_),
     .Q(PWM0CFG_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
   sky130_fd_sc_hd__dfrtp_1 _1202_ (
     .CLK(PCLK),
     .D(_0000_[0]),
     .Q(IC_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
   sky130_fd_sc_hd__dfrtp_1 _1203_ (
     .CLK(PCLK),
     .D(_0000_[1]),
     .Q(IC_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:183.3-186.25" *)
   sky130_fd_sc_hd__dfrtp_1 _1204_ (
     .CLK(PCLK),
     .D(_0000_[2]),
@@ -11257,13 +11257,13 @@ module EF_TMR32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
     .RESET_B(PRESETn)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:64.23-70.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:64.23-70.4" *)
   ef_util_gating_cell clk_gate_cell (
     .clk(PCLK),
     .clk_en(GCLK_REG),
     .clk_o(clk)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:214.5-240.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_TMR32_APB.v:214.5-240.4" *)
   \$paramod\EF_TMR32\PRW=s32'00000000000000000000000000010000  instance_to_wrap (
     .clk(clk),
     .cmpx(CMPX_REG),
@@ -11317,27 +11317,27 @@ module EF_TMR32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
   assign PREADY = 1'h1;
 endmodule
 
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:23.1-47.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:23.1-47.10" *)
 module EF_WDT32(clk, rst_n, WDTMR, WDTLOAD, WDTTO, WDTEN);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:24.23-24.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:24.23-24.26" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:25.23-25.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:25.23-25.28" *)
   input rst_n;
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:26.23-26.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:26.23-26.28" *)
   output [31:0] WDTMR;
   wire [31:0] WDTMR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:27.23-27.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:27.23-27.30" *)
   input [31:0] WDTLOAD;
   wire [31:0] WDTLOAD;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:28.23-28.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:28.23-28.28" *)
   output WDTTO;
   wire WDTTO;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:29.23-29.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:29.23-29.28" *)
   input WDTEN;
   wire WDTEN;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   wire [31:0] _000_;
   wire _001_;
   wire _002_;
@@ -11944,224 +11944,224 @@ module EF_WDT32(clk, rst_n, WDTMR, WDTLOAD, WDTTO, WDTEN);
     .B2(_001_),
     .Y(_000_[31])
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _160_ (
     .CLK(clk),
     .D(_000_[0]),
     .Q(WDTMR[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _161_ (
     .CLK(clk),
     .D(_000_[1]),
     .Q(WDTMR[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _162_ (
     .CLK(clk),
     .D(_000_[2]),
     .Q(WDTMR[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _163_ (
     .CLK(clk),
     .D(_000_[3]),
     .Q(WDTMR[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _164_ (
     .CLK(clk),
     .D(_000_[4]),
     .Q(WDTMR[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _165_ (
     .CLK(clk),
     .D(_000_[5]),
     .Q(WDTMR[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _166_ (
     .CLK(clk),
     .D(_000_[6]),
     .Q(WDTMR[6]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _167_ (
     .CLK(clk),
     .D(_000_[7]),
     .Q(WDTMR[7]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _168_ (
     .CLK(clk),
     .D(_000_[8]),
     .Q(WDTMR[8]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _169_ (
     .CLK(clk),
     .D(_000_[9]),
     .Q(WDTMR[9]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _170_ (
     .CLK(clk),
     .D(_000_[10]),
     .Q(WDTMR[10]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _171_ (
     .CLK(clk),
     .D(_000_[11]),
     .Q(WDTMR[11]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _172_ (
     .CLK(clk),
     .D(_000_[12]),
     .Q(WDTMR[12]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _173_ (
     .CLK(clk),
     .D(_000_[13]),
     .Q(WDTMR[13]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _174_ (
     .CLK(clk),
     .D(_000_[14]),
     .Q(WDTMR[14]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _175_ (
     .CLK(clk),
     .D(_000_[15]),
     .Q(WDTMR[15]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _176_ (
     .CLK(clk),
     .D(_000_[16]),
     .Q(WDTMR[16]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _177_ (
     .CLK(clk),
     .D(_000_[17]),
     .Q(WDTMR[17]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _178_ (
     .CLK(clk),
     .D(_000_[18]),
     .Q(WDTMR[18]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _179_ (
     .CLK(clk),
     .D(_000_[19]),
     .Q(WDTMR[19]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _180_ (
     .CLK(clk),
     .D(_000_[20]),
     .Q(WDTMR[20]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _181_ (
     .CLK(clk),
     .D(_000_[21]),
     .Q(WDTMR[21]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _182_ (
     .CLK(clk),
     .D(_000_[22]),
     .Q(WDTMR[22]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _183_ (
     .CLK(clk),
     .D(_000_[23]),
     .Q(WDTMR[23]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _184_ (
     .CLK(clk),
     .D(_000_[24]),
     .Q(WDTMR[24]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _185_ (
     .CLK(clk),
     .D(_000_[25]),
     .Q(WDTMR[25]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _186_ (
     .CLK(clk),
     .D(_000_[26]),
     .Q(WDTMR[26]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _187_ (
     .CLK(clk),
     .D(_000_[27]),
     .Q(WDTMR[27]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _188_ (
     .CLK(clk),
     .D(_000_[28]),
     .Q(WDTMR[28]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _189_ (
     .CLK(clk),
     .D(_000_[29]),
     .Q(WDTMR[29]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _190_ (
     .CLK(clk),
     .D(_000_[30]),
     .Q(WDTMR[30]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32.v:35.2-45.5" *)
   sky130_fd_sc_hd__dfrtp_1 _191_ (
     .CLK(clk),
     .D(_000_[31]),
@@ -12170,39 +12170,39 @@ module EF_WDT32(clk, rst_n, WDTMR, WDTLOAD, WDTTO, WDTEN);
   );
 endmodule
 
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:25.1-141.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:25.1-141.10" *)
 module EF_WDT32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, PRDATA, IRQ);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:27.24-27.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:27.24-27.28" *)
   input PCLK;
   wire PCLK;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:28.24-28.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:28.24-28.31" *)
   input PRESETn;
   wire PRESETn;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:29.24-29.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:29.24-29.30" *)
   input PWRITE;
   wire PWRITE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:30.24-30.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:30.24-30.30" *)
   input [31:0] PWDATA;
   wire [31:0] PWDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:31.24-31.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:31.24-31.29" *)
   input [31:0] PADDR;
   wire [31:0] PADDR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:32.24-32.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:32.24-32.31" *)
   input PENABLE;
   wire PENABLE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:33.24-33.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:33.24-33.28" *)
   input PSEL;
   wire PSEL;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:34.24-34.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:34.24-34.30" *)
   output PREADY;
   wire PREADY;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:35.24-35.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:35.24-35.30" *)
   output [31:0] PRDATA;
   wire [31:0] PRDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:36.24-36.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:36.24-36.27" *)
   output IRQ;
   wire IRQ;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101.3-104.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101.3-104.25" *)
   wire _000_;
   wire _001_;
   wire _002_;
@@ -12337,39 +12337,39 @@ module EF_WDT32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
   wire _131_;
   wire _132_;
   wire _133_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:48.13-48.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:48.13-48.21" *)
   wire [0:0] GCLK_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:94.16-94.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:94.16-94.22" *)
   wire [0:0] IC_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:93.16-93.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:93.16-93.22" *)
   wire [0:0] IM_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:97.16-97.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:97.16-97.23" *)
   wire [0:0] MIS_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:95.16-95.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:95.16-95.23" *)
   wire [0:0] RIS_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:70.17-70.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:70.17-70.22" *)
   wire [0:0] WDTEN;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:68.17-68.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:68.17-68.24" *)
   wire [31:0] WDTLOAD;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:67.17-67.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:67.17-67.22" *)
   wire [31:0] WDTMR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:69.17-69.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:69.17-69.22" *)
   wire [0:0] WDTTO;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:60.17-60.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:60.17-60.20" *)
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:49.8-49.13" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:49.8-49.13" *)
   wire clk_g;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:51.8-51.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:51.8-51.20" *)
   wire clk_gated_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:82.13-82.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:82.13-82.24" *)
   wire [0:0] control_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:76.14-76.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:76.14-76.22" *)
   wire [31:0] load_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:61.17-61.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:61.17-61.22" *)
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:73.17-73.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:73.17-73.27" *)
   wire [31:0] timer_WIRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:106.14-106.19" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:106.14-106.19" *)
   wire [0:0] wdtto;
   sky130_fd_sc_hd__nor4_1 _134_ (
     .A(PADDR[10]),
@@ -13359,259 +13359,259 @@ module EF_WDT32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
     .C(_133_),
     .Y(_000_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _301_ (
     .CLK(PCLK),
     .D(_031_),
     .Q(load_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _302_ (
     .CLK(PCLK),
     .D(_030_),
     .Q(load_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _303_ (
     .CLK(PCLK),
     .D(_029_),
     .Q(load_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _304_ (
     .CLK(PCLK),
     .D(_028_),
     .Q(load_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _305_ (
     .CLK(PCLK),
     .D(_027_),
     .Q(load_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _306_ (
     .CLK(PCLK),
     .D(_026_),
     .Q(load_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _307_ (
     .CLK(PCLK),
     .D(_025_),
     .Q(load_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _308_ (
     .CLK(PCLK),
     .D(_024_),
     .Q(load_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _309_ (
     .CLK(PCLK),
     .D(_023_),
     .Q(load_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _310_ (
     .CLK(PCLK),
     .D(_022_),
     .Q(load_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _311_ (
     .CLK(PCLK),
     .D(_021_),
     .Q(load_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _312_ (
     .CLK(PCLK),
     .D(_020_),
     .Q(load_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _313_ (
     .CLK(PCLK),
     .D(_019_),
     .Q(load_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _314_ (
     .CLK(PCLK),
     .D(_018_),
     .Q(load_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _315_ (
     .CLK(PCLK),
     .D(_017_),
     .Q(load_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _316_ (
     .CLK(PCLK),
     .D(_016_),
     .Q(load_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _317_ (
     .CLK(PCLK),
     .D(_015_),
     .Q(load_REG[16]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _318_ (
     .CLK(PCLK),
     .D(_014_),
     .Q(load_REG[17]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _319_ (
     .CLK(PCLK),
     .D(_013_),
     .Q(load_REG[18]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _320_ (
     .CLK(PCLK),
     .D(_012_),
     .Q(load_REG[19]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _321_ (
     .CLK(PCLK),
     .D(_011_),
     .Q(load_REG[20]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _322_ (
     .CLK(PCLK),
     .D(_010_),
     .Q(load_REG[21]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _323_ (
     .CLK(PCLK),
     .D(_009_),
     .Q(load_REG[22]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _324_ (
     .CLK(PCLK),
     .D(_008_),
     .Q(load_REG[23]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _325_ (
     .CLK(PCLK),
     .D(_007_),
     .Q(load_REG[24]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _326_ (
     .CLK(PCLK),
     .D(_006_),
     .Q(load_REG[25]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _327_ (
     .CLK(PCLK),
     .D(_005_),
     .Q(load_REG[26]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _328_ (
     .CLK(PCLK),
     .D(_004_),
     .Q(load_REG[27]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _329_ (
     .CLK(PCLK),
     .D(_003_),
     .Q(load_REG[28]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _330_ (
     .CLK(PCLK),
     .D(_002_),
     .Q(load_REG[29]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _331_ (
     .CLK(PCLK),
     .D(_001_),
     .Q(load_REG[30]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:78.3-80.86" *)
   sky130_fd_sc_hd__dfrtp_1 _332_ (
     .CLK(PCLK),
     .D(_032_),
     .Q(load_REG[31]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98.3-100.81" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:98.3-100.81" *)
   sky130_fd_sc_hd__dfrtp_1 _333_ (
     .CLK(PCLK),
     .D(_033_),
     .Q(IM_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84.3-86.91" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:84.3-86.91" *)
   sky130_fd_sc_hd__dfrtp_1 _334_ (
     .CLK(PCLK),
     .D(_034_),
     .Q(control_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109.3-116.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:109.3-116.8" *)
   sky130_fd_sc_hd__dfrtp_1 _335_ (
     .CLK(PCLK),
     .D(_035_),
     .Q(RIS_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89.3-91.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:89.3-91.85" *)
   sky130_fd_sc_hd__dfrtp_1 _336_ (
     .CLK(PCLK),
     .D(_036_),
     .Q(GCLK_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101.3-104.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:101.3-104.25" *)
   sky130_fd_sc_hd__dfrtp_1 _337_ (
     .CLK(PCLK),
     .D(_000_),
@@ -13619,14 +13619,14 @@ module EF_WDT32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
     .RESET_B(PRESETn)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:52.23-58.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:52.23-58.4" *)
   ef_util_gating_cell clk_gate_cell (
     .clk(PCLK),
     .clk_en(GCLK_REG),
     .clk_o(clk)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:120.12-127.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/EF_WDT32_APB.v:120.12-127.4" *)
   EF_WDT32 instance_to_wrap (
     .WDTEN(control_REG),
     .WDTLOAD(load_REG),
@@ -13647,74 +13647,74 @@ module EF_WDT32_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY,
 endmodule
 
 (* top =  1  *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:13.1-80.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:13.1-80.10" *)
 module pwm_wrapper(clk_i, rst_ni, pwm_paddr, pwm_pwdata, pwm_prdata, pwm_pwrite, pwm_psel, pwm_penable, pwm_pready, wdt_paddr, wdt_pwdata, wdt_prdata, wdt_pwrite, wdt_psel, wdt_penable, wdt_pready, pwm0, pwm1, pwm_irq_o, wdt_irq_o, wdt_rst_n_o
 );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:14.24-14.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:14.24-14.29" *)
   input clk_i;
   wire clk_i;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:15.24-15.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:15.24-15.30" *)
   input rst_ni;
   wire rst_ni;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:18.24-18.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:18.24-18.33" *)
   input [31:0] pwm_paddr;
   wire [31:0] pwm_paddr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:19.24-19.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:19.24-19.34" *)
   input [31:0] pwm_pwdata;
   wire [31:0] pwm_pwdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:20.24-20.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:20.24-20.34" *)
   output [31:0] pwm_prdata;
   wire [31:0] pwm_prdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:21.24-21.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:21.24-21.34" *)
   input pwm_pwrite;
   wire pwm_pwrite;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:22.24-22.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:22.24-22.32" *)
   input pwm_psel;
   wire pwm_psel;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:23.24-23.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:23.24-23.35" *)
   input pwm_penable;
   wire pwm_penable;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:24.24-24.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:24.24-24.34" *)
   output pwm_pready;
   wire pwm_pready;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:27.24-27.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:27.24-27.33" *)
   input [31:0] wdt_paddr;
   wire [31:0] wdt_paddr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:28.24-28.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:28.24-28.34" *)
   input [31:0] wdt_pwdata;
   wire [31:0] wdt_pwdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:29.24-29.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:29.24-29.34" *)
   output [31:0] wdt_prdata;
   wire [31:0] wdt_prdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:30.24-30.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:30.24-30.34" *)
   input wdt_pwrite;
   wire wdt_pwrite;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:31.24-31.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:31.24-31.32" *)
   input wdt_psel;
   wire wdt_psel;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:32.24-32.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:32.24-32.35" *)
   input wdt_penable;
   wire wdt_penable;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:33.24-33.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:33.24-33.34" *)
   output wdt_pready;
   wire wdt_pready;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:36.24-36.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:36.24-36.28" *)
   output pwm0;
   wire pwm0;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:37.24-37.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:37.24-37.28" *)
   output pwm1;
   wire pwm1;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:40.24-40.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:40.24-40.33" *)
   output pwm_irq_o;
   wire pwm_irq_o;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:41.24-41.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:41.24-41.33" *)
   output wdt_irq_o;
   wire wdt_irq_o;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:42.24-42.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:42.24-42.35" *)
   output wdt_rst_n_o;
   wire wdt_rst_n_o;
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:46.18-60.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:46.18-60.6" *)
   EF_TMR32_APB u_tmr32 (
     .IRQ(pwm_irq_o),
     .PADDR(pwm_paddr),
@@ -13731,7 +13731,7 @@ module pwm_wrapper(clk_i, rst_ni, pwm_paddr, pwm_pwdata, pwm_prdata, pwm_pwrite,
     .pwm_fault(1'h0)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:63.18-74.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-pwm/rtl/pwm_wrapper.v:63.18-74.6" *)
   EF_WDT32_APB u_wdt32 (
     .IRQ(wdt_irq_o),
     .PADDR(wdt_paddr),

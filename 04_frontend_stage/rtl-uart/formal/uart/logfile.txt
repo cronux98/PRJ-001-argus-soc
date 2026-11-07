@@ -1,7 +1,7 @@
-SBY  6:47:52 [uart] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart'.
-SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART_APB.v'.
-SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART.v'.
-SBY  6:47:52 [uart] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/ef_util_lib.v'.
+SBY  6:47:52 [uart] Removing directory '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart'.
+SBY  6:47:52 [uart] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART_APB.v'.
+SBY  6:47:52 [uart] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/EF_UART.v'.
+SBY  6:47:52 [uart] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/formal/uart/src/ef_util_lib.v'.
 SBY  6:47:52 [uart] engine_0: smtbmc z3
 SBY  6:47:52 [uart] base: starting process "cd uart/src; yosys -ql ../model/design.log ../model/design.ys"
 SBY  6:47:53 [uart] base: finished (returncode=0)
@@ -9,7 +9,7 @@ SBY  6:47:53 [uart] prep: starting process "cd uart/model; yosys -ql design_prep
 SBY  6:47:53 [uart] prep: finished (returncode=0)
 SBY  6:47:53 [uart] smt2: starting process "cd uart/model; yosys -ql design_smt2.log design_smt2.ys"
 SBY  6:47:53 [uart] smt2: finished (returncode=0)
-SBY  6:47:53 [uart] engine_0: starting process "cd uart; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  6:47:53 [uart] engine_0: starting process "cd uart; ~/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
 SBY  6:47:53 [uart] engine_0: ##   0:00:00  Solver: z3
 SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assumptions in step 0..
 SBY  6:47:53 [uart] engine_0: ##   0:00:00  Checking assertions in step 0..

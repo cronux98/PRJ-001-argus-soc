@@ -14,7 +14,7 @@
     "lint": {
       "status": "PASS",
       "errors": 0,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/lint/wb_bridge_verilator.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/lint/wb_bridge_verilator.log"
     },
     "synthesis": {
       "status": "PASS",
@@ -22,24 +22,24 @@
       "dff_count": 35,
       "latch_count": 0,
       "area_um2": 1297.4944,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/synth/wb_bridge_synth.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/synth/wb_bridge_synth.log"
     },
     "formal": {
       "status": "PASS",
       "depth": 20,
       "mode": "bmc",
-      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/PASS"
+      "pass_file": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/PASS"
     },
     "equivalence": {
       "status": "PASS",
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/equiv_check/wb_bridge_equiv.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/logs/equiv_check/wb_bridge_equiv.log"
     },
     "verification": {
       "status": "PASS",
       "tests_total": 8,
       "tests_pass": 8,
       "tests_fail": 0,
-      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-wb_bridge/results.xml"
+      "results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-wb_bridge/results.xml"
     }
   },
   "promotion": {

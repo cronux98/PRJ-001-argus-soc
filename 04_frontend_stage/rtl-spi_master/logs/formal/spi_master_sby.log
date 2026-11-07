@@ -1,9 +1,9 @@
 GENERATED-FROM: sby SBY v0.64-2-gf57802a spi_master.sby depth=20 2026-07-20T06:47:59+00:00
-SBY  6:47:59 [spi_master] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master'.
-SBY  6:47:59 [spi_master] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/EF_SPI_APB.v'.
-SBY  6:47:59 [spi_master] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/spi_master.v'.
-SBY  6:47:59 [spi_master] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/EF_SPI.v'.
-SBY  6:47:59 [spi_master] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/ef_util_lib.v'.
+SBY  6:47:59 [spi_master] Removing directory '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master'.
+SBY  6:47:59 [spi_master] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/EF_SPI_APB.v'.
+SBY  6:47:59 [spi_master] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/spi_master.v'.
+SBY  6:47:59 [spi_master] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/EF_SPI.v'.
+SBY  6:47:59 [spi_master] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/formal/spi_master/src/ef_util_lib.v'.
 SBY  6:47:59 [spi_master] engine_0: smtbmc z3
 SBY  6:47:59 [spi_master] base: starting process "cd spi_master/src; yosys -ql ../model/design.log ../model/design.ys"
 SBY  6:47:59 [spi_master] base: finished (returncode=0)
@@ -11,7 +11,7 @@ SBY  6:47:59 [spi_master] prep: starting process "cd spi_master/model; yosys -ql
 SBY  6:47:59 [spi_master] prep: finished (returncode=0)
 SBY  6:47:59 [spi_master] smt2: starting process "cd spi_master/model; yosys -ql design_smt2.log design_smt2.ys"
 SBY  6:47:59 [spi_master] smt2: finished (returncode=0)
-SBY  6:47:59 [spi_master] engine_0: starting process "cd spi_master; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  6:47:59 [spi_master] engine_0: starting process "cd spi_master; ~/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
 SBY  6:47:59 [spi_master] engine_0: ##   0:00:00  Solver: z3
 SBY  6:47:59 [spi_master] engine_0: ##   0:00:00  Checking assumptions in step 0..
 SBY  6:47:59 [spi_master] engine_0: ##   0:00:00  Checking assertions in step 0..

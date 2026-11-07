@@ -14,7 +14,7 @@
     "lint": {
       "status": "PASS",
       "errors": 0,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/lint/apb_interconnect_verilator.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/lint/apb_interconnect_verilator.log"
     },
     "synthesis": {
       "status": "PASS",
@@ -22,24 +22,24 @@
       "dff_count": 20,
       "latch_count": 0,
       "area_um2": 3459.568,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/synth/apb_interconnect_synth.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/synth/apb_interconnect_synth.log"
     },
     "formal": {
       "status": "PASS",
       "depth": 20,
       "mode": "bmc",
-      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/PASS"
+      "pass_file": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/PASS"
     },
     "equivalence": {
       "status": "PASS",
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/equiv_check/apb_interconnect_equiv.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/logs/equiv_check/apb_interconnect_equiv.log"
     },
     "verification": {
       "status": "PASS",
       "tests_total": 8,
       "tests_pass": 8,
       "tests_fail": 0,
-      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-apb_interconnect/results.xml"
+      "results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-apb_interconnect/results.xml"
     }
   },
   "promotion": {

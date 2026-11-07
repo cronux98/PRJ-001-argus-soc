@@ -2,7 +2,7 @@
 MODULE = test_wb_bridge
 TOPLEVEL_LANG = verilog
 VERILOG_SOURCES = \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v
 TOPLEVEL = wb_bridge
 SIM = icarus
 COCOTB_HDL_TIMEUNIT = 1ns

@@ -7,47 +7,47 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/equiv_check/equiv_i2c_master.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/equiv_check/equiv_i2c_master.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v' to AST representation.
 Generating RTLIL representation for module `\EF_I2C_APB'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v' to AST representation.
 Generating RTLIL representation for module `\i2c_master_wbs_16'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v' to AST representation.
+3. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v' to AST representation.
 Generating RTLIL representation for module `\i2c_master'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v' to AST representation.
+4. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_init.v' to AST representation.
 Generating RTLIL representation for module `\i2c_init'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v' to AST representation.
+5. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v' to AST representation.
 Generating RTLIL representation for module `\axis_fifo'.
-Warning: Replacing memory \m_axis_pipe_reg with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
-Warning: Replacing memory \mem with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
+Warning: Replacing memory \m_axis_pipe_reg with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
+Warning: Replacing memory \mem with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v' to AST representation.
+6. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_single_reg.v' to AST representation.
 Generating RTLIL representation for module `\i2c_single_reg'.
 Successfully finished Verilog frontend.
 
-7. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v' to AST representation.
+7. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_axil.v' to AST representation.
 Generating RTLIL representation for module `\i2c_master_axil'.
 Successfully finished Verilog frontend.
 
-8. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+8. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -105,8 +105,8 @@ Parameter \DEST_ENABLE = 0
 Parameter \USER_ENABLE = 0
 Parameter \FRAME_FIFO = 0
 Generating RTLIL representation for module `$paramod$2e04ddebe2c25f35ed3875dbafb514a3db3a7f08\axis_fifo'.
-Warning: Replacing memory \m_axis_pipe_reg with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
-Warning: Replacing memory \mem with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
+Warning: Replacing memory \m_axis_pipe_reg with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
+Warning: Replacing memory \mem with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
 Parameter \DEPTH = 32
 Parameter \DATA_WIDTH = 8
 Parameter \KEEP_ENABLE = 0
@@ -135,8 +135,8 @@ Parameter \DEST_ENABLE = 0
 Parameter \USER_ENABLE = 0
 Parameter \FRAME_FIFO = 0
 Generating RTLIL representation for module `$paramod$f2c6533c9d5a2099e045f160402101382dfc3a59\axis_fifo'.
-Warning: Replacing memory \m_axis_pipe_reg with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
-Warning: Replacing memory \mem with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
+Warning: Replacing memory \m_axis_pipe_reg with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
+Warning: Replacing memory \mem with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
 
 9.5. Analyzing design hierarchy..
 Top module:  \EF_I2C_APB
@@ -163,8 +163,8 @@ Parameter \DEST_ENABLE = 0
 Parameter \USER_ENABLE = 0
 Parameter \FRAME_FIFO = 0
 Generating RTLIL representation for module `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
-Warning: Replacing memory \m_axis_pipe_reg with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
-Warning: Replacing memory \mem with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
+Warning: Replacing memory \m_axis_pipe_reg with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
+Warning: Replacing memory \mem with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
 Parameter \DEPTH = 16
 Parameter \DATA_WIDTH = 8
 Parameter \KEEP_ENABLE = 0
@@ -193,8 +193,8 @@ Parameter \DEST_ENABLE = 0
 Parameter \USER_ENABLE = 0
 Parameter \FRAME_FIFO = 0
 Generating RTLIL representation for module `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
-Warning: Replacing memory \m_axis_pipe_reg with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
-Warning: Replacing memory \mem with list of registers. See /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
+Warning: Replacing memory \m_axis_pipe_reg with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:258
+Warning: Replacing memory \mem with list of registers. See ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218
 
 9.8. Analyzing design hierarchy..
 Top module:  \EF_I2C_APB
@@ -231,29 +231,29 @@ Removed 15 unused modules.
 10. Executing PROC pass (convert processes to netlists).
 
 10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 5 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$649'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$649'.
-Found and cleaned up 1 empty switch in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
-Found and cleaned up 5 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$695'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$695'.
-Found and cleaned up 1 empty switch in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Found and cleaned up 5 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$649'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$649'.
+Found and cleaned up 1 empty switch in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Found and cleaned up 5 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$695'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:118$695'.
+Found and cleaned up 1 empty switch in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
 Cleaned up 12 empty switches.
 
 10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Removed 1 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518 in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
-Marked 16 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493 in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138 in module i2c_master.
-Marked 10 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130 in module i2c_master.
-Marked 25 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80 in module i2c_master.
-Removed 1 dead cases from process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30 in module EF_I2C_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26 in module EF_I2C_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22 in module EF_I2C_APB.
+Removed 1 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623 in module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518 in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+Marked 16 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493 in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138 in module i2c_master.
+Marked 10 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130 in module i2c_master.
+Marked 25 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80 in module i2c_master.
+Removed 1 dead cases from process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669 in module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30 in module EF_I2C_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26 in module EF_I2C_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22 in module EF_I2C_APB.
 Removed a total of 2 dead cases.
 
 10.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -261,91 +261,91 @@ Removed 46 redundant assignments.
 Promoted 77 assignments to connections.
 
 10.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
   Set init value: \bad_frame_reg = 1'0
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
   Set init value: \overflow_reg = 1'0
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
   Set init value: \drop_frame_reg = 1'0
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
   Set init value: \m_axis_tvalid_pipe_reg = 2'00
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
   Set init value: \rd_ptr_reg = 5'00000
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
   Set init value: \wr_ptr_cur_reg = 5'00000
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
   Set init value: \wr_ptr_reg = 5'00000
-Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
+Found init rule in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
   Set init value: \good_frame_reg = 1'0
-Found init rule in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
+Found init rule in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
   Set init value: \write_fifo_overflow_reg = 1'0
-Found init rule in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
+Found init rule in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
   Set init value: \cmd_fifo_overflow_reg = 1'0
-Found init rule in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
+Found init rule in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
   Set init value: \phy_state_reg = 5'00000
-Found init rule in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
+Found init rule in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
   Set init value: \state_reg = 5'00000
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
   Set init value: \bad_frame_reg = 1'0
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
   Set init value: \overflow_reg = 1'0
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
   Set init value: \drop_frame_reg = 1'0
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
   Set init value: \m_axis_tvalid_pipe_reg = 2'00
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
   Set init value: \rd_ptr_reg = 5'00000
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
   Set init value: \wr_ptr_cur_reg = 5'00000
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
   Set init value: \wr_ptr_reg = 5'00000
-Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
+Found init rule in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
   Set init value: \good_frame_reg = 1'0
 
 10.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
-Found async reset \rst in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
-Found async reset \rst in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
-Found async reset \rst in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
-Found async reset \rst in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
-Found async reset \rst in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
-Found async reset \PRESETn in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
-Found async reset \PRESETn in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
-Found async reset \PRESETn in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Found async reset \rst in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Found async reset \rst in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Found async reset \rst in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Found async reset \rst in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Found async reset \rst in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Found async reset \rst in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Found async reset \PRESETn in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
+Found async reset \PRESETn in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Found async reset \PRESETn in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
 
 10.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~71 debug messages>
 
 10.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
-     1/11: $3$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$646
-     2/11: $2$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$645
-     3/11: $2$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR[3:0]$644
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+     1/11: $3$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$646
+     2/11: $2$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$645
+     3/11: $2$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR[3:0]$644
      4/11: $0\m_axis_tvalid_pipe_reg[1:0] [1]
      5/11: $0\m_axis_tvalid_pipe_reg[1:0] [0]
-     6/11: $1$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR[3:0]$637
+     6/11: $1$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR[3:0]$637
      7/11: $1\j[31:0]
      8/11: $0\m_axis_pipe_reg[1][8:0]
      9/11: $0\m_axis_pipe_reg[0][8:0]
-    10/11: $1$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$638
+    10/11: $1$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$638
     11/11: $0\rd_ptr_reg[4:0]
-Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
-     1/28: $3$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$631
-     2/28: $3$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$632
-     3/28: $2$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$630
-     4/28: $2$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$629
-     5/28: $1$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$627
-     6/28: $1$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$626
+Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+     1/28: $3$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$631
+     2/28: $3$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$632
+     3/28: $2$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$630
+     4/28: $2$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$629
+     5/28: $1$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA[8:0]$627
+     6/28: $1$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR[3:0]$626
      7/28: $0\mem[15][8:0]
      8/28: $0\mem[14][8:0]
      9/28: $0\mem[13][8:0]
@@ -368,9 +368,9 @@ Creating decoders for process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7
     26/28: $0\drop_frame_reg[0:0]
     27/28: $0\wr_ptr_cur_reg[4:0]
     28/28: $0\wr_ptr_reg[4:0]
-Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
-Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
-Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
+Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
+Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
      1/17: $0\write_fifo_overflow_reg[0:0]
      2/17: $0\cmd_fifo_overflow_reg[0:0]
      3/17: $0\missed_ack_reg[0:0]
@@ -388,7 +388,7 @@ Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d
     15/17: $0\cmd_address_reg[6:0]
     16/17: $0\wbs_ack_o_reg[0:0]
     17/17: $0\wbs_dat_o_reg[15:0]
-Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
      1/87: $3\wbs_dat_o_next[15:0] [15]
      2/87: $3\wbs_dat_o_next[15:0] [13]
      3/87: $3\wbs_dat_o_next[15:0] [11]
@@ -476,9 +476,9 @@ Creating decoders for process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d
     85/87: $1\cmd_address_next[6:0]
     86/87: $1\wbs_ack_o_next[0:0]
     87/87: $1\wbs_dat_o_next[15:0]
-Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
-Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
-Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating decoders for process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
+Creating decoders for process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
+Creating decoders for process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
      1/28: $0\bus_active_reg[0:0]
      2/28: $0\missed_ack_reg[0:0]
      3/28: $0\bus_control_reg[0:0]
@@ -507,7 +507,7 @@ Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace
     26/28: $0\phy_rx_data_reg[0:0]
     27/28: $0\phy_state_reg[4:0]
     28/28: $0\state_reg[4:0]
-Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+Creating decoders for process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
      1/53: $10\phy_state_next[4:0]
      2/53: $10\delay_next[16:0]
      3/53: $10\sda_o_next[0:0]
@@ -561,7 +561,7 @@ Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace
     51/53: $1\sda_o_next[0:0]
     52/53: $1\bus_control_next[0:0]
     53/53: $1\phy_rx_data_next[0:0]
-Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+Creating decoders for process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
      1/155: $25\state_next[4:0]
      2/155: $12\phy_tx_data[0:0]
      3/155: $12\phy_write_bit[0:0]
@@ -717,34 +717,34 @@ Creating decoders for process `\i2c_master.$proc$/home/smdadmin/hermes_workspace
    153/155: $1\phy_stop_bit[0:0]
    154/155: $1\phy_start_bit[0:0]
    155/155: $1\missed_ack_next[0:0]
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
-     1/11: $3$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$692
-     2/11: $2$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$691
-     3/11: $2$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR[3:0]$690
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+     1/11: $3$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$692
+     2/11: $2$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$691
+     3/11: $2$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR[3:0]$690
      4/11: $0\m_axis_tvalid_pipe_reg[1:0] [1]
      5/11: $0\m_axis_tvalid_pipe_reg[1:0] [0]
-     6/11: $1$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR[3:0]$683
+     6/11: $1$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR[3:0]$683
      7/11: $1\j[31:0]
      8/11: $0\m_axis_pipe_reg[1][11:0]
      9/11: $0\m_axis_pipe_reg[0][11:0]
-    10/11: $1$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$684
+    10/11: $1$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$684
     11/11: $0\rd_ptr_reg[4:0]
-Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
-     1/28: $3$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$677
-     2/28: $3$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$678
-     3/28: $2$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$676
-     4/28: $2$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$675
-     5/28: $1$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$673
-     6/28: $1$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$672
+Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+     1/28: $3$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$677
+     2/28: $3$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$678
+     3/28: $2$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$676
+     4/28: $2$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$675
+     5/28: $1$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA[11:0]$673
+     6/28: $1$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR[3:0]$672
      7/28: $0\mem[15][11:0]
      8/28: $0\mem[14][11:0]
      9/28: $0\mem[13][11:0]
@@ -767,338 +767,338 @@ Creating decoders for process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d
     26/28: $0\drop_frame_reg[0:0]
     27/28: $0\wr_ptr_cur_reg[4:0]
     28/28: $0\wr_ptr_reg[4:0]
-Creating decoders for process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
+Creating decoders for process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
      1/1: $0\apb_rd_ack[0:0]
-Creating decoders for process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Creating decoders for process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
      1/2: $0\apb_wr_ack_1[0:0]
      2/2: $0\IM_REG[8:0]
-Creating decoders for process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Creating decoders for process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
      1/2: $0\apb_wr_ack_0[0:0]
      2/2: $0\GCLK_REG[0:0]
 
 10.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem_read_data_valid_reg' from process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_dat_o_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_ack_o_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_address_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_start_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_read_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_multiple_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_stop_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_valid_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_valid_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_last_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_out_ready_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\prescale_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\missed_ack_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_fifo_overflow_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\write_fifo_overflow_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-No latch inferred for signal `\i2c_master.\phy_state_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\phy_rx_data_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\delay_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\delay_scl_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\delay_sda_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\scl_o_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\sda_o_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\bus_control_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-No latch inferred for signal `\i2c_master.\missed_ack_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\state_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_start_bit' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_stop_bit' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_write_bit' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_read_bit' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_release_bus' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\phy_tx_data' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\addr_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\data_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\last_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\mode_read_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\mode_write_multiple_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\mode_stop_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\bit_count_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\s_axis_cmd_ready_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\s_axis_data_tready_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\m_axis_data_tdata_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\m_axis_data_tvalid_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `\i2c_master.\m_axis_data_tlast_next' from process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-No latch inferred for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem_read_data_valid_reg' from process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
+No latch inferred for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem_read_data_valid_reg' from process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_dat_o_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_ack_o_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_address_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_start_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_read_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_multiple_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_stop_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_valid_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_valid_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_last_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_out_ready_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\prescale_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\missed_ack_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_fifo_overflow_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\write_fifo_overflow_next' from process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+No latch inferred for signal `\i2c_master.\phy_state_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\phy_rx_data_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\delay_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\delay_scl_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\delay_sda_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\scl_o_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\sda_o_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\bus_control_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+No latch inferred for signal `\i2c_master.\missed_ack_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\state_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_start_bit' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_stop_bit' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_write_bit' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_read_bit' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_release_bus' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\phy_tx_data' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\addr_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\data_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\last_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\mode_read_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\mode_write_multiple_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\mode_stop_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\bit_count_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\s_axis_cmd_ready_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\s_axis_data_tready_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\m_axis_data_tdata_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\m_axis_data_tvalid_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `\i2c_master.\m_axis_data_tlast_next' from process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+No latch inferred for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem_read_data_valid_reg' from process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
 
 10.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\rd_ptr_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\rd_ptr_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5468' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_tvalid_pipe_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_tvalid_pipe_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5471' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\j' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\j' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5474' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_pipe_reg[0]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_pipe_reg[0]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $dff cell `$procdff$5479' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_pipe_reg[1]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\m_axis_pipe_reg[1]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5482' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_ADDR' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5485' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
   created $adff cell `$procdff$5488' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\wr_ptr_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\wr_ptr_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5491' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\wr_ptr_cur_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\wr_ptr_cur_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5494' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\drop_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\drop_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5497' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\overflow_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\overflow_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5500' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\bad_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\bad_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5503' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\good_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\good_frame_reg' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5506' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[0]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[0]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5511' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[1]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[1]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5516' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[2]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[2]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5521' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[3]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[3]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5526' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[4]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[4]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5531' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[5]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[5]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5536' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[6]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[6]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5541' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[7]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[7]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5546' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[8]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[8]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5551' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[9]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[9]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5556' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[10]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[10]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5561' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[11]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[11]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5566' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[12]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[12]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5571' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[13]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[13]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5576' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[14]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[14]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5581' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[15]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.\mem[15]' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $dff cell `$procdff$5586' with positive edge clock.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_ADDR' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5589' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Creating register for signal `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$613_DATA' using process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
   created $adff cell `$procdff$5592' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_dat_o_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_dat_o_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5595' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_ack_o_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\wbs_ack_o_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5598' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_address_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_address_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5601' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_start_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_start_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5604' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_read_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_read_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5607' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5610' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_multiple_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_write_multiple_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5613' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_stop_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_stop_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5616' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_valid_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_valid_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5619' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5622' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_valid_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_valid_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5625' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_last_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_in_last_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5628' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_out_ready_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\data_out_ready_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5631' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\prescale_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\prescale_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5634' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\missed_ack_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\missed_ack_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5637' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_fifo_overflow_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\cmd_fifo_overflow_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5640' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\write_fifo_overflow_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Creating register for signal `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.\write_fifo_overflow_reg' using process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
   created $adff cell `$procdff$5643' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\missed_ack_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\missed_ack_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5646' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\state_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\state_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5649' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\phy_state_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\phy_state_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5652' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\phy_rx_data_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\phy_rx_data_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5655' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\addr_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\addr_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5658' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\data_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\data_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5661' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\last_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\last_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5664' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\mode_read_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\mode_read_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5667' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\mode_write_multiple_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\mode_write_multiple_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5670' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\mode_stop_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\mode_stop_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5673' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\delay_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\delay_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5676' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\delay_scl_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\delay_scl_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5679' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\delay_sda_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\delay_sda_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5682' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\bit_count_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\bit_count_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5685' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\s_axis_cmd_ready_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\s_axis_cmd_ready_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5688' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\s_axis_data_tready_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\s_axis_data_tready_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5691' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\m_axis_data_tdata_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\m_axis_data_tdata_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5694' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\m_axis_data_tvalid_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\m_axis_data_tvalid_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5697' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\m_axis_data_tlast_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\m_axis_data_tlast_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5700' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\scl_i_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\scl_i_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5703' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\sda_i_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\sda_i_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5706' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\scl_o_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\scl_o_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5709' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\sda_o_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\sda_o_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5712' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\last_scl_i_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\last_scl_i_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5715' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\last_sda_i_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\last_sda_i_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5718' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\busy_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\busy_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5721' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\bus_active_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\bus_active_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5724' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master.\bus_control_reg' using process `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Creating register for signal `\i2c_master.\bus_control_reg' using process `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
   created $adff cell `$procdff$5727' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\rd_ptr_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\rd_ptr_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5730' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_tvalid_pipe_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_tvalid_pipe_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5733' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\j' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\j' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5736' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_pipe_reg[0]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_pipe_reg[0]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $dff cell `$procdff$5741' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_pipe_reg[1]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\m_axis_pipe_reg[1]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5744' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_ADDR' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5747' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
   created $adff cell `$procdff$5750' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\wr_ptr_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\wr_ptr_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5753' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\wr_ptr_cur_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\wr_ptr_cur_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5756' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\drop_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\drop_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5759' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\overflow_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\overflow_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5762' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\bad_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\bad_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5765' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\good_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\good_frame_reg' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5768' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[0]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[0]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5773' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[1]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[1]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5778' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[2]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[2]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5783' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[3]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[3]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5788' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[4]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[4]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5793' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[5]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[5]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5798' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[6]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[6]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5803' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[7]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[7]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5808' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[8]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[8]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5813' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[9]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[9]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5818' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[10]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[10]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5823' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[11]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[11]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5828' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[12]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[12]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5833' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[13]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[13]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5838' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[14]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[14]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5843' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[15]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.\mem[15]' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $dff cell `$procdff$5848' with positive edge clock.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_ADDR' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5851' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_wr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Creating register for signal `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$mem2reg_wr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:218$659_DATA' using process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
   created $adff cell `$procdff$5854' with positive edge clock and positive level reset.
-Creating register for signal `\EF_I2C_APB.\apb_rd_ack' using process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
+Creating register for signal `\EF_I2C_APB.\apb_rd_ack' using process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
   created $adff cell `$procdff$5859' with positive edge clock and positive level reset.
-Creating register for signal `\EF_I2C_APB.\IM_REG' using process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Creating register for signal `\EF_I2C_APB.\IM_REG' using process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
   created $adff cell `$procdff$5864' with positive edge clock and positive level reset.
-Creating register for signal `\EF_I2C_APB.\apb_wr_ack_1' using process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Creating register for signal `\EF_I2C_APB.\apb_wr_ack_1' using process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
   created $dff cell `$procdff$5871' with positive edge clock.
-Creating register for signal `\EF_I2C_APB.\GCLK_REG' using process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Creating register for signal `\EF_I2C_APB.\GCLK_REG' using process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
   created $adff cell `$procdff$5876' with positive edge clock and positive level reset.
-Creating register for signal `\EF_I2C_APB.\apb_wr_ack_0' using process `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Creating register for signal `\EF_I2C_APB.\apb_wr_ack_0' using process `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
   created $dff cell `$procdff$5883' with positive edge clock.
 
 10.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 10.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
-Found and cleaned up 5 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
-Found and cleaned up 2 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
-Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
-Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
-Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
-Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
-Found and cleaned up 16 empty switches in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
-Removing empty process `i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
-Removing empty process `i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
-Found and cleaned up 2 empty switches in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
-Removing empty process `i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
-Found and cleaned up 10 empty switches in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-Removing empty process `i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
-Found and cleaned up 25 empty switches in `\i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-Removing empty process `i2c_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
-Found and cleaned up 5 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
-Found and cleaned up 2 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
-Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
-Found and cleaned up 2 empty switches in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
-Removing empty process `EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
-Found and cleaned up 1 empty switch in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
-Removing empty process `EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
-Found and cleaned up 1 empty switch in `\EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
-Removing empty process `EF_I2C_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$657'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$656'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$655'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$654'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$653'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$652'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$651'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$650'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$658'.
+Found and cleaned up 5 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$634'.
+Found and cleaned up 2 empty switches in `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Removing empty process `$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$623'.
+Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:321$520'.
+Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:320$519'.
+Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:615$518'.
+Found and cleaned up 16 empty switches in `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+Removing empty process `$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:469$493'.
+Removing empty process `i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:219$151'.
+Removing empty process `i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:199$150'.
+Found and cleaned up 2 empty switches in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Removing empty process `i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:829$138'.
+Found and cleaned up 10 empty switches in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+Removing empty process `i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:599$130'.
+Found and cleaned up 25 empty switches in `\i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+Removing empty process `i2c_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:293$80'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:175$703'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:174$702'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:173$701'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:163$700'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:158$699'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:154$698'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:153$697'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:152$696'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:176$704'.
+Found and cleaned up 5 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:253$680'.
+Found and cleaned up 2 empty switches in `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Removing empty process `$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:205$669'.
+Found and cleaned up 2 empty switches in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
+Removing empty process `EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:160$30'.
+Found and cleaned up 1 empty switch in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Removing empty process `EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:151$26'.
+Found and cleaned up 1 empty switch in `\EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
+Removing empty process `EF_I2C_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/EF_I2C_APB.v:142$22'.
 Cleaned up 71 empty switches.
 
 10.12. Executing OPT_EXPR pass (perform const folding).
@@ -1873,14 +1873,14 @@ Adding EN signal on $procdff$5571 ($dff) from module $paramod$fc82893ce2d814ed80
 Adding EN signal on $procdff$5531 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[4]).
 Adding EN signal on $procdff$5586 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[15]).
 Adding EN signal on $procdff$5576 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[13]).
-Adding EN signal on $procdff$5468 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648_Y [4:0], Q = \rd_ptr_reg).
+Adding EN signal on $procdff$5468 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648_Y [4:0], Q = \rd_ptr_reg).
 Adding EN signal on $procdff$5471 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $procmux$733_Y, Q = \m_axis_tvalid_pipe_reg [1]).
 Adding EN signal on $procdff$5471 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $procmux$740_Y, Q = \m_axis_tvalid_pipe_reg [0]).
 Adding EN signal on $procdff$5546 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[7]).
-Adding EN signal on $procdff$5479 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $3$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$646, Q = \m_axis_pipe_reg[0]).
+Adding EN signal on $procdff$5479 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $3$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$614_DATA[8:0]$646, Q = \m_axis_pipe_reg[0]).
 Adding EN signal on $procdff$5482 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = \m_axis_pipe_reg[0], Q = \m_axis_pipe_reg[1]).
 Adding EN signal on $procdff$5551 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[8]).
-Adding EN signal on $procdff$5491 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633_Y [4:0], Q = \wr_ptr_reg).
+Adding EN signal on $procdff$5491 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = $add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633_Y [4:0], Q = \wr_ptr_reg).
 Adding EN signal on $procdff$5556 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[9]).
 Handling D = Q on $procdff$5494 ($adff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (removing D path).
 Adding EN signal on $procdff$5581 ($dff) from module $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo (D = { \s_axis_tlast \s_axis_tdata }, Q = \mem[14]).
@@ -1976,14 +1976,14 @@ Adding EN signal on $procdff$5833 ($dff) from module $paramod$f1bd7922988db237f4
 Adding EN signal on $procdff$5793 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[4]).
 Adding EN signal on $procdff$5848 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[15]).
 Adding EN signal on $procdff$5838 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[13]).
-Adding EN signal on $procdff$5730 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694_Y [4:0], Q = \rd_ptr_reg).
+Adding EN signal on $procdff$5730 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694_Y [4:0], Q = \rd_ptr_reg).
 Adding EN signal on $procdff$5733 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $procmux$5214_Y, Q = \m_axis_tvalid_pipe_reg [1]).
 Adding EN signal on $procdff$5733 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $procmux$5221_Y, Q = \m_axis_tvalid_pipe_reg [0]).
 Adding EN signal on $procdff$5808 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[7]).
-Adding EN signal on $procdff$5741 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $3$mem2reg_rd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$692, Q = \m_axis_pipe_reg[0]).
+Adding EN signal on $procdff$5741 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $3$mem2reg_rd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:277$660_DATA[11:0]$692, Q = \m_axis_pipe_reg[0]).
 Adding EN signal on $procdff$5744 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \m_axis_pipe_reg[0], Q = \m_axis_pipe_reg[1]).
 Adding EN signal on $procdff$5813 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[8]).
-Adding EN signal on $procdff$5753 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679_Y [4:0], Q = \wr_ptr_reg).
+Adding EN signal on $procdff$5753 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = $add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679_Y [4:0], Q = \wr_ptr_reg).
 Adding EN signal on $procdff$5818 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[9]).
 Handling D = Q on $procdff$5756 ($adff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (removing D path).
 Adding EN signal on $procdff$5843 ($dff) from module $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo (D = \s_axis_tdata, Q = \mem[14]).
@@ -2114,7 +2114,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.
   Optimizing cells in module \ef_util_gating_cell.
   Optimizing cells in module \i2c_master.
-    New ctrl vector for $pmux cell $procmux$4906: { $eq$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:884$142_Y $auto$opt_reduce.cc:135:opt_pmux$6135 }
+    New ctrl vector for $pmux cell $procmux$4906: { $eq$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:884$142_Y $auto$opt_reduce.cc:135:opt_pmux$6135 }
     New ctrl vector for $pmux cell $procmux$4973: $auto$opt_reduce.cc:135:opt_pmux$6137
     New ctrl vector for $pmux cell $procmux$4990: $auto$opt_reduce.cc:135:opt_pmux$6139
     New ctrl vector for $pmux cell $procmux$4956: $auto$opt_reduce.cc:135:opt_pmux$6141
@@ -2371,9 +2371,9 @@ Optimizing module EF_I2C_APB.
 11.30. Finished fast OPT passes. (There is nothing left to do.)
 
 12. Executing ASYNC2SYNC pass.
-Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5972 ($adffe): ARST=\rst, D=$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633_Y [4:0], Q=\wr_ptr_reg
+Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5972 ($adffe): ARST=\rst, D=$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633_Y [4:0], Q=\wr_ptr_reg
 Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5953 ($adffe): ARST=\rst, D=$0\m_axis_tvalid_pipe_reg[1:0] [0], Q=\m_axis_tvalid_pipe_reg [0]
-Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5945 ($adffe): ARST=\rst, D=$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648_Y [4:0], Q=\rd_ptr_reg
+Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5945 ($adffe): ARST=\rst, D=$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648_Y [4:0], Q=\rd_ptr_reg
 Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5966 ($adffe): ARST=\rst, D=\m_axis_pipe_reg[0], Q=\m_axis_pipe_reg[1]
 Replacing $paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo.$auto$ff.cc:337:slice$5950 ($adffe): ARST=\rst, D=$0\m_axis_tvalid_pipe_reg[1:0] [1], Q=\m_axis_tvalid_pipe_reg [1]
 Replacing $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16.$auto$ff.cc:337:slice$6195 ($adffe): ARST=\rst, D=\wbs_dat_i [8], Q=\cmd_start_reg
@@ -2421,9 +2421,9 @@ Replacing i2c_master.$procdff$5706 ($adff): ARST=\rst, D=\sda_i, Q=\sda_i_reg
 Replacing i2c_master.$procdff$5688 ($adff): ARST=\rst, D=\s_axis_cmd_ready_next, Q=\s_axis_cmd_ready_reg
 Replacing i2c_master.$auto$ff.cc:337:slice$6207 ($adffe): ARST=\rst, D=$2\bit_count_next[3:0], Q=\bit_count_reg
 Replacing i2c_master.$auto$ff.cc:337:slice$6198 ($adffe): ARST=\rst, D=$5\phy_state_next[4:0], Q=\phy_state_reg
-Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6094 ($adffe): ARST=\rst, D=$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679_Y [4:0], Q=\wr_ptr_reg
+Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6094 ($adffe): ARST=\rst, D=$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679_Y [4:0], Q=\wr_ptr_reg
 Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6075 ($adffe): ARST=\rst, D=$0\m_axis_tvalid_pipe_reg[1:0] [0], Q=\m_axis_tvalid_pipe_reg [0]
-Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6067 ($adffe): ARST=\rst, D=$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694_Y [4:0], Q=\rd_ptr_reg
+Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6067 ($adffe): ARST=\rst, D=$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694_Y [4:0], Q=\rd_ptr_reg
 Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6088 ($adffe): ARST=\rst, D=\m_axis_pipe_reg[0], Q=\m_axis_pipe_reg[1]
 Replacing $paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo.$auto$ff.cc:337:slice$6072 ($adffe): ARST=\rst, D=$0\m_axis_tvalid_pipe_reg[1:0] [1], Q=\m_axis_tvalid_pipe_reg [1]
 Replacing EF_I2C_APB.$auto$ff.cc:337:slice$6132 ($adffe): ARST=\PRESETn, D=\PWDATA [8:0], Q=\IM_REG
@@ -2560,7 +2560,7 @@ Removed a total of 0 cells.
 14.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding SRST signal on $procdff$5598 ($sdff) from module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16 (D = $2\wbs_ack_o_next[0:0], Q = $auto$async2sync.cc:253:execute$6360, rval = 1'0).
 Adding SRST signal on $procdff$5595 ($sdff) from module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16 (D = $3\wbs_dat_o_next[15:0], Q = $auto$async2sync.cc:253:execute$6372, rval = 16'0000000000000000).
-Adding SRST signal on $procdff$5631 ($sdff) from module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16 (D = $logic_and$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:602$516_Y, Q = $auto$async2sync.cc:253:execute$6388, rval = 1'0).
+Adding SRST signal on $procdff$5631 ($sdff) from module $paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16 (D = $logic_and$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master_wbs_16.v:602$516_Y, Q = $auto$async2sync.cc:253:execute$6388, rval = 1'0).
 Adding SRST signal on $procdff$5646 ($sdff) from module i2c_master (D = \phy_rx_data_reg, Q = $auto$async2sync.cc:253:execute$6428, rval = 1'0).
 Adding SRST signal on $procdff$5691 ($sdff) from module i2c_master (D = $2\s_axis_data_tready_next[0:0], Q = $auto$async2sync.cc:253:execute$6436, rval = 1'0).
 Adding SRST signal on $procdff$5688 ($sdff) from module i2c_master (D = $2\s_axis_cmd_ready_next[0:0], Q = $auto$async2sync.cc:253:execute$6442, rval = 1'0).
@@ -2750,8 +2750,8 @@ Optimizing module EF_I2C_APB.
 
 15. Executing TECHMAP pass (map to technology primitives).
 
-15.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+15.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -3303,7 +3303,7 @@ Optimizing module EF_I2C_APB.
 
 18.16. Finished fast OPT passes. (There is nothing left to do.)
 
-19. Executing Liberty frontend: /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+19. Executing Liberty frontend: ~/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 Ignoring cell sky130_fd_sc_hd__dlclkp_1 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_2 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_4 with missing function on output GCLK.
@@ -3313,8 +3313,8 @@ Ignoring cell sky130_fd_sc_hd__sdlclkp_4 with missing function on output GCLK.
 Imported 422 cell types from liberty file.
 <suppressed ~12 debug messages>
 
-20. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/synth/i2c_master_netlist.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/synth/i2c_master_netlist.v' to AST representation.
+20. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/synth/i2c_master_netlist.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/synth/i2c_master_netlist.v' to AST representation.
 Generating RTLIL representation for module `\$paramod$323a030b9649baabb32f22ea6226179e8ede1b3d\i2c_master_wbs_16'.
 Generating RTLIL representation for module `\$paramod$f1bd7922988db237f4ba194aac1401b4ee047c5d\axis_fifo'.
 Generating RTLIL representation for module `\$paramod$fc82893ce2d814ed806bd1b817fb79d7575b3df7\axis_fifo'.
@@ -3322,8 +3322,8 @@ Generating RTLIL representation for module `\EF_I2C_APB'.
 Generating RTLIL representation for module `\i2c_master'.
 Successfully finished Verilog frontend.
 
-21. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+21. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -6564,8 +6564,8 @@ Optimizing module sky130_fd_sc_hd__xnor2_1.
 
 28. Executing TECHMAP pass (map to technology primitives).
 
-28.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+28.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -9834,39 +9834,39 @@ Presumably equivalent cells: master_inst.genblk2.write_fifo_inst_gold master_ins
 Presumably equivalent cells: master_inst_gold master_inst_gate ($scopeinfo) -> master_inst
 Presumably equivalent cells: master_inst.genblk3.read_fifo_inst_gold master_inst.genblk3.read_fifo_inst_gate ($scopeinfo) -> master_inst.genblk3.read_fifo_inst
 Presumably equivalent cells: clk_gate_cell_gold clk_gate_cell_gate ($scopeinfo) -> clk_gate_cell
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$8\buffer[23:0]_gold [7:1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$8\buffer[23:0]_gold [23:9]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [3:1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [7:5]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [23:13]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$3\buffer[23:0]_gold [23:16]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [3]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [5]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [7]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [23:15]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.B_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$8\buffer[22:0]_gold [6:1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$8\buffer[22:0]_gold [22:9]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [3:1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [6:5]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [22:13]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$3\buffer[22:0]_gold [22:16]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [1]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [3]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [5]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [22:15]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:631$136.$auto$alumacc.cc:512:replace_alu$10101.Y_gold [17]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:631$136.$auto$alumacc.cc:512:replace_alu$10101.CO_gold [16]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.Y_gold [16:4]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.CO_gold [6:4]
-Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.CO_gold [14:8]
-Setting undriven nets to undef: $flatten\master_inst.\genblk1.cmd_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\genblk1.cmd_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\genblk2.write_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\genblk2.write_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\genblk3.read_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
-Setting undriven nets to undef: $flatten\master_inst.\genblk3.read_fifo_inst.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$8\buffer[23:0]_gold [7:1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$8\buffer[23:0]_gold [23:9]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [3:1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [7:5]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$6\buffer[23:0]_gold [23:13]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$3\buffer[23:0]_gold [23:16]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [3]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [5]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [7]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:540$125.$4\buffer[23:0]_gold [23:15]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.B_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$8\buffer[22:0]_gold [6:1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$8\buffer[22:0]_gold [22:9]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [3:1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [6:5]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$6\buffer[22:0]_gold [22:13]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$3\buffer[22:0]_gold [22:16]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [1]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [3]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [5]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$shiftx$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:491$119.$4\buffer[22:0]_gold [22:15]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:631$136.$auto$alumacc.cc:512:replace_alu$10101.Y_gold [17]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:631$136.$auto$alumacc.cc:512:replace_alu$10101.CO_gold [16]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.Y_gold [16:4]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.CO_gold [6:4]
+Setting undriven nets to undef: $flatten\master_inst.\i2c_master_inst.$techmap$gt$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/i2c_master.v:629$135.$auto$alumacc.cc:512:replace_alu$10090.CO_gold [14:8]
+Setting undriven nets to undef: $flatten\master_inst.\genblk1.cmd_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$694.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\genblk1.cmd_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$679.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\genblk2.write_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\genblk2.write_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\genblk3.read_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:219$633.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
+Setting undriven nets to undef: $flatten\master_inst.\genblk3.read_fifo_inst.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/rtl/axis_fifo.v:281$648.$auto$alumacc.cc:512:replace_alu$7368.CO_gold [4]
 
 33. Executing EQUIV_SIMPLE pass.
 Found 1388 unproven $equiv cells (314 groups) in equiv_EF_I2C_APB:

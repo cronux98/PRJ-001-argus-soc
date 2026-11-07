@@ -7,15 +7,15 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/synth/synth_uart.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/synth/synth_uart.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v' to AST representation.
 Generating RTLIL representation for module `\EF_UART_APB'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v' to AST representation.
 Generating RTLIL representation for module `\EF_UART'.
 Generating RTLIL representation for module `\BAUDGEN'.
 Generating RTLIL representation for module `\UART_RX'.
@@ -93,25 +93,25 @@ Removed 3 unused modules.
 Cleaned up 0 empty switches.
 
 4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 16 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
-Marked 22 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
-Marked 3 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141 in module BAUDGEN.
-Marked 4 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216 in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
-Marked 11 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62 in module EF_UART_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49 in module EF_UART_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40 in module EF_UART_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19 in module EF_UART_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15 in module EF_UART_APB.
+Marked 16 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Marked 22 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Marked 3 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228 in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141 in module BAUDGEN.
+Marked 4 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216 in module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.
+Marked 11 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62 in module EF_UART_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49 in module EF_UART_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40 in module EF_UART_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19 in module EF_UART_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15 in module EF_UART_APB.
 Removed a total of 0 dead cases.
 
 4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -121,30 +121,30 @@ Promoted 14 assignments to connections.
 4.4. Executing PROC_INIT pass (extract init attributes).
 
 4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
-Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
-Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
-Found async reset \rst_n in `\BAUDGEN.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
-Found async reset \rst_n in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
-Found async reset \PRESETn in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
+Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
+Found async reset \resetn in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Found async reset \rst_n in `\BAUDGEN.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
+Found async reset \rst_n in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
+Found async reset \PRESETn in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
 
 4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~81 debug messages>
 
 4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
      1/45: $6\tx_done[0:0]
      2/45: $15\next_state[2:0]
      3/45: $12\b_next[3:0]
@@ -190,15 +190,15 @@ Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3
     43/45: $1\tx_next[0:0]
     44/45: $1\count_next[3:0]
     45/45: $1\tx_done[0:0]
-Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
      1/5: $0\tx_reg[0:0]
      2/5: $0\data_reg[8:0]
      3/5: $0\count_reg[3:0]
      4/5: $0\b_reg[3:0]
      5/5: $0\current_state[2:0]
-Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
+Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
      1/1: $0\brk[11:0]
-Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
      1/57: $7\f_error_next[0:0]
      2/57: $6\f_error_next[0:0]
      3/57: $6\rx_done[0:0]
@@ -256,19 +256,19 @@ Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3
     55/57: $1\data_next[8:0]
     56/57: $1\count_next[3:0]
     57/57: $1\rx_done[0:0]
-Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating decoders for process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
      1/6: $0\data_reg[8:0]
      2/6: $0\count_reg[3:0]
      3/6: $0\b_reg[3:0]
      4/6: $0\current_state[2:0]
      5/6: $0\f_error_reg[0:0]
      6/6: $0\p_error_reg[0:0]
-Creating decoders for process `\BAUDGEN.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
+Creating decoders for process `\BAUDGEN.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
      1/1: $0\count_reg[15:0]
-Creating decoders for process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Creating decoders for process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
      1/2: $0\samples_count[4:0]
      2/2: $0\bits_count[5:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
      1/11: $0\RIS_REG[9:0] [9]
      2/11: $0\RIS_REG[9:0] [8]
      3/11: $0\RIS_REG[9:0] [7]
@@ -280,142 +280,142 @@ Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspac
      9/11: $0\RIS_REG[9:0] [1]
     10/11: $0\RIS_REG[9:0] [0]
     11/11: $1\_i_[31:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
      1/1: $0\IC_REG[9:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
      1/1: $0\IM_REG[9:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
      1/1: $0\GCLK_REG[0:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
      1/1: $0\TX_FIFO_FLUSH_REG[0:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
      1/1: $0\TX_FIFO_THRESHOLD_REG[3:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
      1/1: $0\RX_FIFO_FLUSH_REG[0:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
      1/1: $0\RX_FIFO_THRESHOLD_REG[3:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
      1/1: $0\MATCH_REG[8:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
      1/1: $0\CFG_REG[13:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
      1/1: $0\CTRL_REG[4:0]
-Creating decoders for process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
+Creating decoders for process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
      1/1: $0\PR_REG[15:0]
 
 4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_done' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\count_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\next_state' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\b_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\data_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\rx_done' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\count_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\next_state' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\b_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\data_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\p_error_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\f_error_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_done' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\count_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\next_state' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\b_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\data_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\rx_done' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\count_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\next_state' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\b_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\data_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\p_error_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+No latch inferred for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\f_error_next' from process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
 
 4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\count_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\count_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
   created $adff cell `$procdff$1446' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\current_state' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\current_state' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
   created $adff cell `$procdff$1451' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\b_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\b_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
   created $adff cell `$procdff$1456' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\data_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\data_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
   created $adff cell `$procdff$1461' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.\tx_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
   created $adff cell `$procdff$1466' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\brk' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\brk' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
   created $adff cell `$procdff$1471' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\count_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\count_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $adff cell `$procdff$1476' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\current_state' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\current_state' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $adff cell `$procdff$1481' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\b_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\b_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $adff cell `$procdff$1486' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\data_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\data_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $adff cell `$procdff$1491' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\p_error_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\p_error_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $adff cell `$procdff$1496' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\f_error_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Creating register for signal `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.\f_error_reg' using process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
   created $dff cell `$procdff$1503' with positive edge clock.
-Creating register for signal `\BAUDGEN.\count_reg' using process `\BAUDGEN.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
+Creating register for signal `\BAUDGEN.\count_reg' using process `\BAUDGEN.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
   created $adff cell `$procdff$1508' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.\bits_count' using process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Creating register for signal `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.\bits_count' using process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
   created $adff cell `$procdff$1513' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.\samples_count' using process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Creating register for signal `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.\samples_count' using process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
   created $adff cell `$procdff$1518' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\RIS_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Creating register for signal `\EF_UART_APB.\RIS_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
   created $adff cell `$procdff$1523' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\_i_' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Creating register for signal `\EF_UART_APB.\_i_' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
   created $dff cell `$procdff$1530' with positive edge clock.
-Creating register for signal `\EF_UART_APB.\IC_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
+Creating register for signal `\EF_UART_APB.\IC_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
   created $adff cell `$procdff$1535' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\IM_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
+Creating register for signal `\EF_UART_APB.\IM_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
   created $adff cell `$procdff$1540' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\GCLK_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
+Creating register for signal `\EF_UART_APB.\GCLK_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
   created $adff cell `$procdff$1545' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\TX_FIFO_FLUSH_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
+Creating register for signal `\EF_UART_APB.\TX_FIFO_FLUSH_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
   created $adff cell `$procdff$1550' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\TX_FIFO_THRESHOLD_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
+Creating register for signal `\EF_UART_APB.\TX_FIFO_THRESHOLD_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
   created $adff cell `$procdff$1555' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\RX_FIFO_FLUSH_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
+Creating register for signal `\EF_UART_APB.\RX_FIFO_FLUSH_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
   created $adff cell `$procdff$1560' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\RX_FIFO_THRESHOLD_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
+Creating register for signal `\EF_UART_APB.\RX_FIFO_THRESHOLD_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
   created $adff cell `$procdff$1565' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\MATCH_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
+Creating register for signal `\EF_UART_APB.\MATCH_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
   created $adff cell `$procdff$1570' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\CFG_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
+Creating register for signal `\EF_UART_APB.\CFG_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
   created $adff cell `$procdff$1575' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\CTRL_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
+Creating register for signal `\EF_UART_APB.\CTRL_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
   created $adff cell `$procdff$1580' with positive edge clock and positive level reset.
-Creating register for signal `\EF_UART_APB.\PR_REG' using process `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
+Creating register for signal `\EF_UART_APB.\PR_REG' using process `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
   created $adff cell `$procdff$1585' with positive edge clock and positive level reset.
 
 4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 16 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
-Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
-Found and cleaned up 3 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
-Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
-Found and cleaned up 22 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
-Found and cleaned up 4 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
-Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
-Found and cleaned up 1 empty switch in `\BAUDGEN.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
-Removing empty process `BAUDGEN.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
-Found and cleaned up 4 empty switches in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
-Removing empty process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
-Found and cleaned up 20 empty switches in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
-Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
-Removing empty process `EF_UART_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
+Found and cleaned up 16 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:482$273'.
+Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465$271'.
+Found and cleaned up 3 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
+Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397$257'.
+Found and cleaned up 22 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:312$232'.
+Found and cleaned up 4 empty switches in `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Removing empty process `$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286$228'.
+Found and cleaned up 1 empty switch in `\BAUDGEN.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
+Removing empty process `BAUDGEN.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231$141'.
+Found and cleaned up 4 empty switches in `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Removing empty process `$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193$216'.
+Found and cleaned up 20 empty switches in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216$62'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199$58'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196$54'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187$49'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180$44'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173$40'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162$35'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155$31'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146$27'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140$23'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131$19'.
+Found and cleaned up 1 empty switch in `\EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
+Removing empty process `EF_UART_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121$15'.
 Cleaned up 81 empty switches.
 
 4.12. Executing OPT_EXPR pass (perform const folding).
@@ -714,7 +714,7 @@ Adding EN signal on $procdff$1503 ($dff) from module $paramod$b4c45ad6b7a50c506f
 Adding SRST signal on $auto$ff.cc:337:slice$1683 ($dffe) from module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (D = $procmux$1336_Y, Q = \f_error_reg, rval = 1'0).
 Adding EN signal on $procdff$1481 ($adff) from module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (D = $procmux$1303_Y, Q = \current_state).
 Adding EN signal on $procdff$1496 ($adff) from module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (D = $procmux$1344_Y, Q = \p_error_reg).
-Adding EN signal on $procdff$1508 ($adff) from module BAUDGEN (D = $ternary$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:238$145_Y [15:0], Q = \count_reg).
+Adding EN signal on $procdff$1508 ($adff) from module BAUDGEN (D = $ternary$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:238$145_Y [15:0], Q = \count_reg).
 Adding EN signal on $procdff$1518 ($adff) from module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (D = $procmux$1349_Y, Q = \samples_count).
 Adding EN signal on $procdff$1513 ($adff) from module $paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (D = $procmux$1363_Y, Q = \bits_count).
 Adding EN signal on $procdff$1585 ($adff) from module EF_UART_APB (D = \PWDATA [15:0], Q = \PR_REG).
@@ -820,7 +820,7 @@ Removed 0 multiplexer ports.
     New ctrl vector for $pmux cell $procmux$703: { $auto$opt_reduce.cc:135:opt_pmux$1772 $procmux$605_CMP $procmux$672_CMP }
   Optimizing cells in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX.
   Optimizing cells in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
-    New ctrl vector for $pmux cell $procmux$1295: { $auto$opt_reduce.cc:135:opt_pmux$1774 $procmux$1215_CMP $eq$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:298$230_Y }
+    New ctrl vector for $pmux cell $procmux$1295: { $auto$opt_reduce.cc:135:opt_pmux$1774 $procmux$1215_CMP $eq$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:298$230_Y }
     New ctrl vector for $pmux cell $procmux$1311: $auto$opt_reduce.cc:135:opt_pmux$1776
   Optimizing cells in module $paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX.
   Optimizing cells in module \BAUDGEN.
@@ -1269,8 +1269,8 @@ Optimizing module EF_UART_APB.
 
 10. Executing TECHMAP pass (map to technology primitives).
 
-10.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+10.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.

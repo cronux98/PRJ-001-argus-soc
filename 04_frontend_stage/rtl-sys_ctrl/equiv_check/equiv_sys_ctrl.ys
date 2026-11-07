@@ -1,7 +1,7 @@
 # Gold: RTL + common lib
 design -push
-read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v
-read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+read_verilog ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/rtl/sys_ctrl.v
+read_verilog ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
 hierarchy -check -top sys_ctrl
 proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
 design -save gold
@@ -9,8 +9,8 @@ design -pop
 
 # Gate: Netlist only (common lib already loaded)
 design -push
-read_liberty -ignore_miss_func /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/synth/sys_ctrl_netlist.v
+read_liberty -ignore_miss_func ~/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sys_ctrl/synth/sys_ctrl_netlist.v
 hierarchy -check -top sys_ctrl
 proc; opt; async2sync; memory; opt; techmap; opt; flatten; opt
 design -save gate

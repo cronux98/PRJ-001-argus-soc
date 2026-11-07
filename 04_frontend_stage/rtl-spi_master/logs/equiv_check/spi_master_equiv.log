@@ -7,27 +7,27 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/equiv_check/equiv_spi_master.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/equiv_check/equiv_spi_master.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v' to AST representation.
 Generating RTLIL representation for module `\EF_SPI_APB'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v' to AST representation.
 Generating RTLIL representation for module `\spi_master'.
 Generating RTLIL representation for module `\sri'.
 Generating RTLIL representation for module `\sro'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v' to AST representation.
+3. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v' to AST representation.
 Generating RTLIL representation for module `\EF_SPI'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+4. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -170,23 +170,23 @@ Removed 13 unused modules.
 Cleaned up 0 empty switches.
 
 6.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308 in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305 in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
-Marked 5 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
-Marked 7 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245 in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
-Marked 7 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54 in module EF_SPI_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41 in module EF_SPI_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32 in module EF_SPI_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15 in module EF_SPI_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308 in module $paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305 in module $paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 5 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 7 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245 in module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.
+Marked 7 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32 in module EF_SPI_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15 in module EF_SPI_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11 in module EF_SPI_APB.
 Removed a total of 0 dead cases.
 
 6.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -196,34 +196,34 @@ Promoted 12 assignments to connections.
 6.4. Executing PROC_INIT pass (extract init attributes).
 
 6.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \resetb in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
-Found async reset \resetb in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
-Found async reset \rst_n in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
-Found async reset \resetb in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
-Found async reset \PRESETn in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
+Found async reset \resetb in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Found async reset \resetb in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
+Found async reset \rst_n in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Found async reset \resetb in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
+Found async reset \PRESETn in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
 
 6.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~41 debug messages>
 
 6.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
-Creating decoders for process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Creating decoders for process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
+Creating decoders for process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
      1/2: $0\dout_s[0:0]
      2/2: $0\datao[7:0]
-Creating decoders for process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
+Creating decoders for process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
      1/1: $0\sr_reg[7:0]
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
      1/15: $4\full_next[0:0]
      2/15: $3\full_next[0:0]
      3/15: $3\level_next[3:0]
@@ -239,17 +239,17 @@ Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab
     13/15: $1\level_next[3:0]
     14/15: $1\r_ptr_next[3:0]
     15/15: $1\w_ptr_next[3:0]
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
      1/5: $0\level_reg[3:0]
      2/5: $0\empty_reg[0:0]
      3/5: $0\full_reg[0:0]
      4/5: $0\r_ptr_reg[3:0]
      5/5: $0\w_ptr_reg[3:0]
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
-     1/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_EN[7:0]$285
-     2/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$284
-     3/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_ADDR[3:0]$283
-Creating decoders for process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+     1/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_EN[7:0]$285
+     2/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$284
+     3/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_ADDR[3:0]$283
+Creating decoders for process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
      1/8: $0\clk_count[7:0]
      2/8: $0\stop_s[0:0]
      3/8: $0\shift_count[4:0]
@@ -258,7 +258,7 @@ Creating decoders for process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e
      6/8: $0\done[0:0]
      7/8: $0\sclk[0:0]
      8/8: $0\csb[0:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
      1/7: $0\RIS_REG[5:0] [5]
      2/7: $0\RIS_REG[5:0] [4]
      3/7: $0\RIS_REG[5:0] [3]
@@ -266,140 +266,140 @@ Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace
      5/7: $0\RIS_REG[5:0] [1]
      6/7: $0\RIS_REG[5:0] [0]
      7/7: $1\_i_[31:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
      1/1: $0\IC_REG[5:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
      1/1: $0\IM_REG[5:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
      1/1: $0\GCLK_REG[0:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
      1/1: $0\TX_FIFO_FLUSH_REG[0:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
      1/1: $0\TX_FIFO_THRESHOLD_REG[3:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
      1/1: $0\RX_FIFO_FLUSH_REG[0:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
      1/1: $0\RX_FIFO_THRESHOLD_REG[3:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
      1/1: $0\PR_REG[7:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
      1/1: $0\CTRL_REG[2:0]
-Creating decoders for process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
+Creating decoders for process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
      1/1: $0\CFG_REG[1:0]
 
 6.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
 
 6.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
+Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
   created $dff cell `$procdff$566' with positive edge clock.
-Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\datao' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\datao' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
   created $adff cell `$procdff$571' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\dout_s' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Creating register for signal `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.\dout_s' using process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
   created $adff cell `$procdff$576' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.\sr_reg' using process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
+Creating register for signal `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.\sr_reg' using process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
   created $adff cell `$procdff$581' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
   created $adff cell `$procdff$586' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
   created $adff cell `$procdff$591' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
   created $adff cell `$procdff$596' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
   created $adff cell `$procdff$601' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
   created $adff cell `$procdff$606' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_ADDR' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_ADDR' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
   created $dff cell `$procdff$607' with positive edge clock.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
   created $dff cell `$procdff$608' with positive edge clock.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_EN' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_EN' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
   created $dff cell `$procdff$609' with positive edge clock.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\csb' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\csb' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$614' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\sclk' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\sclk' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$619' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\done' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\done' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$624' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\busy' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\busy' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$629' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\clk_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\clk_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$634' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\state' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\state' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$639' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\shift_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\shift_count' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$644' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\stop_s' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Creating register for signal `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.\stop_s' using process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
   created $adff cell `$procdff$649' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\RIS_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Creating register for signal `\EF_SPI_APB.\RIS_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
   created $adff cell `$procdff$654' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\_i_' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Creating register for signal `\EF_SPI_APB.\_i_' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
   created $dff cell `$procdff$661' with positive edge clock.
-Creating register for signal `\EF_SPI_APB.\IC_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
+Creating register for signal `\EF_SPI_APB.\IC_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
   created $adff cell `$procdff$666' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\IM_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
+Creating register for signal `\EF_SPI_APB.\IM_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
   created $adff cell `$procdff$671' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\GCLK_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
+Creating register for signal `\EF_SPI_APB.\GCLK_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
   created $adff cell `$procdff$676' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\TX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
+Creating register for signal `\EF_SPI_APB.\TX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
   created $adff cell `$procdff$681' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\TX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
+Creating register for signal `\EF_SPI_APB.\TX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
   created $adff cell `$procdff$686' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\RX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
+Creating register for signal `\EF_SPI_APB.\RX_FIFO_FLUSH_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
   created $adff cell `$procdff$691' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\RX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
+Creating register for signal `\EF_SPI_APB.\RX_FIFO_THRESHOLD_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
   created $adff cell `$procdff$696' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\PR_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
+Creating register for signal `\EF_SPI_APB.\PR_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
   created $adff cell `$procdff$701' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\CTRL_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
+Creating register for signal `\EF_SPI_APB.\CTRL_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
   created $adff cell `$procdff$706' with positive edge clock and positive level reset.
-Creating register for signal `\EF_SPI_APB.\CFG_REG' using process `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
+Creating register for signal `\EF_SPI_APB.\CFG_REG' using process `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
   created $adff cell `$procdff$711' with positive edge clock and positive level reset.
 
 6.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 6.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
-Found and cleaned up 1 empty switch in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
-Removing empty process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
-Found and cleaned up 2 empty switches in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
-Removing empty process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
-Found and cleaned up 5 empty switches in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
-Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
-Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
-Found and cleaned up 9 empty switches in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
-Removing empty process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
-Found and cleaned up 12 empty switches in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
-Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
-Removing empty process `EF_SPI_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
+Removing empty process `ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$169'.
+Found and cleaned up 1 empty switch in `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Removing empty process `$paramod\sro\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:236$308'.
+Found and cleaned up 2 empty switches in `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
+Removing empty process `$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:207$305'.
+Found and cleaned up 5 empty switches in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$291'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$289'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$279'.
+Found and cleaned up 9 empty switches in `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Removing empty process `$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:124$245'.
+Found and cleaned up 12 empty switches in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:203$54'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:190$50'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:187$46'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:178$41'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:171$36'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:164$32'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:153$27'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:146$23'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:127$19'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:121$15'.
+Found and cleaned up 1 empty switch in `\EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
+Removing empty process `EF_SPI_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI_APB.v:113$11'.
 Cleaned up 41 empty switches.
 
 6.12. Executing OPT_EXPR pass (perform const folding).
@@ -587,7 +587,7 @@ Adding EN signal on $procdff$624 ($adff) from module $paramod$1b57ab934979e1dcff
 Adding EN signal on $procdff$644 ($adff) from module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master (D = $procmux$459_Y, Q = \shift_count).
 Adding EN signal on $procdff$614 ($adff) from module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master (D = $procmux$511_Y, Q = \csb).
 Adding EN signal on $procdff$619 ($adff) from module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master (D = $procmux$501_Y, Q = \sclk).
-Adding EN signal on $procdff$649 ($adff) from module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master (D = $ge$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:99$244_Y, Q = \stop_s).
+Adding EN signal on $procdff$649 ($adff) from module $paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master (D = $ge$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:99$244_Y, Q = \stop_s).
 Adding EN signal on $procdff$711 ($adff) from module EF_SPI_APB (D = \PWDATA [1:0], Q = \CFG_REG).
 Adding EN signal on $procdff$676 ($adff) from module EF_SPI_APB (D = \PWDATA [0], Q = \GCLK_REG).
 Adding EN signal on $procdff$654 ($adff) from module EF_SPI_APB (D = $procmux$531_Y, Q = \RIS_REG [2]).
@@ -1155,22 +1155,22 @@ Finding duplicate cells in `\EF_SPI_APB'.
 Removed a total of 0 cells.
 
 10.13. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $memory\array_reg[0]$880 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[0]).
-Adding EN signal on $memory\array_reg[1]$882 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[1]).
-Adding EN signal on $memory\array_reg[2]$884 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[2]).
-Adding EN signal on $memory\array_reg[3]$886 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[3]).
-Adding EN signal on $memory\array_reg[4]$888 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[4]).
-Adding EN signal on $memory\array_reg[5]$890 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[5]).
-Adding EN signal on $memory\array_reg[6]$892 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[6]).
-Adding EN signal on $memory\array_reg[7]$894 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[7]).
-Adding EN signal on $memory\array_reg[8]$896 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[8]).
-Adding EN signal on $memory\array_reg[9]$898 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[9]).
-Adding EN signal on $memory\array_reg[10]$900 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[10]).
-Adding EN signal on $memory\array_reg[11]$902 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[11]).
-Adding EN signal on $memory\array_reg[12]$904 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[12]).
-Adding EN signal on $memory\array_reg[13]$906 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[13]).
-Adding EN signal on $memory\array_reg[14]$908 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[14]).
-Adding EN signal on $memory\array_reg[15]$910 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[15]).
+Adding EN signal on $memory\array_reg[0]$880 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[0]).
+Adding EN signal on $memory\array_reg[1]$882 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[1]).
+Adding EN signal on $memory\array_reg[2]$884 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[2]).
+Adding EN signal on $memory\array_reg[3]$886 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[3]).
+Adding EN signal on $memory\array_reg[4]$888 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[4]).
+Adding EN signal on $memory\array_reg[5]$890 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[5]).
+Adding EN signal on $memory\array_reg[6]$892 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[6]).
+Adding EN signal on $memory\array_reg[7]$894 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[7]).
+Adding EN signal on $memory\array_reg[8]$896 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[8]).
+Adding EN signal on $memory\array_reg[9]$898 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[9]).
+Adding EN signal on $memory\array_reg[10]$900 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[10]).
+Adding EN signal on $memory\array_reg[11]$902 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[11]).
+Adding EN signal on $memory\array_reg[12]$904 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[12]).
+Adding EN signal on $memory\array_reg[13]$906 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[13]).
+Adding EN signal on $memory\array_reg[14]$908 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[14]).
+Adding EN signal on $memory\array_reg[15]$910 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$278_DATA[7:0]$281, Q = \array_reg[15]).
 
 10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \ef_util_gating_cell..
@@ -1293,8 +1293,8 @@ Optimizing module EF_SPI_APB.
 
 11. Executing TECHMAP pass (map to technology primitives).
 
-11.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+11.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -1713,7 +1713,7 @@ Optimizing module EF_SPI_APB.
 
 14.16. Finished fast OPT passes. (There is nothing left to do.)
 
-15. Executing Liberty frontend: /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+15. Executing Liberty frontend: ~/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 Ignoring cell sky130_fd_sc_hd__dlclkp_1 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_2 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_4 with missing function on output GCLK.
@@ -1723,8 +1723,8 @@ Ignoring cell sky130_fd_sc_hd__sdlclkp_4 with missing function on output GCLK.
 Imported 422 cell types from liberty file.
 <suppressed ~12 debug messages>
 
-16. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/synth/spi_master_netlist.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/synth/spi_master_netlist.v' to AST representation.
+16. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/synth/spi_master_netlist.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/synth/spi_master_netlist.v' to AST representation.
 Generating RTLIL representation for module `\$paramod$1b57ab934979e1dcff9d7d7aa75fd3de5f50b91e\spi_master'.
 Generating RTLIL representation for module `\$paramod$c472ad5b357594777851f1f1c93c46d2cb71eced\EF_SPI'.
 Generating RTLIL representation for module `\$paramod\sri\DATA_WIDTH=s32'00000000000000000000000000001000'.
@@ -1732,8 +1732,8 @@ Generating RTLIL representation for module `\$paramod\sro\DATA_WIDTH=s32'0000000
 Generating RTLIL representation for module `\EF_SPI_APB'.
 Successfully finished Verilog frontend.
 
-17. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+17. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -2333,9 +2333,9 @@ Removed 374 unused modules.
 Cleaned up 0 empty switches.
 
 19.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 5 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 5 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536 in module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.
 Removed a total of 0 dead cases.
 
 19.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -2345,14 +2345,14 @@ Promoted 11 assignments to connections.
 19.4. Executing PROC_INIT pass (extract init attributes).
 
 19.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst_n in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Found async reset \rst_n in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
 
 19.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~7 debug messages>
 
 19.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
      1/15: $4\full_next[0:0]
      2/15: $3\full_next[0:0]
      3/15: $3\level_next[3:0]
@@ -2368,57 +2368,57 @@ Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab
     13/15: $1\full_next[0:0]
     14/15: $1\empty_next[0:0]
     15/15: $1\w_ptr_next[3:0]
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
      1/5: $0\level_reg[3:0]
      2/5: $0\empty_reg[0:0]
      3/5: $0\full_reg[0:0]
      4/5: $0\r_ptr_reg[3:0]
      5/5: $0\w_ptr_reg[3:0]
-Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
-     1/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_EN[7:0]$11540
-     2/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11541
-     3/3: $1$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_ADDR[3:0]$11542
-Creating decoders for process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
+Creating decoders for process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+     1/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_EN[7:0]$11540
+     2/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11541
+     3/3: $1$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_ADDR[3:0]$11542
+Creating decoders for process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
 
 19.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_succ' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+No latch inferred for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_next' from process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
 
 19.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\empty_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
   created $adff cell `$procdff$11689' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\full_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
   created $adff cell `$procdff$11694' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\level_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
   created $adff cell `$procdff$11699' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\r_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
   created $adff cell `$procdff$11704' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.\w_ptr_reg' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
   created $adff cell `$procdff$11709' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_EN' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_EN' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
   created $dff cell `$procdff$11710' with positive edge clock.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
   created $dff cell `$procdff$11711' with positive edge clock.
-Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_ADDR' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+Creating register for signal `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_ADDR' using process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
   created $dff cell `$procdff$11712' with positive edge clock.
-Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
+Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
   created $dff cell `$procdff$11713' with positive edge clock.
 
 19.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 19.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 5 empty switches in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
-Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
-Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
-Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
-Removing empty process `ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
+Found and cleaned up 5 empty switches in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:229$11548'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:201$11546'.
+Found and cleaned up 1 empty switch in `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+Removing empty process `$paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:192$11536'.
+Removing empty process `ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$11476'.
 Cleaned up 7 empty switches.
 
 19.12. Executing OPT_EXPR pass (perform const folding).
@@ -6055,22 +6055,22 @@ Finding duplicate cells in `\sky130_fd_sc_hd__nor2_1'.
 Removed a total of 0 cells.
 
 23.13. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $memory\array_reg[0]$11768 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[0]).
-Adding EN signal on $memory\array_reg[1]$11770 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[1]).
-Adding EN signal on $memory\array_reg[2]$11772 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[2]).
-Adding EN signal on $memory\array_reg[3]$11774 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[3]).
-Adding EN signal on $memory\array_reg[4]$11776 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[4]).
-Adding EN signal on $memory\array_reg[5]$11778 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[5]).
-Adding EN signal on $memory\array_reg[6]$11780 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[6]).
-Adding EN signal on $memory\array_reg[7]$11782 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[7]).
-Adding EN signal on $memory\array_reg[8]$11784 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[8]).
-Adding EN signal on $memory\array_reg[9]$11786 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[9]).
-Adding EN signal on $memory\array_reg[10]$11788 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[10]).
-Adding EN signal on $memory\array_reg[11]$11790 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[11]).
-Adding EN signal on $memory\array_reg[12]$11792 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[12]).
-Adding EN signal on $memory\array_reg[13]$11794 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[13]).
-Adding EN signal on $memory\array_reg[14]$11796 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[14]).
-Adding EN signal on $memory\array_reg[15]$11798 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[15]).
+Adding EN signal on $memory\array_reg[0]$11768 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[0]).
+Adding EN signal on $memory\array_reg[1]$11770 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[1]).
+Adding EN signal on $memory\array_reg[2]$11772 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[2]).
+Adding EN signal on $memory\array_reg[3]$11774 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[3]).
+Adding EN signal on $memory\array_reg[4]$11776 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[4]).
+Adding EN signal on $memory\array_reg[5]$11778 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[5]).
+Adding EN signal on $memory\array_reg[6]$11780 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[6]).
+Adding EN signal on $memory\array_reg[7]$11782 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[7]).
+Adding EN signal on $memory\array_reg[8]$11784 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[8]).
+Adding EN signal on $memory\array_reg[9]$11786 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[9]).
+Adding EN signal on $memory\array_reg[10]$11788 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[10]).
+Adding EN signal on $memory\array_reg[11]$11790 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[11]).
+Adding EN signal on $memory\array_reg[12]$11792 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[12]).
+Adding EN signal on $memory\array_reg[13]$11794 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[13]).
+Adding EN signal on $memory\array_reg[14]$11796 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[14]).
+Adding EN signal on $memory\array_reg[15]$11798 ($dff) from module $paramod$35fd2251be7b04b97383c73c619c568cec4a51ab\ef_util_fifo (D = $0$memwr$\array_reg$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:194$11535_DATA[7:0]$11538, Q = \array_reg[15]).
 
 23.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \sky130_fd_sc_hd__o221ai_1..
@@ -6794,8 +6794,8 @@ Optimizing module sky130_fd_sc_hd__nor2_1.
 
 24. Executing TECHMAP pass (map to technology primitives).
 
-24.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+24.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -10490,31 +10490,31 @@ Presumably equivalent cells: instance_to_wrap.spi_master_gold instance_to_wrap.s
 Presumably equivalent cells: instance_to_wrap.rx_fifo_gold instance_to_wrap.rx_fifo_gate ($scopeinfo) -> instance_to_wrap.rx_fifo
 Presumably equivalent cells: instance_to_wrap.done_ed_gold instance_to_wrap.done_ed_gate ($scopeinfo) -> instance_to_wrap.done_ed
 Presumably equivalent cells: clk_gate_cell_gold clk_gate_cell_gate ($scopeinfo) -> clk_gate_cell
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.Y_gate [4]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$11555.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$11549.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$11550.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$11550.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$11549.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$11555.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.Y_gate [4]
-Setting undriven nets to undef: $flatten\instance_to_wrap.$techmap$lt$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v:83$235.$auto$alumacc.cc:512:replace_alu$2495.CO_gold [2]
-Setting undriven nets to undef: $flatten\instance_to_wrap.$techmap$gt$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v:84$236.$auto$alumacc.cc:512:replace_alu$2501.CO_gold [2]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$298.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$292.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$293.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.Y_gold [4]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:170$251.$auto$alumacc.cc:512:replace_alu$2764.CO_gold [4]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:75$239.$auto$alumacc.cc:512:replace_alu$2720.CO_gold [7]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$ge$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:99$244.$auto$alumacc.cc:512:replace_alu$2749.Y_gold [4]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$298.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$292.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$293.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
-Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.Y_gold [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.Y_gate [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$11555.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$11549.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$11550.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$11550.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$11549.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$11555.$auto$alumacc.cc:512:replace_alu$12402.CO_gate [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$11552.$auto$alumacc.cc:512:replace_alu$12421.Y_gate [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.$techmap$lt$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v:83$235.$auto$alumacc.cc:512:replace_alu$2495.CO_gold [2]
+Setting undriven nets to undef: $flatten\instance_to_wrap.$techmap$gt$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/EF_SPI.v:84$236.$auto$alumacc.cc:512:replace_alu$2501.CO_gold [2]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$298.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$292.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$293.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\tx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.Y_gold [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:170$251.$auto$alumacc.cc:512:replace_alu$2764.CO_gold [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:75$239.$auto$alumacc.cc:512:replace_alu$2720.CO_gold [7]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\spi_master.$techmap$ge$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-spi_master/rtl/spi_master.v:99$244.$auto$alumacc.cc:512:replace_alu$2749.Y_gold [4]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:253$298.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:230$292.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$add$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:231$293.$auto$alumacc.cc:512:replace_alu$4474.CO_gold [3]
+Setting undriven nets to undef: $flatten\instance_to_wrap.\rx_fifo.$techmap$sub$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:244$295.$auto$alumacc.cc:512:replace_alu$4477.Y_gold [4]
 
 29. Executing EQUIV_SIMPLE pass.
 Found 787 unproven $equiv cells (227 groups) in equiv_EF_SPI_APB:

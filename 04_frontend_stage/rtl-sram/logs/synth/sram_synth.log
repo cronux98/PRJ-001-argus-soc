@@ -7,10 +7,10 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/synth/synth_sram.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/synth/synth_sram.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v' to AST representation.
 Generating RTLIL representation for module `\sram'.
 Successfully finished Verilog frontend.
 
@@ -29,11 +29,11 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73 in module sram.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55 in module sram.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51 in module sram.
-Marked 5 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13 in module sram.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11 in module sram.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73 in module sram.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55 in module sram.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51 in module sram.
+Marked 5 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13 in module sram.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11 in module sram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -49,98 +49,98 @@ Converted 0 switches.
 <suppressed ~10 debug messages>
 
 3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
+Creating decoders for process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
      1/1: $0\apb_prdata[31:0]
-Creating decoders for process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
-     1/6: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$72
-     2/6: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA[31:0]$71
-     3/6: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR[9:0]$70
-     4/6: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$62
-     5/6: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA[31:0]$61
-     6/6: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR[9:0]$60
-Creating decoders for process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
+Creating decoders for process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+     1/6: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$72
+     2/6: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA[31:0]$71
+     3/6: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR[9:0]$70
+     4/6: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$62
+     5/6: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA[31:0]$61
+     6/6: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR[9:0]$60
+Creating decoders for process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
      1/1: $0\dmem_rdata[31:0]
-Creating decoders for process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
-     1/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$50
-     2/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA[31:0]$49
-     3/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR[9:0]$48
-     4/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$47
-     5/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA[31:0]$46
-     6/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR[9:0]$45
-     7/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$44
-     8/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA[31:0]$43
-     9/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR[9:0]$42
-    10/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$41
-    11/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA[31:0]$40
-    12/24: $2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR[9:0]$39
-    13/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$38
-    14/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA[31:0]$37
-    15/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR[9:0]$36
-    16/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$35
-    17/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA[31:0]$34
-    18/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR[9:0]$33
-    19/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$32
-    20/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA[31:0]$31
-    21/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR[9:0]$30
-    22/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$29
-    23/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA[31:0]$28
-    24/24: $1$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR[9:0]$27
-Creating decoders for process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
+Creating decoders for process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+     1/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$50
+     2/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA[31:0]$49
+     3/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR[9:0]$48
+     4/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$47
+     5/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA[31:0]$46
+     6/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR[9:0]$45
+     7/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$44
+     8/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA[31:0]$43
+     9/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR[9:0]$42
+    10/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$41
+    11/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA[31:0]$40
+    12/24: $2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR[9:0]$39
+    13/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$38
+    14/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA[31:0]$37
+    15/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR[9:0]$36
+    16/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$35
+    17/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA[31:0]$34
+    18/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR[9:0]$33
+    19/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$32
+    20/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA[31:0]$31
+    21/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR[9:0]$30
+    22/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$29
+    23/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA[31:0]$28
+    24/24: $1$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR[9:0]$27
+Creating decoders for process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
      1/1: $0\imem_rdata[31:0]
 
 3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\sram.\apb_prdata' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
+Creating register for signal `\sram.\apb_prdata' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
   created $dff cell `$procdff$221' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_ADDR' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
   created $dff cell `$procdff$222' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_DATA' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
   created $dff cell `$procdff$223' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
   created $dff cell `$procdff$224' with positive edge clock.
-Creating register for signal `\sram.\dmem_rdata' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
+Creating register for signal `\sram.\dmem_rdata' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
   created $dff cell `$procdff$225' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_ADDR' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$226' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_DATA' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$227' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$228' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_ADDR' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$229' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_DATA' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$230' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$231' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_ADDR' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$232' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_DATA' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$233' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$234' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_ADDR' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$235' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_DATA' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$236' with positive edge clock.
-Creating register for signal `\sram.$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Creating register for signal `\sram.$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
   created $dff cell `$procdff$237' with positive edge clock.
-Creating register for signal `\sram.\imem_rdata' using process `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
+Creating register for signal `\sram.\imem_rdata' using process `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
   created $dff cell `$procdff$238' with positive edge clock.
 
 3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
-Removing empty process `sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
-Found and cleaned up 2 empty switches in `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
-Removing empty process `sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
-Found and cleaned up 1 empty switch in `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
-Removing empty process `sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
-Found and cleaned up 5 empty switches in `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
-Removing empty process `sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
-Found and cleaned up 1 empty switch in `\sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
-Removing empty process `sram.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
+Found and cleaned up 1 empty switch in `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
+Removing empty process `sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:85$73'.
+Found and cleaned up 2 empty switches in `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+Removing empty process `sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:77$55'.
+Found and cleaned up 1 empty switch in `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
+Removing empty process `sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:69$51'.
+Found and cleaned up 5 empty switches in `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Removing empty process `sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:60$13'.
+Found and cleaned up 1 empty switch in `\sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
+Removing empty process `sram.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:52$11'.
 Cleaned up 10 empty switches.
 
 3.12. Executing OPT_EXPR pass (perform const folding).
@@ -205,23 +205,23 @@ Removed 15 multiplexer ports.
       New connections: $procmux$82_Y [31:1] = { $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] $procmux$82_Y [0] }
   Optimizing cells in module \sram.
     Consolidated identical input bits for $mux cell $procmux$210:
-      Old ports: A=0, B=$2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$41, Y=$procmux$210_Y
+      Old ports: A=0, B=$2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:62$1_EN[31:0]$41, Y=$procmux$210_Y
       New ports: A=1'0, B=$procmux$166_Y [0], Y=$procmux$210_Y [0]
       New connections: $procmux$210_Y [31:1] = { 24'000000000000000000000000 $procmux$210_Y [0] $procmux$210_Y [0] $procmux$210_Y [0] $procmux$210_Y [0] $procmux$210_Y [0] $procmux$210_Y [0] $procmux$210_Y [0] }
     Consolidated identical input bits for $mux cell $procmux$201:
-      Old ports: A=0, B=$2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$44, Y=$procmux$201_Y
+      Old ports: A=0, B=$2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:63$2_EN[31:0]$44, Y=$procmux$201_Y
       New ports: A=1'0, B=$procmux$148_Y [8], Y=$procmux$201_Y [8]
       New connections: { $procmux$201_Y [31:9] $procmux$201_Y [7:0] } = { 16'0000000000000000 $procmux$201_Y [8] $procmux$201_Y [8] $procmux$201_Y [8] $procmux$201_Y [8] $procmux$201_Y [8] $procmux$201_Y [8] $procmux$201_Y [8] 8'00000000 }
     Consolidated identical input bits for $mux cell $procmux$192:
-      Old ports: A=0, B=$2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$47, Y=$procmux$192_Y
+      Old ports: A=0, B=$2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:64$3_EN[31:0]$47, Y=$procmux$192_Y
       New ports: A=1'0, B=$procmux$130_Y [16], Y=$procmux$192_Y [16]
       New connections: { $procmux$192_Y [31:17] $procmux$192_Y [15:0] } = { 8'00000000 $procmux$192_Y [16] $procmux$192_Y [16] $procmux$192_Y [16] $procmux$192_Y [16] $procmux$192_Y [16] $procmux$192_Y [16] $procmux$192_Y [16] 16'0000000000000000 }
     Consolidated identical input bits for $mux cell $procmux$183:
-      Old ports: A=0, B=$2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$50, Y=$procmux$183_Y
+      Old ports: A=0, B=$2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:65$4_EN[31:0]$50, Y=$procmux$183_Y
       New ports: A=1'0, B=$procmux$112_Y [24], Y=$procmux$183_Y [24]
       New connections: { $procmux$183_Y [31:25] $procmux$183_Y [23:0] } = { $procmux$183_Y [24] $procmux$183_Y [24] $procmux$183_Y [24] $procmux$183_Y [24] $procmux$183_Y [24] $procmux$183_Y [24] $procmux$183_Y [24] 24'000000000000000000000000 }
     Consolidated identical input bits for $mux cell $procmux$99:
-      Old ports: A=0, B=$2$memwr$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$72, Y=$procmux$99_Y
+      Old ports: A=0, B=$2$memwr$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:81$5_EN[31:0]$72, Y=$procmux$99_Y
       New ports: A=1'0, B=$procmux$82_Y [0], Y=$procmux$99_Y [0]
       New connections: $procmux$99_Y [31:1] = { $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] $procmux$99_Y [0] }
   Optimizing cells in module \sram.
@@ -234,9 +234,9 @@ Finding duplicate cells in `\sram'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$238 ($dff) from module sram (D = $memrd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:54$12_DATA, Q = \imem_rdata, rval = 0).
-Adding SRST signal on $procdff$221 ($dff) from module sram (D = $memrd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:87$76_DATA, Q = \apb_prdata, rval = 0).
-Adding SRST signal on $procdff$225 ($dff) from module sram (D = $memrd$\mem$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:71$54_DATA, Q = \dmem_rdata, rval = 0).
+Adding SRST signal on $procdff$238 ($dff) from module sram (D = $memrd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:54$12_DATA, Q = \imem_rdata, rval = 0).
+Adding SRST signal on $procdff$221 ($dff) from module sram (D = $memrd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:87$76_DATA, Q = \apb_prdata, rval = 0).
+Adding SRST signal on $procdff$225 ($dff) from module sram (D = $memrd$\mem$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v:71$54_DATA, Q = \dmem_rdata, rval = 0).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \sram..
@@ -4605,8 +4605,8 @@ Optimizing module sram.
 
 9. Executing TECHMAP pass (map to technology primitives).
 
-9.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+9.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.

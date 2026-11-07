@@ -3,7 +3,7 @@
 **Date:** 2026-07-21
 **Auditor:** Claude Opus 4.8 (high effort)
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/09_caravel_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/09_caravel_stage
 
 ## Verdict
 **FAIL (INTEGRITY FAIL)** — the stage's `audit_pass.json` and `PRECHECK_REPORT.md` both assert "KLayout BEOL DRC: 0 violations — clean," but the precheck tool reports **406 BEOL DRC violations**, the BEOL check **FAILED**, and the run terminated with **CRITICAL FAILURE (6 checks failed)**. Claiming clean where the tool metric is non-zero is an automatic integrity FAIL under §8.4 and a minted-verdict violation under §G.8/§G.16.

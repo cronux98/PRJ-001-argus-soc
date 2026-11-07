@@ -42,8 +42,8 @@
         "type": "STAGE_FIX",
         "description": "All 90 hold violations are I/O hold — set_min_delay needed on I/O paths. Current SDC has set_input_delay -min 1.5, set_output_delay -min 1.5. Hold WNS -0.846ns means min delays need ~1.0ns more margin.",
         "action": "Increase min I/O delays in SDC from 1.5ns to 3.0ns. Add set_min_delay constraints for critical I/O paths. Increase hold clock uncertainty from 0.15ns to 0.30ns. Re-run LibreLane with updated SDC.",
-        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/constraints/argus_soc.sdc",
-        "command": "Update SDC: set_input_delay -min 3.0 [all_inputs]; set_output_delay -min 3.0 [all_outputs]; set_clock_uncertainty -hold 0.30 [get_clocks clk_sys]. Then: cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane && unset LD_LIBRARY_PATH PYTHONPATH && PATH='/usr/local/bin:/usr/bin:/bin:/home/smdadmin/.local/bin' && /home/smdadmin/hermes_workspace/tools/librelane.AppImage librelane config.yaml --run-tag v0-run9"
+        "file": "~/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/constraints/argus_soc.sdc",
+        "command": "Update SDC: set_input_delay -min 3.0 [all_inputs]; set_output_delay -min 3.0 [all_outputs]; set_clock_uncertainty -hold 0.30 [get_clocks clk_sys]. Then: cd ~/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane && unset LD_LIBRARY_PATH PYTHONPATH && PATH='/usr/local/bin:/usr/bin:/bin:~/.local/bin' && ~/hermes_workspace/tools/librelane.AppImage librelane config.yaml --run-tag v0-run9"
       }
     },
     {

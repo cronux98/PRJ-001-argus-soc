@@ -14,7 +14,7 @@
     "lint": {
       "status": "PASS",
       "errors": 0,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/lint/interrupt_ctrl_verilator.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/lint/interrupt_ctrl_verilator.log"
     },
     "synthesis": {
       "status": "PASS",
@@ -22,24 +22,24 @@
       "dff_count": 16,
       "latch_count": 0,
       "area_um2": 862.0768,
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/synth/interrupt_ctrl_synth.log"
     },
     "formal": {
       "status": "PASS",
       "depth": 20,
       "mode": "bmc",
-      "pass_file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/formal/interrupt_ctrl/PASS"
+      "pass_file": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/formal/interrupt_ctrl/PASS"
     },
     "equivalence": {
       "status": "PASS",
-      "log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/equiv_check/interrupt_ctrl_equiv.log"
+      "log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-interrupt_ctrl/logs/equiv_check/interrupt_ctrl_equiv.log"
     },
     "verification": {
       "status": "PASS",
       "tests_total": 15,
       "tests_pass": 15,
       "tests_fail": 0,
-      "results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml"
+      "results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-interrupt_ctrl/results.xml"
     }
   },
   "promotion": {

@@ -7,20 +7,20 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/equiv_check/equiv_gpio.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/equiv_check/equiv_gpio.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v' to AST representation.
 Generating RTLIL representation for module `\EF_GPIO8_APB'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8.v' to AST representation.
 Generating RTLIL representation for module `\EF_GPIO8'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+3. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -62,12 +62,12 @@ Removed 5 unused modules.
 Cleaned up 0 empty switches.
 
 5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 33 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58 in module EF_GPIO8_APB.
-Marked 2 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54 in module EF_GPIO8_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50 in module EF_GPIO8_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45 in module EF_GPIO8_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41 in module EF_GPIO8_APB.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37 in module EF_GPIO8_APB.
+Marked 33 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58 in module EF_GPIO8_APB.
+Marked 2 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41 in module EF_GPIO8_APB.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37 in module EF_GPIO8_APB.
 Removed a total of 0 dead cases.
 
 5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -77,22 +77,22 @@ Promoted 4 assignments to connections.
 5.4. Executing PROC_INIT pass (extract init attributes).
 
 5.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
-Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
+Found async reset \PRESETn in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
 
 5.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~69 debug messages>
 
 5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\ef_util_ned.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
-Creating decoders for process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
-Creating decoders for process `\ef_util_sync.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Creating decoders for process `\ef_util_ned.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
+Creating decoders for process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
+Creating decoders for process `\ef_util_sync.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
      1/33: $0\RIS_REG[31:0] [31]
      2/33: $0\RIS_REG[31:0] [30]
      3/33: $0\RIS_REG[31:0] [29]
@@ -126,59 +126,59 @@ Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspa
     31/33: $0\RIS_REG[31:0] [1]
     32/33: $0\RIS_REG[31:0] [0]
     33/33: $1\_i_[31:0]
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
      1/1: $0\IC_REG[31:0]
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
      1/1: $0\IM_REG[31:0]
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
      1/1: $0\GCLK_REG[0:0]
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
      1/1: $0\DIR_REG[7:0]
-Creating decoders for process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
+Creating decoders for process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
      1/1: $0\DATAO_REG[7:0]
 
 5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 5.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\ef_util_ned.\last_in' using process `\ef_util_ned.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
+Creating register for signal `\ef_util_ned.\last_in' using process `\ef_util_ned.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
   created $dff cell `$procdff$358' with positive edge clock.
-Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
+Creating register for signal `\ef_util_ped.\last_in' using process `\ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
   created $dff cell `$procdff$359' with positive edge clock.
-Creating register for signal `\ef_util_sync.\sync' using process `\ef_util_sync.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
+Creating register for signal `\ef_util_sync.\sync' using process `\ef_util_sync.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
   created $dff cell `$procdff$360' with positive edge clock.
-Creating register for signal `\EF_GPIO8_APB.\RIS_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Creating register for signal `\EF_GPIO8_APB.\RIS_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
   created $adff cell `$procdff$365' with positive edge clock and positive level reset.
-Creating register for signal `\EF_GPIO8_APB.\_i_' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Creating register for signal `\EF_GPIO8_APB.\_i_' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
   created $dff cell `$procdff$372' with positive edge clock.
-Creating register for signal `\EF_GPIO8_APB.\IC_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
+Creating register for signal `\EF_GPIO8_APB.\IC_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
   created $adff cell `$procdff$377' with positive edge clock and positive level reset.
-Creating register for signal `\EF_GPIO8_APB.\IM_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
+Creating register for signal `\EF_GPIO8_APB.\IM_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
   created $adff cell `$procdff$382' with positive edge clock and positive level reset.
-Creating register for signal `\EF_GPIO8_APB.\GCLK_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
+Creating register for signal `\EF_GPIO8_APB.\GCLK_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
   created $adff cell `$procdff$387' with positive edge clock and positive level reset.
-Creating register for signal `\EF_GPIO8_APB.\DIR_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
+Creating register for signal `\EF_GPIO8_APB.\DIR_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
   created $adff cell `$procdff$392' with positive edge clock and positive level reset.
-Creating register for signal `\EF_GPIO8_APB.\DATAO_REG' using process `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
+Creating register for signal `\EF_GPIO8_APB.\DATAO_REG' using process `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
   created $adff cell `$procdff$397' with positive edge clock and positive level reset.
 
 5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `ef_util_ned.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
-Removing empty process `ef_util_ped.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
-Removing empty process `ef_util_sync.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
-Found and cleaned up 64 empty switches in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
-Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
-Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
-Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
-Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
-Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
-Removing empty process `EF_GPIO8_APB.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
+Removing empty process `ef_util_ned.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:68$131'.
+Removing empty process `ef_util_ped.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:54$128'.
+Removing empty process `ef_util_sync.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v:38$127'.
+Found and cleaned up 64 empty switches in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:173$58'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:134$54'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:131$50'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:122$45'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:117$41'.
+Found and cleaned up 1 empty switch in `\EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
+Removing empty process `EF_GPIO8_APB.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/rtl/EF_GPIO8_APB.v:111$37'.
 Cleaned up 69 empty switches.
 
 5.12. Executing OPT_EXPR pass (perform const folding).
@@ -703,8 +703,8 @@ Optimizing module EF_GPIO8_APB.
 
 10. Executing TECHMAP pass (map to technology primitives).
 
-10.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+10.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -1010,7 +1010,7 @@ Optimizing module EF_GPIO8_APB.
 
 13.16. Finished fast OPT passes. (There is nothing left to do.)
 
-14. Executing Liberty frontend: /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+14. Executing Liberty frontend: ~/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 Ignoring cell sky130_fd_sc_hd__dlclkp_1 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_2 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_4 with missing function on output GCLK.
@@ -1020,8 +1020,8 @@ Ignoring cell sky130_fd_sc_hd__sdlclkp_4 with missing function on output GCLK.
 Imported 422 cell types from liberty file.
 <suppressed ~12 debug messages>
 
-15. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/synth/gpio_netlist.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/synth/gpio_netlist.v' to AST representation.
+15. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/synth/gpio_netlist.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-gpio/synth/gpio_netlist.v' to AST representation.
 Generating RTLIL representation for module `\EF_GPIO8'.
 Generating RTLIL representation for module `\EF_GPIO8_APB'.
 Generating RTLIL representation for module `\ef_util_gating_cell'.
@@ -2948,8 +2948,8 @@ Optimizing module sky130_fd_sc_hd__o31ai_1.
 
 22. Executing TECHMAP pass (map to technology primitives).
 
-22.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+22.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.

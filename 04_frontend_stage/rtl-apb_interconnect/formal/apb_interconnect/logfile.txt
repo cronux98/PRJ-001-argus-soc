@@ -1,6 +1,6 @@
-SBY  6:48:09 [apb_interconnect] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect'.
-SBY  6:48:09 [apb_interconnect] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/src/apb_interconnect.v'.
-SBY  6:48:09 [apb_interconnect] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/src/ef_util_lib.v'.
+SBY  6:48:09 [apb_interconnect] Removing directory '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect'.
+SBY  6:48:09 [apb_interconnect] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/src/apb_interconnect.v'.
+SBY  6:48:09 [apb_interconnect] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/formal/apb_interconnect/src/ef_util_lib.v'.
 SBY  6:48:09 [apb_interconnect] engine_0: smtbmc z3
 SBY  6:48:09 [apb_interconnect] base: starting process "cd apb_interconnect/src; yosys -ql ../model/design.log ../model/design.ys"
 SBY  6:48:10 [apb_interconnect] base: finished (returncode=0)
@@ -8,7 +8,7 @@ SBY  6:48:10 [apb_interconnect] prep: starting process "cd apb_interconnect/mode
 SBY  6:48:10 [apb_interconnect] prep: finished (returncode=0)
 SBY  6:48:10 [apb_interconnect] smt2: starting process "cd apb_interconnect/model; yosys -ql design_smt2.log design_smt2.ys"
 SBY  6:48:10 [apb_interconnect] smt2: finished (returncode=0)
-SBY  6:48:10 [apb_interconnect] engine_0: starting process "cd apb_interconnect; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY  6:48:10 [apb_interconnect] engine_0: starting process "cd apb_interconnect; ~/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
 SBY  6:48:10 [apb_interconnect] engine_0: ##   0:00:00  Solver: z3
 SBY  6:48:10 [apb_interconnect] engine_0: ##   0:00:00  Checking assumptions in step 0..
 SBY  6:48:10 [apb_interconnect] engine_0: ##   0:00:00  Checking assertions in step 0..

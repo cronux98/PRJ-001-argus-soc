@@ -3,7 +3,7 @@
 **Date:** 2026-07-21
 **Auditor:** Claude Opus 4.8 (high effort)
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/03_architecture_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/03_architecture_stage
 
 ## Verdict
 **PASS** (8/8 mandatory checks)

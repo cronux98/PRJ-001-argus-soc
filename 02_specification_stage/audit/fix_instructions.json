@@ -40,8 +40,8 @@
         "type": "STAGE_FIX",
         "description": "Generate a planning validator that cross-checks spec/plan self-consistency and emit planning_validator.log containing PASS (or a PASS marker file)",
         "action": "Create a validator that asserts: (a) every SYS-xx-NNN ID in system_spec.md §11 is unique and referenced; (b) memory-map regions in §8 do not overlap; (c) every module in module_list.md M01-M12 appears in system_spec.md §2.3; (d) module_list.md summary arithmetic reconciles. Write its stdout to planning_validator.log ending with 'RESULT: PASS' on success. Re-run so 1.6's grep finds PASS.",
-        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/planning_validator.py",
-        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && python3 planning_validator.py | tee planning_validator.log && grep -q 'RESULT: PASS' planning_validator.log && echo PASS > PASS"
+        "file": "~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/planning_validator.py",
+        "command": "cd ~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && python3 planning_validator.py | tee planning_validator.log && grep -q 'RESULT: PASS' planning_validator.log && echo PASS > PASS"
       }
     },
     {
@@ -57,8 +57,8 @@
         "type": "STAGE_FIX",
         "description": "Author traceability_matrix.md binding each requirement to the config key that implements it, with no orphan config keys and no unbound requirements",
         "action": "Create traceability_matrix.md with columns [Req ID | Config Key | Implementing Block | Value/Constraint]. Bind the config-relevant requirements the spec already fixes, e.g. SYS-FR-002 -> UART.BAUD_DIV (434 @50MHz), SYS-PR-006 -> SPI.CLK_DIV (=2), SYS-PR-007 -> I2C.CLK_DIV_LO/HI (250/250), SYS-PR-008/009 -> PWM.PERIOD/DUTY, SYS-PR-001 -> CLK_PERIOD (20ns), SYS-FR-007 -> SRAM_SIZE (0x1000), SYS-FR-014 -> SYSCTRL.CHIP_ID. Assert every config key traces to >=1 requirement and every MUST requirement with a tunable value traces to >=1 config key.",
-        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/traceability_matrix.md",
-        "command": "cd /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && $EDITOR traceability_matrix.md   # populate Req->ConfigKey binding table per action above"
+        "file": "~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/traceability_matrix.md",
+        "command": "cd ~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage && $EDITOR traceability_matrix.md   # populate Req->ConfigKey binding table per action above"
       }
     },
     {
@@ -84,8 +84,8 @@
         "type": "STAGE_FIX",
         "description": "Remove the self-authored audit_pass.json; the stage agent must not write auditor-owned gate files",
         "action": "Delete audit/audit_pass.json (self-authored). The stage self-report belongs in audit/stage_report.md (already present) or 02_specification_stage_run_summary.md. Gate verdict is owned by the independent auditor and lives in audit/fix_instructions.json (FAIL) or audit/audit_pass.json (PASS) only when written by the auditor.",
-        "file": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json",
-        "command": "rm /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json"
+        "file": "~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json",
+        "command": "rm ~/hermes_workspace/projects/PRJ-001/v0/02_specification_stage/audit/audit_pass.json"
       }
     }
   ],

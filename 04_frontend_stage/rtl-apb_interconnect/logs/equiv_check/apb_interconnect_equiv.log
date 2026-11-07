@@ -7,15 +7,15 @@ GENERATED-FROM: yosys Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O
  \----------------------------------------------------------------------------/
  Yosys 0.65+71 (git sha1 e56c6a954, clang++ 18.1.8 -fPIC -O3)
 
--- Executing script file `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/equiv_check/equiv_apb_interconnect.ys' --
+-- Executing script file `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/equiv_check/equiv_apb_interconnect.ys' --
 
-1. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v' to AST representation.
+1. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v' to AST representation.
 Generating RTLIL representation for module `\apb_interconnect'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+2. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -51,8 +51,8 @@ Removed 9 unused modules.
 Cleaned up 0 empty switches.
 
 4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 10 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50 in module apb_interconnect.
-Marked 1 switch rules as full_case in process $proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28 in module apb_interconnect.
+Marked 10 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50 in module apb_interconnect.
+Marked 1 switch rules as full_case in process $proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28 in module apb_interconnect.
 Removed a total of 0 dead cases.
 
 4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -62,14 +62,14 @@ Promoted 1 assignment to connection.
 4.4. Executing PROC_INIT pass (extract init attributes).
 
 4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst_ni in `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Found async reset \rst_ni in `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
 
 4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~10 debug messages>
 
 4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
+Creating decoders for process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
      1/10: $10\master_prdata[31:0]
      2/10: $9\master_prdata[31:0]
      3/10: $8\master_prdata[31:0]
@@ -80,7 +80,7 @@ Creating decoders for process `\apb_interconnect.$proc$/home/smdadmin/hermes_wor
      8/10: $3\master_prdata[31:0]
      9/10: $2\master_prdata[31:0]
     10/10: $1\master_prdata[31:0]
-Creating decoders for process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating decoders for process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
      1/20: $0\s9_penable[0:0]
      2/20: $0\s8_penable[0:0]
      3/20: $0\s7_penable[0:0]
@@ -103,56 +103,56 @@ Creating decoders for process `\apb_interconnect.$proc$/home/smdadmin/hermes_wor
     20/20: $0\s0_psel[0:0]
 
 4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\apb_interconnect.\master_prdata' from process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
+No latch inferred for signal `\apb_interconnect.\master_prdata' from process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
 
 4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\apb_interconnect.\s0_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s0_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$304' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s0_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s0_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$309' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s1_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s1_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$314' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s1_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s1_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$319' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s2_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s2_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$324' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s2_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s2_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$329' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s3_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s3_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$334' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s3_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s3_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$339' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s4_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s4_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$344' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s4_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s4_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$349' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s5_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s5_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$354' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s5_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s5_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$359' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s6_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s6_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$364' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s6_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s6_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$369' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s7_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s7_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$374' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s7_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s7_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$379' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s8_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s8_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$384' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s8_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s8_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$389' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s9_psel' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s9_psel' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$394' with positive edge clock and positive level reset.
-Creating register for signal `\apb_interconnect.\s9_penable' using process `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Creating register for signal `\apb_interconnect.\s9_penable' using process `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
   created $adff cell `$procdff$399' with positive edge clock and positive level reset.
 
 4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 10 empty switches in `\apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
-Removing empty process `apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
-Removing empty process `apb_interconnect.$proc$/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
+Found and cleaned up 10 empty switches in `\apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
+Removing empty process `apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:205$50'.
+Removing empty process `apb_interconnect.$proc$~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v:171$28'.
 Cleaned up 10 empty switches.
 
 4.12. Executing OPT_EXPR pass (perform const folding).
@@ -368,8 +368,8 @@ Optimizing module apb_interconnect.
 
 9. Executing TECHMAP pass (map to technology primitives).
 
-9.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+9.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -519,7 +519,7 @@ Optimizing module apb_interconnect.
 
 12.9. Finished fast OPT passes. (There is nothing left to do.)
 
-13. Executing Liberty frontend: /home/smdadmin/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+13. Executing Liberty frontend: ~/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130B/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 Ignoring cell sky130_fd_sc_hd__dlclkp_1 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_2 with missing function on output GCLK.
 Ignoring cell sky130_fd_sc_hd__dlclkp_4 with missing function on output GCLK.
@@ -529,13 +529,13 @@ Ignoring cell sky130_fd_sc_hd__sdlclkp_4 with missing function on output GCLK.
 Imported 422 cell types from liberty file.
 <suppressed ~12 debug messages>
 
-14. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/synth/apb_interconnect_netlist.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/synth/apb_interconnect_netlist.v' to AST representation.
+14. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/synth/apb_interconnect_netlist.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/synth/apb_interconnect_netlist.v' to AST representation.
 Generating RTLIL representation for module `\apb_interconnect'.
 Successfully finished Verilog frontend.
 
-15. Executing Verilog-2005 frontend: /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
-Parsing Verilog input from `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
+15. Executing Verilog-2005 frontend: ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v
+Parsing Verilog input from `~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to AST representation.
 Generating RTLIL representation for module `\ef_util_sync'.
 Generating RTLIL representation for module `\ef_util_ped'.
 Generating RTLIL representation for module `\ef_util_ned'.
@@ -2187,8 +2187,8 @@ Optimizing module sky130_fd_sc_hd__and3_1.
 
 22. Executing TECHMAP pass (map to technology primitives).
 
-22.1. Executing Verilog-2005 frontend: /home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/smdadmin/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+22.1. Executing Verilog-2005 frontend: ~/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `~/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.

@@ -7,7 +7,7 @@
   "dff_count": 56,
   "latch_count": 0,
   "area_um2": 2616.2592,
-  "synthesis_log": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/logs/synth/i2c_master_synth.log",
+  "synthesis_log": "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-i2c_master/logs/synth/i2c_master_synth.log",
   "lint_errors": 0,
   "formal_pass": true,
   "formal_depth": 20,
@@ -15,7 +15,7 @@
   "verification_tests_pass": 15,
   "verification_tests_total": 15,
   "verification_tests_fail": 0,
-  "verification_results_xml": "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-i2c_master/results.xml",
+  "verification_results_xml": "~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage/tb-i2c_master/results.xml",
   "admission_reasons": [],
   "has_frontend_artifacts": true
 }

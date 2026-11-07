@@ -2,7 +2,7 @@
 MODULE = test_sram
 TOPLEVEL_LANG = verilog
 VERILOG_SOURCES = \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-sram/rtl/sram.v
 TOPLEVEL = sram
 SIM = icarus
 COMPILE_ARGS = -DSIMULATION

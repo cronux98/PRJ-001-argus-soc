@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/09_caravel_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/09_caravel_stage
 **Verdict:** FAIL (INTEGRITY FAIL) — a PASS was minted over a precheck that reported 406 BEOL DRC violations and CRITICAL FAILURE.
 
 ## What Went Well

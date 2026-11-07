@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage
 **Verdict:** CONDITIONAL PASS — 177/177 tests, but estimated coverage + deferred GLS + under-tested Tier-B modules. Audit reached PASS on retry 2 (cumulative $0.676).
 
 ## What Went Well

@@ -5,7 +5,7 @@
 **Auditor:** physical-design-agent (Hermes)
 **Docker Image:** efabless/mpw_precheck:latest
 **Input:** user_project_wrapper.gds (41.5 MB, KLayout-merged)
-**PDK:** sky130A @ /home/smdadmin/.local/share/pdk
+**PDK:** sky130A @ ~/.local/share/pdk
 
 ---
 

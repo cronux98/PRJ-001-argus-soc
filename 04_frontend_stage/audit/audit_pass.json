@@ -24,7 +24,7 @@
   "waiver": {
     "active": true,
     "scope": "argus_soc formal: k-induction proof replaces deep BMC on top-level SoC. 11/12 leaf modules retain BMC depth 20.",
-    "issued_by": "Vera (Luqman) via kanban comment on t_953eb7c3, 2026-07-20 09:45",
+    "issued_by": "Vera (owner) via kanban comment on t_953eb7c3, 2026-07-20 09:45",
     "rationale": "Full BMC depth 20 on 50-file SoC is computationally infeasible with Z3 solver. Top-level formal scope is interconnect-safety proof, not functional BMC — leaf modules carry functional verification burden. Assertion-based prove with k-induction is the correct mode for top-level integration formal.",
     "formal_config": "mode prove, depth 4 basecase, clk2fflogic enabled, 6 safety assertions via SV bind"
   },

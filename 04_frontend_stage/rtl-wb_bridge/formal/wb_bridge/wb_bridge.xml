@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2026-07-20T06:48:10" hostname="smdtest02" package="wb_bridge" id="0" name="default" tests="0" errors="0" failures="0" time="0" skipped="0">
+<testsuite timestamp="2026-07-20T06:48:10" hostname="buildhost" package="wb_bridge" id="0" name="default" tests="0" errors="0" failures="0" time="0" skipped="0">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -8,9 +8,9 @@
 </properties>
 <testcase classname="default" name="build execution" time="0">
 </testcase>
-<system-out>SBY  6:48:10 [wb_bridge] Removing directory '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge'.
-SBY  6:48:10 [wb_bridge] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/src/wb_bridge.v'.
-SBY  6:48:10 [wb_bridge] Copy '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/src/ef_util_lib.v'.
+<system-out>SBY  6:48:10 [wb_bridge] Removing directory '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge'.
+SBY  6:48:10 [wb_bridge] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/rtl/wb_bridge.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/src/wb_bridge.v'.
+SBY  6:48:10 [wb_bridge] Copy '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v' to '~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-wb_bridge/formal/wb_bridge/src/ef_util_lib.v'.
 SBY  6:48:10 [wb_bridge] engine_0: smtbmc z3
 SBY  6:48:10 [wb_bridge] base: starting process &quot;cd wb_bridge/src; yosys -ql ../model/design.log ../model/design.ys&quot;
 SBY  6:48:10 [wb_bridge] base: finished (returncode=0)
@@ -18,7 +18,7 @@ SBY  6:48:10 [wb_bridge] prep: starting process &quot;cd wb_bridge/model; yosys 
 SBY  6:48:10 [wb_bridge] prep: finished (returncode=0)
 SBY  6:48:10 [wb_bridge] smt2: starting process &quot;cd wb_bridge/model; yosys -ql design_smt2.log design_smt2.ys&quot;
 SBY  6:48:10 [wb_bridge] smt2: finished (returncode=0)
-SBY  6:48:10 [wb_bridge] engine_0: starting process &quot;cd wb_bridge; /home/smdadmin/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  6:48:10 [wb_bridge] engine_0: starting process &quot;cd wb_bridge; ~/oss-cad-suite/bin/yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
 SBY  6:48:10 [wb_bridge] engine_0: ##   0:00:00  Solver: z3
 SBY  6:48:10 [wb_bridge] engine_0: ##   0:00:00  Checking assumptions in step 0..
 SBY  6:48:10 [wb_bridge] engine_0: ##   0:00:00  Checking assertions in step 0..

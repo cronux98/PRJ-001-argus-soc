@@ -15,7 +15,7 @@ GENERATED-FROM: gen_reuse_manifest.py, 04_frontend_stage artifacts, 06_verificat
 import os, re, json, glob, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
-PROJECT_DIR = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0"
+PROJECT_DIR = "~/hermes_workspace/projects/PRJ-001/v0"
 FRONTEND_DIR = os.path.join(PROJECT_DIR, "04_frontend_stage")
 VERIFY_DIR = os.path.join(PROJECT_DIR, "06_verification_stage")
 PROMOTE_DIR = os.path.join(PROJECT_DIR, "07_promote_stage")

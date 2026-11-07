@@ -3,7 +3,7 @@
 **Date:** 2026-07-21
 **Auditor:** Claude Opus 4.8 (high effort)
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/07_promote_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/07_promote_stage
 
 ## Verdict
 **PASS (with integrity note)** — promotion artifacts are complete and self-consistent; the one reservation is that the stage's own gate was self-audited, not independently adjudicated (§G.16).

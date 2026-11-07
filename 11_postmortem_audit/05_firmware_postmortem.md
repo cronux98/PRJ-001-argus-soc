@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/05_firmware_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/05_firmware_stage
 **Verdict:** PASS (17/17) — audit cost $0.00 (recorded)
 
 ## What Went Well

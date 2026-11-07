@@ -54,7 +54,7 @@ PRJ-001 "Argus" is a fully open-source environmental sensor-hub SoC on sky130A, 
 
 - Full document: `PRJ-001_Argus_Engineering_Document.pdf`
 - Source: `PRJ-001_Argus_Engineering_Document.html`
-- Project root: `/home/smdadmin/hermes_workspace/projects/PRJ-001/v0`
+- Project root: `~/hermes_workspace/projects/PRJ-001/v0`
 - Precheck report: `../09_caravel_stage/PRECHECK_REPORT.md`
 - Architecture: `../03_architecture_stage/ARCHITECTURE.md`
 - Backend metrics: `../08_backend_stage/results/librelane/metrics.json`

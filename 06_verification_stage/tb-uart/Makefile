@@ -2,9 +2,9 @@
 MODULE = test_uart
 TOPLEVEL_LANG = verilog
 VERILOG_SOURCES = \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/common/ef_util_lib.v \
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v \
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v
 TOPLEVEL = EF_UART_APB
 SIM = icarus
 COCOTB_HDL_TIMEUNIT = 1ns

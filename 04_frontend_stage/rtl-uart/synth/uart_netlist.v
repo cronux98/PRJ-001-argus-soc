@@ -2,48 +2,48 @@
 
 (* dynports =  1  *)
 (* hdlname = "UART_RX" *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:246.1-415.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:246.1-415.10" *)
 module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (clk, resetn, b_tick, data_size, stop_bits_count, parity_type, rx, match_data, rx_done, parity_error, frame_error, break_flag, match_flag, dout);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:247.29-247.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:247.29-247.32" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:248.29-248.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:248.29-248.35" *)
   input resetn;
   wire resetn;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:249.29-249.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:249.29-249.35" *)
   input b_tick;
   wire b_tick;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:250.29-250.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:250.29-250.38" *)
   input [3:0] data_size;
   wire [3:0] data_size;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:251.29-251.44" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:251.29-251.44" *)
   input stop_bits_count;
   wire stop_bits_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:252.29-252.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:252.29-252.40" *)
   input [2:0] parity_type;
   wire [2:0] parity_type;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:254.29-254.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:254.29-254.31" *)
   input rx;
   wire rx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:255.29-255.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:255.29-255.39" *)
   input [8:0] match_data;
   wire [8:0] match_data;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:256.29-256.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:256.29-256.36" *)
   output rx_done;
   wire rx_done;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:257.29-257.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:257.29-257.41" *)
   output parity_error;
   wire parity_error;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:258.29-258.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:258.29-258.40" *)
   output frame_error;
   wire frame_error;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:259.29-259.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:259.29-259.39" *)
   output break_flag;
   wire break_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:260.29-260.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:260.29-260.39" *)
   output match_flag;
   wire match_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:261.29-261.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:261.29-261.33" *)
   output [8:0] dout;
   wire [8:0] dout;
   wire _000_;
@@ -248,19 +248,19 @@ module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (clk, resetn, 
   wire _199_;
   wire _200_;
   wire _201_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:274.17-274.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:274.17-274.22" *)
   wire [3:0] b_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:396.16-396.19" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:396.16-396.19" *)
   wire [11:0] brk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:276.17-276.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:276.17-276.26" *)
   wire [3:0] count_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:272.17-272.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:272.17-272.30" *)
   wire [2:0] current_state;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:278.17-278.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:278.17-278.25" *)
   wire [8:0] data_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:282.17-282.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:282.17-282.28" *)
   wire f_error_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:280.17-280.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:280.17-280.28" *)
   wire p_error_reg;
   sky130_fd_sc_hd__clkinv_1 _202_ (
     .A(current_state[2]),
@@ -1500,238 +1500,238 @@ module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX (clk, resetn, 
     .S(_115_),
     .X(_034_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _418_ (
     .CLK(clk),
     .D(_027_),
     .Q(b_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _419_ (
     .CLK(clk),
     .D(_026_),
     .Q(b_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _420_ (
     .CLK(clk),
     .D(_025_),
     .Q(b_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _421_ (
     .CLK(clk),
     .D(_031_),
     .Q(b_reg[3]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _422_ (
     .CLK(clk),
     .D(_024_),
     .Q(data_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _423_ (
     .CLK(clk),
     .D(_023_),
     .Q(data_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _424_ (
     .CLK(clk),
     .D(_022_),
     .Q(data_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _425_ (
     .CLK(clk),
     .D(_021_),
     .Q(data_reg[3]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _426_ (
     .CLK(clk),
     .D(_020_),
     .Q(data_reg[4]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _427_ (
     .CLK(clk),
     .D(_019_),
     .Q(data_reg[5]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _428_ (
     .CLK(clk),
     .D(_018_),
     .Q(data_reg[6]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _429_ (
     .CLK(clk),
     .D(_017_),
     .Q(data_reg[7]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _430_ (
     .CLK(clk),
     .D(_034_),
     .Q(data_reg[8]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _431_ (
     .CLK(clk),
     .D(_028_),
     .Q(p_error_reg),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _432_ (
     .CLK(clk),
     .D(_016_),
     .Q(current_state[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _433_ (
     .CLK(clk),
     .D(_015_),
     .Q(current_state[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _434_ (
     .CLK(clk),
     .D(_029_),
     .Q(current_state[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__edfxtp_1 _435_ (
     .CLK(clk),
     .D(_030_),
     .DE(_000_),
     .Q(f_error_reg)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _436_ (
     .CLK(clk),
     .D(_014_),
     .Q(brk[0]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _437_ (
     .CLK(clk),
     .D(_013_),
     .Q(brk[1]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _438_ (
     .CLK(clk),
     .D(_012_),
     .Q(brk[2]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _439_ (
     .CLK(clk),
     .D(_011_),
     .Q(brk[3]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _440_ (
     .CLK(clk),
     .D(_010_),
     .Q(brk[4]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _441_ (
     .CLK(clk),
     .D(_009_),
     .Q(brk[5]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _442_ (
     .CLK(clk),
     .D(_008_),
     .Q(brk[6]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _443_ (
     .CLK(clk),
     .D(_007_),
     .Q(brk[7]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _444_ (
     .CLK(clk),
     .D(_006_),
     .Q(brk[8]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _445_ (
     .CLK(clk),
     .D(_005_),
     .Q(brk[9]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _446_ (
     .CLK(clk),
     .D(_004_),
     .Q(brk[10]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:397.5-407.8" *)
   sky130_fd_sc_hd__dfstp_2 _447_ (
     .CLK(clk),
     .D(_032_),
     .Q(brk[11]),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _448_ (
     .CLK(clk),
     .D(_003_),
     .Q(count_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _449_ (
     .CLK(clk),
     .D(_002_),
     .Q(count_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _450_ (
     .CLK(clk),
     .D(_001_),
     .Q(count_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:286.5-309.8" *)
   sky130_fd_sc_hd__dfrtp_1 _451_ (
     .CLK(clk),
     .D(_033_),
@@ -1742,36 +1742,36 @@ endmodule
 
 (* dynports =  1  *)
 (* hdlname = "UART_TX" *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:420.1-581.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:420.1-581.10" *)
 module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX (clk, resetn, tx_start, b_tick, data_size, stop_bits_count, parity_type, d_in, tx_done, tx);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:421.33-421.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:421.33-421.36" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:422.33-422.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:422.33-422.39" *)
   input resetn;
   wire resetn;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:423.33-423.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:423.33-423.41" *)
   input tx_start;
   wire tx_start;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:424.33-424.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:424.33-424.39" *)
   input b_tick;
   wire b_tick;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:425.33-425.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:425.33-425.42" *)
   input [3:0] data_size;
   wire [3:0] data_size;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:426.33-426.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:426.33-426.48" *)
   input stop_bits_count;
   wire stop_bits_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:427.33-427.44" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:427.33-427.44" *)
   input [2:0] parity_type;
   wire [2:0] parity_type;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:429.33-429.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:429.33-429.37" *)
   input [8:0] d_in;
   wire [8:0] d_in;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:430.33-430.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:430.33-430.40" *)
   output tx_done;
   wire tx_done;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:431.33-431.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:431.33-431.35" *)
   output tx;
   wire tx;
   wire _000_;
@@ -1900,15 +1900,15 @@ module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX (clk, resetn, 
   wire _123_;
   wire _124_;
   wire _125_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:451.17-451.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:451.17-451.22" *)
   wire [3:0] b_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:453.17-453.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:453.17-453.26" *)
   wire [3:0] count_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:449.17-449.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:449.17-449.30" *)
   wire [2:0] current_state;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:455.17-455.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:455.17-455.25" *)
   wire [8:0] data_reg;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:457.17-457.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:457.17-457.23" *)
   wire tx_reg;
   sky130_fd_sc_hd__nor2_1 _126_ (
     .A(_100_),
@@ -2650,147 +2650,147 @@ module \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX (clk, resetn, 
     .B(_101_),
     .Y(_103_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _253_ (
     .CLK(clk),
     .D(_015_),
     .Q(b_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _254_ (
     .CLK(clk),
     .D(_014_),
     .Q(b_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _255_ (
     .CLK(clk),
     .D(_013_),
     .Q(b_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _256_ (
     .CLK(clk),
     .D(_020_),
     .Q(b_reg[3]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _257_ (
     .CLK(clk),
     .D(_012_),
     .Q(count_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _258_ (
     .CLK(clk),
     .D(_011_),
     .Q(count_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _259_ (
     .CLK(clk),
     .D(_010_),
     .Q(count_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _260_ (
     .CLK(clk),
     .D(_016_),
     .Q(count_reg[3]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _261_ (
     .CLK(clk),
     .D(_009_),
     .Q(current_state[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _262_ (
     .CLK(clk),
     .D(_008_),
     .Q(current_state[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _263_ (
     .CLK(clk),
     .D(_017_),
     .Q(current_state[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfstp_2 _264_ (
     .CLK(clk),
     .D(_018_),
     .Q(tx_reg),
     .SET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _265_ (
     .CLK(clk),
     .D(_007_),
     .Q(data_reg[0]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _266_ (
     .CLK(clk),
     .D(_006_),
     .Q(data_reg[1]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _267_ (
     .CLK(clk),
     .D(_005_),
     .Q(data_reg[2]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _268_ (
     .CLK(clk),
     .D(_004_),
     .Q(data_reg[3]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _269_ (
     .CLK(clk),
     .D(_003_),
     .Q(data_reg[4]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _270_ (
     .CLK(clk),
     .D(_002_),
     .Q(data_reg[5]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _271_ (
     .CLK(clk),
     .D(_001_),
     .Q(data_reg[6]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _272_ (
     .CLK(clk),
     .D(_000_),
     .Q(data_reg[7]),
     .RESET_B(resetn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:465.5-479.8" *)
   sky130_fd_sc_hd__dfrtp_1 _273_ (
     .CLK(clk),
     .D(_019_),
@@ -2802,123 +2802,123 @@ endmodule
 
 (* dynports =  1  *)
 (* hdlname = "EF_UART" *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:47.1-215.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:47.1-215.10" *)
 module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, prescaler, en, tx_en, rx_en, rd, wr, wdata, data_size, stop_bits_count, parity_type, txfifotr, rxfifotr, match_data, timeout_bits, loopback_en, glitch_filter_en, tx_fifo_flush, rx_fifo_flush, tx_empty
 , tx_full, tx_level, tx_level_below, rdata, rx_empty, rx_full, rx_level, rx_level_above, break_flag, match_flag, frame_error_flag, parity_error_flag, overrun_flag, timeout_flag, rx, tx);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:52.29-52.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:52.29-52.32" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:53.29-53.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:53.29-53.34" *)
   input rst_n;
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:55.29-55.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:55.29-55.38" *)
   input [15:0] prescaler;
   wire [15:0] prescaler;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:56.29-56.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:56.29-56.31" *)
   input en;
   wire en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:57.29-57.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:57.29-57.34" *)
   input tx_en;
   wire tx_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:58.29-58.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:58.29-58.34" *)
   input rx_en;
   wire rx_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:59.29-59.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:59.29-59.31" *)
   input rd;
   wire rd;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:60.29-60.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:60.29-60.31" *)
   input wr;
   wire wr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:61.29-61.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:61.29-61.34" *)
   input [8:0] wdata;
   wire [8:0] wdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:62.29-62.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:62.29-62.38" *)
   input [3:0] data_size;
   wire [3:0] data_size;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:63.29-63.44" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:63.29-63.44" *)
   input stop_bits_count;
   wire stop_bits_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:64.29-64.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:64.29-64.40" *)
   input [2:0] parity_type;
   wire [2:0] parity_type;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:65.29-65.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:65.29-65.37" *)
   input [3:0] txfifotr;
   wire [3:0] txfifotr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:66.29-66.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:66.29-66.37" *)
   input [3:0] rxfifotr;
   wire [3:0] rxfifotr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:67.29-67.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:67.29-67.39" *)
   input [8:0] match_data;
   wire [8:0] match_data;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:68.29-68.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:68.29-68.41" *)
   input [5:0] timeout_bits;
   wire [5:0] timeout_bits;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:69.29-69.40" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:69.29-69.40" *)
   input loopback_en;
   wire loopback_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:70.29-70.45" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:70.29-70.45" *)
   input glitch_filter_en;
   wire glitch_filter_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:71.29-71.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:71.29-71.42" *)
   input tx_fifo_flush;
   wire tx_fifo_flush;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:72.29-72.42" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:72.29-72.42" *)
   input rx_fifo_flush;
   wire rx_fifo_flush;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:74.29-74.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:74.29-74.37" *)
   output tx_empty;
   wire tx_empty;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:75.29-75.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:75.29-75.36" *)
   output tx_full;
   wire tx_full;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:76.29-76.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:76.29-76.37" *)
   output [3:0] tx_level;
   wire [3:0] tx_level;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:77.29-77.43" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:77.29-77.43" *)
   output tx_level_below;
   wire tx_level_below;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:78.29-78.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:78.29-78.34" *)
   output [8:0] rdata;
   wire [8:0] rdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:79.29-79.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:79.29-79.37" *)
   output rx_empty;
   wire rx_empty;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:80.29-80.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:80.29-80.36" *)
   output rx_full;
   wire rx_full;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:81.29-81.37" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:81.29-81.37" *)
   output [3:0] rx_level;
   wire [3:0] rx_level;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:82.29-82.43" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:82.29-82.43" *)
   output rx_level_above;
   wire rx_level_above;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:84.29-84.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:84.29-84.39" *)
   output break_flag;
   wire break_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:85.29-85.39" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:85.29-85.39" *)
   output match_flag;
   wire match_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:86.29-86.45" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:86.29-86.45" *)
   output frame_error_flag;
   wire frame_error_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:87.29-87.46" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:87.29-87.46" *)
   output parity_error_flag;
   wire parity_error_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:88.29-88.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:88.29-88.41" *)
   output overrun_flag;
   wire overrun_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:89.29-89.41" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:89.29-89.41" *)
   output timeout_flag;
   wire timeout_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:91.29-91.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:91.29-91.31" *)
   input rx;
   wire rx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:92.29-92.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:92.29-92.31" *)
   output tx;
   wire tx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:152.17-152.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:152.17-152.31" *)
   wire _000_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:177.17-177.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:177.17-177.31" *)
   wire _001_;
   wire _002_;
   wire _003_;
@@ -2984,29 +2984,29 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
   wire _063_;
   wire _064_;
   wire _065_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:151.19-151.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:151.19-151.28" *)
   wire _066_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:98.17-98.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:98.17-98.23" *)
   wire b_tick;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:191.17-191.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:191.17-191.27" *)
   wire [5:0] bits_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:101.21-101.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:101.21-101.28" *)
   wire [8:0] rx_data;
   (* keep = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:96.28-96.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:96.28-96.35" *)
   wire rx_done;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:106.17-106.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:106.17-106.28" *)
   wire rx_filtered;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:107.17-107.22" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:107.17-107.22" *)
   wire rx_in;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:105.17-105.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:105.17-105.27" *)
   wire rx_synched;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:192.17-192.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:192.17-192.30" *)
   wire [4:0] samples_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:100.21-100.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:100.21-100.28" *)
   wire [8:0] tx_data;
   (* keep = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:95.28-95.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:95.28-95.35" *)
   wire tx_done;
   sky130_fd_sc_hd__clkinv_1 _067_ (
     .A(rx_level[0]),
@@ -3406,77 +3406,77 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .B1(_036_),
     .Y(rx_in)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _139_ (
     .CLK(clk),
     .D(_010_),
     .Q(bits_count[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _140_ (
     .CLK(clk),
     .D(_009_),
     .Q(bits_count[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _141_ (
     .CLK(clk),
     .D(_008_),
     .Q(bits_count[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _142_ (
     .CLK(clk),
     .D(_007_),
     .Q(bits_count[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _143_ (
     .CLK(clk),
     .D(_006_),
     .Q(bits_count[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _144_ (
     .CLK(clk),
     .D(_012_),
     .Q(bits_count[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _145_ (
     .CLK(clk),
     .D(_005_),
     .Q(samples_count[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _146_ (
     .CLK(clk),
     .D(_004_),
     .Q(samples_count[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _147_ (
     .CLK(clk),
     .D(_003_),
     .Q(samples_count[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _148_ (
     .CLK(clk),
     .D(_002_),
     .Q(samples_count[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:193.5-208.8" *)
   sky130_fd_sc_hd__dfrtp_1 _149_ (
     .CLK(clk),
     .D(_011_),
@@ -3484,7 +3484,7 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .RESET_B(rst_n)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:127.13-133.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:127.13-133.6" *)
   BAUDGEN buad_gen (
     .baudtick(b_tick),
     .clk(clk),
@@ -3493,7 +3493,7 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .rst_n(rst_n)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:161.44-172.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:161.44-172.6" *)
   ef_util_fifo #(
     .AW(32'sd4),
     .DW(32'sd9)
@@ -3510,7 +3510,7 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .wr(rx_done)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:135.44-146.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:135.44-146.6" *)
   ef_util_fifo #(
     .AW(32'sd4),
     .DW(32'sd9)
@@ -3527,7 +3527,7 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .wr(wr)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:115.40-121.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:115.40-121.6" *)
   ef_util_glitch_filter #(
     .N(32'sd8)
   ) rx_glitch_filter (
@@ -3538,13 +3538,13 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .rst_n(rst_n)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:109.18-113.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:109.18-113.6" *)
   ef_util_sync rx_sync (
     .clk(clk),
     .in(rx),
     .out(rx_synched)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:174.44-189.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:174.44-189.6" *)
   \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_RX  uart_rx (
     .b_tick(_001_),
     .break_flag(break_flag),
@@ -3561,7 +3561,7 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
     .rx_done(rx_done),
     .stop_bits_count(stop_bits_count)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:148.44-159.6" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:148.44-159.6" *)
   \$paramod$b4c45ad6b7a50c506f0a9649f786147095b9aae3\UART_TX  uart_tx (
     .b_tick(_000_),
     .clk(clk),
@@ -3576,21 +3576,21 @@ module \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART (clk, rst_n, p
   );
 endmodule
 
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:218.1-241.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:218.1-241.10" *)
 module BAUDGEN(clk, rst_n, prescale, en, baudtick);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:220.25-220.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:220.25-220.28" *)
   input clk;
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:221.25-221.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:221.25-221.30" *)
   input rst_n;
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:222.25-222.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:222.25-222.33" *)
   input [15:0] prescale;
   wire [15:0] prescale;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:223.25-223.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:223.25-223.27" *)
   input en;
   wire en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:224.25-224.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:224.25-224.33" *)
   output baudtick;
   wire baudtick;
   wire _000_;
@@ -3662,7 +3662,7 @@ module BAUDGEN(clk, rst_n, prescale, en, baudtick);
   wire _066_;
   wire _067_;
   wire _068_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:227.17-227.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:227.17-227.26" *)
   wire [15:0] count_reg;
   sky130_fd_sc_hd__clkinv_1 _069_ (
     .A(count_reg[4]),
@@ -4061,112 +4061,112 @@ module BAUDGEN(clk, rst_n, prescale, en, baudtick);
     .C(_027_),
     .Y(_015_)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _139_ (
     .CLK(clk),
     .D(_014_),
     .Q(count_reg[0]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _140_ (
     .CLK(clk),
     .D(_013_),
     .Q(count_reg[1]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _141_ (
     .CLK(clk),
     .D(_012_),
     .Q(count_reg[2]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _142_ (
     .CLK(clk),
     .D(_011_),
     .Q(count_reg[3]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _143_ (
     .CLK(clk),
     .D(_010_),
     .Q(count_reg[4]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _144_ (
     .CLK(clk),
     .D(_009_),
     .Q(count_reg[5]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _145_ (
     .CLK(clk),
     .D(_008_),
     .Q(count_reg[6]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _146_ (
     .CLK(clk),
     .D(_007_),
     .Q(count_reg[7]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _147_ (
     .CLK(clk),
     .D(_006_),
     .Q(count_reg[8]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _148_ (
     .CLK(clk),
     .D(_005_),
     .Q(count_reg[9]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _149_ (
     .CLK(clk),
     .D(_004_),
     .Q(count_reg[10]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _150_ (
     .CLK(clk),
     .D(_003_),
     .Q(count_reg[11]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _151_ (
     .CLK(clk),
     .D(_002_),
     .Q(count_reg[12]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _152_ (
     .CLK(clk),
     .D(_001_),
     .Q(count_reg[13]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _153_ (
     .CLK(clk),
     .D(_000_),
     .Q(count_reg[14]),
     .RESET_B(rst_n)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART.v:231.5-236.8" *)
   sky130_fd_sc_hd__dfrtp_1 _154_ (
     .CLK(clk),
     .D(_015_),
@@ -4177,49 +4177,49 @@ endmodule
 
 (* dynports =  1  *)
 (* top =  1  *)
-(* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:25.1-332.10" *)
+(* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:25.1-332.10" *)
 module EF_UART_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, PRDATA, IRQ, rx, tx);
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:32.25-32.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:32.25-32.29" *)
   input PCLK;
   wire PCLK;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:33.25-33.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:33.25-33.32" *)
   input PRESETn;
   wire PRESETn;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:34.25-34.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:34.25-34.31" *)
   input PWRITE;
   wire PWRITE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:35.25-35.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:35.25-35.31" *)
   input [31:0] PWDATA;
   wire [31:0] PWDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:36.25-36.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:36.25-36.30" *)
   input [31:0] PADDR;
   wire [31:0] PADDR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:37.25-37.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:37.25-37.32" *)
   input PENABLE;
   wire PENABLE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:38.25-38.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:38.25-38.29" *)
   input PSEL;
   wire PSEL;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:39.25-39.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:39.25-39.31" *)
   output PREADY;
   wire PREADY;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:40.25-40.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:40.25-40.31" *)
   output [31:0] PRDATA;
   wire [31:0] PRDATA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:41.25-41.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:41.25-41.28" *)
   output IRQ;
   wire IRQ;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:42.25-42.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:42.25-42.27" *)
   input [0:0] rx;
   wire [0:0] rx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:43.25-43.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:43.25-43.27" *)
   output [0:0] tx;
   wire [0:0] tx;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   wire [9:0] _000_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162.3-166.56" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162.3-166.56" *)
   wire _001_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180.3-184.56" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180.3-184.56" *)
   wire _002_;
   wire _003_;
   wire _004_;
@@ -4507,131 +4507,131 @@ module EF_UART_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, 
   wire _286_;
   wire _287_;
   wire _288_;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:208.14-208.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:208.14-208.17" *)
   wire [0:0] BRK;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:135.14-135.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:135.14-135.21" *)
   wire [13:0] CFG_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:125.13-125.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:125.13-125.21" *)
   wire [4:0] CTRL_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:210.14-210.16" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:210.14-210.16" *)
   wire [0:0] FE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:63.13-63.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:63.13-63.21" *)
   wire [0:0] GCLK_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:192.17-192.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:192.17-192.23" *)
   wire [9:0] IC_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:191.17-191.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:191.17-191.23" *)
   wire [9:0] IM_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:209.14-209.19" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:209.14-209.19" *)
   wire [0:0] MATCH;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:144.17-144.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:144.17-144.26" *)
   wire [8:0] MATCH_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:212.14-212.16" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:212.14-212.16" *)
   wire [0:0] OR;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:211.14-211.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:211.14-211.17" *)
   wire [0:0] PRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:119.18-119.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:119.18-119.24" *)
   wire [15:0] PR_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:193.17-193.24" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:193.17-193.24" *)
   wire [9:0] RIS_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:213.14-213.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:213.14-213.17" *)
   wire [0:0] RTO;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:207.14-207.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:207.14-207.17" *)
   wire [0:0] RXA;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:117.18-117.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:117.18-117.29" *)
   wire [8:0] RXDATA_WIRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:205.14-205.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:205.14-205.17" *)
   wire [0:0] RXF;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:160.13-160.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:160.13-160.30" *)
   wire [0:0] RX_FIFO_FLUSH_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:150.18-150.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:150.18-150.36" *)
   wire [3:0] RX_FIFO_LEVEL_WIRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:153.17-153.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:153.17-153.38" *)
   wire [3:0] RX_FIFO_THRESHOLD_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:206.14-206.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:206.14-206.17" *)
   wire [0:0] TXB;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:204.14-204.17" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:204.14-204.17" *)
   wire [0:0] TXE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:178.13-178.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:178.13-178.30" *)
   wire [0:0] TX_FIFO_FLUSH_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:168.18-168.36" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:168.18-168.36" *)
   wire [3:0] TX_FIFO_LEVEL_WIRE;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:171.17-171.38" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:171.17-171.38" *)
   wire [3:0] TX_FIFO_THRESHOLD_REG;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:109.18-109.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:109.18-109.28" *)
   wire [0:0] break_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:75.18-75.21" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:75.18-75.21" *)
   wire clk;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:64.8-64.13" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:64.8-64.13" *)
   wire clk_g;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:66.8-66.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:66.8-66.20" *)
   wire clk_gated_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:96.18-96.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:96.18-96.27" *)
   wire [3:0] data_size;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:83.18-83.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:83.18-83.20" *)
   wire [0:0] en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:111.18-111.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:111.18-111.34" *)
   wire [0:0] frame_error_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:89.18-89.34" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:89.18-89.34" *)
   wire [0:0] glitch_filter_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:88.18-88.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:88.18-88.29" *)
   wire [0:0] loopback_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:101.18-101.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:101.18-101.28" *)
   wire [8:0] match_data;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:110.18-110.28" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:110.18-110.28" *)
   wire [0:0] match_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:113.18-113.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:113.18-113.30" *)
   wire [0:0] overrun_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:112.18-112.35" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:112.18-112.35" *)
   wire [0:0] parity_error_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:98.18-98.29" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:98.18-98.29" *)
   wire [2:0] parity_type;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:82.18-82.27" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:82.18-82.27" *)
   wire [15:0] prescaler;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:92.18-92.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:92.18-92.20" *)
   wire [0:0] rd;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:105.18-105.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:105.18-105.23" *)
   wire [8:0] rdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:76.18-76.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:76.18-76.23" *)
   wire rst_n;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:106.18-106.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:106.18-106.26" *)
   (* unused_bits = "0" *)
   wire [0:0] rx_empty;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:85.18-85.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:85.18-85.23" *)
   wire [0:0] rx_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:95.18-95.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:95.18-95.31" *)
   wire [0:0] rx_fifo_flush;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:107.18-107.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:107.18-107.25" *)
   wire [0:0] rx_full;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:91.18-91.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:91.18-91.26" *)
   wire [3:0] rx_level;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:108.18-108.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:108.18-108.32" *)
   wire [0:0] rx_level_above;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:100.18-100.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:100.18-100.26" *)
   wire [3:0] rxfifotr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:97.18-97.33" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:97.18-97.33" *)
   wire [0:0] stop_bits_count;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:87.18-87.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:87.18-87.30" *)
   wire [5:0] timeout_bits;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:114.18-114.30" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:114.18-114.30" *)
   wire [0:0] timeout_flag;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:102.18-102.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:102.18-102.26" *)
   wire [0:0] tx_empty;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:84.18-84.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:84.18-84.23" *)
   wire [0:0] tx_en;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:94.18-94.31" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:94.18-94.31" *)
   wire [0:0] tx_fifo_flush;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:103.18-103.25" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:103.18-103.25" *)
   (* unused_bits = "0" *)
   wire [0:0] tx_full;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:90.18-90.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:90.18-90.26" *)
   wire [3:0] tx_level;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:104.18-104.32" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:104.18-104.32" *)
   wire [0:0] tx_level_below;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:99.18-99.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:99.18-99.26" *)
   wire [3:0] txfifotr;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:86.18-86.23" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:86.18-86.23" *)
   wire [8:0] wdata;
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:93.18-93.20" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:93.18-93.20" *)
   wire [0:0] wr;
   sky130_fd_sc_hd__clkinv_1 _289_ (
     .A(TX_FIFO_THRESHOLD_REG[3]),
@@ -6487,595 +6487,595 @@ module EF_UART_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, 
     .SLEEP(_174_),
     .X(_000_[9])
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
   sky130_fd_sc_hd__dfrtp_1 _607_ (
     .CLK(PCLK),
     .D(_057_),
     .Q(CTRL_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
   sky130_fd_sc_hd__dfrtp_1 _608_ (
     .CLK(PCLK),
     .D(_056_),
     .Q(CTRL_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
   sky130_fd_sc_hd__dfrtp_1 _609_ (
     .CLK(PCLK),
     .D(_055_),
     .Q(CTRL_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
   sky130_fd_sc_hd__dfrtp_1 _610_ (
     .CLK(PCLK),
     .D(_054_),
     .Q(CTRL_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:131.3-133.85" *)
   sky130_fd_sc_hd__dfrtp_1 _611_ (
     .CLK(PCLK),
     .D(_066_),
     .Q(CTRL_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187.3-189.85" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:187.3-189.85" *)
   sky130_fd_sc_hd__dfrtp_1 _612_ (
     .CLK(PCLK),
     .D(_067_),
     .Q(GCLK_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _613_ (
     .CLK(PCLK),
     .D(_053_),
     .Q(IM_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _614_ (
     .CLK(PCLK),
     .D(_052_),
     .Q(IM_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _615_ (
     .CLK(PCLK),
     .D(_051_),
     .Q(IM_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _616_ (
     .CLK(PCLK),
     .D(_050_),
     .Q(IM_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _617_ (
     .CLK(PCLK),
     .D(_049_),
     .Q(IM_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _618_ (
     .CLK(PCLK),
     .D(_048_),
     .Q(IM_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _619_ (
     .CLK(PCLK),
     .D(_047_),
     .Q(IM_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _620_ (
     .CLK(PCLK),
     .D(_046_),
     .Q(IM_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _621_ (
     .CLK(PCLK),
     .D(_045_),
     .Q(IM_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:196.3-198.82" *)
   sky130_fd_sc_hd__dfrtp_1 _622_ (
     .CLK(PCLK),
     .D(_068_),
     .Q(IM_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _623_ (
     .CLK(PCLK),
     .D(_044_),
     .Q(CFG_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _624_ (
     .CLK(PCLK),
     .D(_043_),
     .Q(CFG_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _625_ (
     .CLK(PCLK),
     .D(_042_),
     .Q(CFG_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _626_ (
     .CLK(PCLK),
     .D(_041_),
     .Q(CFG_REG[3]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _627_ (
     .CLK(PCLK),
     .D(_040_),
     .Q(CFG_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _628_ (
     .CLK(PCLK),
     .D(_039_),
     .Q(CFG_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _629_ (
     .CLK(PCLK),
     .D(_038_),
     .Q(CFG_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfrtp_1 _630_ (
     .CLK(PCLK),
     .D(_037_),
     .Q(CFG_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _631_ (
     .CLK(PCLK),
     .D(_036_),
     .Q(CFG_REG[8]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _632_ (
     .CLK(PCLK),
     .D(_035_),
     .Q(CFG_REG[9]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _633_ (
     .CLK(PCLK),
     .D(_034_),
     .Q(CFG_REG[10]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _634_ (
     .CLK(PCLK),
     .D(_033_),
     .Q(CFG_REG[11]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _635_ (
     .CLK(PCLK),
     .D(_032_),
     .Q(CFG_REG[12]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:140.3-142.84" *)
   sky130_fd_sc_hd__dfstp_2 _636_ (
     .CLK(PCLK),
     .D(_070_),
     .Q(CFG_REG[13]),
     .SET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
   sky130_fd_sc_hd__dfrtp_1 _637_ (
     .CLK(PCLK),
     .D(_031_),
     .Q(TX_FIFO_THRESHOLD_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
   sky130_fd_sc_hd__dfrtp_1 _638_ (
     .CLK(PCLK),
     .D(_030_),
     .Q(TX_FIFO_THRESHOLD_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
   sky130_fd_sc_hd__dfrtp_1 _639_ (
     .CLK(PCLK),
     .D(_029_),
     .Q(TX_FIFO_THRESHOLD_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:173.3-176.48" *)
   sky130_fd_sc_hd__dfrtp_1 _640_ (
     .CLK(PCLK),
     .D(_071_),
     .Q(TX_FIFO_THRESHOLD_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _641_ (
     .CLK(PCLK),
     .D(_028_),
     .Q(MATCH_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _642_ (
     .CLK(PCLK),
     .D(_027_),
     .Q(MATCH_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _643_ (
     .CLK(PCLK),
     .D(_026_),
     .Q(MATCH_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _644_ (
     .CLK(PCLK),
     .D(_025_),
     .Q(MATCH_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _645_ (
     .CLK(PCLK),
     .D(_024_),
     .Q(MATCH_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _646_ (
     .CLK(PCLK),
     .D(_023_),
     .Q(MATCH_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _647_ (
     .CLK(PCLK),
     .D(_022_),
     .Q(MATCH_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _648_ (
     .CLK(PCLK),
     .D(_021_),
     .Q(MATCH_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:146.3-148.89" *)
   sky130_fd_sc_hd__dfrtp_1 _649_ (
     .CLK(PCLK),
     .D(_072_),
     .Q(MATCH_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _650_ (
     .CLK(PCLK),
     .D(_073_),
     .Q(RIS_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _651_ (
     .CLK(PCLK),
     .D(_058_),
     .Q(RIS_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _652_ (
     .CLK(PCLK),
     .D(_059_),
     .Q(RIS_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _653_ (
     .CLK(PCLK),
     .D(_060_),
     .Q(RIS_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _654_ (
     .CLK(PCLK),
     .D(_061_),
     .Q(RIS_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _655_ (
     .CLK(PCLK),
     .D(_062_),
     .Q(RIS_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _656_ (
     .CLK(PCLK),
     .D(_063_),
     .Q(RIS_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _657_ (
     .CLK(PCLK),
     .D(_064_),
     .Q(RIS_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _658_ (
     .CLK(PCLK),
     .D(_065_),
     .Q(RIS_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:216.3-259.8" *)
   sky130_fd_sc_hd__dfrtp_1 _659_ (
     .CLK(PCLK),
     .D(_069_),
     .Q(RIS_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
   sky130_fd_sc_hd__dfrtp_1 _660_ (
     .CLK(PCLK),
     .D(_020_),
     .Q(RX_FIFO_THRESHOLD_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
   sky130_fd_sc_hd__dfrtp_1 _661_ (
     .CLK(PCLK),
     .D(_019_),
     .Q(RX_FIFO_THRESHOLD_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
   sky130_fd_sc_hd__dfrtp_1 _662_ (
     .CLK(PCLK),
     .D(_018_),
     .Q(RX_FIFO_THRESHOLD_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:155.3-158.48" *)
   sky130_fd_sc_hd__dfrtp_1 _663_ (
     .CLK(PCLK),
     .D(_074_),
     .Q(RX_FIFO_THRESHOLD_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _664_ (
     .CLK(PCLK),
     .D(_017_),
     .Q(PR_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _665_ (
     .CLK(PCLK),
     .D(_016_),
     .Q(PR_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _666_ (
     .CLK(PCLK),
     .D(_015_),
     .Q(PR_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _667_ (
     .CLK(PCLK),
     .D(_014_),
     .Q(PR_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _668_ (
     .CLK(PCLK),
     .D(_013_),
     .Q(PR_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _669_ (
     .CLK(PCLK),
     .D(_012_),
     .Q(PR_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _670_ (
     .CLK(PCLK),
     .D(_011_),
     .Q(PR_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _671_ (
     .CLK(PCLK),
     .D(_010_),
     .Q(PR_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _672_ (
     .CLK(PCLK),
     .D(_009_),
     .Q(PR_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _673_ (
     .CLK(PCLK),
     .D(_008_),
     .Q(PR_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _674_ (
     .CLK(PCLK),
     .D(_007_),
     .Q(PR_REG[10]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _675_ (
     .CLK(PCLK),
     .D(_006_),
     .Q(PR_REG[11]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _676_ (
     .CLK(PCLK),
     .D(_005_),
     .Q(PR_REG[12]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _677_ (
     .CLK(PCLK),
     .D(_004_),
     .Q(PR_REG[13]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _678_ (
     .CLK(PCLK),
     .D(_003_),
     .Q(PR_REG[14]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:121.3-123.82" *)
   sky130_fd_sc_hd__dfrtp_1 _679_ (
     .CLK(PCLK),
     .D(_075_),
     .Q(PR_REG[15]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _680_ (
     .CLK(PCLK),
     .D(_000_[0]),
     .Q(IC_REG[0]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _681_ (
     .CLK(PCLK),
     .D(_000_[1]),
     .Q(IC_REG[1]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _682_ (
     .CLK(PCLK),
     .D(_000_[2]),
     .Q(IC_REG[2]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _683_ (
     .CLK(PCLK),
     .D(_000_[3]),
     .Q(IC_REG[3]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _684_ (
     .CLK(PCLK),
     .D(_000_[4]),
     .Q(IC_REG[4]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _685_ (
     .CLK(PCLK),
     .D(_000_[5]),
     .Q(IC_REG[5]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _686_ (
     .CLK(PCLK),
     .D(_000_[6]),
     .Q(IC_REG[6]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _687_ (
     .CLK(PCLK),
     .D(_000_[7]),
     .Q(IC_REG[7]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _688_ (
     .CLK(PCLK),
     .D(_000_[8]),
     .Q(IC_REG[8]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:199.3-202.26" *)
   sky130_fd_sc_hd__dfrtp_1 _689_ (
     .CLK(PCLK),
     .D(_000_[9]),
     .Q(IC_REG[9]),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180.3-184.56" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:180.3-184.56" *)
   sky130_fd_sc_hd__dfrtp_1 _690_ (
     .CLK(PCLK),
     .D(_002_),
     .Q(TX_FIFO_FLUSH_REG),
     .RESET_B(PRESETn)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162.3-166.56" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:162.3-166.56" *)
   sky130_fd_sc_hd__dfrtp_1 _691_ (
     .CLK(PCLK),
     .D(_001_),
@@ -7083,13 +7083,13 @@ module EF_UART_APB(PCLK, PRESETn, PWRITE, PWDATA, PADDR, PENABLE, PSEL, PREADY, 
     .RESET_B(PRESETn)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:67.23-73.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:67.23-73.4" *)
   ef_util_gating_cell clk_gate_cell (
     .clk(PCLK),
     .clk_en(GCLK_REG),
     .clk_o(clk)
   );
-  (* src = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:268.5-306.4" *)
+  (* src = "~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-uart/rtl/EF_UART_APB.v:268.5-306.4" *)
   \$paramod$e9cdd1478d980710c2839daafb26d490f06a2359\EF_UART  instance_to_wrap (
     .break_flag(break_flag),
     .clk(clk),

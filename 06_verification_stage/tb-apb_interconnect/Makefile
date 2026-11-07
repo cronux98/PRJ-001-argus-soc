@@ -2,7 +2,7 @@
 MODULE = test_apb_interconnect
 TOPLEVEL_LANG = verilog
 VERILOG_SOURCES = \
-    /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v
+    ~/hermes_workspace/projects/PRJ-001/v0/04_frontend_stage/rtl-apb_interconnect/rtl/apb_interconnect.v
 TOPLEVEL = apb_interconnect
 SIM = icarus
 COCOTB_HDL_TIMEUNIT = 1ns

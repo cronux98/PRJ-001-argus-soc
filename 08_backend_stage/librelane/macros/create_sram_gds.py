@@ -52,7 +52,7 @@ for y in range(0, h, 10000):
     top.shapes(layer_met1).insert(pya.Box(0, y, w, y+1000))
 
 # Write GDS
-output_path = "/home/smdadmin/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macros/sram.gds"
+output_path = "~/hermes_workspace/projects/PRJ-001/v0/08_backend_stage/librelane/macros/sram.gds"
 layout.write(output_path)
 print(f"GDS written: {output_path}")
 print(f"  Cell: sram, dimensions: {w}nm x {h}nm")

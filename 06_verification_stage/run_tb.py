@@ -94,7 +94,7 @@ def main():
 
     # Set up PATH
     env = os.environ.copy()
-    env['PATH'] = f"/home/smdadmin/oss-cad-suite/bin:{env.get('PATH', '')}"
+    env['PATH'] = f"~/oss-cad-suite/bin:{env.get('PATH', '')}"
 
     print(f"Running tests for {module_name}...")
 

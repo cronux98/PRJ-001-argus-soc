@@ -3,7 +3,7 @@
 **Date:** 2026-07-21
 **Auditor:** Claude Opus 4.8 (high effort)
 **Project:** PRJ-001 Argus
-**Stage Directory:** /home/smdadmin/hermes_workspace/projects/PRJ-001/v0/06_verification_stage
+**Stage Directory:** ~/hermes_workspace/projects/PRJ-001/v0/06_verification_stage
 
 ## Verdict
 **CONDITIONAL PASS** — all 177 functional tests pass and reconcile, but coverage is *estimated* (not measured), GLS is deferred, and two Tier-B modules sit below the testcase minimum on prose-only justification.
